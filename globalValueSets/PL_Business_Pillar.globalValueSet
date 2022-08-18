@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Inflight Systems (IFS)</fullName>
+        <default>false</default>
+        <label>Inflight Systems (IFS)</label>
+    </customValue>
+    <customValue>
+        <fullName>Connectivity Solutions (IFC)</fullName>
+        <default>false</default>
+        <label>Connectivity Solutions (IFC)</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital Solutions (DSS)</fullName>
+        <default>false</default>
+        <label>Digital Solutions (DSS)</label>
+    </customValue>
+    <customValue>
+        <fullName>Panasonic Technical Services (PTS)</fullName>
+        <default>false</default>
+        <label>Panasonic Technical Services (PTS)</label>
+    </customValue>
+    <masterLabel>PL_Business Pillar</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

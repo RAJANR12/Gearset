@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AUDIO/VIDEO</fullName>
+        <default>false</default>
+        <label>AUDIO/VIDEO</label>
+    </customValue>
+    <customValue>
+        <fullName>AVOD 1.0</fullName>
+        <default>false</default>
+        <label>AVOD 1.0</label>
+    </customValue>
+    <customValue>
+        <fullName>AVOD 1.5</fullName>
+        <default>false</default>
+        <label>AVOD 1.5</label>
+    </customValue>
+    <customValue>
+        <fullName>CMS</fullName>
+        <default>false</default>
+        <label>CMS</label>
+    </customValue>
+    <customValue>
+        <fullName>CSS</fullName>
+        <default>false</default>
+        <label>CSS</label>
+    </customValue>
+    <customValue>
+        <fullName>DAES</fullName>
+        <default>false</default>
+        <label>DAES</label>
+    </customValue>
+    <customValue>
+        <fullName>DIGITAL MPES</fullName>
+        <default>false</default>
+        <label>DIGITAL MPES</label>
+    </customValue>
+    <customValue>
+        <fullName>eFX</fullName>
+        <default>false</default>
+        <label>eFX</label>
+    </customValue>
+    <customValue>
+        <fullName>eX1</fullName>
+        <default>false</default>
+        <label>eX1</label>
+    </customValue>
+    <customValue>
+        <fullName>eX2</fullName>
+        <default>false</default>
+        <label>eX2</label>
+    </customValue>
+    <customValue>
+        <fullName>eX2 FOR B787</fullName>
+        <default>false</default>
+        <label>eX2 FOR B787</label>
+    </customValue>
+    <customValue>
+        <fullName>eX3</fullName>
+        <default>false</default>
+        <label>eX3</label>
+    </customValue>
+    <customValue>
+        <fullName>eXK</fullName>
+        <default>false</default>
+        <label>eXK</label>
+    </customValue>
+    <customValue>
+        <fullName>eXLite</fullName>
+        <default>false</default>
+        <label>eXLite</label>
+    </customValue>
+    <customValue>
+        <fullName>eXO</fullName>
+        <default>false</default>
+        <label>eXO</label>
+    </customValue>
+    <customValue>
+        <fullName>eXTV</fullName>
+        <default>false</default>
+        <label>eXTV</label>
+    </customValue>
+    <customValue>
+        <fullName>eXW</fullName>
+        <default>false</default>
+        <label>eXW</label>
+    </customValue>
+    <customValue>
+        <fullName>FLEETWIDE SW CR PROGRAM</fullName>
+        <default>false</default>
+        <label>FLEETWIDE SW CR PROGRAM</label>
+    </customValue>
+    <customValue>
+        <fullName>MOBILITY</fullName>
+        <default>false</default>
+        <label>MOBILITY</label>
+    </customValue>
+    <customValue>
+        <fullName>NEXT</fullName>
+        <default>false</default>
+        <label>NEXT</label>
+    </customValue>
+    <customValue>
+        <fullName>S3000</fullName>
+        <default>false</default>
+        <label>S3000</label>
+    </customValue>
+    <customValue>
+        <fullName>S3000i</fullName>
+        <default>false</default>
+        <label>S3000i</label>
+    </customValue>
+    <customValue>
+        <fullName>WIFI</fullName>
+        <default>false</default>
+        <label>WIFI</label>
+    </customValue>
+    <customValue>
+        <fullName>GCS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>GCS</label>
+    </customValue>
+    <customValue>
+        <fullName>MISCELLANEOUS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>MISCELLANEOUS</label>
+    </customValue>
+    <customValue>
+        <fullName>PRAM ONLY</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PRAM ONLY</label>
+    </customValue>
+    <customValue>
+        <fullName>MPES w OVH VID</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>MPES w OVH VID</label>
+    </customValue>
+    <customValue>
+        <fullName>Astrova</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Astrova</label>
+    </customValue>
+    <customValue>
+        <fullName>eXphone</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>eXphone</label>
+    </customValue>
+    <customValue>
+        <fullName>eXconnect</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>eXconnect</label>
+    </customValue>
+    <customValue>
+        <fullName>MPES</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>MPES</label>
+    </customValue>
+    <masterLabel>Sub System Type Picklist Values</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

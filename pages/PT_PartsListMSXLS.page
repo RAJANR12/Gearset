@@ -1,0 +1,428 @@
+<apex:page standardController="Opportunity" extensions="PT_PartsListPDFController" contentType="txt/xml#myTest.xls" cache="true">
+    <apex:outputText value="{!xlsHeader}"/>
+    <Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+              xmlns:o="urn:schemas-microsoft-com:office:office"
+              xmlns:x="urn:schemas-microsoft-com:office:excel"
+              xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+              xmlns:html="http://www.w3.org/TR/REC-html40">
+
+        <Styles>
+            <Style ss:ID="s1">
+              <Alignment/>
+                         <Borders/>
+                                  <Font ss:Bold="1"/>
+                                                    <Interior/>
+                                                              <NumberFormat/>
+                                                                            <Protection/>
+            </Style>
+            <Style ss:ID="s1b">
+              <Alignment ss:Horizontal="Right" /><Font ss:Bold="1"/>
+            </Style>
+            <Style ss:ID="s2">
+              <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+                                                                     <Font ss:Bold="1"/>
+            </Style>
+            <Style ss:ID="s3">
+              <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+                                                                     <Font ss:Size="8"/>
+            </Style>
+            <Style ss:ID="s4">
+              <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+                                                                     <Font ss:Bold="1" ss:FontName="Verdana" x:Family="Swiss" ss:Size="14" ss:Color="#0168b3" />
+            </Style>
+            <Style ss:ID="s4b">
+              <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+                                                                     <Font ss:Bold="1" ss:FontName="Verdana" x:Family="Swiss" ss:Size="11" ss:Color="#0168b3" />
+
+            </Style>
+            <Style ss:ID="s4c">
+              <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+                                                                     <Font  ss:FontName="Verdana" x:Family="Swiss" ss:Size="10" />
+            </Style>
+            <Style ss:ID="s4d">
+              <Alignment ss:Horizontal="Right" ss:Vertical="Center"/>
+                                                                    <Font  ss:FontName="Verdana" x:Family="Swiss" ss:Size="10" />
+            </Style>
+            <Style ss:ID="s4e">
+              <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+                                                                   <Font  ss:FontName="Verdana" x:Family="Swiss" ss:Size="10" />
+            </Style>
+            <Style ss:ID="s5">
+              <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+                                                                     <Interior  ss:Color="#0168b3" ss:Pattern="ThinHorzStripe" ss:PatternColor="#0168b3"/>
+            </Style>
+            <Style ss:ID="s5b">
+              <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+                                                                     <Interior  ss:Color="#000000" ss:Pattern="ThinHorzStripe" ss:PatternColor="#000000"/>
+            </Style>
+
+        </Styles>
+        <Worksheet ss:Name="Sheet1">
+            <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+                <DoNotDisplayGridlines/>
+            </WorksheetOptions>
+            <Table x:FullColumns="1" x:FullRows="1">
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Row>
+                    <Cell ss:StyleID="s4" ss:MergeAcross="7" ><Data ss:Type="String" >Panasonic</Data></Cell>
+                </Row>
+                <Row ss:Height="4">
+                    <Cell ss:StyleID="s2" ss:MergeAcross="2" ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s5" ss:MergeAcross="1" ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s2" ss:MergeAcross="3" ><Data ss:Type="String" ></Data></Cell>
+                </Row>
+                <Row ss:Height="3">
+                </Row>
+                <Row ss:Height="2">
+                    <Cell ss:StyleID="s2" ss:MergeAcross="2" ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s5" ss:MergeAcross="1" ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s2" ss:MergeAcross="3" ><Data ss:Type="String" ></Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s4b" ss:MergeAcross="7" ><Data ss:Type="String" >Panasonic Avionics Corporation</Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s2" ss:MergeAcross="1" ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s4c" ss:MergeAcross="1" ><Data ss:Type="String" >26200 Enterprise Way</Data></Cell>
+                    <!--                    <Cell ss:StyleID="s2" ><Data ss:Type="String" ></Data></Cell>-->
+                    <Cell ss:StyleID="s4c" ss:MergeAcross="1" ><Data ss:Type="String" >3303 Monte Villa Parkway</Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s2" ss:MergeAcross="1" ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s4c" ss:MergeAcross="1" ><Data ss:Type="String" >Lake Forest, CA 92630 USA</Data></Cell>
+                    <!--                    <Cell ss:StyleID="s2" ><Data ss:Type="String" ></Data></Cell>-->
+                    <Cell ss:StyleID="s4c" ss:MergeAcross="1" ><Data ss:Type="String" >Bothell, WA 98021 USA</Data></Cell>
+                </Row>
+                <Row ss:Height="2">
+                    <!--                    <Cell ss:StyleID="s2" ss:MergeAcross="2" ><Data ss:Type="String" ></Data></Cell>-->
+                    <Cell ss:StyleID="s5b" ss:MergeAcross="7" ><Data ss:Type="String" ></Data></Cell>
+                    <!--                    <Cell ss:StyleID="s2" ss:MergeAcross="3" ><Data ss:Type="String" ></Data></Cell>-->
+                </Row>
+                <Row ss:Height="3">
+                </Row>
+                <Row ss:Height="4">
+                    <!--                    <Cell ss:StyleID="s2" ss:MergeAcross="2" ><Data ss:Type="String" ></Data></Cell>-->
+                    <Cell ss:StyleID="s5b" ss:MergeAcross="7" ><Data ss:Type="String" ></Data></Cell>
+                    <!--                    <Cell ss:StyleID="s2" ss:MergeAcross="3" ><Data ss:Type="String" ></Data></Cell>-->
+                </Row>
+                <Row>
+                </Row>
+
+                <Row>
+                    <Cell ss:StyleID="s2" ss:MergeAcross="7" ><Data ss:Type="String" >{!oppw.documentHeaderTitle} PARTS LIST</Data></Cell>
+                </Row>
+                <Row>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s2" ss:MergeAcross="7" ><Data ss:Type="String" >Operator: {!oppw.operator}</Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s2" ss:MergeAcross="7" ><Data ss:Type="String" >Owner: {!oppw.owner}</Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s2" ss:MergeAcross="7" ><Data ss:Type="String" >{!oppw.fitType}</Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s2" ss:MergeAcross="7" ><Data ss:Type="String" >{!oppw.aircraftType}</Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s2" ss:MergeAcross="7" ><Data ss:Type="String" >{!oppw.seats}</Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s2" ss:MergeAcross="7" ><Data ss:Type="String" >PROGRAM # {!oppw.program}</Data></Cell>
+                </Row>
+                <Row>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s2" ss:MergeAcross="7" ><Data ss:Type="String" >EFFECTIVITY#: {!oppw.eff}</Data></Cell>
+                </Row>
+                <Row>
+                </Row>
+                <Row>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s3" ss:MergeAcross="7" ><Data ss:Type="String" >-NOTICE-</Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s3" ss:MergeAcross="7" ><Data ss:Type="String" >THE INFORMATION CONTAINED HEREIN IS PROPRIETARY TO PANASONIC AVIONICS</Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s3" ss:MergeAcross="7" ><Data ss:Type="String" >CORPORATION AND SHALL NOT BE REPRODUCED OR DISCLOSED IN WHOLE OR IN PART OR</Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s3" ss:MergeAcross="7" ><Data ss:Type="String" >USED FOR ANY DESIGN OR MANUFACTURE EXCEPT WHEN SUCH USER POSSESSES DIRECT, WRITTEN</Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s3" ss:MergeAcross="7" ><Data ss:Type="String" >AUTHORIZATION FROM PANASONIC AVIONICS CORPORATION.</Data></Cell>
+                </Row>
+            </Table>
+        </Worksheet>
+        <Worksheet ss:Name="Sheet2">
+            <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+                <DoNotDisplayGridlines/>
+            </WorksheetOptions>
+            <Table x:FullColumns="1" x:FullRows="1">
+                <Column ss:Width="150"/>
+                <Column ss:Width="150"/>
+                <Column ss:Width="75"/>
+                <Column ss:Width="150"/>
+                <Column ss:Width="150"/>
+                <Column ss:Width="150"/>
+                <Column ss:Width="800"/>
+                <Row>
+                    <Cell ss:StyleID="s4" ss:MergeAcross="4" ><Data ss:Type="String" >Panasonic</Data></Cell>
+                </Row>
+                <Row ss:Height="4">
+                    <Cell ss:StyleID="s2" ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s5" ss:MergeAcross="2" ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s2"  ><Data ss:Type="String" ></Data></Cell>
+                </Row>
+                <Row ss:Height="3">
+                </Row>
+                <Row ss:Height="2">
+                    <Cell ss:StyleID="s2"  ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s5" ss:MergeAcross="2" ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s2"  ><Data ss:Type="String" ></Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s4b" ss:MergeAcross="4" ><Data ss:Type="String" >Panasonic Avionics Corporation</Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s2"  ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s4d"><Data ss:Type="String" >26200 Enterprise Way</Data></Cell>
+                    <Cell ss:StyleID="s2" ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s4e"  ><Data ss:Type="String" >3303 Monte Villa Parkway</Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s2"  ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s4d" ><Data ss:Type="String" >Lake Forest, CA 92630 USA</Data></Cell>
+                    <Cell ss:StyleID="s2" ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s4e"  ><Data ss:Type="String" >Bothell, WA 98021 USA</Data></Cell>
+                </Row>
+                <Row ss:Height="2">
+                    <!--                    <Cell ss:StyleID="s2" ss:MergeAcross="2" ><Data ss:Type="String" ></Data></Cell>-->
+                    <Cell ss:StyleID="s5b" ss:MergeAcross="4" ><Data ss:Type="String" ></Data></Cell>
+                    <!--                    <Cell ss:StyleID="s2" ss:MergeAcross="3" ><Data ss:Type="String" ></Data></Cell>-->
+                </Row>
+                <Row ss:Height="3">
+                </Row>
+                <Row ss:Height="4">
+                    <!--                    <Cell ss:StyleID="s2" ss:MergeAcross="2" ><Data ss:Type="String" ></Data></Cell>-->
+                    <Cell ss:StyleID="s5b" ss:MergeAcross="4" ><Data ss:Type="String" ></Data></Cell>
+                    <!--                    <Cell ss:StyleID="s2" ss:MergeAcross="3" ><Data ss:Type="String" ></Data></Cell>-->
+                </Row>
+                <Row>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s2" ss:MergeAcross="4" ><Data ss:Type="String" >Document Revision History Sheet</Data></Cell>
+                </Row>
+                <Row>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >REV</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >REV DATE</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >APPROVED</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >PREPARED</Data></Cell>
+                </Row>
+                <apex:repeat value="{!plrListWrapper}" var="plrw">
+                    <Row>
+                        <Cell ss:StyleID="s1"><Data ss:Type="String">{!plrw.revision}</Data></Cell>
+                        <Cell><Data ss:Type="String"></Data></Cell>
+                        <Cell><Data ss:Type="String">{!plrw.appSubDate}</Data></Cell>
+                        <Cell><Data ss:Type="String">{!plrw.approver}</Data></Cell>
+                        <Cell><Data ss:Type="String">{!plrw.submitter}</Data></Cell>
+                    </Row>
+                    <Row>
+                        <Cell ss:StyleID="s1"><Data ss:Type="String">Comments</Data></Cell>
+                        <Cell ss:MergeAcross="5"><Data ss:Type="String" >{!plrw.comments}</Data></Cell>
+                    </Row>
+                    <apex:repeat value="{!plrw.plrDetailsList}" var="plrwDetails">
+                        <apex:repeat value="{!plrwDetails}" var="dets">
+                        <Row>
+                            <Cell ss:StyleID="s1"><Data ss:Type="String">{!dets.detailsLabel}</Data></Cell>
+                            <Cell ss:MergeAcross="5"><Data ss:Type="String" >{!dets.details}</Data></Cell>
+                        </Row>
+                        </apex:repeat>
+                    </apex:repeat>
+                    <Row>
+                    </Row>
+                </apex:repeat>
+            </Table>
+        </Worksheet>
+        <Worksheet ss:Name="Sheet3">
+            <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+                <DoNotDisplayGridlines/>
+            </WorksheetOptions>
+            <Table x:FullColumns="1" x:FullRows="1">
+                <Column ss:Width="150"/>
+                <Column ss:Width="150"/>
+                <Column ss:Width="150"/>
+                <Column ss:Width="150"/>
+                <Column ss:Width="150"/>
+                <Column ss:Width="150"/>
+                <Column ss:Width="330"/>
+                <Row>
+                    <Cell ss:StyleID="s4" ss:MergeAcross="5" ><Data ss:Type="String" >Panasonic</Data></Cell>
+                </Row>
+                <Row ss:Height="4">
+                    <Cell ss:StyleID="s2" ss:MergeAcross="1" ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s5" ss:MergeAcross="1" ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s2" ss:MergeAcross="3" ><Data ss:Type="String" ></Data></Cell>
+                </Row>
+                <Row ss:Height="3">
+                </Row>
+                <Row ss:Height="2">
+                    <Cell ss:StyleID="s2" ss:MergeAcross="1" ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s5" ss:MergeAcross="1" ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s2" ss:MergeAcross="3" ><Data ss:Type="String" ></Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s4b" ss:MergeAcross="5" ><Data ss:Type="String" >Panasonic Avionics Corporation</Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s2"  ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s4c" ss:MergeAcross="1" ><Data ss:Type="String" >26200 Enterprise Way</Data></Cell>
+                    <!--                    <Cell ss:StyleID="s2" ><Data ss:Type="String" ></Data></Cell>-->
+                    <Cell ss:StyleID="s4c" ss:MergeAcross="1" ><Data ss:Type="String" >3303 Monte Villa Parkway</Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s2"  ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s4c" ss:MergeAcross="1" ><Data ss:Type="String" >Lake Forest, CA 92630 USA</Data></Cell>
+                    <!--                    <Cell ss:StyleID="s2" ><Data ss:Type="String" ></Data></Cell>-->
+                    <Cell ss:StyleID="s4c" ss:MergeAcross="1" ><Data ss:Type="String" >Bothell, WA 98021 USA</Data></Cell>
+                </Row>
+                <Row ss:Height="2">
+                    <!--                    <Cell ss:StyleID="s2" ss:MergeAcross="2" ><Data ss:Type="String" ></Data></Cell>-->
+                    <Cell ss:StyleID="s5b" ss:MergeAcross="5" ><Data ss:Type="String" ></Data></Cell>
+                    <!--                    <Cell ss:StyleID="s2" ss:MergeAcross="3" ><Data ss:Type="String" ></Data></Cell>-->
+                </Row>
+                <Row ss:Height="3">
+                </Row>
+                <Row ss:Height="4">
+                    <!--                    <Cell ss:StyleID="s2" ss:MergeAcross="2" ><Data ss:Type="String" ></Data></Cell>-->
+                    <Cell ss:StyleID="s5b" ss:MergeAcross="5" ><Data ss:Type="String" ></Data></Cell>
+                    <!--                    <Cell ss:StyleID="s2" ss:MergeAcross="3" ><Data ss:Type="String" ></Data></Cell>-->
+                </Row>
+                <Row>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >NOTE #</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >REV NOTE ADDED</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >REV NOTE DELETED</Data></Cell>
+                    <Cell ss:StyleID="s1" ss:MergeAcross="3"><Data ss:Type="String" >NOTE DESCRIPTION</Data></Cell>
+                </Row>
+                <apex:repeat value="{!noteWrapperList}" var="nwl">
+                    <Row>
+                        <Cell><Data ss:Type="String">{!nwl.noteName}</Data></Cell>
+                        <Cell><Data ss:Type="String">{!nwl.revAdded}</Data></Cell>
+                        <Cell><Data ss:Type="String">{!nwl.revDeleted}</Data></Cell>
+                        <Cell ss:MergeAcross="3"><Data ss:Type="String" >{!nwl.notes}</Data></Cell>
+
+                    </Row>
+                </apex:repeat>
+            </Table>
+        </Worksheet>
+        <Worksheet ss:Name="Sheet4">
+            <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+                <DoNotDisplayGridlines/>
+            </WorksheetOptions>
+            <Table x:FullColumns="1" x:FullRows="1">
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+<!--                <Column ss:Width="100"/>-->
+                <Column ss:Width="80"/>
+                <Column ss:Width="20"/>
+                <Column ss:Width="80"/>
+                <Column ss:Width="20"/>
+                <Column ss:Width="100"/>
+                <Row>
+                    <Cell ss:StyleID="s4" ss:MergeAcross="9" ><Data ss:Type="String" >Panasonic</Data></Cell>
+                </Row>
+                <Row ss:Height="4">
+                    <Cell ss:StyleID="s2" ss:MergeAcross="2" ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s5" ss:MergeAcross="1" ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s2" ss:MergeAcross="3" ><Data ss:Type="String" ></Data></Cell>
+                </Row>
+                <Row ss:Height="3">
+                </Row>
+                <Row ss:Height="2">
+                    <Cell ss:StyleID="s2" ss:MergeAcross="2" ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s5" ss:MergeAcross="1" ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s2" ss:MergeAcross="3" ><Data ss:Type="String" ></Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s4b" ss:MergeAcross="9" ><Data ss:Type="String" >Panasonic Avionics Corporation</Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s2" ss:MergeAcross="1" ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s4c" ss:MergeAcross="1" ><Data ss:Type="String" >26200 Enterprise Way</Data></Cell>
+                    <!--                    <Cell ss:StyleID="s2" ><Data ss:Type="String" ></Data></Cell>-->
+                    <Cell ss:StyleID="s4c" ss:MergeAcross="1" ><Data ss:Type="String" >3303 Monte Villa Parkway</Data></Cell>
+                </Row>
+                <Row>
+                    <Cell ss:StyleID="s2" ss:MergeAcross="1" ><Data ss:Type="String" ></Data></Cell>
+                    <Cell ss:StyleID="s4c" ss:MergeAcross="1" ><Data ss:Type="String" >Lake Forest, CA 92630 USA</Data></Cell>
+                    <!--                    <Cell ss:StyleID="s2" ><Data ss:Type="String" ></Data></Cell>-->
+                    <Cell ss:StyleID="s4c" ss:MergeAcross="1" ><Data ss:Type="String" >Bothell, WA 98021 USA</Data></Cell>
+                </Row>
+                <Row ss:Height="2">
+                    <!--                    <Cell ss:StyleID="s2" ss:MergeAcross="2" ><Data ss:Type="String" ></Data></Cell>-->
+                    <Cell ss:StyleID="s5b" ss:MergeAcross="9" ><Data ss:Type="String" ></Data></Cell>
+                    <!--                    <Cell ss:StyleID="s2" ss:MergeAcross="3" ><Data ss:Type="String" ></Data></Cell>-->
+                </Row>
+                <Row ss:Height="3">
+                </Row>
+                <Row ss:Height="4">
+                    <!--                    <Cell ss:StyleID="s2" ss:MergeAcross="2" ><Data ss:Type="String" ></Data></Cell>-->
+                    <Cell ss:StyleID="s5b" ss:MergeAcross="9" ><Data ss:Type="String" ></Data></Cell>
+                    <!--                    <Cell ss:StyleID="s2" ss:MergeAcross="3" ><Data ss:Type="String" ></Data></Cell>-->
+                </Row>
+                <Row>
+                </Row>
+                <apex:repeat value="{!iLocWrapperList}" var="ilw">
+                    <Row>
+                        <Cell ss:StyleID="s2" ss:MergeAcross="9" ><Data ss:Type="String">{!ilw.installLoc}</Data></Cell>
+                    </Row>
+                    <Row>
+                        <Cell ss:StyleID="s2" ss:MergeAcross="9" ><Data ss:Type="String">{!ilw.installLocDescription}</Data></Cell>
+                    </Row>
+                    <Row>
+                        <Cell ss:StyleID="s2" ss:MergeAcross="9" ><Data ss:Type="String">{!ilw.vendor}</Data></Cell>
+                    </Row>
+                    <Row>
+                        <Cell ss:StyleID="s1"><Data ss:Type="String" >PART NUMBER</Data></Cell>
+                        <Cell ss:StyleID="s1" ss:MergeAcross="2"><Data ss:Type="String" >NOMENCLATURE</Data></Cell>
+<!--                        <Cell ss:StyleID="s1"><Data ss:Type="String" >STATUS</Data></Cell>-->
+                        <Cell ss:StyleID="s1b"  ss:MergeAcross="1"><Data ss:Type="String" >CONFIG QTY</Data></Cell>
+                        <Cell ss:StyleID="s1b"  ss:MergeAcross="1"><Data ss:Type="String" >PURCH QTY</Data></Cell>
+                        <Cell ss:StyleID="s1b"><Data ss:Type="String" >NOTE</Data></Cell>
+                    </Row>
+                    <apex:repeat value="{!ilw.assetWrapperList}" var="awl">
+                        <Row>
+                            <Cell><Data ss:Type="String">{!awl.productCode}</Data></Cell>
+                            <Cell ss:MergeAcross="2"><Data ss:Type="String">{!awl.productName}</Data></Cell>
+<!--                            <Cell><Data ss:Type="String" >{!awl.status}</Data></Cell>-->
+                            <Cell><Data ss:Type="Number" >{!awl.configQty}</Data></Cell>
+                            <Cell><Data ss:Type="String" ></Data></Cell>
+                            <Cell><Data ss:Type="Number" >{!awl.qty}</Data></Cell>
+                            <Cell><Data ss:Type="String" ></Data></Cell>
+                            <Cell><Data ss:Type="String" >{!awl.noteName}</Data></Cell>
+                        </Row>
+                    </apex:repeat>
+                    <Row>
+                    </Row>
+                </apex:repeat>
+            </Table>
+        </Worksheet>
+    </Workbook>
+</apex:page>

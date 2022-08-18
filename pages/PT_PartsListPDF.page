@@ -1,0 +1,304 @@
+<apex:page renderAs="pdf" showHeader="false" sidebar="false" standardStylesheets="false" applyBodyTag="false"
+           applyHtmlTag="false"
+           standardController="Opportunity" extensions="PT_PartsListPDFController">
+
+    <html>
+    <head>
+        <style>
+          div.header {
+            display: block;
+            text-align: center;
+            position: running(header);
+          }
+
+          div.footer {
+            display: block;
+            text-align: left;
+            position: running(footer);
+            /*content: "Page " counter(page) " of " counter(pages);*/
+          }
+
+          @page {
+            margin: 5mm;
+            margin-top: 60mm;
+            margin-bottom: 25mm;
+            @top-center {
+              content: element(header)
+              /*content: "Sample";*/
+            }
+            @bottom-center {
+              content: "Sheet " counter(page) " of " counter(pages);
+
+
+            }
+            @bottom-right {
+              content: element(footer);
+            }
+          }
+
+          .page-break {
+            display: block;
+            page-break-after: always;
+          }
+
+          body {
+            /*font-family: Arial Unicode MS;*/
+            font-size: small;
+            border: #66ccff;
+          }
+
+          table {
+            /*border-collapse: collapse;*/
+            /*border: .02em solid blue;*/
+          }
+
+          th {
+            border-bottom: solid 1px black;
+          }
+
+          td {
+            /*border: .02em solid blue;*/
+          }
+
+          h2 {
+            align-content: center;
+          }
+
+        </style>
+    </head>
+    <body>
+
+    <div class="header">
+        <table width="100%">
+            <tr>
+                <td width="30%">
+                </td>
+                <td width="40%">
+<!--                    <h1 style="color: blue; text-align: center">Panasonic</h1>-->
+<!--                    <hr style="border: 3px solid blue;"/>-->
+<!--                    <hr style="border: 1px solid blue;"/>-->
+<!--                    <h2 style="color: blue; text-align: center">Panasonic Avionics Corporation</h2>-->
+                    <img src="{!$Resource.PanasonicLogo}" width='300' height='52' />
+                    <hr style="border: 3px solid #0168b3;"/>
+                    <hr style="border: 1px solid #0168b;"/>
+                    <h2 style="color: #0168b; text-align: center">Panasonic Avionics Corporation</h2>
+                </td>
+                <td width="30%">
+                </td>
+            </tr>
+        </table>
+        <table width="100%">
+            <tr>
+                <td width="20%">&nbsp;</td>
+                <td width="25%">26200 Enterprise Way</td>
+                <td width="10%">&nbsp;</td>
+                <td width="25%">3303 Monte Villa Parkway</td>
+                <td width="20%">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>Lake Forest, CA 92630 USA</td>
+                <td>&nbsp;</td>
+                <td>Bothell, WA 98021 USA</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>CAGE Code: 1UL05</td>
+                <td>&nbsp;</td>
+                <td>CAGE Code: 0FF57</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+
+        <hr style="border: 1px solid black;"/>
+        <hr style="border: 3px solid black;"/>
+    </div>
+
+    <div class="footer">
+        DOC NO: {!oppw.partListName}
+        <hr/>
+        REV: {!oppw.rev}
+        <hr/>
+    </div>
+
+    <div style="text-align: center">
+        <!-- <h3>COMPONENT PARTS LIST</h3> -->
+        <!-- Updated by Lipton for W-003629 -->
+        <!-- Changed to PROGRAM PARTS LIST -->
+        <h3>{!oppw.documentHeaderTitle} PARTS LIST</h3>
+        <br/>
+        <h3>Operator: {!oppw.operator}</h3>
+        <h3>Owner: {!oppw.owner}</h3>
+        <h3>{!oppw.fitType}</h3>
+        <h3>{!oppw.aircraftType}</h3>
+        <!-- Removed by Lipton for W-003629 -->
+        <h3>{!oppw.seats}</h3>
+        <br/>
+        <h3>PROGRAM # {!oppw.program}</h3>
+        <br/>
+        <!-- Removed by Lipton for W-003629 -->
+        <h3>EFFECTIVITY#: {!oppw.eff}</h3>
+        <br/>
+        <br/>
+        -NOTICE-<br/>
+        THE INFORMATION CONTAINED HEREIN IS PROPRIETARY TO PANASONIC AVIONICS<br/>
+        CORPORATION AND SHALL NOT BE REPRODUCED OR DISCLOSED IN WHOLE OR IN PART OR<br/>
+        USED FOR ANY DESIGN OR MANUFACTURE EXCEPT WHEN SUCH USER POSSESSES DIRECT, WRITTEN<br/>
+        AUTHORIZATION FROM PANASONIC AVIONICS CORPORATION.
+    </div>
+
+    <div style="page-break-before:always;">
+        <div style="text-align: center">
+            <h3>Document Revision History Sheet</h3>
+        </div>
+        <table width="100%">
+            <tr>
+                <th width="20%">REV</th>
+                <th width="50%">&nbsp;</th>
+                <th width="10%">REV DATE</th>
+                <th width="10%">APPROVED</th>
+                <th width="10%">PREPARED</th>
+            </tr>
+            <apex:repeat id="PartList" value="{!plrListWrapper}" var="plrw">
+                <tr>
+                    <td>
+                        <b>{!plrw.revision}</b>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td style="font-size: small">
+                        {!plrw.appSubDate}
+                    </td>
+                    <td style="font-size: small">
+                        {!plrw.approver}
+                    </td>
+                    <td style="font-size: small">
+                        {!plrw.submitter}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Comments</b>
+                    </td>
+                    <td>
+                        {!plrw.comments} <br/>
+                        <hr/>
+                    </td>
+                    <td colspan="3">
+                        &nbsp;
+                    </td>
+                </tr>
+                <apex:repeat id="PartList" value="{!plrw.plrDetailsList}" var="plrwDetails">
+                    <apex:repeat id="PartList" value="{!plrwDetails}" var="dets">
+                    <tr>
+                        <td style="vertical-align: top">
+                            <b>{!dets.detailsLabel}</b>
+                        </td>
+                        <td>
+                            {!dets.details} <br/>
+                            <hr/>
+                        </td>
+                        <td colspan="3">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    </apex:repeat>
+                </apex:repeat>
+            </apex:repeat>
+
+        </table>
+    </div>
+
+
+    <div style="page-break-before:always;">
+        <h3 style="text-align: center">NOTE INFORMATION</h3><!-- Added Note Information Header by Jan Geronga for W-003768-->
+        <table width="100%">
+            <tr>
+                <th width="10%" style="border-bottom: none;font-weight: normal"><u>NOTE #</u></th><!-- added border:none and underline by Jan Geronga for W-003768-->
+                <!-- Removed by Jan Geronga for W-003768-->
+                <!--<th width="20%">REV NOTE ADDED</th>
+                <th width="20%">REV NOTE DELETED</th>-->
+                <th width="90%" style="border-bottom: none;font-weight: normal"><u>NOTE DESCRIPTION</u></th><!-- added border:none and underline by Jan Geronga for W-003768-->
+
+            </tr>
+            <apex:repeat id="NoteList" value="{!noteWrapperList}" var="nwl">
+                <tr>
+                    <td>
+                        &#60;{!nwl.noteName}&#62;<!-- Added '<' and '>' characters by Jan Geronga for W-003768-->
+                    </td>
+                    <!-- Removed by Jan Geronga for W-003768-->
+                    <!--<td>
+                        {!nwl.revAdded}
+                    </td>
+                    <td>
+                        {!nwl.revDeleted}
+                    </td>-->
+                    <td>
+                        {!nwl.notes}
+                    </td>
+
+                </tr>
+            </apex:repeat>
+
+        </table>
+    </div>
+
+    <div style="page-break-before:always;">
+        <apex:repeat id="ILocList" value="{!iLocWrapperList}" var="ilw">
+            <div style="text-align: center">
+                <br/>
+                <b>{!ilw.installLoc}</b>
+                <br/>
+                <b>{!ilw.installLocDescription}</b>
+                <br/>
+                <b>{!ilw.vendor}</b>
+                <br/>
+                <br/>
+            </div>
+            <table width="100%">
+                <tr style="vertical-align: bottom">
+                    <!-- Updated by Jan Geronga for W-003775: Start-->
+                    <th width="21%" style="border-bottom: none;font-weight: normal"><u>PART NUMBER</u></th>
+                    <th width="50%" style="border-bottom: none;font-weight: normal"><u>NOMENCLATURE</u></th>
+<!--                <th>STATUS</th>-->
+                    <th width="11%" style="text-align: center;font-weight: normal;border-bottom: none">CONFIG<br/><u>QUANTITY</u></th>
+                    <th width="11%" style="text-align: center;font-weight: normal; border-bottom: none">PURCHASE<br/><u>QUANTITY</u></th>
+<!--                <th>REASON</th>-->
+                    <th width="7%" style="border-bottom: none;font-weight: normal"><u>NOTE</u></th>
+                    <!-- Updated by Jan Geronga for W-003775: End-->
+                </tr>
+                <apex:repeat id="PartList" value="{!ilw.assetWrapperList}" var="awl">
+                    <tr>
+                        <td>
+                            {!awl.productCode}
+                        </td>
+                        <td>
+                            {!awl.productName}
+                        </td>
+<!--                        <td>-->
+<!--                            {!awl.status}-->
+<!--                        </td>-->
+                        <td style="text-align: center">
+                            {!awl.configQty}
+                        </td>
+                        <td style="text-align: center">
+                            {!awl.qty}
+                        </td>
+<!--                        <td>-->
+<!--                            {!awl.reason}-->
+<!--                        </td>-->
+                        <td>
+                            {!awl.noteName}
+                        </td>
+                    </tr>
+                </apex:repeat>
+            </table>
+        </apex:repeat>
+    </div>
+
+    </body>
+    </html>
+
+</apex:page>

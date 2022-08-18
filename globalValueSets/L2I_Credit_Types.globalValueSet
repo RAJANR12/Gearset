@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Shipset</fullName>
+        <default>false</default>
+        <label>Shipset</label>
+    </customValue>
+    <customValue>
+        <fullName>Spares</fullName>
+        <default>false</default>
+        <label>Spares</label>
+    </customValue>
+    <customValue>
+        <fullName>Training</fullName>
+        <default>false</default>
+        <label>Training</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Publications</fullName>
+        <default>false</default>
+        <label>Technical Publications</label>
+    </customValue>
+    <customValue>
+        <fullName>Retrofit</fullName>
+        <default>false</default>
+        <label>Retrofit</label>
+    </customValue>
+    <customValue>
+        <fullName>Software</fullName>
+        <default>false</default>
+        <label>Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Certification</fullName>
+        <default>false</default>
+        <label>Certification</label>
+    </customValue>
+    <customValue>
+        <fullName>DSS Services</fullName>
+        <default>false</default>
+        <label>DSS Services</label>
+    </customValue>
+    <customValue>
+        <fullName>System Installation Engineering</fullName>
+        <default>false</default>
+        <label>System Installation Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>Connectivity Voucher</fullName>
+        <default>false</default>
+        <label>Connectivity Voucher</label>
+    </customValue>
+    <customValue>
+        <fullName>PTS</fullName>
+        <default>false</default>
+        <label>PTS</label>
+    </customValue>
+    <customValue>
+        <fullName>DSS Applications</fullName>
+        <default>false</default>
+        <label>DSS Applications</label>
+    </customValue>
+    <customValue>
+        <fullName>IFC Applications</fullName>
+        <default>false</default>
+        <label>IFC Applications</label>
+    </customValue>
+    <customValue>
+        <fullName>IFEC Other</fullName>
+        <default>false</default>
+        <label>IFEC Other</label>
+    </customValue>
+    <customValue>
+        <fullName>DSS Other</fullName>
+        <default>false</default>
+        <label>DSS Other</label>
+    </customValue>
+    <masterLabel>Credit Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

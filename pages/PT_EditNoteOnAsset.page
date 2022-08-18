@@ -1,0 +1,15 @@
+<apex:page >
+    <apex:includeLightning />
+    <div id="lightning"></div>
+    <script>
+        var recordId = "{!$CurrentPage.parameters.id}";
+        $Lightning.use("c:PT_EditNoteOnAssetApp", function () {
+            $Lightning.createComponent("c:pt_EditNoteOnAsset",
+                  {"recordId": recordId},
+                  "lightning",
+                  function (cmp) {
+                      // do some stuff
+                  });
+        });
+    </script>
+</apex:page>

@@ -1,0 +1,76 @@
+<apex:page showHeader="false" sidebar="false" controller="ife_DocumentDetailsController" action="{!getData}">
+
+    <head>
+        <style>
+            .row {
+                width: 100%;
+                margin: 0 auto;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .block {
+
+                float: left;
+            }
+
+            h1 {
+                font-size: 29px;
+                color: blue;
+
+            }
+        </style>
+    </head>
+    <div class="row">
+        <div class="block" style="width: 100%;">
+            <h1>Technical Document Information</h1>
+        </div>
+        <div class="block" style="width: 30%;">
+            <br/> Document Nbr :
+        </div>
+        <div class="block" style="width: 70%;">
+            <br/>
+            <apex:outputText value="{! IF((documentObj.Document_Number__c == null), 'N/A', documentObj.Document_Number__c)}"
+            />
+        </div>
+        <div class="block" style="width: 30%;">
+            Description :
+        </div>
+        <div class="block" style="width: 70%;">
+            <apex:outputText value="{! IF((documentObj.Description__c == null), 'N/A', documentObj.Description__c)}" />
+        </div>
+        <div class="block" style="width: 30%;">
+            Work Statement :
+        </div>
+        <div class="block" style="width: 70%;">
+            <apex:outputText value="{! IF((documentObj.Work_Statement__c == null), 'N/A', documentObj.Work_Statement__c)}" />
+        </div>
+        <div class="block" style="width: 30%;">
+            Revision :
+        </div>
+        <div class="block" style="width: 70%;">
+            <apex:outputText value="{! IF((documentObj.Revision__c == null), 'N/A', documentObj.Revision__c)}" />
+        </div>
+        <div class="block" style="width: 30%;">
+            Revision :
+        </div>
+        <div class="block" style="width: 70%;">
+            ---
+        </div>
+        <div class="block" style="width: 30%;">
+            Type:
+        </div>
+        <div class="block" style="width: 70%;">
+            <apex:outputText value="{! IF((documentObj.FIle_Type__c == null), 'N/A', documentObj.FIle_Type__c)}" />
+        </div>
+        <div class="block" style="width: 30%;">
+            FileName :
+        </div>
+        <div class="block" style="width: 70%;">
+            <a href="{!downloadDocumentLink}" target="_blank">{!documentObj.File_Name__c}</a>
+            <!--<apex:outputText value="{! IF((documentObj.File_Name__c == null), 'N/A', documentObj.File_Name__c)}" />-->
+        </div>
+        
+
+    </div>
+</apex:page>

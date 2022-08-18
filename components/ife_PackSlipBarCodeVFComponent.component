@@ -1,0 +1,16 @@
+<apex:component controller="ife_PackSlipBarCodeController" access="global">
+    <apex:attribute assignTo="{!shouldCheckDigit}" type="boolean" name="checkDigit" default="false" description="True if should append additional check character." />
+    <apex:attribute assignTo="{!sourceCodeValue}" type="string" name="codeValue" description="The string to encode." />
+    <apex:stylesheet value="{!URLFOR($Resource.ife_PackSlipBarCodeCSS)}"/>
+    <apex:attribute assignTo="{!barCode}"  type="string" name="barCodeSize" description="The string to encode." />
+    <div style="{!barCodeSize}" >
+        <div>
+            <apex:repeat value="{!barCodeString}" var="bar">
+                <apex:outputText value="" styleClass="{!if(bar='1','blackbar','whitebar')}" />
+            </apex:repeat>
+        </div>
+        <div style="text-align: center">
+           
+        </div>
+    </div>
+</apex:component>

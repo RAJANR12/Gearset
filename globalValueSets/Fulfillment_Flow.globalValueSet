@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ATP</fullName>
+        <default>false</default>
+        <label>ATP</label>
+    </customValue>
+    <customValue>
+        <fullName>CERT</fullName>
+        <default>false</default>
+        <label>CERT</label>
+    </customValue>
+    <customValue>
+        <fullName>FIRST AC DELIVERY</fullName>
+        <default>false</default>
+        <label>FIRST AC DELIVERY</label>
+    </customValue>
+    <customValue>
+        <fullName>HARDWARE</fullName>
+        <default>false</default>
+        <label>HARDWARE</label>
+    </customValue>
+    <customValue>
+        <fullName>MEDIA</fullName>
+        <default>false</default>
+        <label>MEDIA</label>
+    </customValue>
+    <customValue>
+        <fullName>SIE</fullName>
+        <default>false</default>
+        <label>SIE</label>
+    </customValue>
+    <customValue>
+        <fullName>TECH PUBS</fullName>
+        <default>false</default>
+        <label>TECH PUBS</label>
+    </customValue>
+    <customValue>
+        <fullName>TRAINING</fullName>
+        <default>false</default>
+        <label>TRAINING</label>
+    </customValue>
+    <masterLabel>Fulfillment Flow</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

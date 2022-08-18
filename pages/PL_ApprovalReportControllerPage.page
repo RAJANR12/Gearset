@@ -1,0 +1,53 @@
+<!--
+* @Apex Class         : PL_ApprovalReportControllerPage
+* @Description        : VFP for PL_ApprovalReportController
+* @Author             : Jan Denrick Geronga / Managed Services Simplus
+* @Modification Log   :
+* Ver           Date          Author              Modification
+* W-004439      May-19-2022   MS Simplus Jan      Initial Version
+-->
+
+<apex:page controller="PL_ApprovalReportController" showHeader="false">
+    <apex:form style="width:100%;">
+        <apex:pageblock id="pg1" >
+            <apex:pageBlockTable title="All Pending Advanced Approvals" value="{!allPendingApprovals}" var="app">
+                <apex:column headerValue="Action to Perform" style="width: 200px;">                    
+                    <apex:commandButton style="background:LightBlue;width:60px;" value="Approve" onclick="window.open('/apex/sbaa__Approve?id={!app.approvalName.Id}','_parent');"> </apex:commandButton>
+                    <apex:commandButton style="background:LightBlue;width:60px;" value="Reject" onclick="window.open('/apex/sbaa__Reject?id={!app.approvalName.Id}','_parent');"> </apex:commandButton>
+                    <apex:commandButton style="background:LightBlue;width:60px;" value="Reassign" onclick="window.open('/apex/sbaa__Reassign?id={!app.approvalName.Id}','_parent');"> </apex:commandButton>
+                </apex:column>
+                <!--apex:column headerValue="Actions" value="{!app.approvalName.sbaa__Actions__c}"/-->           
+                <apex:column headerValue="Approval">
+                    <apex:outputlink onclick="window.open('/{!app.approvalName.Id}','_blank');">{!app.approvalName.Name}</apex:outputlink>
+                </apex:column> 
+                <apex:column headerValue="P&L Name">
+                    <apex:outputlink onclick="window.open('/{!app.relatedToId}','_blank');">{!app.relatedTo}</apex:outputlink>
+                </apex:column>
+                <apex:column headerValue="Automated Deal Opportunity Description">
+                    <apex:outputlink onclick="window.open('/{!app.approvalDealOpptyId}','_blank');">{!app.automatedDealDesc}</apex:outputlink>
+                </apex:column>
+                <apex:column headerValue="Revision Status" value="{!app.revisionStatus}"/>
+            </apex:pageBlockTable>
+            <br/>
+            <apex:outputLabel >Total number of approval records: {!total}</apex:outputLabel>
+            <div align="center">
+                <apex:outputPanel rendered="{!AND(IF(isAll, false, true), IF(totalPage == 1, false, true))}">
+                    <apex:commandButton value="Prev" disabled="{! IF(pageNum == 1, true, false) }"
+                                        action="{!previousPage}" reRender="pg1" />
+                    <apex:outputText value="    "/>
+                    <apex:repeat value="{!pageList}" var="pl">
+                        <apex:outputText rendered="{!!pl.isActive}">
+                            <apex:commandLink action="{!updatePage}" rerender="pg1">
+                                {!pl.pNum}
+                                <apex:param name="selectedPage" value="{!pl.pNum}" assignTo="{!pageNum}" />
+                            </apex:commandLink>
+                        </apex:outputText>
+                        <apex:outputText rendered="{!pl.isActive}" value="{!pl.pNum}"/>
+                    </apex:repeat>
+                    <apex:outputText value="    "/>
+                    <apex:commandButton value="Next" disabled="{! IF(pageNum == totalPage, true, false) }" action="{!nextPage}" reRender="pg1"/>
+                </apex:outputPanel>
+            </div>
+        </apex:pageblock>
+    </apex:form>    
+</apex:page>

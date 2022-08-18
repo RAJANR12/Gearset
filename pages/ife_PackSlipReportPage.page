@@ -1,0 +1,349 @@
+<apex:page controller="ife_PackSlipReportController" showHeader="false"  renderAs="PDF" sidebar="false" standardStylesheets="false"
+    applyHtmlTag="false" action="{!getPageValue}">
+    <apex:outputText rendered="{!!isDisplay}">
+
+        <apex:pageMessages />
+
+    </apex:outputText>
+
+    <apex:outputText rendered="{!isDisplay}">
+
+        <head>
+
+
+            <style type="text/css" media="print">
+                @page {
+                    margin-top: 408.5px;
+
+                    @top-center {
+                        content: element(header);
+                    }
+                    margin-bottom: 120px;
+                    @bottom-left {
+                        content: element(footer);
+                    }
+                }
+
+                div.header {
+                    padding: 10px;
+                    position: running(header);
+                }
+
+                div.footer {
+                    display: block;
+                    position: running(footer);
+                }
+
+                .pagenumber:before {
+
+                    content: counter(page);
+                }
+
+                .pagecount:before {
+
+                    content: counter(pages);
+                }
+            </style>
+            <style>
+                .row {
+                    width: 100%;
+
+                    margin: 0 auto;
+                }
+
+                .block {
+
+                    float: left;
+                }
+
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+            </style>
+
+        </head>
+        
+        <div class="header">
+            <div style=" width: 100%;">
+                <div style="width: 33%;float: left;">
+                    <div style="float: left; font-weight: bold; font-size: 20px;"> Panasonic
+                    </div>
+                    <br/>
+                    <div style="float: left; font-weight: bold; font-size: 12px;">{!logoName}</div>
+                </div>
+                <div style="width: 33%;float: left;">
+                    <div style=" font-size: 18px;">PACKING LIST</div>
+
+                </div>
+                <div style="width: 27%;float: left;">
+                    <br/>
+                    <!--<div style="float: right ; font-size: 12px;">Shipped From: CARLYLE</div>-->
+                </div>
+            </div>
+            <br/>
+            <div style=" width: 100%; font-size: 8px">
+                <div style="width: 25%; float: left;">
+                    <div>Corporate Headquarters</div>
+                    <div>{!shopAddress}</div>
+                    <div>{!shopTeleFax}</div>
+                </div>
+                <div style="width: 25%; float: left; ">
+                    <div>Panasonic Bothell</div>
+                    <div>3303 Monte Villa Parkway, Bothell, WA 98021, USA</div>
+                    <div>Telephone: (425) 415-9000 Fax: (425) 482-3530</div>
+                </div>
+                <div style=" width: 25%;float: left; ">
+                    <div>Panasonic Osaka</div>
+                    <div>2-15 Matsuba-Cho, Kadoma, Osaka 571-0056 Japan</div>
+                    <div>Telephone: (06) 6906-2787 Fax: (06) 6908-9168</div>
+                </div>
+                <div style="width: 25%; float: left; ">
+                    <div>Shipped From: {!headerObj.CP_WAREHOUSE_NAME}</div>
+                    <div>Shipped On: ---</div>
+                    <div>Printed On: ---
+                    </div>
+
+                </div>
+            </div>
+            <br/>
+
+            <div style=" width: 100%; font-size: 11px">
+                <div style="width: 33%; float: left; ">
+                    <div style="width: 20%; float: left; margin-top: 5px; ">Trip Id:</div>
+                    <div style="width: 20%; float: left;margin-top: 5px; ">{!headerObj.TRIP_NAME}</div>
+                    <div style="width: 50%; float: right; ">
+                        <c:ife_PackSlipBarCodeVFComponent codeValue="{!headerObj.TRIP_NAME}" barCodeSize="display: inline-block;  min-width: 2in;" />
+                        
+                    </div>
+                </div>
+                <div style="width: 33%; float: left; ">
+                    <div style="width: 20%; float: left; margin-top: 5px; ">Delivery*:</div>
+                    <div style="width: 20%; float: left;margin-top: 5px; ">{!headerObj.C_DELIVERY_NAME}</div>
+                    <div style="width: 50%; float: right; ">
+                        <c:ife_PackSlipBarCodeVFComponent codeValue="{!headerObj.DELIVERY_ID}" barCodeSize="display: inline-block;  min-width: 2in;" />
+                        
+                    </div>
+                </div>
+                <div style="width: 33%; float: left; ">
+                    <div style="width: 20%; float: left; margin-top: 5px; ">Waybill:</div>
+                    <div style="width: 20%; float: left;margin-top: 5px; ">{!headerObj.C_WAYBILL}</div>
+                    <div style="width: 50%; float: right; ">
+                        <c:ife_PackSlipBarCodeVFComponent codeValue="{!headerObj.C_WAYBILL}" barCodeSize="display: inline-block;  min-width: 2in;"/>
+                       
+                    </div>
+                </div>
+                <div style="width: 100%; float: left; ">
+                    .This order no. must appear on all invoices, packing lists, cartons and correspondences related to this order.
+                </div>
+                <div style="width: 100%; float: left; ">
+                    <div style="width: 25%; float: left; ">
+                        Total LPNs: {!headerObj.Number_Of_LPN}
+                    </div>
+                    <div style="width: 25%; float: left; ">
+                        Total Cartons: {!headerObj.C_VOLUME}{!headerObj.C_VOLUME_UOM_CODE}
+                    </div>
+                    <div style="width: 25%; float: left; ">
+                        Total Weight: {!headerObj.C_GROSS_WEIGHT}{!headerObj.C_WEIGHT_UOM}
+                    </div>
+                    <div style="width: 25%; float: left; ">
+                        Ship Method: ----
+                    </div>
+                    <br/>
+                    <br/>
+                    <div style="width: 50%; float: left; ">
+                        SHIP TO:
+                        <br/>
+                        <span style="margin-left : 20px"> {!headerObj.F_BILL_TO_CUST_NAME}</span>
+                        <br/>
+                        <span style="margin-left : 20px"> {!headerObj.C_TO_ADDRESS_1}</span>
+                        <br/>
+                        <span style="margin-left : 20px"> {!headerObj.CF_TO_ADDR_2}</span>
+                        <br/>
+                        <span style="margin-left : 20px"> {!headerObj.CF_TO_ADDR_3}</span>
+                        <br/>
+                        <span style="margin-left : 20px"> {!headerObj.CF_TO_ADDR_4}</span>
+                        <br/>
+                        <span style="margin-left : 20px"> {!headerObj.CF_TO_CITY}</span>
+                    </div>
+                    <div style="width: 50%; float: left; ">
+                        <br/>
+                        <span> Freight Terms :{!headerObj.CF_FREIGHT_TERMS}</span>
+                        <br/>
+                        <span style="margin-left : 20px"> Incoterms: {!headerObj.CF_FOB}</span>
+                        <br/>
+                        <span> Terms of Sales: ---</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div style="width: 100%;  border: 1px solid black; font-size: 8px; margin-top : 30px">
+                These items are controlled by the U.S. Government and authorized for export only to the country of ultimate destination for
+                use by the ultimate consignee or end-user(s) herein identified. They may not be resold, transferred, or otherwise
+                disposed of, to any other country or to any person other than the authorized ultimate consignee or end-user(s),
+                either in their original form or after being incorporated into other items, without first obtaining approval
+                from the U.S. government or as otherwise authorized by U.S. law and regulations.
+                <br/> We hereby certify this Commercial Invoice is to the best of our knowledge, correct in every respect and
+                contains the statement of true and exact prices as well as true quantity of said merchandise.
+                <br/>
+                <br/>
+            </div>
+            <br/>
+            <div>
+                Page
+                <span class="pagenumber" /> of
+                <span class="pagecount" />
+            </div>
+        </div>
+        <div class="content">
+            <table style=" font-size: 11px;padding: 8px;">
+                <tr>
+                    <th style=" width: 5%; border-left: 1px solid black;border-top: 1px solid black; border-bottom: 1px solid black;">Line</th>
+                    <th style="width: 30%; border-top: 1px solid black; border-bottom: 1px solid black;">Part Number / Description</th>
+                    <th style="width: 10%; border-top: 1px solid black; border-bottom: 1px solid black;">Qty Shipped / UOM</th>
+                    <th style="width: 20%; border-top: 1px solid black; border-bottom: 1px solid black;">PO Number / PO Line</th>
+                    <th style="width: 20%; border-top: 1px solid black; border-bottom: 1px solid black;">ECCN/Origin</th>
+                    <th style="width: 15%; border-right: 1px solid black; border-top: 1px solid black; border-bottom: 1px solid black;">Inst Loc</th>
+                </tr>
+
+                <tr style="height: 20px;"></tr>
+                <apex:variable var="index" value="{!0}" />
+                <apex:variable var="breaktable" value="{!recordPerPage}" />
+                <apex:variable var="isSize" value="false" />
+                <apex:repeat value="{!headerObj.lines}" var="line">
+                    <tr style="height: 50px;">
+                        <td style=" width: 5%;"></td>
+                        <td style=" width: 30%;">
+                            <c:ife_PackSlipBarCodeVFComponent codeValue="{!line.CF_ITEM_NUM}" barCodeSize="display: inline-block;  min-width: 2in;"/>
+                           
+                        </td>
+                        <td style=" width: 10%;">
+                            <c:ife_PackSlipBarCodeVFComponent codeValue="{!line.C_SHIP_QTY}" barCodeSize="display: inline-block;  min-width: .8in;"/>
+                           
+                        </td>
+                        <td style=" width: 20%;">
+                            <c:ife_PackSlipBarCodeVFComponent codeValue="{!line.CF_CUST_PO_NUM}" barCodeSize="display: inline-block;  min-width: 2in;"/>
+                           
+                        </td>
+                        <td style=" width: 20%;"></td>
+                        <td style=" width: 15%;"></td>
+                    </tr>
+                    <tr>
+                        <td style=" width: 5%;">
+                            {!line.LINE_NUM}
+                        </td>
+
+                        <td style=" width: 30%;">
+                            {!line.CF_ITEM_NUM}
+                        </td>
+                        <td style=" width: 10%;">
+                            {!line.C_SHIP_QTY}
+                        </td>
+
+                        <td style=" width: 20%;">
+                            {!line.CF_PO_LINE_NUM}
+                        </td>
+                        <td style=" width: 20%;">{!line.CF_ECCN_NUM}
+                        </td>
+                        <td style=" width: 15%;">
+                            {!line.CF_INST_LOCATION}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style=" width: 5%;"></td>
+                        <td style=" width: 30%;">{!line.C_ITEM_DESCRIPTION}</td>
+                        <td style=" width: 10%;">  {!line.CP_DEST_SUB_INV} </td>
+                        <td style=" width: 20%;">---</td>
+                        <td style=" width: 20%;"></td>
+                        <td style=" width: 15%;"></td>
+                    </tr>
+
+                    <tr>
+                        <td style=" width: 5%;"></td>
+                        <td style=" width: 30%;"></td>
+                        <td style=" width: 10%;"> </td>
+                        <td style=" width: 20%;"></td>
+                        <td style=" width: 20%;">
+                            <sapn style="margin-left : 50px"> LPN: {!line.CF_LPN_NAME} </sapn>
+                        </td>
+                        <td style=" width: 15%;"></td>
+                    </tr>
+
+
+                    <apex:variable var="index" value="{!index + 1}" />
+                    <apex:outputText rendered="{!IF((index == breaktable), true, false)}">
+                        <apex:outputText rendered="{!IF((index != totalRecords), true, false)}">
+                            <apex:variable var="breaktable" value="{!breaktable + recordPerPage}" />
+                            <apex:variable var="isSize" value="true" />
+                        </apex:outputText>
+                    </apex:outputText>
+                    <apex:outputText rendered="{!IF((index == breakBeforLastPage), true, false)}">
+                        <apex:variable var="isSize" value="true" />
+                    </apex:outputText>
+
+                    <apex:outputText rendered="{!isSize }">
+                        <div style="page-break-after: always" />
+                        <table style=" font-size: 11px;padding: 8px;">
+                            <tr>
+                                <th style=" width: 5%; border-left: 1px solid black;border-top: 1px solid black; border-bottom: 1px solid black;">Line</th>
+                                <th style="width: 30%; border-top: 1px solid black; border-bottom: 1px solid black;">Part Number / Description</th>
+                                <th style="width: 10%; border-top: 1px solid black; border-bottom: 1px solid black;">Qty Shipped / UOM</th>
+                                <th style="width: 20%; border-top: 1px solid black; border-bottom: 1px solid black;">PO Number / PO Line</th>
+                                <th style="width: 20%; border-top: 1px solid black; border-bottom: 1px solid black;">ECCN/Origin</th>
+                                <th style="width: 15%; border-right: 1px solid black; border-top: 1px solid black; border-bottom: 1px solid black;">Inst Loc</th>
+                            </tr>
+                            <tr style="height: 10px;"></tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td> </td>
+                            <td></td>
+                        </table>
+                        <apex:variable var="isSize" value="false" />
+                    </apex:outputText>
+
+                </apex:repeat>
+
+                <tr style="height: 1px;">
+                    <td></td>
+
+                </tr>
+                <br/>
+                <br/>
+                <div style=" width: 100%;">
+                    <div style="width: 25%;float: left;"> Order Number:  {!headerObj.C_SO_NUMBER}</div>
+                    <div style="width: 25%;float: left;">Program:   ------</div>
+                    <div style="width: 25%;float: left;">Prog Type: {!headerObj.CF_PROGRAM_TYPE}</div>
+                    <div style="width: 25%;float: left;">Shipset/Tail:  {!headerObj.CF_SHIP_SET}</div>
+                    <div style="width: 100%;float: left;">
+                        <span style="font-weight: bold;">Packing Instructions: </span> {!headerObj.CP_PACKING_INSTRUCTIONS}
+                    </div>
+                    <div style="width: 100%;float: left;">
+                        <span style="font-weight: bold;">Shipping Instructions: </span> {!headerObj.CP_SHIPPING_INSTRUCTIONS}
+
+                    </div>
+                    <div style="width: 100%;float: left;">
+                        <span style="font-weight: bold;">End Dest: </span> {!headerObj.CF_ULT_TO_ADDR2} {!headerObj.CF_ULT_TO_ADDR3} {!headerObj.CF_ULT_TO_ADDR4} {!headerObj.CF_ULT_TO_CITY_STATE_ZIP}
+                    </div>
+                    <div style="width: 60%;float: left;">
+                        <span style="font-weight: bold;">Ship To Contact: </span>  {!headerObj.CF_SHIP_TO_CONTACT}
+                    </div>
+                    <div style="width: 40%;float: left;">Phone Number : {!headerObj.CP_SHIP_TO_PHONE_NO}
+                    </div>
+                    <div style="width: 100%;float: left;">
+                        <span style="font-weight: bold;">Customer Name: </span> {!headerObj.CONSIGNEE_NAME}
+                    </div>
+                </div>
+
+
+            </table>
+        </div>
+
+        <!-- <apex:image value="https://generator.barcodetools.com/barcode.png?gen=0&data=1234567&bcolor=FFFFFF&fcolor=000000&tcolor=000000&fh=14&bred=0&w2n=2.5&xdim=2&w=&h=120&debug=1&btype=7&angle=0&quiet=1&balign=2&talign=0&guarg=1&text=1&tdown=1&stst=1&schk=0&cchk=1&ntxt=1&c128=0"/>-->
+    </apex:outputText>
+</apex:page>

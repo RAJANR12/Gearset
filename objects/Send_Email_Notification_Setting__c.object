@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Additional_Emails__c</fullName>
+        <description>Additional emails that will receive the email notification</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Additional emails that will receive the email notification</inlineHelpText>
+        <label>Additional Emails</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Exception_Emails__c</fullName>
+        <description>Emails that will not be notified even if they are on the Additional Emails or part of a Group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Emails that will not be notified even if they are on the Additional Emails or part of a Group. Use semi-colon to separate more than one email entry.</inlineHelpText>
+        <label>Exception Emails</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Is_Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Indicator if this setting is currently in use.</description>
+        <externalId>false</externalId>
+        <label>Is Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Public_Group__c</fullName>
+        <description>Name of the Public Group that need to receive the email notification on BCC</description>
+        <externalId>false</externalId>
+        <label>Public Group</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Send Email Notification Setting</label>
+    <visibility>Public</visibility>
+</CustomObject>

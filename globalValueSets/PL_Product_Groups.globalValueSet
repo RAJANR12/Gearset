@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>IFS Hardware</fullName>
+        <default>false</default>
+        <label>IFS Hardware</label>
+    </customValue>
+    <customValue>
+        <fullName>IFS Program Related Services</fullName>
+        <default>false</default>
+        <label>IFS Program Related Services</label>
+    </customValue>
+    <customValue>
+        <fullName>IFC Hardware</fullName>
+        <default>false</default>
+        <label>IFC Hardware</label>
+    </customValue>
+    <customValue>
+        <fullName>IFC Hardware (third party)</fullName>
+        <default>false</default>
+        <label>IFC Hardware (third party)</label>
+    </customValue>
+    <customValue>
+        <fullName>IFC Program Related Services</fullName>
+        <default>false</default>
+        <label>IFC Program Related Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Application Software &amp; Services</fullName>
+        <default>false</default>
+        <label>Application Software &amp; Services</label>
+    </customValue>
+    <customValue>
+        <fullName>PTS Services</fullName>
+        <default>false</default>
+        <label>PTS Services</label>
+    </customValue>
+    <masterLabel>Product Groups</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

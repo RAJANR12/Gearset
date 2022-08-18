@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>IFE_Document_Record_Page2</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>IFE_Document_Record_Page2</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Read</externalSharingModel>
+    <fields>
+        <fullName>All_Customers__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Document should be displayed to all customers</description>
+        <externalId>false</externalId>
+        <label>All Customers</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Category_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Category Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer Specific Document</fullName>
+                    <default>false</default>
+                    <label>Customer Specific Document</label>
+                </value>
+                <value>
+                    <fullName>Part Number Specific Document</fullName>
+                    <default>false</default>
+                    <label>Part Number Specific Document</label>
+                </value>
+                <value>
+                    <fullName>Part Number Specific</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Part Number Specific</label>
+                </value>
+                <value>
+                    <fullName>System Specific Document</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>System Specific Document</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Customer_List__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer List</label>
+        <length>60000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Document_Modified_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Required to be set so that it can be picked up by weekly email batch</inlineHelpText>
+        <label>Document Modified Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Document_Number__c</fullName>
+        <externalId>true</externalId>
+        <label>Document Number</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Document_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Document Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Technical Publication</fullName>
+                    <default>false</default>
+                    <label>Technical Publication</label>
+                </value>
+                <value>
+                    <fullName>Repair</fullName>
+                    <default>false</default>
+                    <label>Repair</label>
+                </value>
+                <value>
+                    <fullName>GCS</fullName>
+                    <default>false</default>
+                    <label>GCS</label>
+                </value>
+                <value>
+                    <fullName>Spare Parrs</fullName>
+                    <default>false</default>
+                    <label>Spare Parrs</label>
+                </value>
+                <value>
+                    <fullName>Products</fullName>
+                    <default>false</default>
+                    <label>Products</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Emaiil_Alert__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Email to subscribed customers when a new version of this document is published.</description>
+        <externalId>false</externalId>
+        <label>Emaiil Alert</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Email_Alert__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Email to subscribed customers when a new version of this document is published.</description>
+        <externalId>false</externalId>
+        <label>Email Alert</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>File_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>File Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>File_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>File Size</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>File_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>File Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>pdf</fullName>
+                    <default>false</default>
+                    <label>pdf</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Folder_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Folder Number</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Folder_Version__c</fullName>
+        <externalId>false</externalId>
+        <label>Folder Version</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Item_Id__c</fullName>
+        <externalId>true</externalId>
+        <label>Item Id</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Part_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Part Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Part_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Part Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Revision__c</fullName>
+        <externalId>false</externalId>
+        <label>Revision</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tech_Pub_Document_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Tech Pub Document Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Document_Type__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Aircraft Illustrated Parts Catalog</fullName>
+                    <default>false</default>
+                    <label>Aircraft Illustrated Parts Catalog</label>
+                </value>
+                <value>
+                    <fullName>Aircraft Maintenance Manual</fullName>
+                    <default>false</default>
+                    <label>Aircraft Maintenance Manual</label>
+                </value>
+                <value>
+                    <fullName>AIRCRAFT SCHEMATIC MANUAL</fullName>
+                    <default>false</default>
+                    <label>AIRCRAFT SCHEMATIC MANUAL</label>
+                </value>
+                <value>
+                    <fullName>AIRCRAFT WIRING MANUAL</fullName>
+                    <default>false</default>
+                    <label>AIRCRAFT WIRING MANUAL</label>
+                </value>
+                <value>
+                    <fullName>Component Maintenance Manual</fullName>
+                    <default>false</default>
+                    <label>Component Maintenance Manual</label>
+                </value>
+                <value>
+                    <fullName>COMPONENT MAINTENANCE PUBLICATION</fullName>
+                    <default>false</default>
+                    <label>COMPONENT MAINTENANCE PUBLICATION</label>
+                </value>
+                <value>
+                    <fullName>Customer Information Letter</fullName>
+                    <default>false</default>
+                    <label>Customer Information Letter</label>
+                </value>
+                <value>
+                    <fullName>Fault Isolation Manual</fullName>
+                    <default>false</default>
+                    <label>Fault Isolation Manual</label>
+                </value>
+                <value>
+                    <fullName>Illustrated Parts Catalog</fullName>
+                    <default>false</default>
+                    <label>Illustrated Parts Catalog</label>
+                </value>
+                <value>
+                    <fullName>ILLUSTRATED PARTS DATA</fullName>
+                    <default>false</default>
+                    <label>ILLUSTRATED PARTS DATA</label>
+                </value>
+                <value>
+                    <fullName>INSTALLATION SERVICE BULLETIN</fullName>
+                    <default>false</default>
+                    <label>INSTALLATION SERVICE BULLETIN</label>
+                </value>
+                <value>
+                    <fullName>MAINTENANCE PRACTICE</fullName>
+                    <default>false</default>
+                    <label>MAINTENANCE PRACTICE</label>
+                </value>
+                <value>
+                    <fullName>Master BITE Fault List</fullName>
+                    <default>false</default>
+                    <label>Master BITE Fault List</label>
+                </value>
+                <value>
+                    <fullName>ON-AIRCRAFT TEST PROCEDURE</fullName>
+                    <default>false</default>
+                    <label>ON-AIRCRAFT TEST PROCEDURE</label>
+                </value>
+                <value>
+                    <fullName>Operations Maintenance Manual</fullName>
+                    <default>false</default>
+                    <label>Operations Maintenance Manual</label>
+                </value>
+                <value>
+                    <fullName>Publications Indexes</fullName>
+                    <default>false</default>
+                    <label>Publications Indexes</label>
+                </value>
+                <value>
+                    <fullName>Reference Document</fullName>
+                    <default>false</default>
+                    <label>Reference Document</label>
+                </value>
+                <value>
+                    <fullName>REMOVAL SERVICE BULLETIN</fullName>
+                    <default>false</default>
+                    <label>REMOVAL SERVICE BULLETIN</label>
+                </value>
+                <value>
+                    <fullName>REQUEST FORMS</fullName>
+                    <default>false</default>
+                    <label>REQUEST FORMS</label>
+                </value>
+                <value>
+                    <fullName>Service Bulletin</fullName>
+                    <default>false</default>
+                    <label>Service Bulletin</label>
+                </value>
+                <value>
+                    <fullName>Service Information Letter</fullName>
+                    <default>false</default>
+                    <label>Service Information Letter</label>
+                </value>
+                <value>
+                    <fullName>STANDARD PRACTICE MANUAL</fullName>
+                    <default>false</default>
+                    <label>STANDARD PRACTICE MANUAL</label>
+                </value>
+                <value>
+                    <fullName>Standard Wiring Practices Manual</fullName>
+                    <default>false</default>
+                    <label>Standard Wiring Practices Manual</label>
+                </value>
+                <value>
+                    <fullName>SYSTEM SCHEMATIC MANUAL</fullName>
+                    <default>false</default>
+                    <label>SYSTEM SCHEMATIC MANUAL</label>
+                </value>
+                <value>
+                    <fullName>TASK CARDS</fullName>
+                    <default>false</default>
+                    <label>TASK CARDS</label>
+                </value>
+                <value>
+                    <fullName>TEAC CMM</fullName>
+                    <default>false</default>
+                    <label>TEAC CMM</label>
+                </value>
+                <value>
+                    <fullName>Technical Information Letter</fullName>
+                    <default>false</default>
+                    <label>Technical Information Letter</label>
+                </value>
+                <value>
+                    <fullName>Trouble Shooting Manual</fullName>
+                    <default>false</default>
+                    <label>Trouble Shooting Manual</label>
+                </value>
+                <value>
+                    <fullName>Video Control Center Component Maintenance Manual</fullName>
+                    <default>false</default>
+                    <label>Video Control Center Component Maintenance Manual</label>
+                </value>
+                <value>
+                    <fullName>﻿WIRING DIAGRAM MANUAL</fullName>
+                    <default>false</default>
+                    <label>﻿WIRING DIAGRAM MANUAL</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>Aircraft Illustrated Parts Catalog</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>Aircraft Maintenance Manual</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>AIRCRAFT SCHEMATIC MANUAL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>AIRCRAFT WIRING MANUAL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>Component Maintenance Manual</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>COMPONENT MAINTENANCE PUBLICATION</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>Customer Information Letter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>Fault Isolation Manual</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>Illustrated Parts Catalog</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>ILLUSTRATED PARTS DATA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>INSTALLATION SERVICE BULLETIN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>MAINTENANCE PRACTICE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>Master BITE Fault List</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>ON-AIRCRAFT TEST PROCEDURE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>Operations Maintenance Manual</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>Publications Indexes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>Reference Document</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>REMOVAL SERVICE BULLETIN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>REQUEST FORMS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>Service Bulletin</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>Service Information Letter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>STANDARD PRACTICE MANUAL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>Standard Wiring Practices Manual</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>SYSTEM SCHEMATIC MANUAL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>TASK CARDS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>TEAC CMM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>Technical Information Letter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>Trouble Shooting Manual</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>Video Control Center Component Maintenance Manual</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Technical Publication</controllingFieldValue>
+                <valueName>﻿WIRING DIAGRAM MANUAL</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Work_Statement__c</fullName>
+        <externalId>false</externalId>
+        <label>Work Statement</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>myIfeOrderHeaders__c</fullName>
+        <externalId>false</externalId>
+        <label>myIfeOrderHeaders</label>
+        <length>50</length>
+        <referenceTo>myIfeOrderHeaders__x</referenceTo>
+        <relationshipLabel>IFE Documents</relationshipLabel>
+        <relationshipName>IFE_Documents</relationshipName>
+        <trackTrending>false</trackTrending>
+        <type>ExternalLookup</type>
+    </fields>
+    <label>IFE Document</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>File_Name__c</columns>
+        <columns>Document_Number__c</columns>
+        <columns>Description__c</columns>
+        <columns>Category_Type__c</columns>
+        <columns>Document_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All1</fullName>
+        <columns>NAME</columns>
+        <columns>Document_Type__c</columns>
+        <columns>Folder_Number__c</columns>
+        <columns>Folder_Version__c</columns>
+        <columns>Document_Modified_Date__c</columns>
+        <columns>Emaiil_Alert__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Document Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>IFE Documents</pluralLabel>
+    <recordTypes>
+        <fullName>Agile_Document</fullName>
+        <active>true</active>
+        <description>Other Agile Documents</description>
+        <label>Agile Document</label>
+        <picklistValues>
+            <picklist>Category_Type__c</picklist>
+            <values>
+                <fullName>Part Number Specific Document</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Document_Type__c</picklist>
+            <values>
+                <fullName>GCS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Repair</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spare Parrs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Publication</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>File_Type__c</picklist>
+            <values>
+                <fullName>pdf</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Tech_Pub_Document_Type__c</picklist>
+            <values>
+                <fullName>Aircraft Illustrated Parts Catalog</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aircraft Maintenance Manual</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Misc_Documents</fullName>
+        <active>true</active>
+        <description>Salesforce hosted  dicuments</description>
+        <label>Misc Documents</label>
+        <picklistValues>
+            <picklist>Category_Type__c</picklist>
+            <values>
+                <fullName>Part Number Specific Document</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Document_Type__c</picklist>
+            <values>
+                <fullName>GCS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Repair</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spare Parrs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Publication</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>File_Type__c</picklist>
+            <values>
+                <fullName>pdf</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Tech_Pub_Document_Type__c</picklist>
+            <values>
+                <fullName>Aircraft Illustrated Parts Catalog</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aircraft Maintenance Manual</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Technical_Publication</fullName>
+        <active>true</active>
+        <description>Tech Pub docs</description>
+        <label>Technical Publication</label>
+        <picklistValues>
+            <picklist>Category_Type__c</picklist>
+            <values>
+                <fullName>Customer Specific Document</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Part Number Specific Document</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Document_Type__c</picklist>
+            <values>
+                <fullName>Technical Publication</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>File_Type__c</picklist>
+            <values>
+                <fullName>pdf</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Tech_Pub_Document_Type__c</picklist>
+            <values>
+                <fullName>%EF%BB%BFWIRING DIAGRAM MANUAL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AIRCRAFT SCHEMATIC MANUAL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AIRCRAFT WIRING MANUAL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aircraft Illustrated Parts Catalog</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aircraft Maintenance Manual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMPONENT MAINTENANCE PUBLICATION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Component Maintenance Manual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Information Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fault Isolation Manual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ILLUSTRATED PARTS DATA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INSTALLATION SERVICE BULLETIN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illustrated Parts Catalog</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MAINTENANCE PRACTICE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Master BITE Fault List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ON-AIRCRAFT TEST PROCEDURE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operations Maintenance Manual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Publications Indexes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>REMOVAL SERVICE BULLETIN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>REQUEST FORMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reference Document</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>STANDARD PRACTICE MANUAL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SYSTEM SCHEMATIC MANUAL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Bulletin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service Information Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard Wiring Practices Manual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TASK CARDS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TEAC CMM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Information Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trouble Shooting Manual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video Control Center Component Maintenance Manual</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Part_Number_Required_for_Part_Specific</fullName>
+        <active>false</active>
+        <description>Part Number is required for part specific document</description>
+        <errorConditionFormula>ISPICKVAL(Category_Type__c, &quot;Part Number Specific Document&quot;) &amp;&amp; 
+ ISBLANK(Part_Number__c)</errorConditionFormula>
+        <errorMessage>Part Number is required for Part Specific document.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

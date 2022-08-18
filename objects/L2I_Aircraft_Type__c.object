@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Custom Object to hold the different types of Aircrafts</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Read</externalSharingModel>
+    <fields>
+        <fullName>AircraftType_External_Id__c</fullName>
+        <description>External Id for data migration</description>
+        <externalId>true</externalId>
+        <label>AircraftType_External_Id</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Available_in_Oracle_PT__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Available in Oracle PT</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Aircraft_Type__c</fullName>
+        <externalId>true</externalId>
+        <inlineHelpText>The type of the aircraft (ex. A380, A380-800, A380-841, etc.)</inlineHelpText>
+        <label>Type</label>
+        <length>36</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Body_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Represents body type of Aircraft</inlineHelpText>
+        <label>Body Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+                <value>
+                    <fullName>Multiple</fullName>
+                    <default>false</default>
+                    <label>Multiple</label>
+                </value>
+                <value>
+                    <fullName>Narrow Body</fullName>
+                    <default>false</default>
+                    <label>Narrow Body</label>
+                </value>
+                <value>
+                    <fullName>Wide Body</fullName>
+                    <default>false</default>
+                    <label>Wide Body</label>
+                </value>
+                <value>
+                    <fullName>Regional Jet</fullName>
+                    <default>false</default>
+                    <label>Regional Jet</label>
+                </value>
+                <value>
+                    <fullName>Business Jet</fullName>
+                    <default>false</default>
+                    <label>Business Jet</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_Is_Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Whether this value can be selected in pick lists/drop down boxes.  Used to prevent users from selecting old values which cannot be deleted.</inlineHelpText>
+        <label>Is Active</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Make__c</fullName>
+        <externalId>false</externalId>
+        <label>Make</label>
+        <length>32</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Manuf_Make_Type_Combo_Must_Be_Unique__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>false</externalId>
+        <label>Manuf Make Type Combo Must Be Unique</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Manufacturer_Party_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Manufacturer Party ID</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Master_Series__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The general master series of the aircraft (e.g. 200, 300) - used to refer to many variants</inlineHelpText>
+        <label>Master Series</label>
+        <length>16</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Model__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The high level name of the Aircraft Model (e.g. A380, 737) - groups many master series</inlineHelpText>
+        <label>Model</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_PAC_Master_Aircraft_Type_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <inlineHelpText>The record ID of the Aircraft Type in the PAC Aircraft Type/Taxonomy Master database table</inlineHelpText>
+        <label>PAC Master Aircraft Type ID</label>
+        <length>32</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_PAC_Type_Designator__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>PAC aircraft type designator (derived from ICAO), typically 3-4 digits in length</inlineHelpText>
+        <label>PAC Type Designator</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Program_Code__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Three digit code used for Program number generation</inlineHelpText>
+        <label>Program Code</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Series__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The specific series / subtype of the aircraft (e.g. 241, 341) - used in service to identify specific aircraft variants.</inlineHelpText>
+        <label>Series</label>
+        <length>16</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Type_Level_ID__c</fullName>
+        <defaultValue>3</defaultValue>
+        <externalId>false</externalId>
+        <label>Type Level ID</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Type_Level__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(L2I_Type_Level_ID__c) = &#39;1&#39;, &quot;Model&quot;,
+IF(TEXT(L2I_Type_Level_ID__c) = &#39;2&#39;, &quot;Master Series&quot;,
+IF(TEXT(L2I_Type_Level_ID__c) = &#39;3&#39;, &quot;Series&quot;, &quot;Series&quot;)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The level of detail defined by this aircraft type (1 is less detailed, 3 is very detailed)</inlineHelpText>
+        <label>Type Level</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Manufacturer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>The name of the Aircraft Manufacturer</inlineHelpText>
+        <label>Manufacturer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Aircraft Types</relationshipLabel>
+        <relationshipName>Aircraft_Types</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Aircraft Type</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Manufacturer__c</columns>
+        <columns>L2I_Make__c</columns>
+        <columns>L2I_Aircraft_Type__c</columns>
+        <columns>L2I_Type_Level__c</columns>
+        <columns>L2I_Master_Series__c</columns>
+        <columns>L2I_Model__c</columns>
+        <columns>L2I_Series__c</columns>
+        <columns>L2I_PAC_Type_Designator__c</columns>
+        <columns>L2I_Is_Active__c</columns>
+        <columns>L2I_Program_Code__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Aircraft Types</pluralLabel>
+    <searchLayouts />
+    <sharingModel>Read</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>L2I_Aircraft_Type_Name_Unique</fullName>
+        <active>true</active>
+        <description>Aircraft Type Name must be unique</description>
+        <errorConditionFormula>and( 
+Name = VLOOKUP 
+($ObjectType.L2I_Aircraft_Type__c.Fields.Name , $ObjectType.L2I_Aircraft_Type__c.Fields.Name, Name ), 
+
+not( 
+Id=VLOOKUP 
+($ObjectType.L2I_Aircraft_Type__c.Fields.Id , $ObjectType.L2I_Aircraft_Type__c.Fields.Name, Name )))</errorConditionFormula>
+        <errorDisplayField>Name</errorDisplayField>
+        <errorMessage>The name of your Aircraft Type must be unique</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>L2I_Master_Series_Required</fullName>
+        <active>true</active>
+        <description>Master Series is required if Type Level ID = 2</description>
+        <errorConditionFormula>AND(
+  L2I_Master_Series__c = &quot;&quot;,
+   TEXT(L2I_Type_Level_ID__c) = &quot;2&quot;)</errorConditionFormula>
+        <errorDisplayField>L2I_Master_Series__c</errorDisplayField>
+        <errorMessage>Master Series cannot be blank if Type Level ID = 2</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>L2I_Series_Required</fullName>
+        <active>true</active>
+        <description>Series is required if Type Level ID = 3</description>
+        <errorConditionFormula>AND( 
+L2I_Series__c = &quot;&quot;, 
+TEXT(L2I_Type_Level_ID__c) = &quot;3&quot;)</errorConditionFormula>
+        <errorDisplayField>L2I_Series__c</errorDisplayField>
+        <errorMessage>Series cannot be blank if Type Level ID = 3</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Type_Level_ID_1_Master_Series_and_Series</fullName>
+        <active>true</active>
+        <description>Validation
+If Type Level = 1 Then Series and Master Series Must be Blank</description>
+        <errorConditionFormula>AND(
+(L2I_Type_Level_ID__c = 1),
+OR(
+NOT(ISBLANK(L2I_Master_Series__c)),
+NOT(ISBLANK(L2I_Series__c))))</errorConditionFormula>
+        <errorMessage>If Type Level ID = 1 Then Series and Master Series Must be Blank</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Type_Level_ID_2_Series</fullName>
+        <active>true</active>
+        <description>If Type Level ID = 2 Series must be blank</description>
+        <errorConditionFormula>AND(
+(L2I_Type_Level_ID__c = 2),
+AND(NOT(ISBLANK(L2I_Series__c))
+))</errorConditionFormula>
+        <errorDisplayField>L2I_Series__c</errorDisplayField>
+        <errorMessage>If Type Level ID = 2 Then Series Must be Blank</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

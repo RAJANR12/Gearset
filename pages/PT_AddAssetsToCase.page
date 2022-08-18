@@ -1,0 +1,7 @@
+<apex:page showHeader="false" sidebar="false" controller="PT_AssignAssetsToCaseController" action="{!assignAssetsToCase}">
+
+<div style="text-align:center">
+<br />
+Selected parts have been successfully added to the case.
+</div>
+</apex:page>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>COGS</fullName>
+        <default>false</default>
+        <label>COGS</label>
+    </customValue>
+    <customValue>
+        <fullName>Direct Fixed Cost</fullName>
+        <default>false</default>
+        <label>Direct Fixed Cost</label>
+    </customValue>
+    <customValue>
+        <fullName>Allocation Cost</fullName>
+        <default>false</default>
+        <label>Allocation Cost</label>
+    </customValue>
+    <customValue>
+        <fullName>Variable Cost</fullName>
+        <default>false</default>
+        <label>Variable Cost</label>
+    </customValue>
+    <masterLabel>Cost Allocation Group</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

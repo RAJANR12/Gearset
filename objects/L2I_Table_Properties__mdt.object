@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Created for B-18141, this custom metadata type stores the formatting settings for the table headers and table cell values.</description>
+    <fields>
+        <fullName>L2I_CSS_Class__c</fullName>
+        <description>In this field, store the CSS class for the associated field defined in the Field_API_Name field.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>In this field, store the CSS class for the associated field defined in the Field_API_Name field.</inlineHelpText>
+        <label>L2I CSS Class</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Column_Name__c</fullName>
+        <description>Store the column name for a particular table column.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Store the column name for a particular table column.</inlineHelpText>
+        <label>L2I Column Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Default_Value__c</fullName>
+        <description>Initial default value for a given column&#39;s table cells.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Initial default value for a given column&#39;s table cells.</inlineHelpText>
+        <label>L2I Default Value</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Disabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Controls disabled property of table grid cells within a column.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Controls disabled property of table grid cells within a column.</inlineHelpText>
+        <label>L2I Disabled</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Field_API_Name__c</fullName>
+        <description>In this field, store the API name of a field defined in the Price_Adjustment Order Product field set.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>In this field, store the API name of a field defined in the Price_Adjustment Order Product field set.</inlineHelpText>
+        <label>L2I Field API Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Field_Path__c</fullName>
+        <description>Store the field path. Useful for Order Item object since the Product2Id cannot be directly queried (it must be traversed through the PricebookEntry).</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Store the field path. Useful for Order Item object since the Product2Id cannot be directly queried (it must be traversed through the PricebookEntry).</inlineHelpText>
+        <label>L2I Field Path</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Linkified__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This checkbox determines if the system is to attempt to linkify the field stored in the Field_API_Name field.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>This checkbox determines if the system is to attempt to linkify the field stored in the Field_API_Name field.</inlineHelpText>
+        <label>L2I Linkified</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Min_Length__c</fullName>
+        <description>Minimum character length allowed in a table cell.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Minimum character length allowed in a table cell.</inlineHelpText>
+        <label>L2I Min Length</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Min_Number__c</fullName>
+        <description>Minimum number allowed on a given attribute.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Minimum number allowed on a given attribute.</inlineHelpText>
+        <label>Min Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Override_FLS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Optionally override Field Level Security for a specific field (within the context of the Custom List Lightning Web Component). Checking this box will make the field editable in the component regardless of FLS, as long as the field is not a formula or auto number.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Optionally override Field Level Security for a specific field (within the context of the Custom List Lightning Web Component). Checking this box will make the field editable in the component regardless of FLS, as long as the field is not a formula or auto</inlineHelpText>
+        <label>L2I Override FLS</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Read_Only__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check this box to make the field read only on the component, regardless of FLS.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Check this box to make the field read only on the component, regardless of FLS.</inlineHelpText>
+        <label>L2I Read Only</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Related_Lookup_Field__c</fullName>
+        <description>In this field, store the lookup field name if applicable. This is useful for linkiying a field.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>In this field, store the lookup field name if applicable. This is useful for linkiying a field.</inlineHelpText>
+        <label>L2I Related Lookup Field</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Determines whether a field element is required or not.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Determines whether a field element is required or not.</inlineHelpText>
+        <label>Required</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Row_Type__c</fullName>
+        <description>Whether the table property for a table header row vs a table body row.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Whether the table property for a table header row vs a table body row.</inlineHelpText>
+        <label>L2I Row Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Header</fullName>
+                    <default>true</default>
+                    <label>Header</label>
+                </value>
+                <value>
+                    <fullName>Body</fullName>
+                    <default>false</default>
+                    <label>Body</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_Step__c</fullName>
+        <description>To use with the Lightning Input element, specifically the &#39;step&#39; property.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>To use with the Lightning Input element, specifically the &#39;step&#39; property.</inlineHelpText>
+        <label>L2I Step</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Style__c</fullName>
+        <description>In this field, store custom styles to apply to the respective field stored in the Field_API_Name field.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>In this field, store custom styles to apply to the respective field stored in the Field_API_Name field.</inlineHelpText>
+        <label>L2I Style</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Table_Name__c</fullName>
+        <description>Enter the name of the table this table properties belongs to.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Enter the name of the table this table properties belongs to.</inlineHelpText>
+        <label>L2I Table Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Text_Alignment__c</fullName>
+        <description>Align the text of a table column&#39;s cells.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Align the text of a table column&#39;s cells.</inlineHelpText>
+        <label>L2I Text Alignment</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Left</fullName>
+                    <default>true</default>
+                    <label>Left</label>
+                </value>
+                <value>
+                    <fullName>Center</fullName>
+                    <default>false</default>
+                    <label>Center</label>
+                </value>
+                <value>
+                    <fullName>Right</fullName>
+                    <default>false</default>
+                    <label>Right</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>L2I Table Property</label>
+    <pluralLabel>L2I Table Properties</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

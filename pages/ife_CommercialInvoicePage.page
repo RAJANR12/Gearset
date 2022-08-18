@@ -1,0 +1,428 @@
+<apex:page controller="ife_CommercialInvoiceController" renderAs="PDF" showHeader="false" sidebar="false" standardStylesheets="false"
+    applyHtmlTag="false" action="{!getPageValue}">
+    <apex:outputText rendered="{!!isDisplay}">
+
+        <apex:pageMessages />
+
+    </apex:outputText>
+
+    <apex:outputText rendered="{!isDisplay}">
+
+        <head>
+            <style type="text/css" media="print">
+                @page {
+
+                    padding-top: 440px;
+                    /*border-top: none;
+                page-break-after: always;*/
+                    /* page-break-after:auto; */
+                    /* border: 1px solid black;*/
+                    /* border-bottom: 1px solid black;*/
+                    @top-center {
+                        content: element(header);
+                    }
+                    margin-bottom: 100px;
+                    @bottom-left {
+                        content: element(footer);
+                    }
+
+
+                }
+
+
+                @page {
+                    /* page-break-after: always;*/
+                    /* border-bottom: 1px solid black;*/
+                    /* border-top: 1px solid black;*/
+                }
+
+                div.header {
+                    padding: 10px;
+
+                    position: running(header);
+                }
+
+                div.footer {
+                    display: block;
+                    position: running(footer);
+                }
+
+                .pagenumber:before {
+
+                    content: counter(page);
+                }
+
+                .pagecount:before {
+
+                    content: counter(pages);
+                }
+            </style>
+
+            <style>
+                h1 {
+                    font-size: 20px;
+                    float: left;
+                }
+
+                h6 {
+                    font-size: 13px;
+                    float: right;
+                }
+
+                .invoice__address {
+                    width: 50%;
+                    float: left;
+                }
+
+                .invoice__table {
+                    width: 50%;
+                    float: right;
+                }
+
+                .invoice__address--left {
+                    font-size: 10px;
+                    text-align: left;
+                    width: 51%;
+
+                }
+
+                .invoice__address--right {
+                    text-align: left;
+                    width: 48%;
+
+                }
+
+                .invoice__address--p {
+                    font-size: 13px;
+                    margin-left: 30px
+                }
+
+                table {
+
+                    border-collapse: collapse;
+                    min-width: 100%;
+                    min-height: 100%;
+                }
+
+                .table--border {
+                    border: 1px solid black;
+
+                }
+
+                .fixCell {
+                    height: 120px;
+                    display: inline-block;
+                }
+            </style>
+        </head>
+        <div>
+            <div class="header">
+                <div>
+                    <h1> Panasonic</h1>
+                    <h6>Panasonic Corporation on behalf of Panasonic Avionics Corporation</h6>
+                    <div class="invoice__address invoice__address--left">
+                        <p style=" font-weight: bold;"> SHIP FROM</p>
+                        <p style="margin-left: 20px; margin-top: -9px;">{!headerObj.CP_DUB_SHIPFROM_ADD1}
+                            <br/>{!headerObj.CP_DUB_SHIPFROM_ADD2}
+                            <br/> {!headerObj.CP_DUB_SHIPFROM_ADD3}
+                            <br/> {!headerObj.CP_DUB_SHIPFROM_ADD4}
+                            <br/> {!headerObj.CP_DUB_SHIPFROM_CITY_STATE}
+                            <br/>{!headerObj.CP_DUB_SHIPFROM_COUNTRY}</p>
+                    </div>
+                    <div class="invoice__table invoice__address--right table--border">
+                        <div class="table--border;" style="font-size: 13px; font-weight: bold; height : 30px;  text-align: center; margin-top:10px;">
+                            COMMERCIAL INVOICE
+                        </div>
+                        <div class="table--border" style="padding: 8px;">
+                            <span style="font-size: 13px; font-weight: bold;  text-align: left;">NUMBER</span>
+                            <span style="font-size: 20px; font-weight: bold; margin-left: 30px; ">{!headerObj.F_DELIVERY_NAME}</span>
+                        </div>
+                        <table>
+                            <tr>
+                                <td style="border: 1px solid black;  table-layout: fixed;
+                width: 50%"><span style="font-size: 13px; font-weight: bold;">PAGE</span>
+                                    <br/>
+                                    <span style="margin-left: 10px"><span class="pagenumber" /> of
+                                        <span class="pagecount" /></span>
+                                </td>
+                                <td style="border: 1px solid black;  table-layout: fixed;
+                width: 50%"><span style="font-size: 13px; font-weight: bold;">PRINTED DATE AND TIME</span>
+                                    <br/>
+                                    <span style="margin-left: 10px font-size: 10px;">{!headerObj.SHIP_DATE}</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid black;  table-layout: fixed;
+                width: 50%"><span style="font-size: 13px; font-weight: bold;">CURRENCY</span>
+                                    <br/>
+                                    <span style="margin-left: 10px">{!headerObj.CURRENCY_CODE}</span>
+                                </td>
+                                <td style="border: 1px solid black;  table-layout: fixed;
+                width: 50%"><span style="font-size: 13px; font-weight: bold;">FREIGHT TERMS CODE</span>
+                                    <br/>
+                                    <span style="margin-left: 10px"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid black;  table-layout: fixed;
+                width: 50%"><span style="font-size: 13px; font-weight: bold;">FREIGHT CARRIER</span>
+                                    <br/>
+                                    <span style="margin-left: 10px">{!headerObj.C_SHIP_VIA}</span>
+                                </td>
+                                <td style="border: 1px solid black; table-layout: fixed;
+                width: 50%"><span style="font-size: 13px; font-weight: bold;">INCO TERMS</span>
+                                    <br/>
+                                    <span style="margin-left: 10px">{!headerObj.FOB_CODE}</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid black; table-layout: fixed;
+                width: 50%"><span style="font-size: 13px; font-weight: bold;">TOTAL GROSS WT / TOTAL PACKAGES </span>
+                                    <br/>
+                                    <span style="margin-left: 10px">{!headerObj.C_NUM_BOXES}</span>
+                                </td>
+                                <td style="border: 1px solid black;  table-layout: fixed;
+                width: 50%"><span style="font-size: 13px; font-weight: bold;">WAY BILL NUMBER</span>
+                                    <br/>
+                                    <span style="margin-left: 10px">{!headerObj.CF_WAYBILL}</span>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="table--border" style="padding: 8px;">
+                            <span style="font-size: 13px; font-weight: bold;  text-align: left;">ITN</span>
+                            <br/>
+                            <span style="margin-left: 10px"></span>
+                        </div>
+
+                    </div>
+                    <div class="invoice__address invoice__address--left">
+                        <p style=" font-weight: bold;"> ULTIMATE SHIP TO:</p>
+                        <p style="margin-left: 20px; margin-top: -9px;">{!headerObj.CF_ULTIMATE_SHIP_TO}
+                            <br/>{!headerObj.CF_ULTI_SHIP_ADDR1}
+                            <br/> ------
+                            <br/> {!headerObj.CF_ULTI_SHIP_ADDR3}
+                            <br/> {!headerObj.CF_ULTI_BILLCITYSTATEZIP}
+                            <br/>{!headerObj.CF_ULTI_COUNTRY}</p>
+                    </div>
+                    <div class="invoice__address invoice__address--left">
+                        <p style=" font-weight: bold;"> BILL TO: </p>
+                        <p style="margin-left: 20px; margin-top: -9px;">{!headerObj.CF_BILL_CUSTOMER}
+                            <br/> {!headerObj.CF_BILL_ADDRESS1}
+                            <br/>{!headerObj.CF_BILL_ADDRESS2}
+                            <br/> {!headerObj.CF_BILL_ADDRESS3}
+                            <br/> {!headerObj.CF_BILL_CITYSTATEZIP}
+                            <br/> {!headerObj.CF_BILL_COUNTRY}
+                        </p>
+                    </div>
+                    <div class="invoice__address invoice__address--left">
+                        <p style=" font-weight: bold;">INTERMEDIATE CONSIGNEE: </p>
+                        <p style="margin-left: 20px; margin-top: -9px;">{!headerObj.CF_1STDEST_CUSTOMER}
+                            <br/> {!headerObj.CF_1STDEST_ADDRESS1}
+                            <br/> {!headerObj.CF_1STDEST_ADDRESS2}
+                            <br/> {!headerObj.CF_1STDEST_ADDRESS3}
+                            <br/> {!headerObj.CF_1STDEST_BILLCITYSTATEZIP}
+                            <br/> {!headerObj.CF_1STDEST_COUNTRY}</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="footer">
+
+                <p style="font-size: 10px; font-weight: bold;">
+                    THESE COMMODITIES, TECHNOLOGY OR SOFTWARE WERE EXPORTED FROM JAPAN IN ACCORDANCE WITH THE APPLICABLE UNITED STATES EXPORT
+                    ADMINISTRATION REGULATIONS AND/OR FOREIGN ASSETS CONTROL REGULATIONS. DIVERSION CONTRARY TO U.S. LAW,
+                    INCLUDING BUT NOT LIMITED TO RE-EXPORTS OR ANY OTHER FORM OF SHIPMENT TO</p>
+
+                <div>
+                    Page
+                    <span class="pagenumber" /> of
+                    <span class="pagecount" />
+                </div>
+
+
+
+            </div>
+
+            <div class="content">
+                <p>
+
+                    <table class="table--border" style="width:100%; border: 1px solid black; ">
+                        <tr>
+                            <th style="border-left: 1px solid black;border-bottom: 1px solid black; border-top: 1px solid black;font-size: 10px; width: 5%;">ITEM #</th>
+                            <th style="border-bottom: 1px solid black; border-top: 1px solid black;width: 3%;"></th>
+
+                            <th style=" border-top: 1px solid black;border-bottom: 1px solid black; border-right: 1px solid black; word-wrap: break-word;width: 2%;"></th>
+                            <th style=" border-top: 1px solid black;border-bottom: 1px solid black; word-wrap: break-word; font-size: 10px; width: 25%;">PART NUMBER<br/> PART DESCRIPTION <br/>ECCN</th>
+                            <th style=" border-top: 1px solid black;border-bottom: 1px solid black; word-wrap: break-word;  font-size: 10px; width: 10%;">HARMONIZED TARIFF SYSTEM #</th>
+                            <th style=" border-top: 1px solid black;border-bottom: 1px solid black; word-wrap: break-word;  font-size: 10px; width: 10%;">CUSTOMER PURCHASE ORDER #</th>
+                            <th style=" border-top: 1px solid black;border-bottom: 1px solid black; word-wrap: break-word;  font-size: 10px; width: 10%;">PROGRAM SHIPSET  TAIL</th>
+                            <th style=" border-top: 1px solid black;border-bottom: 1px solid black; word-wrap: break-word;font-size: 10px; width: 10%;">SO# WGT(kg) CTRY ORG</th>
+                            <th style=" border: 1px solid black; word-wrap: break-word; font-size: 10px; width: 5%;">SHIP'D QTY</th>
+                            <th style=" border: 1px solid black; word-wrap: break-word; font-size: 10px; width: 5%;">UNIT</th>
+                            <th style=" border: 1px solid black; word-wrap: break-word; font-size: 10px; width: 5%;">UNIT PRICE</th>
+                            <th style=" border: 1px solid black; word-wrap: break-word; font-size: 10px; width: 10%;">TOTAL PRICE</th>
+                        </tr>
+                        <apex:variable var="index" value="{!0}" />
+                        <apex:variable var="breaktable" value="{!recordPerPage}" />
+                        <apex:variable var="isSize" value="false" />
+                        <apex:repeat value="{!JSONWrapperObj.lines}" var="line">
+                            <tr>
+                                <td style="border-left: 1px solid black; border-right: 1px solid black; width: 5%;"></td>
+                                <td style="border-left: 1px solid black; border-right: 1px solid black; width: 3%;"></td>
+                                <td style=" border-right: 1px solid black;width: 2%;"></td>
+                                <td colspan="3" style="width: 45%;">
+                                    <span style="font-size: 10px; font-weight: bold;">line</span>
+                                </td>
+
+
+                                <td style="width: 10%;"></td>
+
+                                <td style=" border-right: 1px solid black; width: 10%;"></td>
+
+                                <td style=" border-right: 1px solid black; width: 5%;"></td>
+                                <td style=" border-right: 1px solid black; width: 5%;"></td>
+                                <td style=" border-right: 1px solid black; width: 5%;"></td>
+                                <td style=" border-right: 1px solid black; width: 10%;"></td>
+
+                            </tr>
+
+                            <tr>
+                                <td style="border-left: 1px solid black; border-right: 1px solid black; font-size: 10px; width: 5%;">{!index + 1}</td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 3%;">{!line.CF_EL1_NEW}</td>
+                                <td style=" border-right: 1px solid black; font-size: 10px;width: 2%;">{!line.CF_EL2_NEW}</td>
+                                <td style="font-size: 10px; width: 25%;">{!line.CF_ITEM_NAME} </td>
+                                <td style="font-size: 10px; width: 10%;">{!line.CF_HARMONIZED1} </td>
+                                <td style="font-size: 10px; width: 10%;">{!line.PO}</td>
+                                <td style="width: 10%;font-size: 10px;">{!line.Program}</td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 10%;">{!line.ORDER_NUM}</td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 5%;">{!line.UNIT_OF_MEASURE}</td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 5%;">{!line.NVL_WDD_SHIPPED_QUANTITY_WDD_R}</td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 5%;">{!line.C_ITEM_COST_FMT}</td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 10%;">{!line.C_EXT_COST_FMT}</td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: 1px solid black; border-right: 1px solid black; font-size: 10px; width: 5%;"></td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 3%;"></td>
+                                <td style=" border-right: 1px solid black; font-size: 10px;width: 2%;"></td>
+                                <td  colspan="3" style="font-size: 10px; width: 45%;">{!line.C_ITEM_DISP}</td>
+                                
+                                <td style="width: 10%;font-size: 10px;">{!line.Shipset}</td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 10%;">{!line.CF_UNIT_WEIGHT}</td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 5%;"></td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 5%;"></td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 5%;"></td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 10%;"></td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: 1px solid black; border-right: 1px solid black; font-size: 10px; width: 5%;"></td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 3%;"></td>
+                                <td style=" border-right: 1px solid black; font-size: 10px;width: 2%;"></td>
+                                <td  colspan="3" style="font-size: 10px; width: 45%;">{!line.CF_ECCN}</td>
+                                
+                                <td style="width: 10%;font-size: 10px;">{!line.Tail}</td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 10%;">{!line.CF_COUNTRY_OF_ORIGIN}</td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 5%;"></td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 5%;"></td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 5%;"></td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 10%;"></td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: 1px solid black; border-right: 1px solid black; font-size: 10px; width: 5%;"></td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 3%;"></td>
+                                <td style=" border-right: 1px solid black; font-size: 10px;width: 2%;"></td>
+                                <td  colspan="3" style="font-size: 10px; width: 45%;">{!line.CF_ATTR7}</td>
+                                
+                                <td style="width: 10%;font-size: 10px;"></td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 10%;"></td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 5%;"></td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 5%;"></td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 5%;"></td>
+                                <td style=" border-right: 1px solid black; font-size: 10px; width: 10%;"></td>
+                            </tr>
+                            <apex:variable var="index" value="{!index + 1}" />
+
+                            <apex:outputText rendered="{!IF((index == breaktable), true, false)}">
+                                <apex:outputText rendered="{!IF((index != totalRecords), true, false)}">
+                                    <apex:variable var="breaktable" value="{!breaktable + recordPerPage}" />
+                                    <apex:variable var="isSize" value="true" />
+                                </apex:outputText>
+                                
+                            </apex:outputText>
+                            <apex:outputText rendered="{!IF((index == breakBeforLastPage), true, false)}">
+                                <apex:variable var="isSize" value="true" />
+                            </apex:outputText>
+                            <apex:outputText rendered="{!isSize }">
+
+                                <tr style="height: 10px;">
+                                    <td style="border-bottom: 1px solid black; border-left: 1px solid black; border-right: 1px solid black;"></td>
+                                    <td style="border-bottom: 1px solid black; border-right: 1px solid black;"></td>
+                                    <td style="border-bottom: 1px solid black; border-right: 1px solid black;"></td>
+                                    <td style="border-bottom: 1px solid black;" colspan="4">
+                                    </td>
+
+
+                                    <td style=" border-bottom: 1px solid black;border-right: 1px solid black; font-size: 10px;"></td>
+                                    <td style=" border-bottom: 1px solid black;border-right: 1px solid black; font-size: 10px;"></td>
+                                    <td style=" border-bottom: 1px solid black;border-right: 1px solid black; font-size: 10px;"></td>
+                                    <td style=" border-bottom: 1px solid black;border-right: 1px solid black; font-size: 10px;"></td>
+                                    <td style=" border-bottom: 1px solid black;border-right: 1px solid black; font-size: 10px;"></td>
+
+                                </tr>
+
+                                <div style="page-break-after: always" />
+
+
+                                <table class="table--border" style="width:100%; border: 1px solid black; ">
+                                    <tr>
+                                        <th style="border-left: 1px solid black;border-bottom: 1px solid black; border-top: 1px solid black;font-size: 10px; width: 5%;">ITEM #</th>
+                                        <th style="border-bottom: 1px solid black; border-top: 1px solid black;width: 3%;"></th>
+
+                                        <th style=" border-top: 1px solid black;border-bottom: 1px solid black; border-right: 1px solid black; word-wrap: break-word;width: 2%;"></th>
+                                        <th style=" border-top: 1px solid black;border-bottom: 1px solid black; word-wrap: break-word; font-size: 10px; width: 25%;">PART NUMBER PART DESCRIPTION ECCN</th>
+                                        <th style=" border-top: 1px solid black;border-bottom: 1px solid black; word-wrap: break-word;  font-size: 10px; width: 10%;">HARMONIZED TARIFF SYSTEM #</th>
+                                        <th style=" border-top: 1px solid black;border-bottom: 1px solid black; word-wrap: break-word;  font-size: 10px; width: 10%;">CUSTOMER PURCHASE ORDER #</th>
+                                        <th style=" border-top: 1px solid black;border-bottom: 1px solid black; word-wrap: break-word;  font-size: 10px; width: 10%;">PROGRAM SHIPSET  TAIL</th>
+                                        <th style=" border-top: 1px solid black;border-bottom: 1px solid black; word-wrap: break-word;font-size: 10px; width: 10%;">SO# WGT(kg) CTRY ORG</th>
+                                        <th style=" border: 1px solid black; word-wrap: break-word; font-size: 10px; width: 5%;">SHIP'D QTY</th>
+                                        <th style=" border: 1px solid black; word-wrap: break-word; font-size: 10px; width: 5%;">UNIT</th>
+                                        <th style=" border: 1px solid black; word-wrap: break-word; font-size: 10px; width: 5%;">UNIT PRICE</th>
+                                        <th style=" border: 1px solid black; word-wrap: break-word; font-size: 10px; width: 10%;">TOTAL PRICE</th>
+                                    </tr>
+                                </table>
+                                <apex:variable var="isSize" value="false" />
+                            </apex:outputText>
+
+                        </apex:repeat>
+
+
+                        <!--extar space in end of table-->
+
+
+                        <tr>
+                            <td style="border-left: 1px solid black;border-bottom: 1px solid black; border-right: 1px solid black;"></td>
+                            <td style="border-bottom: 1px solid black; border-right: 1px solid black;"></td>
+                            <td style="border-bottom: 1px solid black; border-right: 1px solid black;"></td>
+                            <td style="border-bottom: 1px solid black;" colspan="5">
+                                <span style="font-size: 10px; font-weight: bold;">
+                                    REMARKS.
+                                    <br/> THIS SHIPMENT DOES NOT CONTAIN WOOD SOLID PACKAGING FROM CHINA/HONG KONG
+                                </span>
+                            </td>
+                            <td colspan="3" style=" border-bottom: 1px solid black;border: 1px solid black; ">
+                                <span style="font-size: 10px; font-weight: bold;"> Total </span>
+                            </td>
+
+                            <td style="border-bottom: 1px solid black; border: 1px solid black;">--</td>
+                        </tr>
+                    </table>
+
+                </p>
+
+            </div>
+        </div>
+        <div style="margin-top: 100px;">
+            Signature : _______________________________ Date : ________________________________
+        </div>
+    </apex:outputText>
+</apex:page>

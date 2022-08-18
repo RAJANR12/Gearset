@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>IFEC</fullName>
+        <default>false</default>
+        <label>IFEC</label>
+    </customValue>
+    <customValue>
+        <fullName>DSS</fullName>
+        <default>false</default>
+        <label>DSS</label>
+    </customValue>
+    <customValue>
+        <fullName>PTS</fullName>
+        <default>false</default>
+        <label>PTS</label>
+    </customValue>
+    <masterLabel>Product Category</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

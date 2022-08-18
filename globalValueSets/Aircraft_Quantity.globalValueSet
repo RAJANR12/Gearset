@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>25-49 Aircraft</fullName>
+        <default>false</default>
+        <label>25-49 Aircraft</label>
+    </customValue>
+    <customValue>
+        <fullName>50-74 Aircraft</fullName>
+        <default>false</default>
+        <label>50-74 Aircraft</label>
+    </customValue>
+    <customValue>
+        <fullName>75-99 Aircraft</fullName>
+        <default>false</default>
+        <label>75-99 Aircraft</label>
+    </customValue>
+    <customValue>
+        <fullName>100-124 Aircraft</fullName>
+        <default>false</default>
+        <label>100-124 Aircraft</label>
+    </customValue>
+    <customValue>
+        <fullName>125-149 Aircraft</fullName>
+        <default>false</default>
+        <label>125-149 Aircraft</label>
+    </customValue>
+    <customValue>
+        <fullName>150+ Aircraft</fullName>
+        <default>false</default>
+        <label>150+ Aircraft</label>
+    </customValue>
+    <masterLabel>Aircraft Quantity</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

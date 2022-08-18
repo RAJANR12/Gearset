@@ -1,0 +1,4 @@
+<apex:component controller="L2I_ApprovalRequestCommentsController" access="global" id="L2I_ApprovalRequestApprover">
+    <apex:attribute name="relatedToId" assignTo="{!targetObjectId}" type="String" description="ID of the record whose fullname to retrieve"/>
+    <apex:outputText value="{!fullname}"/>
+</apex:component>

@@ -1,0 +1,17 @@
+<apex:page showHeader="true">
+    <apex:includeLightning />
+    <div id="lightning" />
+    <script>
+        $Lightning.use("c:l2I_RateScheduleApp", function () {
+            $Lightning.createComponent("c:l2I_RateScheduleLwc", {
+                recordId: null
+            },
+                "lightning",
+                function (cmp) {
+                    console.log("LWC component was created...");
+                    // do some stuff
+                }
+            );
+        });
+    </script>
+</apex:page>

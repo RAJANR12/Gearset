@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Advertising</fullName>
+        <default>false</default>
+        <label>Advertising</label>
+    </customValue>
+    <customValue>
+        <fullName>Cell Modem</fullName>
+        <default>false</default>
+        <label>Cell Modem</label>
+    </customValue>
+    <customValue>
+        <fullName>Games</fullName>
+        <default>false</default>
+        <label>Games</label>
+    </customValue>
+    <customValue>
+        <fullName>TV/Media</fullName>
+        <default>false</default>
+        <label>TV/Media</label>
+    </customValue>
+    <customValue>
+        <fullName>WiFi</fullName>
+        <default>false</default>
+        <label>WiFi</label>
+    </customValue>
+    <masterLabel>Suspended Product Category List</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

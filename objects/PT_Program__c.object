@@ -1,0 +1,4110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Program</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Program</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Program_View</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Program_View</fullName>
+        <fields>Name</fields>
+        <fields>PT_isActive__c</fields>
+        <fields>PT_Program_Type__c</fields>
+        <fields>PT_Pending_MRODs__c</fields>
+        <fields>Program_Manager__c</fields>
+        <fields>Program_Administrator__c</fields>
+        <fields>Order_Administrator__c</fields>
+        <label>Program View</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Programs</relationshipLabel>
+        <relationshipName>Programs</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Airbus_MROD_Approval_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Airbus MROD Approval Status</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>Recalled</fullName>
+                    <default>false</default>
+                    <label>Recalled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Aircraft_Identifier_Field__c</fullName>
+        <description>User Selection to determine which field on the aircraft record will be used as the aircraft identifier</description>
+        <externalId>false</externalId>
+        <inlineHelpText>User Selection to determine which field on the aircraft record will be used as the aircraft identifier</inlineHelpText>
+        <label>Aircraft Identifier Field</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Block Number</fullName>
+                    <default>false</default>
+                    <label>Block Number</label>
+                </value>
+                <value>
+                    <fullName>Fleet Number</fullName>
+                    <default>false</default>
+                    <label>Fleet Number</label>
+                </value>
+                <value>
+                    <fullName>Line Number</fullName>
+                    <default>false</default>
+                    <label>Line Number</label>
+                </value>
+                <value>
+                    <fullName>Serial Number</fullName>
+                    <default>false</default>
+                    <label>Serial Number</label>
+                </value>
+                <value>
+                    <fullName>Tail Number</fullName>
+                    <default>false</default>
+                    <label>Tail Number</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Approval_History_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Approval History Type</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CSFE__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Customer Service Field Engineer</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Programs6</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Certification_Requirement__c</fullName>
+        <externalId>false</externalId>
+        <label>Certification Requirement</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>EASA</fullName>
+                    <default>false</default>
+                    <label>EASA</label>
+                </value>
+                <value>
+                    <fullName>FAA</fullName>
+                    <default>false</default>
+                    <label>FAA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Core_Program__c</fullName>
+        <externalId>false</externalId>
+        <label>Core Program</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deal_Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&#39;/&#39; +  Sales_Opportunity__r.L2I_Parent_Opportunity__c ,  Sales_Opportunity__r.L2I_Parent_Opportunity__r.Name, &#39;_self&#39; )</formula>
+        <label>Deal Opportunity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Estimated_PMA_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimated PMA Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Expedite_MROD_Approval__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Set in the MROD Approval flow based on Assets needing to be expedited</description>
+        <externalId>false</externalId>
+        <label>Expedite MROD Approval</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Airbus__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( OR(PT_Program_Type__c == &#39;Production-AIRBUS&#39;, PT_Program_Type__c == &#39;Production-Airbus&#39;), true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Airbus?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Latest_Approval_Process_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Latest Approval Process Type</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Latest_PPL_Revision_Rollup__c</fullName>
+        <externalId>false</externalId>
+        <label>Latest PPL Revision Rollup</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MROD_Approval_Program_Name__c</fullName>
+        <description>Used in MROD Rev Approval Email Templates.</description>
+        <externalId>false</externalId>
+        <formula>Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MROD Approval Program Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MROD_Approval_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>MROD Approval Status</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>Recalled</fullName>
+                    <default>false</default>
+                    <label>Recalled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MROD_Approval_Step__c</fullName>
+        <externalId>false</externalId>
+        <label>MROD Approval Step</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MROD_Approval_Submitter__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>MROD Approval Submitter</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Programs</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>MROD_Latest_Approval_Questions__c</fullName>
+        <externalId>false</externalId>
+        <label>MROD Comments</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>MROD_Revision__c</fullName>
+        <externalId>false</externalId>
+        <label>MROD Revision</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name__c</fullName>
+        <displayFormat>PRG-{0000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>ODA_Project_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>ODA Project Number</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Operator__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Operator</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Programs (Operator)</relationshipLabel>
+        <relationshipName>Programs2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Order_Administrator__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Order Administrator</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Programs2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Owner</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Programs (Owner)</relationshipLabel>
+        <relationshipName>Programs1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PAC_Airbus_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>PAC Airbus Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>ProgramsAirbusMgr</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PMA_Requirement__c</fullName>
+        <externalId>false</externalId>
+        <label>PMA Requirement</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>C of C Only</fullName>
+                    <default>false</default>
+                    <label>C of C Only</label>
+                </value>
+                <value>
+                    <fullName>PMA by specific OEM</fullName>
+                    <default>false</default>
+                    <label>PMA by specific OEM</label>
+                </value>
+                <value>
+                    <fullName>PMA on Any A/C</fullName>
+                    <default>false</default>
+                    <label>PMA on Any A/C</label>
+                </value>
+                <value>
+                    <fullName>PMA on base A/C Model</fullName>
+                    <default>false</default>
+                    <label>PMA on base A/C Model</label>
+                </value>
+                <value>
+                    <fullName>PMA on specific A/C Model</fullName>
+                    <default>false</default>
+                    <label>PMA on specific A/C Model</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PMO_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>xxx PMO Group</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Americas</fullName>
+                    <default>false</default>
+                    <label>Americas</label>
+                </value>
+                <value>
+                    <fullName>Asia</fullName>
+                    <default>false</default>
+                    <label>Asia</label>
+                </value>
+                <value>
+                    <fullName>China</fullName>
+                    <default>false</default>
+                    <label>China</label>
+                </value>
+                <value>
+                    <fullName>Europe</fullName>
+                    <default>false</default>
+                    <label>Europe</label>
+                </value>
+                <value>
+                    <fullName>Middle East</fullName>
+                    <default>false</default>
+                    <label>Middle East</label>
+                </value>
+                <value>
+                    <fullName>Oceania</fullName>
+                    <default>false</default>
+                    <label>Oceania</label>
+                </value>
+                <value>
+                    <fullName>OEM</fullName>
+                    <default>false</default>
+                    <label>OEM</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PMO_Regional_Director__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Needed in the MROD Approval process</description>
+        <externalId>false</externalId>
+        <label>PMO Regional Director User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Programs5</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PMO_Sub_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>xxx PMO Sub Group</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>PMO_Group__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>NA4-VIP</fullName>
+                    <default>false</default>
+                    <label>NA4-VIP</label>
+                </value>
+                <value>
+                    <fullName>North America 1</fullName>
+                    <default>false</default>
+                    <label>North America 1</label>
+                </value>
+                <value>
+                    <fullName>North America 3</fullName>
+                    <default>false</default>
+                    <label>North America 3</label>
+                </value>
+                <value>
+                    <fullName>South America</fullName>
+                    <default>false</default>
+                    <label>South America</label>
+                </value>
+                <value>
+                    <fullName>Asia 1</fullName>
+                    <default>false</default>
+                    <label>Asia 1</label>
+                </value>
+                <value>
+                    <fullName>Asia 3</fullName>
+                    <default>false</default>
+                    <label>Asia 3</label>
+                </value>
+                <value>
+                    <fullName>Asia Major</fullName>
+                    <default>false</default>
+                    <label>Asia Major</label>
+                </value>
+                <value>
+                    <fullName>Asia Minor</fullName>
+                    <default>false</default>
+                    <label>Asia Minor</label>
+                </value>
+                <value>
+                    <fullName>Asia-VIP</fullName>
+                    <default>false</default>
+                    <label>Asia-VIP</label>
+                </value>
+                <value>
+                    <fullName>Hong Kong</fullName>
+                    <default>false</default>
+                    <label>Hong Kong</label>
+                </value>
+                <value>
+                    <fullName>Europe 1</fullName>
+                    <default>false</default>
+                    <label>Europe 1</label>
+                </value>
+                <value>
+                    <fullName>Europe 2</fullName>
+                    <default>false</default>
+                    <label>Europe 2</label>
+                </value>
+                <value>
+                    <fullName>ME-Central Region</fullName>
+                    <default>false</default>
+                    <label>ME-Central Region</label>
+                </value>
+                <value>
+                    <fullName>ME-Eastern Region</fullName>
+                    <default>false</default>
+                    <label>ME-Eastern Region</label>
+                </value>
+                <value>
+                    <fullName>ME-Emirates Region</fullName>
+                    <default>false</default>
+                    <label>ME-Emirates Region</label>
+                </value>
+                <value>
+                    <fullName>ME-Etihad Region</fullName>
+                    <default>false</default>
+                    <label>ME-Etihad Region</label>
+                </value>
+                <value>
+                    <fullName>ME-Middle East</fullName>
+                    <default>false</default>
+                    <label>ME-Middle East</label>
+                </value>
+                <value>
+                    <fullName>ME-Qatar/GCS</fullName>
+                    <default>false</default>
+                    <label>ME-Qatar/GCS</label>
+                </value>
+                <value>
+                    <fullName>ME-VIP</fullName>
+                    <default>false</default>
+                    <label>ME-VIP</label>
+                </value>
+                <value>
+                    <fullName>ME-Western Region</fullName>
+                    <default>false</default>
+                    <label>ME-Western Region</label>
+                </value>
+                <value>
+                    <fullName>Middle East 1</fullName>
+                    <default>false</default>
+                    <label>Middle East 1</label>
+                </value>
+                <value>
+                    <fullName>VIP Group</fullName>
+                    <default>false</default>
+                    <label>VIP Group</label>
+                </value>
+                <value>
+                    <fullName>Oceania</fullName>
+                    <default>false</default>
+                    <label>Oceania</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <valueName>NA4-VIP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <valueName>North America 1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <valueName>North America 3</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <valueName>South America</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <controllingFieldValue>Asia</controllingFieldValue>
+                <valueName>Asia 1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <controllingFieldValue>Asia</controllingFieldValue>
+                <valueName>Asia 3</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <controllingFieldValue>Asia</controllingFieldValue>
+                <valueName>Asia Major</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <controllingFieldValue>Asia</controllingFieldValue>
+                <valueName>Asia Minor</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <controllingFieldValue>Asia</controllingFieldValue>
+                <valueName>Asia-VIP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <controllingFieldValue>China</controllingFieldValue>
+                <valueName>Hong Kong</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <controllingFieldValue>Europe</controllingFieldValue>
+                <valueName>Europe 1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <controllingFieldValue>Europe</controllingFieldValue>
+                <valueName>Europe 2</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <controllingFieldValue>Middle East</controllingFieldValue>
+                <valueName>ME-Central Region</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <controllingFieldValue>Middle East</controllingFieldValue>
+                <valueName>ME-Eastern Region</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <controllingFieldValue>Middle East</controllingFieldValue>
+                <valueName>ME-Emirates Region</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <controllingFieldValue>Middle East</controllingFieldValue>
+                <valueName>ME-Etihad Region</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <controllingFieldValue>Middle East</controllingFieldValue>
+                <valueName>ME-Middle East</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <controllingFieldValue>Middle East</controllingFieldValue>
+                <valueName>ME-Qatar/GCS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <controllingFieldValue>Middle East</controllingFieldValue>
+                <valueName>ME-VIP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <controllingFieldValue>Middle East</controllingFieldValue>
+                <valueName>ME-Western Region</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <controllingFieldValue>Middle East</controllingFieldValue>
+                <valueName>Middle East 1</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <controllingFieldValue>OEM</controllingFieldValue>
+                <valueName>VIP Group</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Americas</controllingFieldValue>
+                <controllingFieldValue>Middle East</controllingFieldValue>
+                <controllingFieldValue>Oceania</controllingFieldValue>
+                <valueName>Oceania</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PM_RM_RD__c</fullName>
+        <externalId>false</externalId>
+        <label>Program Mgr, Regional Mgr, Director</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PO_Provider_Notes__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Reason for the Secondary Provider</inlineHelpText>
+        <label>PO Provider Notes</label>
+        <length>160</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PO_Provider__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>PO Provider</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Programs (PO Provider)</relationshipLabel>
+        <relationshipName>Programs3</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PT_Aircraft_Type__c</fullName>
+        <description>Aircraft type retrieved from the Opportunity</description>
+        <externalId>false</externalId>
+        <formula>Sales_Opportunity__r.L2I_AircraftType__c</formula>
+        <label>Aircraft Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Approval_History__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&#39;/lightning/r/ProcessInstanceHistory/&#39;+ Id + &#39;/related/ProcessSteps/view&#39;, &#39;MROD Approvals&#39; ,&#39;_self&#39;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Link to MROD Approvals</inlineHelpText>
+        <label>Approval History</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_First_Aircraft_Delivery__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Date that the first aircraft of this program has been delivered</inlineHelpText>
+        <label>First Aircraft Delivery</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PT_Legacy_Program_Id__c</fullName>
+        <description>Program Table Program ID field</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Program Table Program ID field</inlineHelpText>
+        <label>Legacy Program ID</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_MROD_Approval_Steps__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&#39;/lightning/r/ProcessInstanceHistory/&#39;+Id+&#39;/related/ProcessSteps/view&#39;, &#39;Approvals&#39; , &#39;_self&#39;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MROD Approval Steps</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Operator_Payment_Terms__c</fullName>
+        <externalId>false</externalId>
+        <formula>Operator__r.L2I_Payment_Term_Status__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Operator Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Owner_Payment_Terms__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner__r.L2I_Payment_Term_Status__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_PMO_Group__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>PMO Group</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>PT_PMO_Groups__c.Group_Type__c</field>
+                <operation>equals</operation>
+                <value>Group</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>PT_PMO_Groups__c</referenceTo>
+        <relationshipLabel>PMO Group Programs</relationshipLabel>
+        <relationshipName>PMOGroupPrograms</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PT_PMO_Regional_Director__c</fullName>
+        <externalId>false</externalId>
+        <formula>PT_PMO_Group__r.Owner:User.FirstName + &quot; &quot; +  PT_PMO_Group__r.Owner:User.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PMO Regional Director</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_PMO_SubGroup__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>PMO Sub Group</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>PT_PMO_Groups__c.Group_Type__c</field>
+                <operation>equals</operation>
+                <value>Sub Group</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>PT_PMO_Groups__c</referenceTo>
+        <relationshipLabel>Programs (PMO Sub Group)</relationshipLabel>
+        <relationshipName>PMOSubGroupPrograms</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PT_POProvider_Payment_Terms__c</fullName>
+        <externalId>false</externalId>
+        <formula>PO_Provider__r.L2I_Payment_Term_Status__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PO Provider Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Part_List_Report_url__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(
+&#39;https://panacorp--devr4.lightning.force.com/lightning/r/Report/00O21000000UY92EAG/view?fv2=&#39; + Name__c
+, &#39;Parts Changes&#39; )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Link to outstanding parts list changes on this program</inlineHelpText>
+        <label>Part List Changes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Pending_MRODs__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(isActiveMrodApproval__c,
+&quot;Pending &quot; + Latest_Approval_Process_Type__c + &quot;s&quot;,
+&quot;No Approval Pending&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MRODs Pending Approval</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Primary_Price_List__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Primary Price List</label>
+        <referenceTo>PT_PriceList__c</referenceTo>
+        <relationshipLabel>Programs</relationshipLabel>
+        <relationshipName>Programs</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PT_Primary_System_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sales_Opportunity__r.L2I_Primary_System_Type__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Primary System Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Principal_Program_Manager__c</fullName>
+        <externalId>false</externalId>
+        <formula>PT_PMO_SubGroup__r.Owner:User.FirstName + &quot; &quot; +  PT_PMO_SubGroup__r.Owner:User.LastName</formula>
+        <label>Regional Manager (RM)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Program_Aircraft_IDs__c</fullName>
+        <externalId>false</externalId>
+        <label>Program Aircraft IDs</label>
+        <length>10000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>PT_Program_Link__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEFT($Api.Partner_Server_URL_260, FIND( &#39;/services&#39;, $Api.Partner_Server_URL_260)) + Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PT Program Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Program_Number_Alt__c</fullName>
+        <description>Used in CCC formula on Asset object</description>
+        <externalId>false</externalId>
+        <label>Program Number Alt</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Program_Type_Lead__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(UPPER(PT_Program_Type__c) = &quot;PRODUCTION-BOEING&quot;
+  ,7
+  ,IF(UPPER(PT_Program_Type__c) = &quot;PRODUCTION-AIRBUS&quot;
+    ,10
+    ,14
+  )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Lead time offset calculated by the Program Type</inlineHelpText>
+        <label>Program_Type_Lead</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Program_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Sales_Opportunity__r.L2I_Fit_Type__c) + if(
+Text(Sales_Opportunity__r.L2I_Fit_Type__c) = &#39;Production&#39;,
+&#39;-&#39; +  Sales_Opportunity__r.L2I_Aircraft_Type__r.L2I_Make__c
+,&#39;&#39;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Program Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Special_Project__c</fullName>
+        <externalId>false</externalId>
+        <label>Special Project</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Business_Initiative</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PT_Special_QA_Instruction__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(UPPER(PT_Program_Type__c) = &quot;PRODUCTION-AIRBUS&quot;, &quot;Highest Cert Avail.&quot;, 
+    IF(UPPER(PT_Program_Type__c) = &quot;PRODUCTION-EMBRAER&quot;, &quot;Highest Cert Avail.&quot;, 
+       IF(BEGINS(UPPER(PT_Program_Type__c), &quot;PRODUCTION&quot;), &quot;COC&quot;, 
+          IF(ISPICKVAL(STC_Applicant__c, &quot;Airbus&quot;), &quot;Highest Cert Avail.&quot;, 
+             IF(ISPICKVAL(PMA_Requirement__c, &quot;C of C Only&quot;), &quot;COC&quot;,
+                IF(ISPICKVAL(PMA_Requirement__c, &quot;PMA on Any A/C&quot;), &quot;PMA Any A/C&quot;,
+                   IF(ISPICKVAL(PMA_Requirement__c, &quot;PMA on specific A/C Model&quot;), &quot;PMA A/C Specific&quot;, &quot;&quot;)
+                   )
+                )
+             )
+          )                  
+       )
+   )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Special QA Instruction</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Sub_System_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub System Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Sub_System_Type_Picklist_Values</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>PT_isActive__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Active state of the Program</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>true</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Principal_Program_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Needed for MROD Approval process</description>
+        <externalId>false</externalId>
+        <label>Principal Program Manager User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Programs1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProgramManagerName__c</fullName>
+        <externalId>false</externalId>
+        <formula>Program_Manager__r.FirstName + &#39; &#39; + Program_Manager__r.LastName</formula>
+        <label>Program Manager Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Program_Administrator__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Program Administrator</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Programs3</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Program_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Program Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Programs4</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Program_Method__c</fullName>
+        <externalId>false</externalId>
+        <label>Program Method</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PMO</fullName>
+                    <default>true</default>
+                    <label>PMO</label>
+                </value>
+                <value>
+                    <fullName>OEM</fullName>
+                    <default>false</default>
+                    <label>OEM</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Program_Number__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Program Number</label>
+        <length>80</length>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Program_Type__c</fullName>
+        <description>as of 8/5/20 not being used should be removed.</description>
+        <externalId>false</externalId>
+        <label>xxx Program Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Combination</fullName>
+                    <default>false</default>
+                    <label>Combination</label>
+                </value>
+                <value>
+                    <fullName>Media</fullName>
+                    <default>false</default>
+                    <label>Media</label>
+                </value>
+                <value>
+                    <fullName>Not Applicable</fullName>
+                    <default>false</default>
+                    <label>Not Applicable</label>
+                </value>
+                <value>
+                    <fullName>Production-Airbus</fullName>
+                    <default>false</default>
+                    <label>Production-Airbus</label>
+                </value>
+                <value>
+                    <fullName>Production-Boeing</fullName>
+                    <default>false</default>
+                    <label>Production-Boeing</label>
+                </value>
+                <value>
+                    <fullName>Production-Bombardier</fullName>
+                    <default>false</default>
+                    <label>Production-Bombardier</label>
+                </value>
+                <value>
+                    <fullName>Production-COMAC</fullName>
+                    <default>false</default>
+                    <label>Production-COMAC</label>
+                </value>
+                <value>
+                    <fullName>Production-Embraer</fullName>
+                    <default>false</default>
+                    <label>Production-Embraer</label>
+                </value>
+                <value>
+                    <fullName>Production-Mitsubishi</fullName>
+                    <default>false</default>
+                    <label>Production-Mitsubishi</label>
+                </value>
+                <value>
+                    <fullName>Retrofit</fullName>
+                    <default>false</default>
+                    <label>Retrofit</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Project_Server__c</fullName>
+        <externalId>false</externalId>
+        <label>Schedule</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>STC_Applicant__c</fullName>
+        <externalId>false</externalId>
+        <label>STC Applicant</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>(AES) Astronics</fullName>
+                    <default>false</default>
+                    <label>(AES) Astronics</label>
+                </value>
+                <value>
+                    <fullName>(BCAG) Boeing Comercial Aircraft Group</fullName>
+                    <default>false</default>
+                    <label>(BCAG) Boeing Comercial Aircraft Group</label>
+                </value>
+                <value>
+                    <fullName>(BCAS) Boeing Comercial Aircraft Service</fullName>
+                    <default>false</default>
+                    <label>(BCAS) Boeing Comercial Aircraft Service</label>
+                </value>
+                <value>
+                    <fullName>(BCAS) Boeing Comercial Aircraft Services</fullName>
+                    <default>false</default>
+                    <label>(BCAS) Boeing Comercial Aircraft Services</label>
+                </value>
+                <value>
+                    <fullName>(GTI) GreenPoint Technologies Inc.</fullName>
+                    <default>false</default>
+                    <label>(GTI) GreenPoint Technologies Inc.</label>
+                </value>
+                <value>
+                    <fullName>(SRT) SR Technics</fullName>
+                    <default>false</default>
+                    <label>(SRT) SR Technics</label>
+                </value>
+                <value>
+                    <fullName>(ZNAT) Zodiac Nortwest Aerospace Technologies</fullName>
+                    <default>false</default>
+                    <label>(ZNAT) Zodiac Nortwest Aerospace Technologies</label>
+                </value>
+                <value>
+                    <fullName>AAR Aircraft Services</fullName>
+                    <default>false</default>
+                    <label>AAR Aircraft Services</label>
+                </value>
+                <value>
+                    <fullName>ACJC</fullName>
+                    <default>false</default>
+                    <label>ACJC</label>
+                </value>
+                <value>
+                    <fullName>AEC</fullName>
+                    <default>false</default>
+                    <label>AEC</label>
+                </value>
+                <value>
+                    <fullName>AEROMOBILE</fullName>
+                    <default>false</default>
+                    <label>AEROMOBILE</label>
+                </value>
+                <value>
+                    <fullName>AMAC</fullName>
+                    <default>false</default>
+                    <label>AMAC</label>
+                </value>
+                <value>
+                    <fullName>AMECO Beijing- HARDWARE ONLY</fullName>
+                    <default>false</default>
+                    <label>AMECO Beijing- HARDWARE ONLY</label>
+                </value>
+                <value>
+                    <fullName>Aercocare</fullName>
+                    <default>false</default>
+                    <label>Aercocare</label>
+                </value>
+                <value>
+                    <fullName>Aeroconseil</fullName>
+                    <default>false</default>
+                    <label>Aeroconseil</label>
+                </value>
+                <value>
+                    <fullName>Aerodec</fullName>
+                    <default>false</default>
+                    <label>Aerodec</label>
+                </value>
+                <value>
+                    <fullName>Air Berlin Technic (ABT)</fullName>
+                    <default>false</default>
+                    <label>Air Berlin Technic (ABT)</label>
+                </value>
+                <value>
+                    <fullName>Air France</fullName>
+                    <default>false</default>
+                    <label>Air France</label>
+                </value>
+                <value>
+                    <fullName>Airbus</fullName>
+                    <default>false</default>
+                    <label>Airbus</label>
+                </value>
+                <value>
+                    <fullName>Airbus Service Bulletin</fullName>
+                    <default>false</default>
+                    <label>Airbus Service Bulletin</label>
+                </value>
+                <value>
+                    <fullName>American Airlines</fullName>
+                    <default>false</default>
+                    <label>American Airlines</label>
+                </value>
+                <value>
+                    <fullName>Armstrong</fullName>
+                    <default>false</default>
+                    <label>Armstrong</label>
+                </value>
+                <value>
+                    <fullName>Associated Air Center</fullName>
+                    <default>false</default>
+                    <label>Associated Air Center</label>
+                </value>
+                <value>
+                    <fullName>B/E Flight Structures (FSI)</fullName>
+                    <default>false</default>
+                    <label>B/E Flight Structures (FSI)</label>
+                </value>
+                <value>
+                    <fullName>BOEING GS</fullName>
+                    <default>false</default>
+                    <label>BOEING GS</label>
+                </value>
+                <value>
+                    <fullName>BOMBARDIER AEROSPACE</fullName>
+                    <default>false</default>
+                    <label>BOMBARDIER AEROSPACE</label>
+                </value>
+                <value>
+                    <fullName>DELTA</fullName>
+                    <default>false</default>
+                    <label>DELTA</label>
+                </value>
+                <value>
+                    <fullName>Delta Engineering</fullName>
+                    <default>false</default>
+                    <label>Delta Engineering</label>
+                </value>
+                <value>
+                    <fullName>EASA</fullName>
+                    <default>false</default>
+                    <label>EASA</label>
+                </value>
+                <value>
+                    <fullName>EGAT</fullName>
+                    <default>false</default>
+                    <label>EGAT</label>
+                </value>
+                <value>
+                    <fullName>Eirtech Aviation</fullName>
+                    <default>false</default>
+                    <label>Eirtech Aviation</label>
+                </value>
+                <value>
+                    <fullName>Etihad Airways</fullName>
+                    <default>false</default>
+                    <label>Etihad Airways</label>
+                </value>
+                <value>
+                    <fullName>GORE DESIGN COMPLETIONS</fullName>
+                    <default>false</default>
+                    <label>GORE DESIGN COMPLETIONS</label>
+                </value>
+                <value>
+                    <fullName>Garuda Maintenance Facility</fullName>
+                    <default>false</default>
+                    <label>Garuda Maintenance Facility</label>
+                </value>
+                <value>
+                    <fullName>HAECO/TIMCO</fullName>
+                    <default>false</default>
+                    <label>HAECO/TIMCO</label>
+                </value>
+                <value>
+                    <fullName>Hawaiian Airlines / Southwest Aero Group</fullName>
+                    <default>false</default>
+                    <label>Hawaiian Airlines / Southwest Aero Group</label>
+                </value>
+                <value>
+                    <fullName>Heath Techna</fullName>
+                    <default>false</default>
+                    <label>Heath Techna</label>
+                </value>
+                <value>
+                    <fullName>InFlight Canada</fullName>
+                    <default>false</default>
+                    <label>InFlight Canada</label>
+                </value>
+                <value>
+                    <fullName>JAMCO</fullName>
+                    <default>false</default>
+                    <label>JAMCO</label>
+                </value>
+                <value>
+                    <fullName>Jet Aviation</fullName>
+                    <default>false</default>
+                    <label>Jet Aviation</label>
+                </value>
+                <value>
+                    <fullName>L-3</fullName>
+                    <default>false</default>
+                    <label>L-3</label>
+                </value>
+                <value>
+                    <fullName>LHT</fullName>
+                    <default>false</default>
+                    <label>LHT</label>
+                </value>
+                <value>
+                    <fullName>Lufthansa</fullName>
+                    <default>false</default>
+                    <label>Lufthansa</label>
+                </value>
+                <value>
+                    <fullName>Marshall</fullName>
+                    <default>false</default>
+                    <label>Marshall</label>
+                </value>
+                <value>
+                    <fullName>PMV Engineerng</fullName>
+                    <default>false</default>
+                    <label>PMV Engineerng</label>
+                </value>
+                <value>
+                    <fullName>PRESIDENTIAL-FAA</fullName>
+                    <default>false</default>
+                    <label>PRESIDENTIAL-FAA</label>
+                </value>
+                <value>
+                    <fullName>Panasonic</fullName>
+                    <default>false</default>
+                    <label>Panasonic</label>
+                </value>
+                <value>
+                    <fullName>Qantas Airways</fullName>
+                    <default>false</default>
+                    <label>Qantas Airways</label>
+                </value>
+                <value>
+                    <fullName>Rockwell Collins</fullName>
+                    <default>false</default>
+                    <label>Rockwell Collins</label>
+                </value>
+                <value>
+                    <fullName>ST Aero</fullName>
+                    <default>false</default>
+                    <label>ST Aero</label>
+                </value>
+                <value>
+                    <fullName>Sabena Technics</fullName>
+                    <default>false</default>
+                    <label>Sabena Technics</label>
+                </value>
+                <value>
+                    <fullName>Singapore Technologies Aerospace LTD</fullName>
+                    <default>false</default>
+                    <label>Singapore Technologies Aerospace LTD</label>
+                </value>
+                <value>
+                    <fullName>TBD</fullName>
+                    <default>false</default>
+                    <label>TBD</label>
+                </value>
+                <value>
+                    <fullName>TTF Aerospace</fullName>
+                    <default>false</default>
+                    <label>TTF Aerospace</label>
+                </value>
+                <value>
+                    <fullName>Turkish Airlines Technic, Inc.</fullName>
+                    <default>false</default>
+                    <label>Turkish Airlines Technic, Inc.</label>
+                </value>
+                <value>
+                    <fullName>United Airlines</fullName>
+                    <default>false</default>
+                    <label>United Airlines</label>
+                </value>
+                <value>
+                    <fullName>United ODA</fullName>
+                    <default>false</default>
+                    <label>United ODA</label>
+                </value>
+                <value>
+                    <fullName>Weber</fullName>
+                    <default>false</default>
+                    <label>Weber</label>
+                </value>
+                <value>
+                    <fullName>Zodiac Nortwest Aerospace Technologies</fullName>
+                    <default>false</default>
+                    <label>Zodiac Nortwest Aerospace Technologies</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>STC_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>STC Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Sales Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Programs</relationshipLabel>
+        <relationshipName>Programs</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Secondary_PO_Provider_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>Secondary_PO_Provider__r.L2I_Payment_Term_Status__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Secondary PO Provider Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Secondary_PO_Provider__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Secondary PO Provider</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Programs (Secondary PO Provider)</relationshipLabel>
+        <relationshipName>Programs4</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Send_Approval_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Send Approval Email</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Teamforge__c</fullName>
+        <externalId>false</externalId>
+        <label>Workspace</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>isActiveMrodApproval__c</fullName>
+        <description>Indicator that program is locked for an approval</description>
+        <externalId>false</externalId>
+        <formula>OR(ISPICKVAL(MROD_Approval_Status__c, &#39;Pending&#39;),ISPICKVAL( Airbus_MROD_Approval_Status__c , &#39;Pending&#39;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Indicator that program is locked for an approval</inlineHelpText>
+        <label>Program in MROD Approval</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Program</label>
+    <listViews>
+        <fullName>Active_Programs</fullName>
+        <columns>NAME</columns>
+        <columns>Sales_Opportunity__c</columns>
+        <columns>PT_Program_Type__c</columns>
+        <columns>Operator__c</columns>
+        <columns>PO_Provider__c</columns>
+        <columns>PM_RM_RD__c</columns>
+        <columns>Program_Administrator__c</columns>
+        <columns>Order_Administrator__c</columns>
+        <columns>MROD_Approval_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>PT_Program__c.Production,PT_Program__c.Retrofit</value>
+        </filters>
+        <label>Active Programs</label>
+    </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Sales_Opportunity__c</columns>
+        <columns>PT_Program_Type__c</columns>
+        <columns>Operator__c</columns>
+        <columns>PO_Provider__c</columns>
+        <columns>Program_Manager__c</columns>
+        <columns>PM_RM_RD__c</columns>
+        <columns>Program_Administrator__c</columns>
+        <columns>Order_Administrator__c</columns>
+        <columns>MROD_Approval_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Inactive_Programs</fullName>
+        <columns>NAME</columns>
+        <columns>Sales_Opportunity__c</columns>
+        <columns>PT_Program_Type__c</columns>
+        <columns>Operator__c</columns>
+        <columns>PO_Provider__c</columns>
+        <columns>PM_RM_RD__c</columns>
+        <columns>Program_Administrator__c</columns>
+        <columns>Order_Administrator__c</columns>
+        <columns>MROD_Approval_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>PT_Program__c.Inactive</value>
+        </filters>
+        <label>Inactive Programs</label>
+    </listViews>
+    <listViews>
+        <fullName>PT_Program_Airbus_Manager_Queue_PT_Program</fullName>
+        <columns>NAME</columns>
+        <columns>Sales_Opportunity__c</columns>
+        <columns>PT_Program_Type__c</columns>
+        <columns>PT_Sub_System_Type__c</columns>
+        <columns>Operator__c</columns>
+        <columns>PO_Provider__c</columns>
+        <columns>PM_RM_RD__c</columns>
+        <columns>Program_Administrator__c</columns>
+        <columns>Order_Administrator__c</columns>
+        <columns>MROD_Approval_Status__c</columns>
+        <filterScope>Queue</filterScope>
+        <label>Program Airbus Manager Queue</label>
+        <queue>PT_Program_Airbus_Manager_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>PT_Program_PM_Approval_Queue_PT_Program</fullName>
+        <columns>NAME</columns>
+        <columns>Sales_Opportunity__c</columns>
+        <columns>PT_Program_Type__c</columns>
+        <columns>PT_Sub_System_Type__c</columns>
+        <columns>Operator__c</columns>
+        <columns>PO_Provider__c</columns>
+        <columns>PM_RM_RD__c</columns>
+        <columns>Program_Administrator__c</columns>
+        <columns>Order_Administrator__c</columns>
+        <columns>MROD_Approval_Status__c</columns>
+        <filterScope>Queue</filterScope>
+        <label>Program PM Approval Queue</label>
+        <queue>PT_Program_PM_Approval_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>PT_Program_PPM_Approval_Queue_PT_Program</fullName>
+        <columns>NAME</columns>
+        <columns>Sales_Opportunity__c</columns>
+        <columns>PT_Program_Type__c</columns>
+        <columns>PT_Sub_System_Type__c</columns>
+        <columns>Operator__c</columns>
+        <columns>PO_Provider__c</columns>
+        <columns>PM_RM_RD__c</columns>
+        <columns>Program_Administrator__c</columns>
+        <columns>Order_Administrator__c</columns>
+        <columns>MROD_Approval_Status__c</columns>
+        <filterScope>Queue</filterScope>
+        <label>Program PPM Approval Queue</label>
+        <queue>PT_Program_PPM_Approval_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>PT_Program_RD_Approval_Queue_PT_Program</fullName>
+        <columns>NAME</columns>
+        <columns>Sales_Opportunity__c</columns>
+        <columns>PT_Program_Type__c</columns>
+        <columns>PT_Sub_System_Type__c</columns>
+        <columns>Operator__c</columns>
+        <columns>PO_Provider__c</columns>
+        <columns>PM_RM_RD__c</columns>
+        <columns>Program_Administrator__c</columns>
+        <columns>Order_Administrator__c</columns>
+        <columns>MROD_Approval_Status__c</columns>
+        <filterScope>Queue</filterScope>
+        <label>Program RD Approval Queue</label>
+        <queue>PT_Program_RD_Approval_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Production_Programs</fullName>
+        <columns>NAME</columns>
+        <columns>Sales_Opportunity__c</columns>
+        <columns>PT_Program_Type__c</columns>
+        <columns>Operator__c</columns>
+        <columns>PO_Provider__c</columns>
+        <columns>PM_RM_RD__c</columns>
+        <columns>Program_Administrator__c</columns>
+        <columns>Order_Administrator__c</columns>
+        <columns>MROD_Approval_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>PT_Program__c.Production</value>
+        </filters>
+        <label>Production Programs</label>
+    </listViews>
+    <listViews>
+        <fullName>Program_PM_PPM_Queue_PT_Program</fullName>
+        <columns>NAME</columns>
+        <columns>Sales_Opportunity__c</columns>
+        <columns>PT_Program_Type__c</columns>
+        <columns>PT_Sub_System_Type__c</columns>
+        <columns>Operator__c</columns>
+        <columns>PO_Provider__c</columns>
+        <columns>PM_RM_RD__c</columns>
+        <columns>Program_Administrator__c</columns>
+        <columns>Order_Administrator__c</columns>
+        <columns>MROD_Approval_Status__c</columns>
+        <filterScope>Queue</filterScope>
+        <label>Program PM PPM Queue</label>
+        <queue>Program_PM_PPM_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Program_PM_PPM_RD_Queue_PT_Program</fullName>
+        <columns>NAME</columns>
+        <columns>Sales_Opportunity__c</columns>
+        <columns>PT_Program_Type__c</columns>
+        <columns>PT_Sub_System_Type__c</columns>
+        <columns>Operator__c</columns>
+        <columns>PO_Provider__c</columns>
+        <columns>PM_RM_RD__c</columns>
+        <columns>Program_Administrator__c</columns>
+        <columns>Order_Administrator__c</columns>
+        <columns>MROD_Approval_Status__c</columns>
+        <filterScope>Queue</filterScope>
+        <label>Program PM PPM RD Queue</label>
+        <queue>Program_PM_PPM_RD_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Program_PPM_RD_Queue_PT_Program</fullName>
+        <columns>NAME</columns>
+        <columns>Sales_Opportunity__c</columns>
+        <columns>PT_Program_Type__c</columns>
+        <columns>PT_Sub_System_Type__c</columns>
+        <columns>Operator__c</columns>
+        <columns>PO_Provider__c</columns>
+        <columns>PM_RM_RD__c</columns>
+        <columns>Program_Administrator__c</columns>
+        <columns>Order_Administrator__c</columns>
+        <columns>MROD_Approval_Status__c</columns>
+        <filterScope>Queue</filterScope>
+        <label>Program PPM RD Queue</label>
+        <queue>Program_PPM_RD_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Program_RD_Queue_PT_Program</fullName>
+        <columns>NAME</columns>
+        <columns>Sales_Opportunity__c</columns>
+        <columns>PT_Program_Type__c</columns>
+        <columns>PT_Sub_System_Type__c</columns>
+        <columns>Operator__c</columns>
+        <columns>PO_Provider__c</columns>
+        <columns>PM_RM_RD__c</columns>
+        <columns>Program_Administrator__c</columns>
+        <columns>Order_Administrator__c</columns>
+        <columns>MROD_Approval_Status__c</columns>
+        <filterScope>Queue</filterScope>
+        <label>Program RD Queue</label>
+        <queue>Program_RD_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Retrofit_Programs</fullName>
+        <columns>NAME</columns>
+        <columns>Sales_Opportunity__c</columns>
+        <columns>PT_Program_Type__c</columns>
+        <columns>Operator__c</columns>
+        <columns>PO_Provider__c</columns>
+        <columns>PM_RM_RD__c</columns>
+        <columns>Program_Administrator__c</columns>
+        <columns>Order_Administrator__c</columns>
+        <columns>MROD_Approval_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>PT_Program__c.Retrofit</value>
+        </filters>
+        <label>Retrofit Programs</label>
+    </listViews>
+    <nameField>
+        <label>Program</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Programs</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Inactive</fullName>
+        <active>true</active>
+        <label>Inactive</label>
+        <picklistValues>
+            <picklist>Airbus_MROD_Approval_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recalled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Aircraft_Identifier_Field__c</picklist>
+            <values>
+                <fullName>Block Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fleet Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Line Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Serial Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tail Number</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Certification_Requirement__c</picklist>
+            <values>
+                <fullName>EASA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FAA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MROD_Approval_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recalled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PMA_Requirement__c</picklist>
+            <values>
+                <fullName>C of C Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMA by specific OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMA on Any A%2FC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMA on base A%2FC Model</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMA on specific A%2FC Model</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PMO_Group__c</picklist>
+            <values>
+                <fullName>Americas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>China</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Middle East</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oceania</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PMO_Sub_Group__c</picklist>
+            <values>
+                <fullName>Asia 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia Major</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia Minor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia-VIP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hong Kong</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-Central Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-Eastern Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-Emirates Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-Etihad Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-Middle East</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-Qatar%2FGCS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-VIP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-Western Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Middle East 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NA4-VIP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North America 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North America 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oceania</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South America</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VIP Group</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PT_Special_Project__c</picklist>
+            <values>
+                <fullName>Monitor Upgrade Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Project</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ultra-Low Cost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VIP%2FVVIP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PT_Sub_System_Type__c</picklist>
+            <values>
+                <fullName>AUDIO%2FVIDEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AVOD 1%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AVOD 1%2E5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DAES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DIGITAL MPES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FLEETWIDE SW CR PROGRAM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MOBILITY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NEXT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3000i</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WIFI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eFX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eX1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eX2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eX2 FOR B787</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eX3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eXK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eXLite</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eXO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eXTV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eXW</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PT_isActive__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Program_Method__c</picklist>
+            <values>
+                <fullName>OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMO</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Program_Type__c</picklist>
+            <values>
+                <fullName>Combination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production-Airbus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production-Boeing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production-Bombardier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production-COMAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production-Embraer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production-Mitsubishi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retrofit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>STC_Applicant__c</picklist>
+            <values>
+                <fullName>%28AES%29 Astronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28BCAG%29 Boeing Comercial Aircraft Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28BCAS%29 Boeing Comercial Aircraft Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28BCAS%29 Boeing Comercial Aircraft Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GTI%29 GreenPoint Technologies Inc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28SRT%29 SR Technics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28ZNAT%29 Zodiac Nortwest Aerospace Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AAR Aircraft Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ACJC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AEROMOBILE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMECO Beijing- HARDWARE ONLY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aercocare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aeroconseil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aerodec</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Air Berlin Technic %28ABT%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Air France</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Airbus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Airbus Service Bulletin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>American Airlines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Armstrong</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Associated Air Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B%2FE Flight Structures %28FSI%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BOEING GS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BOMBARDIER AEROSPACE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DELTA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delta Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EASA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EGAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eirtech Aviation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Etihad Airways</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GORE DESIGN COMPLETIONS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Garuda Maintenance Facility</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HAECO%2FTIMCO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hawaiian Airlines %2F Southwest Aero Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Heath Techna</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InFlight Canada</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JAMCO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jet Aviation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>L-3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LHT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lufthansa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marshall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMV Engineerng</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PRESIDENTIAL-FAA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panasonic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qantas Airways</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rockwell Collins</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ST Aero</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sabena Technics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Singapore Technologies Aerospace LTD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TBD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TTF Aerospace</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Turkish Airlines Technic%2C Inc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United Airlines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United ODA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weber</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zodiac Nortwest Aerospace Technologies</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Production</fullName>
+        <active>true</active>
+        <label>Production</label>
+        <picklistValues>
+            <picklist>Airbus_MROD_Approval_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recalled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Aircraft_Identifier_Field__c</picklist>
+            <values>
+                <fullName>Block Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fleet Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Line Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Serial Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tail Number</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Certification_Requirement__c</picklist>
+            <values>
+                <fullName>EASA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FAA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MROD_Approval_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recalled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PMA_Requirement__c</picklist>
+            <values>
+                <fullName>C of C Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMA by specific OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMA on Any A%2FC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMA on base A%2FC Model</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMA on specific A%2FC Model</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PMO_Group__c</picklist>
+            <values>
+                <fullName>Americas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>China</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Middle East</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oceania</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PMO_Sub_Group__c</picklist>
+            <values>
+                <fullName>Asia 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia Major</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia Minor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia-VIP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hong Kong</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-Central Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-Eastern Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-Emirates Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-Etihad Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-Middle East</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-Qatar%2FGCS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-VIP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-Western Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Middle East 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NA4-VIP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North America 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North America 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oceania</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South America</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VIP Group</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PT_Special_Project__c</picklist>
+            <values>
+                <fullName>Monitor Upgrade Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Project</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ultra-Low Cost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VIP%2FVVIP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PT_Sub_System_Type__c</picklist>
+            <values>
+                <fullName>AUDIO%2FVIDEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AVOD 1%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AVOD 1%2E5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DAES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DIGITAL MPES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FLEETWIDE SW CR PROGRAM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MOBILITY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NEXT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3000i</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WIFI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eFX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eX1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eX2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eX2 FOR B787</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eX3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eXK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eXLite</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eXO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eXTV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eXW</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PT_isActive__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Program_Method__c</picklist>
+            <values>
+                <fullName>OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMO</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Program_Type__c</picklist>
+            <values>
+                <fullName>Combination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production-Airbus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production-Boeing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production-Bombardier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production-COMAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production-Embraer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production-Mitsubishi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retrofit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>STC_Applicant__c</picklist>
+            <values>
+                <fullName>%28AES%29 Astronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28BCAG%29 Boeing Comercial Aircraft Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28BCAS%29 Boeing Comercial Aircraft Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28BCAS%29 Boeing Comercial Aircraft Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GTI%29 GreenPoint Technologies Inc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28SRT%29 SR Technics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28ZNAT%29 Zodiac Nortwest Aerospace Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AAR Aircraft Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ACJC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AEROMOBILE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMECO Beijing- HARDWARE ONLY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aercocare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aeroconseil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aerodec</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Air Berlin Technic %28ABT%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Air France</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Airbus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Airbus Service Bulletin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>American Airlines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Armstrong</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Associated Air Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B%2FE Flight Structures %28FSI%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BOEING GS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BOMBARDIER AEROSPACE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DELTA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delta Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EASA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EGAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eirtech Aviation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Etihad Airways</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GORE DESIGN COMPLETIONS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Garuda Maintenance Facility</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HAECO%2FTIMCO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hawaiian Airlines %2F Southwest Aero Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Heath Techna</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InFlight Canada</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JAMCO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jet Aviation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>L-3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LHT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lufthansa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marshall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMV Engineerng</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PRESIDENTIAL-FAA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panasonic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qantas Airways</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rockwell Collins</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ST Aero</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sabena Technics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Singapore Technologies Aerospace LTD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TBD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TTF Aerospace</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Turkish Airlines Technic%2C Inc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United Airlines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United ODA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weber</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zodiac Nortwest Aerospace Technologies</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Retrofit</fullName>
+        <active>true</active>
+        <label>Retrofit</label>
+        <picklistValues>
+            <picklist>Airbus_MROD_Approval_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recalled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Aircraft_Identifier_Field__c</picklist>
+            <values>
+                <fullName>Block Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fleet Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Line Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Serial Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tail Number</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Certification_Requirement__c</picklist>
+            <values>
+                <fullName>EASA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FAA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>MROD_Approval_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recalled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PMA_Requirement__c</picklist>
+            <values>
+                <fullName>C of C Only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMA by specific OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMA on Any A%2FC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMA on base A%2FC Model</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMA on specific A%2FC Model</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PMO_Group__c</picklist>
+            <values>
+                <fullName>Americas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>China</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Middle East</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oceania</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PMO_Sub_Group__c</picklist>
+            <values>
+                <fullName>Asia 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia Major</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia Minor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Asia-VIP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Europe 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hong Kong</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-Central Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-Eastern Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-Emirates Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-Etihad Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-Middle East</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-Qatar%2FGCS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-VIP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME-Western Region</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Middle East 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NA4-VIP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North America 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North America 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oceania</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South America</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VIP Group</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PT_Special_Project__c</picklist>
+            <values>
+                <fullName>Monitor Upgrade Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Special Project</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ultra-Low Cost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VIP%2FVVIP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PT_Sub_System_Type__c</picklist>
+            <values>
+                <fullName>AUDIO%2FVIDEO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AVOD 1%2E0</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AVOD 1%2E5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DAES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DIGITAL MPES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FLEETWIDE SW CR PROGRAM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MOBILITY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NEXT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3000</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>S3000i</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>WIFI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eFX</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eX1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eX2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eX2 FOR B787</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eX3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eXK</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eXLite</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eXO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eXTV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eXW</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PT_isActive__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Program_Method__c</picklist>
+            <values>
+                <fullName>OEM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMO</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Program_Type__c</picklist>
+            <values>
+                <fullName>Combination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production-Airbus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production-Boeing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production-Bombardier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production-COMAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production-Embraer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Production-Mitsubishi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retrofit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>STC_Applicant__c</picklist>
+            <values>
+                <fullName>%28AES%29 Astronics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28BCAG%29 Boeing Comercial Aircraft Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28BCAS%29 Boeing Comercial Aircraft Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28BCAS%29 Boeing Comercial Aircraft Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28GTI%29 GreenPoint Technologies Inc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28SRT%29 SR Technics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>%28ZNAT%29 Zodiac Nortwest Aerospace Technologies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AAR Aircraft Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ACJC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AEC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AEROMOBILE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMAC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>AMECO Beijing- HARDWARE ONLY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aercocare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aeroconseil</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Aerodec</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Air Berlin Technic %28ABT%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Air France</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Airbus</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Airbus Service Bulletin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>American Airlines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Armstrong</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Associated Air Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B%2FE Flight Structures %28FSI%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BOEING GS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BOMBARDIER AEROSPACE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DELTA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delta Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EASA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EGAT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Eirtech Aviation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Etihad Airways</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GORE DESIGN COMPLETIONS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Garuda Maintenance Facility</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HAECO%2FTIMCO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hawaiian Airlines %2F Southwest Aero Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Heath Techna</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>InFlight Canada</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>JAMCO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jet Aviation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>L-3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LHT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lufthansa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marshall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PMV Engineerng</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PRESIDENTIAL-FAA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panasonic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Qantas Airways</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rockwell Collins</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ST Aero</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sabena Technics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Singapore Technologies Aerospace LTD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TBD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TTF Aerospace</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Turkish Airlines Technic%2C Inc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United Airlines</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United ODA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weber</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zodiac Nortwest Aerospace Technologies</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Sales_Opportunity__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PT_Program_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Operator__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PO_Provider__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PM_RM_RD__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Program_Administrator__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Order_Administrator__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>MROD_Approval_Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Cannot_update_Program_Name</fullName>
+        <active>true</active>
+        <errorConditionFormula>Name != Program_Number__c &amp;&amp; NOT(ISBLANK(Program_Number__c))</errorConditionFormula>
+        <errorDisplayField>Name</errorDisplayField>
+        <errorMessage>Program name cannot be edited or different from program number.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_update_Program_Name_Inactive_Rec</fullName>
+        <active>true</active>
+        <errorConditionFormula>RecordType.DeveloperName = &quot;Inactive&quot; &amp;&amp; 
+(ISCHANGED(Name) || ISCHANGED(Program_Number__c))</errorConditionFormula>
+        <errorMessage>You can not modify program record when its inactive.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Generatea5m21000000XIAHAA4</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Generate CPL</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>{!URLFOR($Site.Prefix +&#39;/apex/dfsle__gendocumentgenerator&#39;, null, [sId = PT_Program__c.Id, templateId = &#39;a5m21000000XIAHAA4&#39;, recordId = PT_Program__c.Id, title = &#39;Generate CPL&#39;])}</url>
+    </webLinks>
+</CustomObject>

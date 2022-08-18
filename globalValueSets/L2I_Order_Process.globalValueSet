@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Contract Management</fullName>
+        <default>false</default>
+        <label>Contract Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Shadow</fullName>
+        <default>false</default>
+        <label>Shadow</label>
+    </customValue>
+    <customValue>
+        <fullName>Program Table</fullName>
+        <default>false</default>
+        <label>Program Table</label>
+    </customValue>
+    <customValue>
+        <fullName>Advertising Brand</fullName>
+        <default>false</default>
+        <label>Advertising Brand</label>
+    </customValue>
+    <masterLabel>Order Process</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

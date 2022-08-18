@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AFP</fullName>
+        <default>false</default>
+        <label>AFP</label>
+    </customValue>
+    <customValue>
+        <fullName>Betria</fullName>
+        <default>false</default>
+        <label>Betria</label>
+    </customValue>
+    <customValue>
+        <fullName>Kanai</fullName>
+        <default>false</default>
+        <label>Kanai</label>
+    </customValue>
+    <customValue>
+        <fullName>Mercury</fullName>
+        <default>false</default>
+        <label>Mercury</label>
+    </customValue>
+    <customValue>
+        <fullName>Roberta</fullName>
+        <default>false</default>
+        <label>Roberta</label>
+    </customValue>
+    <customValue>
+        <fullName>Rockwell</fullName>
+        <default>false</default>
+        <label>Rockwell</label>
+    </customValue>
+    <masterLabel>Vendor</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

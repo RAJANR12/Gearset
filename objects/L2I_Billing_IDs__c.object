@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Billable_Product_Rule_100_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Billable Product Rule 100 ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billable_Product_Rule_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Billable Product Rule ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billable_Product_Rule_Quarterly_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Billable Product Rule Quarterly ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billable_Product_Rule_Semi_Annual_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Billable Product Rule Semi-Annual ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billable_Product_Rule_Tri_Annual_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Billable Product Rule Tri-Annual ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billable_Product_Treatment_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Billable Product Treatment_ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quarterly_Treatment_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Quarterly Treatment ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Semi_Annual_Treatment_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Semi-Annual Treatment ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TB_Product_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>TB Product ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tri_Annual_Treatment_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Tri-Annual Treatment ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X100_on_Activation_Treatment_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>100 on Activation Treatment ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>L2I Billing IDs</label>
+    <visibility>Public</visibility>
+</CustomObject>

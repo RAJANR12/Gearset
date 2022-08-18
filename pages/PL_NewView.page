@@ -1,0 +1,297 @@
+<apex:page sidebar="false" applyHtmlTag="false" standardController="L2I_P_L_Approval__c" extensions="PL_newViewController"  showHeader="false"  standardStylesheets="false" docType="html-5.0">
+    
+    <head>
+        <style type='text/css'>
+            table.test { border-collapse: collapse; }
+            table.test td { border-bottom: 1px solid black; }
+            
+            .mystyle{
+                transform: rotate(270deg);
+                width: 35px;
+                height: 13px;
+            }
+        </style>
+
+    </head>
+    <Div style="font-family:Sans-Serif">
+        <!-- previous header background 9d8e4 --> 
+     <Div style="font-size: 14px;background-color: #cce6ff;margin: 1%;margin-top: 2%;line-height: 1;padding: 1%;">
+        <b style="font-size: 21px;">Panasonic</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ONE PAC PROGRAM PROFITABILITY PROJECTION -- Previously Calculated Data -- {!Plapproval.L2I_Approval_Deal_Opportunity__r.L2I_Oppt_Region__c}
+
+        <apex:form >
+            <div style="float:right; margin-top:-1.5%">
+                <apex:commandButton action="{!ViewCalculate}"  value="Calculate Page" id="btnOpen" rendered="{!renderCalculateButton}"/>
+                <!--<apex:commandButton action="{!ViewPDF}"  value="Open PDF" id="btnOpenPDF" /> -->
+
+                <apex:commandButton action="{!URLFOR($Action.L2I_P_L_Approval__c.View, Plapproval.Id)}"   value="Close" id="btnCancel"  style="margin: 10px;"/>
+                <apex:commandButton onclick="window.print();" value="Generate PDF" id="btnPdf"/>
+                <apex:commandButton action="{!GenerateExcel}" value="Generate Excel" id="btnXls" style="margin-left: 10px"/>
+            </div>
+        </apex:form>    
+    </Div>
+     <table border="1" cellpadding = "0.2" cellspacing = "0.2"  style="margin: 1%;" width="98%">
+    
+      
+        <tr>
+        
+            <td style="width:10%;"><b>P&amp;C360 P&amp;L Version</b></td>
+            <td style="width:13%;"><b>: </b> {!header.Pl_Version__c}</td>
+            <td style="width:10%;"><b>Date&nbsp;&nbsp;</b></td>
+            <td style="width:13%;"><b>: </b>{!todaydate}</td>
+            <td style="width:9%;"><b>Average Seat Count </b></td>
+            <td style="width:13%;"><b>: </b>{!header.Ave_Hard_Rate_TotalSC__c}</td> 
+            
+        </tr>
+        <tr>
+            <td style="width:10%;"><b>P&amp;L Approval &nbsp; </b></td>
+            <td style="width:13%;"><b>: </b>
+            <apex:outputLink value="{!URLFOR($Action.L2I_P_L_Approval__c.View, Plapproval.Id)}">
+                {!header.Name}
+            </apex:outputLink>
+            </td>
+            <td style="width:10%;"><b>Buyer/Airline&nbsp;&nbsp; </b></td>
+            <td style="width:13%;"><b>: </b>{!header.Account_Name__c}</td>
+            <td style="width:10%;"><b>One PAC Profit % Pretax </b></td>
+            <td style="width:13%;"><b>: </b>{!header.Program_PBT_Percent__c}%</td>
+        </tr>
+        <tr>
+            <td style="width:10%;"><b>P&amp;L Approval Date &nbsp; </b></td>
+            <td style="width:13%;"><b>: </b>
+            <apex:outputText value=" {0,date,MM/dd/yyy}">  
+                        <apex:param value="{!PlApproval.Last_Approved_Date__c }"/>  
+            </apex:outputText>
+            </td>
+            <td style="width:10%;"><b>Payment Terms&nbsp;&nbsp; </b></td>
+            <td style="width:13%;"><b>: </b>{!header.Payment_Terms__c}</td>
+            <td style="width:10%;"><b>One PAC Profit % After Tax  </b></td>
+            <td style="width:13%;"><b>: </b>{!header.program_PAT_Percent__c}%</td>
+        </tr>
+        <tr>
+            <td style="width:10%;"><b>P&amp;L Approval Status &nbsp; </b></td>
+            <td style="width:13%;"><b>: </b>{!PlApproval.ApprovalStatus__c}</td>
+            <td style="width:10%;"><b>Account Manager </b></td>
+            <td style="width:13%;"><b>: </b>{!header.Owner_Name__c}  </td>
+            <td style="width:10%;"><b>Payback in Years Pretax </b></td>
+            <td style="width:13%;"><b>: </b></td>          
+        </tr>
+        <tr>
+            <td style="width:10%;"><b>P&amp;L Revision Status &nbsp; </b></td>
+            <td style="width:13%;"><b>: </b>{!header.Revision_Status__c}</td>
+            <td style="width:10%;"><b></b></td>
+            <td style="width:13%;"><b> </b></td>
+            <td style="width:10%;"><b>Payback in Years After Tax </b></td>
+            <td style="width:13%;"><b>: </b></td>          
+        </tr>
+        
+        
+    </table>
+    
+   <table border="1" cellpadding = "0.2" cellspacing = "0.2"  style="margin: 1%;position: relative;top: -14px" width="98%">     
+        <tr>
+            <td style="width:3.40%;"><b>P&amp;L Notes </b></td>
+            <td style="width:20%;"><b> </b>{!header.Notes__c}</td>
+        </tr>
+    </table>
+    
+    
+    
+    <!--Salesforce opportunity data-->
+    
+    <p style="margin: 1%;"><b> Sales Opportunties</b> </p>
+    <table border="1"  cellspacing = "0.2" style="margin: 1%;">
+        <tr>
+            <th style="width: 20%; background-color:#e6f3f7;">Description</th>
+            <th style="width: 8%; background-color:#e6f3f7;">Quote Number</th>
+            <th style="width: 8%; background-color:#e6f3f7;">Aircraft Type</th>
+            <th style="width: 8%; background-color:#e6f3f7;">Firm Direct Buy Aircraft Quantity</th>
+            <th style="width: 8%; background-color:#e6f3f7;">Firm Leased Aircraft Quantity</th>
+            <th style="width: 8%; background-color:#e6f3f7;">Optional Aircraft Quantity</th>
+            <th style="width: 8%; background-color:#e6f3f7;">Production or Retrofit</th>
+            <th style="width: 8%; background-color:#e6f3f7;">Delivery Start Date</th>
+            <th style="width: 8%; background-color:#e6f3f7;">Delivery End Date</th>
+            <th style="width: 8%; background-color:#e6f3f7;">Seats per Aircraft</th>
+            <th style="width: 8%; background-color:#e6f3f7;">Initial Proposal Date</th>
+            <th style="width: 8%; background-color:#e6f3f7;">Warranty Duration</th>
+            
+        </tr>
+        <apex:repeat id="opps" value="{!opportunityList}" var="opps"> 
+            <tr>
+                <tr>
+                    <td style="width:10%;background-color:#e6e7e4;">{!opps.name}</td>
+                    <td style="width:10%;background-color:#e6e7e4;"><apex:outputLink value="{!URLFOR($Action.SBQQ__Quote__c.View, opps.PL_Quote__c)}"> {!opps.PL_Quote__r.Name} </apex:outputLink></td>
+                    <td style="width:10%;background-color:#e6e7e4;">{!opps.Aircraft_Type__c}</td>
+                    <td style="width:10%;text-align:right;background-color:#e6e7e4;">{!opps.Direct_Buy_Quantity__c}</td> 
+                    <td style="width:10%;text-align:right;background-color:#e6e7e4;">{!opps.Leased_Aircraft_Quantity__c}</td>
+                    <td style="width:10%;text-align:right;background-color:#e6e7e4;">{!opps.Optional_Aircraft_Quantity__c}</td>
+                    <td style="width:10%;background-color:#e6e7e4;">{!opps.Production_Retrofit__c }</td> 
+                    <td style="width:10%;text-align:right;background-color:#e6e7e4;">
+                        <apex:outputText value="{0,date,MM/dd/yyy}">  
+                            <apex:param value="{!opps.Delivery_Start_Date__c}"/>  
+                        </apex:outputText> </td> 
+                    <td style="width:10%;background-color:#e6e7e4;text-align:right;">
+                        <apex:outputText value=" {0,date,MM/dd/yyy}">  
+                            <apex:param value="{!opps.Delivery_End_Date__c}"/>  
+                        </apex:outputText>
+                    
+                     </td> 
+                    <td style="width:10%;text-align:right;background-color:#e6e7e4;">{!opps.Seats_per_Aircraft__c} </td>
+                    <td style="width:10%;text-align:right;background-color:#e6e7e4;">
+                        <apex:outputText value=" {0,date,MM/dd/yyy}">
+                            <apex:param value="{!opps.Initial_Proposal_Date__c}"/> 
+                        </apex:outputText> </td>
+                        <td style="width:10%;text-align:right;background-color:#e6e7e4;">{!opps.Warranty_Duration__c} </td>
+       
+                </tr>
+   
+            </tr>
+        </apex:repeat>
+    </table>
+    
+  
+    
+    
+    <p style="margin: 1%;"> <b>Shipset Data</b> </p>
+    <!--<p style="margin: 1%;"> <b>Calculated Chipset Discounts </b></p>-->
+     <table border="1" cellpadding = "0.2" cellspacing = "0.2" style="margin: 1%;">
+        <!-- <tr>
+            <th style="width:20%; background-color:#e6f3f7;">Calculated Chipset Discounts</th>
+         </tr>-->
+         <tr>
+           <apex:repeat id="Discount0" value="{!ProductShipsetList0}" var="obj1"> 
+              <tr style="{!obj1.Row_Color_Code__c}">
+                <td style="width:15%;"><apex:outputLabel escape="false" value="{!obj1.Name}"> </apex:outputLabel></td>
+                <td style="width:8%; text-align:right;">{!obj1.Gross_Sales0__c}</td>
+                <td style="width:8%; text-align:right;">{!obj1.Shipset_Discount1__c}</td>
+                <td style="width:8%; text-align:right;">{!obj1.Other_Credits2__c}</td>
+                <td style="width:8%; text-align:right;">{!obj1.Total_Reduction3__c}</td>
+                <td style="width:8%; text-align:right;">{!obj1.Net_Sales4__c}</td>
+                <td style="width:8%; text-align:right;">{!obj1.Cost_Sales_per_Shipset5__c}</td>
+                <td style="width:8%; text-align:right;">{!obj1.Gross_Margin6__c}</td>
+                <td style="width:8%; text-align:right;"></td>
+                <td style="width:8%; text-align:right;"></td>
+                <td style="width:8%; text-align:right;"></td>              
+            </tr>
+           
+           </apex:repeat>
+         </tr> 
+        <tr>
+            <th style="width:15%; background-color:#e6f3f7;">Product Summary</th>
+            <th style="width:8%; background-color:#e6f3f7;">Gross Sales per S/S</th>
+            <th style="width:8%; background-color:#e6f3f7;">Discount to be applied to Shipset</th>
+            <th style="width:8%; background-color:#e6f3f7;">Other Shipset Level Discounts or Credits*</th>
+            <th style="width:8%; background-color:#e6f3f7;">Total Reduction of Gross Sales</th>
+            <th style="width:8%; background-color:#e6f3f7;">Net Sales per Shipset to Customer</th>
+            <th style="width:8%; background-color:#e6f3f7;">Cost of Sales per Shipset</th>
+            <th style="width:8%; background-color:#e6f3f7;">Gross Margin per Shipset</th>
+            <th style="width:8%; background-color:#e6f3f7;">GM % per Shipset</th>
+            <th style="width:8%; background-color:#e6f3f7;">Shipset Category Net PRICE per Seat</th>
+            <th style="width:8%; background-color:#e6f3f7;">Shipset COST per Seat</th>
+        </tr>
+        <apex:repeat id="Discount" value="{!ProductShipsetList}" var="obj"> 
+            <tr style="{!obj.Row_Color_Code__c}">
+                <td style="width:15%;"><apex:outputLabel escape="false" value="{!obj.Name}"> </apex:outputLabel></td>
+                <td style="width:8%; text-align:right;">{!obj.Gross_Sales0__c}</td>
+                <td style="width:8%; text-align:right;">{!obj.Shipset_Discount1__c}</td>
+                <td style="width:8%; text-align:right;">{!obj.Other_Credits2__c}</td>
+                <td style="width:8%; text-align:right;">{!obj.Total_Reduction3__c}</td>
+                <td style="width:8%; text-align:right;">{!obj.Net_Sales4__c}</td>
+                <td style="width:8%; text-align:right;">{!obj.Cost_Sales_per_Shipset5__c}</td>
+                <td style="width:8%; text-align:right;">{!obj.Gross_Margin6__c}</td>
+                <td style="width:8%; text-align:right;">{!obj.GM_Percentage7__c}</td>
+                <td style="width:8%; text-align:right;">{!obj.Category_Net_Price8__c}</td>
+                <td style="width:8%; text-align:right;">{!obj.Cost_per_Seat9__c}</td>
+                
+            </tr>          
+        </apex:repeat>
+        
+      
+    </table>
+    
+    <table border="1" cellpadding = "0.2" styleclass = "height:40%" cellspacing = "0.2" style="margin: 1%;">
+        <tr>
+            <th colspan="2" style="width:20%; background-color:#e6f3f7; height: 100px;">CONSOLIDATED</th>
+            <th rowspan="2" width="8%" style="{!headerColor[0]}">{!headerName[0]}</th>
+            <th rowspan="2" width="8%" style="{!headerColor[1]}">{!headerName[1]}</th>
+            <th rowspan="2" width="8%" style="{!headerColor[2]}">{!headerName[2]} </th>
+            <th rowspan="2" width="8%" style="{!headerColor[3]}">{!headerName[3]}</th>
+            <th rowspan="2" width="8%" style="{!headerColor[4]}">{!headerName[4]}</th>
+            <th rowspan="2" width="8%" style="{!headerColor[5]}">{!headerName[5]}</th>
+            <th rowspan="2" width="8%" style="{!headerColor[6]}">{!headerName[6]}</th>
+            <th rowspan="2" width="8%" style="{!headerColor[7]}">{!headerName[7]}</th>
+            <th rowspan="2" width="8%" style="{!headerColor[8]}">{!headerName[8]}</th>
+            <th rowspan="2" width="8%" style="{!headerColor[9]}">{!headerName[9]}</th>
+        </tr>
+        <tr>
+            <!--<th colspan="2" style="width:32%; background-color:#e6f3f7;">Mixed (2 Cbfg)</th>-->
+            
+        </tr>
+        <apex:repeat id="CONSOLIDATED" value="{!newWrapperConsolidateList}" var="obj"> 
+            <tr style="{!obj.RowColorCode}"> 
+            
+              <apex:outputPanel Style="width: 150px;heightlst: 10px;" rendered="{!obj.isColDisplay}" >   
+                  <!--{!obj.lstGNRowCss}--> 
+                    
+                    <td rowspan="{!obj.RowSpanCount}" style="width:1%; vertical-align: sub; background-color:#778899 ;height: 225px;" >
+                      
+                        <apex:repeat id="nameLst" value="{!obj.lstGN}" var="gn"> 
+                            <div class="mystyle">
+                            {!gn}              
+                        </div>
+                        </apex:repeat>
+                        
+                       <!-- <div class="mystyle">
+                        {!obj.GroupName}
+                        </div> --> 
+                  </td>           
+                </apex:outputPanel>
+
+               
+                <td width="12%;">{!obj.Name}</td>
+                <td width="8%;" style="text-align:right;">{!obj.IFEHardware}</td>
+                <td width="8%;" style="text-align:right;">{!obj.IFEServices}</td>
+                <td width="8%;" style="text-align:right;">{!obj.IFESubTotal}</td>
+                <td width="8%;" style="text-align:right;">{!obj.IFCHardware}</td>
+                <td width="8%;" style="text-align:right;">{!obj.IFCServices}</td>
+                <td width="8%;" style="text-align:right;">{!obj.IFCSubTotal}</td>
+                <td width="8%;" style="text-align:right;">{!obj.DSS}</td>
+                <td width="8%;" style="text-align:right;">{!obj.PTS}</td>
+                <td width="8%;" style="text-align:right;">{!obj.TotalProgram}</td>
+                <td width="8%;" style="text-align:right;">{!obj.NetSales}</td>
+
+            </tr>
+        </apex:repeat>
+    </table>
+    
+    <table border="1" cellpadding = "0.2" cellspacing = "0.2"  style="margin: 1%;">
+        <tr>
+            <th style="width:10%; background-color:#e6f3f7;">PRODUCTS &amp; SERVICES</th>
+            <th style="width:5%; background-color:#e6f3f7;">Gross Sales</th>
+            <th style="width:5%; background-color:#e6f3f7;">Discount Amount</th>
+            <th style="width:5%; background-color:#e6f3f7;">Other Credits Amount</th>
+            <th style="width:5%; background-color:#e6f3f7;">Reduction in Gross Sales</th>
+            <th style="width:5%; background-color:#e6f3f7;">Net Sales  to Customer</th>
+            <th style="width:5%; background-color:#e6f3f7;">Total Cost</th>
+            <th style="width:5%; background-color:#e6f3f7;">Gross Margin</th>
+            <th style="width:5%; background-color:#e6f3f7;">Gross Margin %</th>
+            <!--<th style="width:8%; background-color:#e6f3f7;">Minimum Gross Margin % Required</th>
+            <th style="width:8%; background-color:#e6f3f7;">PMO Install Code</th>-->
+            
+        </tr>
+        <apex:repeat id="ProductServices" value="{!ProductServicesList}" var="obj"> 
+            <tr style="{!obj.Row_Color_Code__c}">
+                <td style="width:10%;">{!obj.Name}</td>
+                <td style="width:5%; text-align:right;">{!obj.Gross_Sales__c}</td>
+                <td style="width:5%; text-align:right;">{!obj.Percent_Discount__c}</td>
+                <td style="width:5%; text-align:right;">{!obj.Other_Credits_Amount__c}</td>
+                <td style="width:5%; text-align:right;">{!obj.Reduction_Gross_Sales__c}</td>
+                <td style="width:5%; text-align:right;">{!obj.Net_Sales_Customer__c}</td>
+                <td style="width:5%; text-align:right;">{!obj.Total_Cost__c}</td>
+                <td style="width:5%; text-align:right;">{!obj.Gross_Margin__c}</td>
+                <td style="width:5%; text-align:right;">{!obj.Gross_Margin_Percentage__c}</td>
+                <!--<td style="width:8%;"></td>
+                <td style="width:8%;"></td>-->              
+            </tr>
+         </apex:repeat>
+        </table>
+    </Div>  
+</apex:page>

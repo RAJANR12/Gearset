@@ -1,0 +1,32 @@
+<apex:page standardController="Case" showHeader="false" sidebar="false" title="Program Grids">
+	<GBLite:TabbedPageComponent pageAPIName="GBTabs_Case_Parts_Tabbed_Page" customJsIds="" customCssIds="">
+	<GBLite:EmbedComponent baseGridUrl="{!$Page.GBLite__Grid}" />
+		<script>
+			var pageDefinition = {
+	"name": "Program Grids",
+	"tabs": [
+		{
+			"id": 1602191122915,
+			"content": "{!gridPage}gname=Available Parts&amp;sh=0&amp;sfname=default&amp;fpf=Asset.PT_Program__c&amp;fpv={!Case.PT_Program_Id__c}&amp;caseId={!Case.Id}",
+			"name": "Available Parts"
+		},
+		{
+			"id": 1604611357954,
+			"content": "{!gridPage}gname=Related Parts&amp;sh=0&amp;sfname=default&amp;fpf=Asset.PT_Case__c&amp;fpv={!Case.Id}",
+			"name": "Related Parts"
+		}
+	],
+	"id": 1602187519185,
+	"selectedCustomCSSIds": [],
+	"selectedCustomJSIds": [],
+	"description": "",
+	"globalButtons": true,
+	"object": "Case",
+	"height": "",
+	"showHeader": false,
+	"showSidebar": false,
+	"pageAPIName": "GBTabs_Case_Parts_Tabbed_Page"
+};
+		</script>
+	</GBLite:TabbedPageComponent>
+</apex:page>

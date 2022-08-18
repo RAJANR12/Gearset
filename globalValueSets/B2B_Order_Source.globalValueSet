@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Oracle</fullName>
+        <default>false</default>
+        <label>Oracle</label>
+    </customValue>
+    <customValue>
+        <fullName>RAMCO</fullName>
+        <default>false</default>
+        <label>RAMCO</label>
+    </customValue>
+    <masterLabel>B2B Order Source</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

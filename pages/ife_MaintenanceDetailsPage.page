@@ -1,0 +1,716 @@
+<apex:page controller="ife_MaintenanceDetailsController" applyBodyTag="false" showHeader="false" sidebar="false" action="{!getMaintenanceDetails}">
+
+    <head>
+        <style>
+            .row {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .block {
+
+                float: left;
+            }
+
+            h1 {
+                font-size: 29px;
+
+            }
+
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+
+            }
+
+            td,
+            th {
+                border: 1px solid black;
+                text-align: left;
+                padding: 8px;
+            }
+        </style>
+        <style>
+            h6 {
+                text-decoration: Underline;
+                color: Blue;
+            }
+
+            heading6 {}
+
+            .tab {
+                width: 100%;
+                border: 1px solid black;
+                border-spacing: 5px;
+                border-width: 1px solid black;
+                padding: 5px;
+            }
+
+            .row {
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+
+            }
+
+            .coloumn {
+                float: left;
+                width: auto;
+            }
+
+            #heading1 {
+                color: blue;
+            }
+
+            #heading2,
+            h5,
+            hr {
+                color: gray;
+            }
+        </style>
+    </head>
+    <div style="margin-right: 10px; margin-left:10px;">
+        <div class="row">
+            <div class="block" style="width: 100%;">
+                <h1 id="heading1">Panasonic Avionics Corporation</h1>
+                <br/>
+                <h1 id="heading2">Maintenance Services</h1>
+                <br/>
+                <br/>
+                <apex:repeat value="{!dataWapperObj.PerfFmrDetail}" var="data">
+                    <div class="row">
+                        <div id="heading1" class="block" style="width: 15% ">FMR Number:</div>
+                        <div class="block" style="width: 80% ">{!data.fmr_id}</div>
+                        <div id="heading1" class="block" style="width: 15% ">Line Station:</div>
+                        <div class="block" style="width: 80% "> {!data.fmr_station}</div>
+                        <div id="heading1" class="block" style="width: 15% ">Customer:</div>
+                        <div class="block" style="width: 80% "> {!data.airline}</div>
+                        <div id="heading1" class="block" style="width: 15% ">Tail Number:</div>
+                        <div class="block" style="width: 80% "> {!data.fmr_tail_no}</div>
+                    </div>
+                    <br/>
+                    <br/>
+                    <h5>FMR Header</h5>
+                    <br/>
+                    <br/>
+                    <div class="block" style="width: 45% ">
+                        <spa id="heading1">Arrival Data</spa>
+                        <br/>
+                        <br/>
+                        <div style="width: 99%; border-bottom: groove;"></div>
+                        <br/>
+                        <div class="row">
+                            <div id="heading2" class="block" style="width: 15% ">Flight #:</div>
+                            <div class="block" style="width: 80% ">{!data.fmr_flight_no_in}</div>
+                            <div id="heading2" class="block" style="width: 15% ">From:</div>
+                            <div class="block" style="width: 80% ">{!data.arr_from}</div>
+                            <div id="heading2" class="block" style="width: 15% ">Scheduled:</div>
+                            <div class="block" style="width: 80% "> {!data.fmr_schd_arrvd}</div>
+                            <div id="heading2" class="block" style="width: 15% ">Actual:</div>
+                            <div class="block" style="width: 80% "> {!data.fmr_actl_arrvd}</div>
+
+                        </div>
+                    </div>
+
+                    <div class="block" style="width: 9%; border-bottom: none"></div>
+                    <div style="width: 45%; float: right;">
+                        <spa id="heading1">Departure Data</spa>
+                        <br/>
+                        <br/>
+                        <div class="block" style="width: 99%; border-bottom: groove;"></div>
+                        <br/>
+                        <div class="row">
+                            <div id="heading2" class="block" style="width: 15% ">Flight #:</div>
+                            <div class="block" style="width: 80% "> {!data.fmr_flight_no_out}</div>
+                            <div id="heading2" class="block" style="width: 15% ">To:</div>
+                            <div class="block" style="width: 80% "> {!data.fmr_dept_to}</div>
+                            <div id="heading2" class="block" style="width: 15% ">Scheduled:</div>
+                            <div class="block" style="width: 80% "> {!data.fmr_schd_dept}</div>
+                            <div id="heading2" class="block" style="width: 15% ">Actual:</div>
+                            <div class="block" style="width: 80% "> {!data.fmr_actl_dept}</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="row">
+                        <br/>
+                        <br/>
+
+                        <div class="block" style="width: 45% ">
+                            <spa id="heading1">Turn Data</spa>
+                            <br/>
+                            <br/>
+                            <div style="width: 100%; border-bottom: groove;"></div>
+                            <br/>
+                            <div class="row">
+                                <div id="heading2" class="block" style="width: 15% ">Avail Period:</div>
+                                <div class="block" style="width: 80% "> {!data.fmr_qmp}</div>
+                                <div id="heading2" class="block" style="width: 15% ">Turn Type:</div>
+                                <div class="block" style="width: 80% "> {!data.sweep}</div>
+                                <div id="heading2" class="block" style="width: 15% ">BITE Run:</div>
+                                <div class="block" style="width: 80% "> {!data.bite}</div>
+                                <div id="heading2" class="block" style="width: 15% ">MSR:</div>
+                                <div class="block" style="width: 80% "> {!data.msr}</div>
+                                <div id="heading2" class="block" style="width: 15% ">FA Name:</div>
+                                <div class="block" style="width: 80% "> -----</div>
+                                <div id="heading2" class="block" style="width: 15% ">Comments:</div>
+                                <div class="block" style="width: 80% "> -----</div>
+                                <div id="heading2" class="block" style="width: 15% ">FA Training?:</div>
+                                <div class="block" style="width: 80% "> -----</div>
+
+                            </div>
+                        </div>
+
+                        <div class="block" style="width: 9%; border-bottom: none"></div>
+                        <div style="width: 45%; float: right;">
+                            <spa id="heading1">Additional Flight Information</spa>
+                            <br/>
+                            <br/>
+                            <div class="block" style="width: 99%; border-bottom: groove;"></div>
+                            <br/>
+                            <div class="row">
+                                <div id="heading2" class="block" style="width: 15% ">Flight #:</div>
+                                <div class="block" style="width: 80% "> -----</div>
+                                <div id="heading2" class="block" style="width: 15% ">sin:</div>
+                                <div class="block" style="width: 80% "> -----</div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <br/>
+                        <br/>
+                        <spa id="heading1">FMR UDFs</spa>
+                        <br/>
+                        <br/>
+                        <div class="block" style="width: 100%; border-bottom: groove;"></div>
+                        <br/>
+                        <br/>
+                        <table>
+                            <tr>
+                                <th style="width: 10%">UDF#</th>
+                                <th style="width: 20%"> Tag</th>
+                                <th style="width: 35%">Description</th>
+                                <th style="width: 35%">Value</th>
+                            </tr>
+                            <apex:repeat value="{!data.FmrUdfRecs.PerfFmrUdfRecs}" var="rec">
+                                <tr>
+                                    <td> {!rec.udf_seq}</td>
+                                    <td>{!rec.udf_tag}</td>
+                                    <td> {!rec.udf_desc} </td>
+                                    <td> {!rec.udf_text}</td>
+                                </tr>
+                            </apex:repeat>
+
+                        </table>
+                    </div>
+                    <div class="row">
+                        <br/>
+                        <br/>
+                        <spa id="heading2">Defects</spa>
+                        <apex:repeat value="{!data.Defects}" var="DefectsData">
+                            <apex:repeat value="{!DefectsData.PerfDefects}" var="rec">
+
+                                <div class="block" style="width: 100%; ">
+                                    <br/>
+                                    <br/>
+                                    <spa id="heading1">Defect Type: {!rec.defecttype}</spa>
+                                </div>
+                                <br/>
+                                <br/>
+                                <div class="block" style="width: 100%; border-bottom: groove;"></div>
+                                <br/>
+                                <br/>
+                                <div class="block" style="width: 30%;">
+                                    <div class="block" style="width: 30%;">
+                                        Station:
+                                    </div>
+                                    <div class="block" style="width: 70%;">
+                                        <apex:outputText value="{! IF((rec.defectstation == null), 'N/A', rec.defectstation) }" />
+                                    </div>
+                                    <div class="block" style="width: 30%;">
+                                        Origination:
+                                    </div>
+                                    <div class="block" style="width: 70%;">
+                                        <apex:outputText value="{! IF((rec.afffunc == null), 'N/A', rec.afffunc) }" />
+                                    </div>
+                                    <div class="block" style="width: 30%;">
+                                        Log Page:
+                                    </div>
+                                    <div class="block" style="width: 70%;">
+                                        <apex:outputText value="{! IF((rec.logpage == null), 'N/A', rec.logpage) }" />
+                                    </div>
+                                    <div class="block" style="width: 30%;">
+                                        Log Item:
+                                    </div>
+                                    <div class="block" style="width: 70%;">
+                                        <apex:outputText value="{! IF((rec.logitem == null), 'N/A', rec.logitem) }" />
+                                    </div>
+
+                                </div>
+                                <div class="block" style="width: 30%;">
+                                    <div class="block" style="width: 30%;">
+                                        Status:
+                                    </div>
+                                    <div class="block" style="width: 70%;">
+                                        <apex:outputText value="{! IF((rec.status == null), 'N/A', rec.status) }" />
+                                    </div>
+                                    <div class="block" style="width: 30%;">
+                                        Deferral Number:
+                                    </div>
+                                    <div class="block" style="width: 70%;">
+                                        <apex:outputText value="{! IF((rec.defnum == null), 'N/A', rec.defnum) }" />
+                                    </div>
+                                    <div class="block" style="width: 30%;">
+                                        Deferral Reason:
+                                    </div>
+                                    <div class="block" style="width: 70%;">
+
+                                        <apex:outputText value="{! IF((rec.reason == null), 'N/A', rec.reason) }" />
+                                    </div>
+                                    <div class="block" style="width: 30%;">
+                                        Previous MMS Deferral?
+                                    </div>
+                                    <div class="block" style="width: 70%;">
+                                        <apex:outputText value="{! IF((rec.deferred == null), 'N/A', rec.deferred) }" />
+                                    </div>
+                                </div>
+                                <div class="block" style="width: 40%;">
+                                    <div class="block" style="width: 30%;">
+                                        Reset Count:
+                                    </div>
+                                    <div class="block" style="width: 70%;">
+                                        <apex:outputText value="{! IF((rec.resets == null), 'N/A', rec.resets) }" />
+                                    </div>
+                                    <div class="block" style="width: 30%;">
+                                        PAX Abuse?
+                                    </div>
+                                    <div class="block" style="width: 70%;">
+                                        <apex:outputText value="{! IF((rec.paxabuse == null), 'N/A', rec.paxabuse) }" />
+                                    </div>
+                                    <div class="block" style="width: 30%;">
+                                        No Fault Found:
+                                    </div>
+                                    <div class="block" style="width: 70%;">
+                                        <apex:outputText value="{! IF((rec.faultfound == null), 'N/A', rec.faultfound) }" />
+                                    </div>
+
+                                </div>
+                                <div class="block" style="width: 100%;">
+                                    <div class="block" style="width: 9%;">
+                                        Description:
+                                    </div>
+                                    <div class="block" style="width: 90%;">
+                                        <apex:outputText value="{! IF((rec.description == null), 'N/A', rec.description) }" />
+                                    </div>
+                                </div>
+                                <div class="block" style="width: 100%;">
+                                    <div class="block" style="width: 9%;">
+                                        Aff. Locations:
+                                    </div>
+                                    <div class="block" style="width: 90%;">
+                                        <apex:outputText value="{! IF((rec.afflocs == null), 'N/A', rec.afflocs) }" />
+                                    </div>
+                                </div>
+                                <apex:repeat value="{!rec.PerfGetActionsRecs}" var="actionsRecs">
+                                    <div class="block" style="width: 100%;">
+                                        <br/>
+                                        <br/>
+                                        <spa id="heading1">Actions</spa>
+                                    </div>
+                                    <div class="block" style="width: 100%;">
+                                        <br/>
+                                        <br/>
+                                        <div class="block" style="width: 9%;">
+                                            Action Taken:
+                                        </div>
+                                        <div class="block" style="width: 90%;">
+                                            {!actionsRecs.asactiontaken}
+                                        </div>
+                                    </div>
+                                    <div class="block" style="width: 100%;">
+                                        <div class="block" style="width: 9%;">
+                                            Taken By:
+                                        </div>
+                                        <div class="block" style="width: 90%;">
+                                            {!actionsRecs.takenby}
+                                        </div>
+                                    </div>
+                                    <div class="block" style="width: 100%;">
+                                        <div class="block" style="width: 9%;">
+                                            Total Labor Hrs:
+                                        </div>
+                                        <div class="block" style="width: 90%;">
+                                            {!actionsRecs.act_time}
+                                        </div>
+                                    </div>
+                                    <div class="block" style="width: 100%;">
+                                        <div class="block" style="width: 9%;">
+                                            Description:
+                                        </div>
+                                        <div class="block" style="width: 90%;">
+                                            {!actionsRecs.actiondescription}
+                                        </div>
+                                    </div>
+                                    <div class="block" style="width: 100%;">
+                                        <br/>
+                                        <br/>
+                                        <spa id="heading1">Defect UDFs</spa>
+
+                                    </div>
+                                    <div class="block" style="width: 100%;">
+                                        <br/>
+                                        <br/>
+                                        <table>
+                                            <tr>
+                                                <th style="width: 20%"> Tag</th>
+                                                <th style="width: 30%">Description</th>
+                                                <th style="width: 50%">Value</th>
+                                            </tr>
+                                            <tr>
+                                                <td>--</td>
+                                                <td>--</td>
+                                                <td>--</td>
+                                            </tr>
+                                        </table>
+
+
+                                    </div>
+                                </apex:repeat>
+                            </apex:repeat>
+                        </apex:repeat>
+                    </div>
+                </apex:repeat>
+
+            </div>
+        </div>
+    </div>
+    <!-- <div style="margin-right: 10px; margin-left:10px;">
+        <div class="row">
+            <div class="block" style="width: 100%;">
+                <h1 id="heading1">Panasonic Avionics Corporation</h1>
+                <br/>
+                <h1 id="heading2">Maintenance Services</h1>
+                <br/>
+                <br/>
+
+
+                <div class="row">
+                    <div id="heading1" class="block" style="width: 15% ">FMR Number:</div>
+                    <div class="block" style="width: 80% ">{!dataWapperObj.perfFmrHeaderDataObj.fmr_id}</div>
+                    <div id="heading1" class="block" style="width: 15% ">Line Station:</div>
+                    <div class="block" style="width: 80% "> {!dataWapperObj.perfFmrHeaderDataObj.fmr_station}</div>
+                    <div id="heading1" class="block" style="width: 15% ">Customer:</div>
+                    <div class="block" style="width: 80% "> {!dataWapperObj.perfFmrHeaderDataObj.airline}</div>
+                    <div id="heading1" class="block" style="width: 15% ">Tail Number:</div>
+                    <div class="block" style="width: 80% "> {!dataWapperObj.perfFmrHeaderDataObj.fmr_tail_no}</div>
+                </div>
+                <br/>
+                <br/>
+                <h5>FMR Header</h5>
+                <br/>
+                <br/>
+
+                <div class="block" style="width: 45% ">
+                    <spa id="heading1">Arrival Data</spa>
+                    <br/>
+                    <br/>
+                    <div style="width: 99%; border-bottom: groove;"></div>
+                    <br/>
+                    <div class="row">
+                        <div id="heading2" class="block" style="width: 15% ">Flight #:</div>
+                        <div class="block" style="width: 80% ">{!dataWapperObj.perfFmrHeaderDataObj.fmr_flight_no_in}</div>
+                        <div id="heading2" class="block" style="width: 15% ">From:</div>
+                        <div class="block" style="width: 80% ">{!dataWapperObj.perfFmrHeaderDataObj.arr_from}</div>
+                        <div id="heading2" class="block" style="width: 15% ">Scheduled:</div>
+                        <div class="block" style="width: 80% "> {!dataWapperObj.perfFmrHeaderDataObj.fmr_schd_arrvd}</div>
+                        <div id="heading2" class="block" style="width: 15% ">Actual:</div>
+                        <div class="block" style="width: 80% "> {!dataWapperObj.perfFmrHeaderDataObj.fmr_actl_arrvd}</div>
+
+                    </div>
+                </div>
+
+                <div class="block" style="width: 9%; border-bottom: none"></div>
+                <div style="width: 45%; float: right;">
+                    <spa id="heading1">Departure Data</spa>
+                    <br/>
+                    <br/>
+                    <div class="block" style="width: 99%; border-bottom: groove;"></div>
+                    <br/>
+                    <div class="row">
+                        <div id="heading2" class="block" style="width: 15% ">Flight #:</div>
+                        <div class="block" style="width: 80% "> {!dataWapperObj.perfFmrHeaderDataObj.fmr_flight_no_out}</div>
+                        <div id="heading2" class="block" style="width: 15% ">To:</div>
+                        <div class="block" style="width: 80% "> {!dataWapperObj.perfFmrHeaderDataObj.fmr_dept_to}</div>
+                        <div id="heading2" class="block" style="width: 15% ">Scheduled:</div>
+                        <div class="block" style="width: 80% "> {!dataWapperObj.perfFmrHeaderDataObj.fmr_schd_dept}</div>
+                        <div id="heading2" class="block" style="width: 15% ">Actual:</div>
+                        <div class="block" style="width: 80% "> {!dataWapperObj.perfFmrHeaderDataObj.fmr_actl_dept}</div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <br/>
+                    <br/>
+
+                    <div class="block" style="width: 45% ">
+                        <spa id="heading1">Turn Data</spa>
+                        <br/>
+                        <br/>
+                        <div style="width: 100%; border-bottom: groove;"></div>
+                        <br/>
+                        <div class="row">
+                            <div id="heading2" class="block" style="width: 15% ">Avail Period:</div>
+                            <div class="block" style="width: 80% "> {!dataWapperObj.perfFmrHeaderDataObj.fmr_qmp}</div>
+                            <div id="heading2" class="block" style="width: 15% ">Turn Type:</div>
+                            <div class="block" style="width: 80% "> {!dataWapperObj.perfFmrHeaderDataObj.sweep}</div>
+                            <div id="heading2" class="block" style="width: 15% ">BITE Run:</div>
+                            <div class="block" style="width: 80% "> ----</div>
+                            <div id="heading2" class="block" style="width: 15% ">MSR:</div>
+                            <div class="block" style="width: 80% "> {!dataWapperObj.perfFmrHeaderDataObj.msr}</div>
+                            <div id="heading2" class="block" style="width: 15% ">FA Name:</div>
+                            <div class="block" style="width: 80% "> -----</div>
+                            <div id="heading2" class="block" style="width: 15% ">Comments:</div>
+                            <div class="block" style="width: 80% "> -----</div>
+                            <div id="heading2" class="block" style="width: 15% ">FA Training?:</div>
+                            <div class="block" style="width: 80% "> -----</div>
+
+                        </div>
+                    </div>
+
+                    <div class="block" style="width: 9%; border-bottom: none"></div>
+                    <div style="width: 45%; float: right;">
+                        <spa id="heading1">Additional Flight Information</spa>
+                        <br/>
+                        <br/>
+                        <div class="block" style="width: 99%; border-bottom: groove;"></div>
+                        <br/>
+                        <div class="row">
+                            <div id="heading2" class="block" style="width: 15% ">Flight #:</div>
+                            <div class="block" style="width: 80% "> -----</div>
+                            <div id="heading2" class="block" style="width: 15% ">sin:</div>
+                            <div class="block" style="width: 80% "> -----</div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+               --------------------- 
+               <div class="row">
+                    <br/>
+                    <br/>
+                    <spa id="heading1">FMR UDFs</spa>
+                    <br/>
+                    <br/>
+                    <div class="block" style="width: 100%; border-bottom: groove;"></div>
+                    <br/>
+                    <br/>
+                    <table>
+                        <tr>
+                            <th style="width: 10%">UDF#</th>
+                            <th style="width: 20%"> Tag</th>
+                            <th style="width: 35%">Description</th>
+                            <th style="width: 35%">Value</th>
+                        </tr>
+                        <apex:repeat value="{!dataWapperObj.PerfFmrUdfRecs}" var="data">
+                            <tr>
+                                <td> {!data.udf_seq}</td>
+                                <td>{!data.udf_tag}</td>
+                                <td> {!data.udf_desc} </td>
+                                <td> {!data.udf_text}</td>
+                            </tr>
+                        </apex:repeat>
+
+                    </table>
+                </div>
+====================
+                <div class="row">
+                    <br/>
+                    <br/>
+                    <spa id="heading2">Defects</spa>
+
+                    <apex:repeat value="{!dataWapperObj.perfDefectsList}" var="data">
+                        <div class="block" style="width: 100%; ">
+                            <br/>
+                            <br/>
+                            <spa id="heading1">Defect Type: {!data.defecttype}</spa>
+                        </div>
+                        <br/>
+                        <br/>
+                        <div class="block" style="width: 100%; border-bottom: groove;"></div>
+                        <br/>
+                        <br/>
+                        <div class="block" style="width: 30%;">
+                            <div class="block" style="width: 30%;">
+                                Station:
+                            </div>
+                            <div class="block" style="width: 70%;">
+                                <apex:outputText value="{! IF((data.defectstation == null), 'N/A', data.defectstation) }" />
+                            </div>
+                            <div class="block" style="width: 30%;">
+                                Origination:
+                            </div>
+                            <div class="block" style="width: 70%;">
+                                <apex:outputText value="{! IF((data.afffunc == null), 'N/A', data.afffunc) }" />
+                            </div>
+                            <div class="block" style="width: 30%;">
+                                Log Page:
+                            </div>
+                            <div class="block" style="width: 70%;">
+                                <apex:outputText value="{! IF((data.logpage == null), 'N/A', data.logpage) }" />
+                            </div>
+                            <div class="block" style="width: 30%;">
+                                Log Item:
+                            </div>
+                            <div class="block" style="width: 70%;">
+                                <apex:outputText value="{! IF((data.logitem == null), 'N/A', data.logitem) }" />
+                            </div>
+
+                        </div>
+                        <div class="block" style="width: 30%;">
+                            <div class="block" style="width: 30%;">
+                                Status:
+                            </div>
+                            <div class="block" style="width: 70%;">
+                                <apex:outputText value="{! IF((data.status == null), 'N/A', data.status) }" />
+                            </div>
+                            <div class="block" style="width: 30%;">
+                                Deferral Number:
+                            </div>
+                            <div class="block" style="width: 70%;">
+                                <apex:outputText value="{! IF((data.defnum == null), 'N/A', data.defnum) }" />
+                            </div>
+                            <div class="block" style="width: 30%;">
+                                Deferral Reason:
+                            </div>
+                            <div class="block" style="width: 70%;">
+
+                                <apex:outputText value="{! IF((data.reason == null), 'N/A', data.reason) }" />
+                            </div>
+                            <div class="block" style="width: 30%;">
+                                Previous MMS Deferral?
+                            </div>
+                            <div class="block" style="width: 70%;">
+                                <apex:outputText value="{! IF((data.deferred == null), 'N/A', data.deferred) }" />
+                            </div>
+                        </div>
+                        <div class="block" style="width: 40%;">
+                            <div class="block" style="width: 30%;">
+                                Reset Count:
+                            </div>
+                            <div class="block" style="width: 70%;">
+                                <apex:outputText value="{! IF((data.resets == null), 'N/A', data.resets) }" />
+                            </div>
+                            <div class="block" style="width: 30%;">
+                                PAX Abuse?
+                            </div>
+                            <div class="block" style="width: 70%;">
+                                <apex:outputText value="{! IF((data.paxabuse == null), 'N/A', data.paxabuse) }" />
+                            </div>
+                            <div class="block" style="width: 30%;">
+                                No Fault Found:
+                            </div>
+                            <div class="block" style="width: 70%;">
+                                <apex:outputText value="{! IF((data.faultfound == null), 'N/A', data.faultfound) }" />
+                            </div>
+
+                        </div>
+                        <div class="block" style="width: 100%;">
+                            <div class="block" style="width: 9%;">
+                                Description:
+                            </div>
+                            <div class="block" style="width: 90%;">
+                                <apex:outputText value="{! IF((data.description == null), 'N/A', data.description) }" />
+                            </div>
+                        </div>
+                        <div class="block" style="width: 100%;">
+                            <div class="block" style="width: 9%;">
+                                Aff. Locations:
+                            </div>
+                            <div class="block" style="width: 90%;">
+                                <apex:outputText value="{! IF((data.afflocs == null), 'N/A', data.afflocs) }" />
+                            </div>
+                        </div>
+                    </apex:repeat>
+                    <div class="block" style="width: 100%;">
+                        <br/>
+                        <br/>
+
+
+
+                        <spa id="heading1">Actions</spa>
+                    </div>
+                    <div class="block" style="width: 100%;">
+                        <br/>
+                        <br/>
+                        <div class="block" style="width: 9%;">
+                            Action Taken:
+                        </div>
+                        <div class="block" style="width: 90%;">
+                            {!dataWapperObj.perfGetActionsRecsObj.asactiontaken}
+                        </div>
+                    </div>
+                    <div class="block" style="width: 100%;">
+                        <div class="block" style="width: 9%;">
+                            Taken By:
+                        </div>
+                        <div class="block" style="width: 90%;">
+                            {!dataWapperObj.perfGetActionsRecsObj.takenby}
+                        </div>
+                    </div>
+                    <div class="block" style="width: 100%;">
+                        <div class="block" style="width: 9%;">
+                            Total Labor Hrs:
+                        </div>
+                        <div class="block" style="width: 90%;">
+                            {!dataWapperObj.perfGetActionsRecsObj.act_time}
+                        </div>
+                    </div>
+                    <div class="block" style="width: 100%;">
+                        <div class="block" style="width: 9%;">
+                            Description:
+                        </div>
+                        <div class="block" style="width: 90%;">
+                            {!dataWapperObj.perfGetActionsRecsObj.actiondescription}
+                        </div>
+                    </div>
+                    <div class="block" style="width: 100%;">
+                        <br/>
+                        <br/>
+                        <spa id="heading1">Defect UDFs</spa>
+
+                    </div>
+                    <div class="block" style="width: 100%;">
+                        <br/>
+                        <br/>
+                        <table>
+                            <tr>
+                                <th style="width: 20%"> Tag</th>
+                                <th style="width: 30%">Description</th>
+                                <th style="width: 50%">Value</th>
+                            </tr>
+                            <tr>
+                                <td>--</td>
+                                <td>--</td>
+                                <td>--</td>
+                            </tr>
+                        </table>
+
+
+                    </div>
+                   
+                </div>
+
+            </div>
+        </div>
+    </div>-->
+</apex:page>

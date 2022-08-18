@@ -1,0 +1,27 @@
+<apex:page standardController="Opportunity" showHeader="false" sidebar="false" title="Opportunity Grids">
+	<GBLite:TabbedPageComponent pageAPIName="GBTabs_Opportunity_Grids" customJsIds="" customCssIds="">
+	<GBLite:EmbedComponent baseGridUrl="{!$Page.GBLite__Grid}" />
+		<script>
+			var pageDefinition = {
+	"name": "Opportunity Grids",
+	"tabs": [
+		{
+			"name": "Add Parts (Assets)",
+			"content": "{!gridPage}gname=PL Assets Parts&amp;sh=0&amp;sfname=default&amp;fpf=PT_Install_Location__c.Part_List_Opportunity__c&amp;fpv={!Opportunity.Id}&amp;oppId={!Opportunity.Id}",
+			"id": 1604949531631
+		}
+	],
+	"id": 1604949531631,
+	"selectedCustomCSSIds": [],
+	"selectedCustomJSIds": [],
+	"description": "",
+	"globalButtons": true,
+	"object": "Opportunity",
+	"height": "",
+	"showHeader": false,
+	"showSidebar": false,
+	"pageAPIName": "GBTabs_Opportunity_Grids"
+};
+		</script>
+	</GBLite:TabbedPageComponent>
+</apex:page>

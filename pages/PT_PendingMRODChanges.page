@@ -1,0 +1,194 @@
+<apex:page standardController="PT_Program__c" extensions="PT_PendingMRODChangesController" contentType="txt/xml#organized.xls" cache="true">
+    
+    <apex:outputText value="{!xlsHeader}"/>
+    <Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+              xmlns:o="urn:schemas-microsoft-com:office:office"
+              xmlns:x="urn:schemas-microsoft-com:office:excel"
+              xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+              xmlns:html="http://www.w3.org/TR/REC-html40">
+        
+        <Styles>
+            <Style ss:ID="s1">
+                <Alignment/>
+                <Borders/>
+                <Font ss:Bold="1" ss:FontName="Arial" ss:Size="11" ss:Color="#FFFFFF"/>
+                <Interior ss:Color="#063970" ss:Pattern="ThinHorzStripe" ss:PatternColor="#063970"/>
+                <NumberFormat/>
+                <Protection/>
+            </Style>
+            <Style ss:ID="s2">
+                <Font ss:FontName="Arial" ss:Size="9" />
+            </Style>
+            <Style ss:ID="s3">
+                <Font ss:FontName="Arial" ss:Size="10" />
+            </Style>
+            <Style ss:ID="s4">
+              <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+                <Font ss:FontName="Arial" ss:Size="18" ss:Color="#0168b3" />
+            </Style>
+            <Style ss:ID="s5">
+                <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+                <Font ss:Bold="1" ss:FontName="Arial" ss:Size="11" ss:Color="#FFFFFF" />
+                <Interior  ss:Color="#063970" ss:Pattern="ThinHorzStripe" ss:PatternColor="#063970"/>
+            </Style>
+            <Style ss:ID="s6">
+                <Alignment ss:Horizontal="Right"/>
+                <Font ss:FontName="Arial" ss:Size="10" />
+            </Style>
+        </Styles>
+        <Worksheet ss:Name="Sheet1">
+            <!--<WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+                <DoNotDisplayGridlines/>
+            </WorksheetOptions>-->
+            <Table x:FullColumns="1" x:FullRows="1">
+                <Column ss:Width="80"/>
+                <Column ss:Width="80"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="50"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="90"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="90"/>
+                <Column ss:Width="90"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="80"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                
+                <Row>
+                    <Cell ss:StyleID="s4" ss:MergeAcross="21" ><Data ss:Type="String" >Pending MROD Changes - {!mrodSubmittedDate}</Data></Cell>
+                </Row>
+                
+                <Row>
+                    <Cell ss:StyleID="s5" ss:MergeAcross="21" ><Data ss:Type="String" >Comments</Data></Cell>
+                </Row>
+                
+                <Row ss:Height="50">
+                    <Cell ss:StyleID="s2" ss:MergeAcross="21" >
+                        <Data ss:Type="String" >
+                            <apex:outputText value="{!HTMLENCODE(mrodQuestions)}" 
+                                             style="white-space:pre;" escape="false"/>                            
+                        </Data>
+                    </Cell>
+                </Row>
+                
+                <Row>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >Region</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >Sub Group</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >Operator</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >Program Manager</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >Program Administrator</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >Program Number</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >Shipset</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >Installation Location</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >Part Number</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >Description</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >Purchase Qty</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >Orderable Item</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >Current MROD</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >Requested MROD</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >OEM Date</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >Expedite</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >Lead Time</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >Lead Time Days</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >Default Shipping Org</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >MROD FORECAST DATE</Data></Cell>
+                    <Cell ss:StyleID="s1"><Data ss:Type="String" >Extended Price</Data></Cell>
+                </Row>
+                
+                <apex:repeat value="{!mrodRevList}" var="pMrod">
+                    <Row>
+                        <Cell ss:StyleID="s3"><Data ss:Type="String">{!pMrod.Region__c}</Data></Cell>
+                        <Cell ss:StyleID="s3"><Data ss:Type="String">{!pMrod.Sub_Group__c}</Data></Cell>
+                        <Cell ss:StyleID="s3"><Data ss:Type="String">{!pMrod.Operator__c}</Data></Cell>
+                        <Cell ss:StyleID="s3"><Data ss:Type="String">{!pMrod.Program_Manager__c}</Data></Cell>
+                        <Cell ss:StyleID="s3"><Data ss:Type="String">{!pMrod.Program_Administrator__c}</Data></Cell>
+                        <Cell ss:StyleID="s3"><Data ss:Type="String">{!pMrod.Program__r.Name}</Data></Cell>
+                        <Cell ss:StyleID="s3"><Data ss:Type="String">{!pMrod.Shipset_PPL__c}</Data></Cell>
+                        <Cell ss:StyleID="s3"><Data ss:Type="String">{!pMrod.Install_Location__r.Name}</Data></Cell>
+                        <Cell ss:StyleID="s3"><Data ss:Type="String">{!pMrod.Part_Number__c}</Data></Cell>
+                        <Cell ss:StyleID="s3"><Data ss:Type="String">{!pMrod.Description__c}</Data></Cell>
+                        <Cell ss:StyleID="s3"><Data ss:Type="String">{!pMrod.Purchase_Qty__c}</Data></Cell>
+                        <Cell ss:StyleID="s3"><Data ss:Type="String">{!pMrod.Orderable_Item__c}</Data></Cell>
+                        <Cell ss:StyleID="s3">
+                            <Data ss:Type="String">
+                                <apex:outputText value="{0, date, MMMM d','  yyyy}">
+                                    <apex:param value="{!pMrod.Current_MROD__c}" />
+                                </apex:outputText>                                
+                            </Data>
+                        </Cell>
+                        <Cell ss:StyleID="s3">
+                            <Data ss:Type="String">
+                                <apex:outputText value="{0, date, MMMM d','  yyyy}">
+                                    <apex:param value="{!pMrod.Requested_MROD__c}" />
+                                </apex:outputText>                                
+                            </Data>                            
+                        </Cell>
+                        <Cell ss:StyleID="s3">
+                            <Data ss:Type="String">
+                                <apex:outputText value="{0, date, MMMM d','  yyyy}">
+                                    <apex:param value="{!pMrod.D1_Date__c}" />
+                                </apex:outputText>                                
+                            </Data>                        
+                        </Cell>
+                        <Cell ss:StyleID="s3"><Data ss:Type="String">{!pMrod.Expedite__c}</Data></Cell>
+                        <Cell ss:StyleID="s3">
+                            <Data ss:Type="String">
+                                <apex:outputText value="{0, date, MMMM d','  yyyy}">
+                                    <apex:param value="{!pMrod.Lead_Time__c}" />
+                                </apex:outputText>                 
+                            </Data>
+                        </Cell>
+                        <Cell ss:StyleID="s3"><Data ss:Type="String">{!pMrod.Lead_Time_Days__c}</Data></Cell>
+                        <Cell ss:StyleID="s3"><Data ss:Type="String">{!pMrod.Default_Shipping_Org__c}</Data></Cell>
+                        <Cell ss:StyleID="s3">
+                            <Data ss:Type="String">
+                                <apex:outputText value="{0, date, MMMM d','  yyyy}">
+                                    <apex:param value="{!pMrod.MROD_FORECAST_DATE__c}" />
+                                </apex:outputText>                                
+                            </Data>
+                        </Cell>
+                        <Cell ss:StyleID="s6"><Data ss:Type="String">{!pMrod.Extended_Price__c}</Data></Cell>
+                    </Row>                    
+                </apex:repeat>
+            </Table>
+        </Worksheet>
+       <!-- <Worksheet ss:Name="Sheet2">
+            <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+                <DoNotDisplayGridlines/>
+            </WorksheetOptions>
+            <Table x:FullColumns="1" x:FullRows="1"> 
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                <Column ss:Width="100"/>
+                
+                
+            </Table>
+        </Worksheet>-->
+    </Workbook>
+</apex:page>

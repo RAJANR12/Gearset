@@ -1,0 +1,27 @@
+<apex:page standardController="L2I_DSL__c" showHeader="true" sidebar="false" title="Test DSL Tabbed page">
+	<GBLite:TabbedPageComponent pageAPIName="GBTabs_Test_DSL_Tabbed_page" customJsIds="" customCssIds="">
+	<GBLite:EmbedComponent baseGridUrl="{!$Page.GBLite__Grid}" />
+		<script>
+			var pageDefinition = {
+	"pageAPIName": "GBTabs_Test_DSL_Tabbed_page",
+	"showSidebar": false,
+	"showHeader": true,
+	"height": "",
+	"object": "L2I_DSL__c",
+	"globalButtons": true,
+	"description": "",
+	"selectedCustomJSIds": [],
+	"selectedCustomCSSIds": [],
+	"id": 1600884669763,
+	"tabs": [
+		{
+			"id": 1600884669764,
+			"content": "{!gridPage}gname=Parts - Assets&amp;sh=0&amp;sfname=default",
+			"name": "Parts - Assets on DSL"
+		}
+	],
+	"name": "Test DSL Tabbed page"
+};
+		</script>
+	</GBLite:TabbedPageComponent>
+</apex:page>

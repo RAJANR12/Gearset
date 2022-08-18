@@ -1,0 +1,2502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>PT_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>AccountId</fields>
+        <fields>ContactId</fields>
+        <fields>PT_Case__c</fields>
+        <fields>Quantity</fields>
+        <fields>PT_Available_Quantity__c</fields>
+        <label>PT Compact Layout</label>
+    </compactLayouts>
+    <enableFeeds>true</enableFeeds>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Address</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AssetLevel</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AssetProvidedById</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AssetServicedById</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ConsequenceOfFailure</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CurrentAmount</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CurrentLifecycleEndDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CurrentMrr</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CurrentQuantity</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DigitalAssetStatus</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ExternalIdentifier</fullName>
+        <inlineHelpText>ID of matching record in an external system.</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HasLifecycleManagement</fullName>
+    </fields>
+    <fields>
+        <fullName>InstallDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsCompetitorProduct</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsInternal</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Is_Parent_Asset__c</fullName>
+        <externalId>false</externalId>
+        <formula>ISBLANK(ParentId)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Parent Asset</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>L2I_CPQMultiplier__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Product2.L2I_CPQMultiplier__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CPQ Multiplier</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_External_Id__c</fullName>
+        <externalId>true</externalId>
+        <inlineHelpText>Migration key for program table load</inlineHelpText>
+        <label>L2I_External_Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Lead_Time__c</fullName>
+        <description>Lead time from Item Master</description>
+        <externalId>false</externalId>
+        <formula>Product2.L2I_Lead_Time__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This is the number of calendar days for lead time for this part</inlineHelpText>
+        <label>Item Master Lead Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LifecycleEndDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>LifecycleStartDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>LocationId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ManufactureDate</fullName>
+        <inlineHelpText>Date when the asset was manufactured.</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ONE__c</fullName>
+        <description>Field to enable record counting</description>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Field to enable record counting</inlineHelpText>
+        <label>ONE</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PT_Additional_AR_Invoice_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional AR Invoice Notes</label>
+        <length>240</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Airbus_D1_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Airbus D1 Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PT_Aircraft__c</fullName>
+        <externalId>false</externalId>
+        <formula>PT_Install_Location__r.ShipSet__r.Aircraft__r.L2I_Registration_Number__c</formula>
+        <label>Aircraft</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Asset_Display_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Asset Display Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Available_Quantity_Child__c</fullName>
+        <description>Value sourced from the Available Quantity at the related Parent Asset level</description>
+        <externalId>false</externalId>
+        <formula>PT_Available_Quantity__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Available Quantity Child</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Available_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+ISBLANK(ParentId), Quantity  -  PT_Total_Order_Quantity__c,   Parent.Quantity -  Parent.PT_Total_Order_Quantity__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Available Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_CCC__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(PT_Install_Location__r.ShipSet__c), 
+
+  IF ( PT_Install_Location__r.Solution_Group__r.PT_is_IFC__c &amp;&amp; NOT(BEGINS(PT_Program__r.Program_Number__c, &quot;E&quot;)), 
+
+	&quot;E&quot; &amp; RIGHT(PT_Program__r.PT_Program_Number_Alt__c, 7),
+
+	PT_Program__r.Program_Number__c ),
+
+	IF ( PT_Install_Location__r.Solution_Group__r.PT_is_IFC__c &amp;&amp; NOT(BEGINS(PT_Program__r.Program_Number__c, &quot;E&quot;)), 
+
+	&quot;E&quot; &amp; RIGHT(PT_Program__r.PT_Program_Number_Alt__c, 7),
+
+    PT_Program__r.Program_Number__c )
+
+ )
+
+&amp; 
+
+IF( ISBLANK(PT_Install_Location__r.ShipSet__c), 
+
+   TEXT(PT_Install_Location__r.Part_List_Opportunity__r.PT_PPL_Type__c),
+
+     PT_Install_Location__r.ShipSet__r.PT_Line_Number__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Cost Collection Code Formula</inlineHelpText>
+        <label>Cost Collection Code (CCC)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Can_be_Processed__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (OR (Text(PT_Status__c) = &#39;New&#39;, Text(PT_Status__c) = &#39;Active&#39;, Text(PT_Status__c) = &#39;Pending Move&#39;, Text(PT_Status__c) = &#39;Reinitialized&#39;, Text(PT_Status__c) = &#39;Pending Replaced&#39;), true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Can be Processed</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PT_Case_Ship_to_Customer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case Ship to Customer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Assets</relationshipLabel>
+        <relationshipName>Assets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PT_Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>$Source.PT_Program__c</field>
+                <operation>equals</operation>
+                <valueField>Case.PT_Program__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Assets</relationshipLabel>
+        <relationshipName>Assets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PT_Change_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(PT_Is_Pending__c
+ ,IF(ISBLANK(PT_Pending__c),&#39;PARTS&#39;,&#39;BOTH&#39;)
+ ,IF(ISBLANK(PT_Pending__c),&#39;&#39;,&#39;MROD&#39;)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Identifies the Current Change Type of an Asset</inlineHelpText>
+        <label>Change Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Child_Asset_Error_Message__c</fullName>
+        <externalId>false</externalId>
+        <formula>Name &amp; &quot; | &quot; &amp; Product2.ProductCode &amp; &quot; | &quot; &amp; Shipset_PPL_Link__c &amp; &quot; | &quot; &amp; PT_Install_Location__r.Name</formula>
+        <label>Child Asset Error Message</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Child_Case_List__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>list of IDs for child assets used to tie to PO cases and create orders</inlineHelpText>
+        <label>Child_Case List</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>PT_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>240</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Configured_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Configured Quantity</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Conformity_Discrepancy__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Conformity Discrepancy</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PT_Conformity_Overwritten__c</fullName>
+        <defaultValue>&quot;No&quot;</defaultValue>
+        <description>Indication that Conformity indication flag has been overwritten</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indication that Conformity indication flag has been overwritten</inlineHelpText>
+        <label>Conformity Overwritten</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PT_Conformity_Required__c</fullName>
+        <description>Predicts if Conformity is required for the parts/asset</description>
+        <externalId>false</externalId>
+        <formula>IF(BEGINS(PT_Program__r.PT_Program_Type__c, &quot;Production&quot;), false, IF(ISBLANK(PT_Extended_Product_Attribute__c), true, !PT_Extended_Product_Attribute__r.hasPMA__c))</formula>
+        <inlineHelpText>Predicts if Conformity is required for the parts/asset</inlineHelpText>
+        <label>Conformity Required?</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PT_Conformity__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Conformity</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PT_Customer_PO_Line__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer PO Line</label>
+        <length>240</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Customer_PO_Request_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer PO Request Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PT_Default_Shipping_Org__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product2.L2I_Default_Shipping_Org__c</formula>
+        <label>Default Shipping Org</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Delivery_Schedule_Line__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Delivery Schedule Line</label>
+        <referenceTo>L2I_DSL__c</referenceTo>
+        <relationshipLabel>Assets</relationshipLabel>
+        <relationshipName>Assets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PT_Expedited_D1_Text__c</fullName>
+        <description>Use for field history tracking. Set via workflow from the Expedited D1 formula.</description>
+        <externalId>false</externalId>
+        <label>Expedited D1 Text</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Expedited_D1__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (OR(ISBLANK(PT_Airbus_D1_Date__c),PT_Lead_Time__c &lt; PT_Airbus_D1_Date__c)
+    , &#39;No&#39;
+    ,IF (ISBLANK(PT_MROD__c)
+        , &#39;Yes&#39;
+        ,IF (PT_Airbus_D1_Date__c &lt; PT_MROD__c
+            , &#39;Yes&#39;
+            , &#39;No&#39;
+        )
+    )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Expedited D1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Expedited_Text__c</fullName>
+        <description>Use for field history tracking. Set via workflow from the Expedited formula.</description>
+        <externalId>false</externalId>
+        <label>Expedited Text</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Expedited__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (OR(ISBLANK(PT_Pending__c),PT_Lead_Time__c &lt; PT_Pending__c)
+    , &#39;No&#39;
+    ,IF (ISBLANK(PT_MROD__c)
+        , &#39;Yes&#39;
+        ,IF (PT_Pending__c &lt; PT_MROD__c
+            , &#39;Yes&#39;
+            , &#39;No&#39;
+        )
+    )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Expedited</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Extended_Price__c</fullName>
+        <externalId>false</externalId>
+        <formula>Price * Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Extended Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PT_Extended_Product_Attribute__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Extended Product Attribute</label>
+        <referenceTo>L2I_Product_Attributes__c</referenceTo>
+        <relationshipLabel>Assets</relationshipLabel>
+        <relationshipName>Assets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PT_Holds__c</fullName>
+        <externalId>false</externalId>
+        <label>Holds</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Conformity Hold</fullName>
+                    <default>false</default>
+                    <label>Conformity Hold</label>
+                </value>
+                <value>
+                    <fullName>Credit Check Failure</fullName>
+                    <default>false</default>
+                    <label>Credit Check Failure</label>
+                </value>
+                <value>
+                    <fullName>Credit Order Hold</fullName>
+                    <default>false</default>
+                    <label>Credit Order Hold</label>
+                </value>
+                <value>
+                    <fullName>H/C PO Hold</fullName>
+                    <default>false</default>
+                    <label>H/C PO Hold</label>
+                </value>
+                <value>
+                    <fullName>Invoicing Hold</fullName>
+                    <default>false</default>
+                    <label>Invoicing Hold</label>
+                </value>
+                <value>
+                    <fullName>Kit Hold</fullName>
+                    <default>false</default>
+                    <label>Kit Hold</label>
+                </value>
+                <value>
+                    <fullName>No Charge PO Auth Hold</fullName>
+                    <default>false</default>
+                    <label>No Charge PO Auth Hold</label>
+                </value>
+                <value>
+                    <fullName>NOC Hold</fullName>
+                    <default>false</default>
+                    <label>NOC Hold</label>
+                </value>
+                <value>
+                    <fullName>Pending Cancellation Hold</fullName>
+                    <default>false</default>
+                    <label>Pending Cancellation Hold</label>
+                </value>
+                <value>
+                    <fullName>PGA Hold</fullName>
+                    <default>false</default>
+                    <label>PGA Hold</label>
+                </value>
+                <value>
+                    <fullName>PMA Hold</fullName>
+                    <default>false</default>
+                    <label>PMA Hold</label>
+                </value>
+                <value>
+                    <fullName>Pricing Hold - Customer</fullName>
+                    <default>false</default>
+                    <label>Pricing Hold - Customer</label>
+                </value>
+                <value>
+                    <fullName>Pricing Hold - Marketing</fullName>
+                    <default>false</default>
+                    <label>Pricing Hold - Marketing</label>
+                </value>
+                <value>
+                    <fullName>Pricing Hold - Price Admin</fullName>
+                    <default>false</default>
+                    <label>Pricing Hold - Price Admin</label>
+                </value>
+                <value>
+                    <fullName>Reference PO Hold</fullName>
+                    <default>false</default>
+                    <label>Reference PO Hold</label>
+                </value>
+                <value>
+                    <fullName>SA Misc Hold</fullName>
+                    <default>false</default>
+                    <label>SA Misc Hold</label>
+                </value>
+                <value>
+                    <fullName>SA PO Amend Hold</fullName>
+                    <default>false</default>
+                    <label>SA PO Amend Hold</label>
+                </value>
+                <value>
+                    <fullName>Ship Complete Hold</fullName>
+                    <default>false</default>
+                    <label>Ship Complete Hold</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PT_InMROD_approval__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(OR(ISPICKVAL(PT_Program__r.Airbus_MROD_Approval_Status__c,&quot;Pending&quot;),ISPICKVAL(PT_Program__r.MROD_Approval_Status__c,&quot;Pending&quot;))
+,true,false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Asset in MROD approval</inlineHelpText>
+        <label>InMROD_approval</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PT_Install_Location_MROD_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>PT_Install_Location__r.MROD__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Install Location MROD Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PT_Install_Location_Parent_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( isPTAsset__c
+,IF(ISBLANK(PT_Install_Location__r.ShipSet__c)
+,CASESAFEID(PT_Install_Location__r.Part_List_Opportunity__c)
+,CASESAFEID(PT_Install_Location__r.ShipSet__c)
+)
+,&quot;&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>ID of parent</inlineHelpText>
+        <label>Shipset/PPL ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Install_Location_Parent__c</fullName>
+        <description>Provides a name for the parent of the install location of this asset</description>
+        <externalId>false</externalId>
+        <formula>IF( isPTAsset__c
+ ,IF(ISBLANK(PT_Install_Location__r.ShipSet__c)
+  ,PT_Install_Location__r.Part_List_Opportunity__r.PT_Part_List_Name__c
+  ,PT_Install_Location__r.ShipSet__r.Name
+ )
+ ,&quot;&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Shipset Name for CPL parts or PPL Name</inlineHelpText>
+        <label>Shipset/PPL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Install_Location_Pending_MROD_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>PT_Install_Location__r.Pending_MROD__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Install Location Pending MROD Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PT_Install_Location__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Install Location</label>
+        <referenceTo>PT_Install_Location__c</referenceTo>
+        <relationshipLabel>Assets</relationshipLabel>
+        <relationshipName>Assets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PT_Is_Airbus__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( PT_Program_Type__c == &#39;Production-AIRBUS&#39;, true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Airbus?</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PT_Is_Kit_Revision_Downlevel__c</fullName>
+        <description>Used for conditional formatting in the Manage Parts grid</description>
+        <externalId>false</externalId>
+        <formula>IF ( AND(PT_Kit_Revision_Code__c !=  Product2.PT_Kit_Current_Revision__c, PT_Is_Kit__c = true) , true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Kit Revision Downlevel</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PT_Is_Kit__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product2.L2I_Is_Kit__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Kit</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PT_Is_Pending__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (OR (Text(PT_Status__c) = &#39;New&#39;, Text(PT_Status__c) = &#39;Pending Removed&#39;, Text(PT_Status__c) = &#39;Pending Move&#39;,
+NOT(ISBLANK(PT_Pending_Quantity__c)), NOT(ISBLANK(PT_Pending_Configured_Quantity__c)),  NOT(ISBLANK(PT_Pending_Notes__c)),  NOT(ISBLANK(PT_Pending_Kit_Revision_Code__c)) ) , true, false)</formula>
+        <label>Is Pending</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PT_Is_Placeholder_Part__c</fullName>
+        <description>This part is a placeholder.</description>
+        <externalId>false</externalId>
+        <formula>Product2.Is_Placeholder_Part__c</formula>
+        <label>Is Placeholder Part</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PT_Kit_Parent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Kit Parent</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Assets (Kit Parent)</relationshipLabel>
+        <relationshipName>KitChildAssets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PT_Kit_Revision_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Kit Revision Code</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_LF_Software_Supply_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>LF Software Supply Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PT_Lead_Time__c</fullName>
+        <description>Required Lead Time (Number of Days) for this Product to achieve MROD</description>
+        <externalId>false</externalId>
+        <formula>PT_Program__r.PT_Program_Type_Lead__c
++
+TODAY()
++
+Product2.L2I_Cumulative_Lead_Time__c
++
+IF (PT_Conformity_Required__c
+,7
+,0
+)
++
+Product2.L2I_Item_Post_Processing_Days__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Required Lead Time (Number of Days) for this Product to achieve MROD</inlineHelpText>
+        <label>PMO Lead Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PT_Lead_Time_old__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead Time</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PT_Line_Type_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case(PT_Line_Type__c,
+					&quot;Eval/Loan Line&quot;, 1659,
+					&quot;Invoice Only Line&quot;, 1662,
+					&quot;Irvine Direct Software Line&quot;, 1666,
+					&quot;Standard Sales Order Line&quot;, 1667,
+					&quot;Shipset Credit Line&quot;, 1672,
+Null)</formula>
+        <label>Line Type ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Line_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Line Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>PT_Order_Type_Context__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Eval/Loan Line</fullName>
+                    <default>false</default>
+                    <label>Eval/Loan Line</label>
+                </value>
+                <value>
+                    <fullName>Invoice Only Line</fullName>
+                    <default>false</default>
+                    <label>Invoice Only Line</label>
+                </value>
+                <value>
+                    <fullName>Irvine Direct Software Line</fullName>
+                    <default>false</default>
+                    <label>Irvine Direct Software Line</label>
+                </value>
+                <value>
+                    <fullName>Standard Sales Order Line</fullName>
+                    <default>false</default>
+                    <label>Standard Sales Order Line</label>
+                </value>
+                <value>
+                    <fullName>Shipset Credit Line</fullName>
+                    <default>false</default>
+                    <label>Shipset Credit Line</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Eval/Loan Order</controllingFieldValue>
+                <controllingFieldValue>Standard Stock Order</controllingFieldValue>
+                <valueName>Eval/Loan Line</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Invoice Only Order</controllingFieldValue>
+                <controllingFieldValue>NRE Service</controllingFieldValue>
+                <valueName>Invoice Only Line</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Irvine Direct - S/W</controllingFieldValue>
+                <valueName>Irvine Direct Software Line</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Irvine Direct - S/W</controllingFieldValue>
+                <controllingFieldValue>MILESTONE</controllingFieldValue>
+                <controllingFieldValue>Standard Stock Order</controllingFieldValue>
+                <valueName>Standard Sales Order Line</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Standard Stock Order</controllingFieldValue>
+                <valueName>Shipset Credit Line</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PT_MROD_Forecast_Date__c</fullName>
+        <description>Roll up look for MROD dates</description>
+        <externalId>false</externalId>
+        <formula>if(isblank(PT_MROD__c)
+, if(isblank(PT_Install_Location__r.MROD__c),
+  if(isblank( PT_Install_Location__r.ShipSet__c ),null, PT_Install_Location__r.ShipSet__r.Delivery_Date__c )
+  ,PT_Install_Location__r.MROD__c)
+,  PT_MROD__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Roll up look for MROD dates</inlineHelpText>
+        <label>MROD Forecast Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PT_MROD__c</fullName>
+        <externalId>false</externalId>
+        <label>MROD</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PT_Note_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>XXNote Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Add</fullName>
+                    <default>false</default>
+                    <label>Add</label>
+                </value>
+                <value>
+                    <fullName>Delete</fullName>
+                    <default>false</default>
+                    <label>Delete</label>
+                </value>
+                <value>
+                    <fullName>Replace</fullName>
+                    <default>false</default>
+                    <label>Replace</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PT_Note__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>XXPart List Note</label>
+        <referenceTo>PT_Note__c</referenceTo>
+        <relationshipLabel>Assets</relationshipLabel>
+        <relationshipName>Assets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PT_Notes_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes Status</label>
+        <length>5000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>PT_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_OEM_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>OEM Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PT_Oracle_Line_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Oracle Line Status</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Order_Quantity__c</fullName>
+        <description>User will populate this field on the Child asset to inform the ordering process the quantity to be ordered as part of this program/ Customer PO Case process</description>
+        <externalId>false</externalId>
+        <label>Order Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Order_Splitting__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+PT_Conformity_Required__c = True,
+PT_CCC__c &amp; &quot;;&quot; &amp; &quot;Conformity&quot;,
+PT_CCC__c
+)</formula>
+        <label>Order Splitting</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Order_Type_Context__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Type Context</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Eval/Loan Order</fullName>
+                    <default>false</default>
+                    <label>Eval/Loan Order</label>
+                </value>
+                <value>
+                    <fullName>Invoice Only Order</fullName>
+                    <default>false</default>
+                    <label>Invoice Only Order</label>
+                </value>
+                <value>
+                    <fullName>Irvine Direct - S/W</fullName>
+                    <default>false</default>
+                    <label>Irvine Direct - S/W</label>
+                </value>
+                <value>
+                    <fullName>MILESTONE</fullName>
+                    <default>false</default>
+                    <label>MILESTONE</label>
+                </value>
+                <value>
+                    <fullName>NRE Service</fullName>
+                    <default>false</default>
+                    <label>NRE Service</label>
+                </value>
+                <value>
+                    <fullName>Standard Stock Order</fullName>
+                    <default>false</default>
+                    <label>Standard Stock Order</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PT_Orderable__c</fullName>
+        <externalId>false</externalId>
+        <formula>True</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Orderable</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PT_Ordered_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(PT_Available_Quantity__c = 0, &quot;Full&quot;,IF(PT_Available_Quantity__c &lt; Quantity,&quot;Partial&quot;,&quot;None&quot;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Indicator of Ordered status</inlineHelpText>
+        <label>Ordered</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Original_Install_Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Original Install Location</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_PMA__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>PMA</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PT_PO_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>PO Number</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_PPL_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(PT_Install_Location__r.Part_List_Opportunity__r.PT_PPL_Type__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PPL Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Pending_Configured_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending Configured Quantity</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Pending_Kit_Revision_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending Kit Revision Code</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Pending_Note__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>XXPending Part List Note</label>
+        <referenceTo>PT_Note__c</referenceTo>
+        <relationshipLabel>Assets (Pending Part List Note)</relationshipLabel>
+        <relationshipName>Assets1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PT_Pending_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending Notes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Pending_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending Quantity</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Pending_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>XXPending Reason</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Pending__c</fullName>
+        <externalId>false</externalId>
+        <label>Pending MROD</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PT_Price__c</fullName>
+        <description>Number Field to Display Price with no &quot;USD&quot; for Parts List Grid</description>
+        <externalId>false</externalId>
+        <formula>Price</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Product_Code_Link__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( &quot;/&quot; + Id,  Product2.ProductCode )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Code Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Program_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>PT_Program__r.PT_Program_Type__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Program Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Program__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Program</label>
+        <referenceTo>PT_Program__c</referenceTo>
+        <relationshipLabel>Assets</relationshipLabel>
+        <relationshipName>Assets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PT_Proposed_Part_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>PT_Proposed_Part_Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Proposed_Part_Nomenclature__c</fullName>
+        <externalId>false</externalId>
+        <label>PT_Proposed_Part_Nomenclature</label>
+        <length>240</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Quantity__c</fullName>
+        <description>Number Field to Display Quantity with no Decimals for Parts List Grid</description>
+        <externalId>false</externalId>
+        <formula>Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Reference_PO_Request_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Reference PO Request Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PT_Reference_PO__c</fullName>
+        <externalId>false</externalId>
+        <label>Reference PO</label>
+        <length>240</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Revision_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Revision Number</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Risk__c</fullName>
+        <externalId>false</externalId>
+        <label>Risk</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>PT_SSD__c</fullName>
+        <externalId>false</externalId>
+        <formula>PT_MROD__c  - PT_Program__r.PT_Program_Type_Lead__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Scheduled Ship Date Logic - used to build MROD</inlineHelpText>
+        <label>SSD</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PT_Ship_from_Org_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case(PT_Warehouse__c,
+&quot;BOT&quot;, 21,
+&quot;GLO&quot;, 22,
+&quot;IRV&quot;, 23,
+&quot;BRP&quot;, 25,
+&quot;LRP&quot;, 26,
+&quot;DRP&quot;, 27,
+&quot;SRP&quot;, 28,
+&quot;DLR&quot;, 29,
+&quot;TRP&quot;, 30,
+&quot;DSP&quot;, 31,
+&quot;MMS&quot;, 32,
+&quot;COW&quot;, 48,
+&quot;OEM&quot;, 49,
+&quot;OST&quot;, 50,
+&quot;RTN&quot;, 51,
+&quot;OSA&quot;, 52,
+&quot;ORP&quot;, 432,
+&quot;CAR&quot;, 472,
+&quot;PTS&quot;, 592,
+&quot;DSO&quot;, 672,
+&quot;BUY&quot;, 1032,
+&quot;SYR&quot;, 1092,
+&quot;DUB&quot;, 1892,
+&quot;DEV&quot;, 1932,
+&quot;LON&quot;, 2032,
+&quot;LFR&quot;, 2514,
+&quot;PWS&quot;, 4434,
+&quot;PRC&quot;, 4494,
+&quot;NRP&quot;, 4994,
+&quot;ELF&quot;, 7014,
+&quot;MXO&quot;, 8674,
+&quot;DUN&quot;, 9274,
+&quot;KRA&quot;, 9514,
+Null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ship from Org ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Ship_to_Location__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Ship to Location</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Value in Ship to Location does not exist or does not match filter criteria.</errorMessage>
+            <filterItems>
+                <field>L2I_Site__c.PT_AccountId__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.PT_Case_Ship_to_Customer__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>L2I_Site__c.L2I_Site_Use_Code__c</field>
+                <operation>equals</operation>
+                <value>Ship_To</value>
+            </filterItems>
+            <filterItems>
+                <field>L2I_Site__c.L2I_Status__c</field>
+                <operation>equals</operation>
+                <value>Active</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>L2I_Site__c</referenceTo>
+        <relationshipLabel>Assets</relationshipLabel>
+        <relationshipName>Assets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PT_Software_Demand_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Software Demand Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Invoice Only</fullName>
+                    <default>false</default>
+                    <label>Invoice Only</label>
+                </value>
+                <value>
+                    <fullName>Ship</fullName>
+                    <default>false</default>
+                    <label>Ship</label>
+                </value>
+                <value>
+                    <fullName>No Sales Order Required</fullName>
+                    <default>false</default>
+                    <label>No Sales Order Required</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PT_Special_Op_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Special Op’s Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PT_Special_QA_Inspection__c</fullName>
+        <externalId>false</externalId>
+        <label>Special QA Inspection</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Airbus Source</fullName>
+                    <default>false</default>
+                    <label>Airbus Source</label>
+                </value>
+                <value>
+                    <fullName>Airbus Yellow Tag</fullName>
+                    <default>false</default>
+                    <label>Airbus Yellow Tag</label>
+                </value>
+                <value>
+                    <fullName>Any/PMAConformity</fullName>
+                    <default>false</default>
+                    <label>Any/PMAConformity</label>
+                </value>
+                <value>
+                    <fullName>Boeing FAA 8130-3</fullName>
+                    <default>false</default>
+                    <label>Boeing FAA 8130-3</label>
+                </value>
+                <value>
+                    <fullName>Boeing Source</fullName>
+                    <default>false</default>
+                    <label>Boeing Source</label>
+                </value>
+                <value>
+                    <fullName>COC</fullName>
+                    <default>false</default>
+                    <label>COC</label>
+                </value>
+                <value>
+                    <fullName>COC, CX, Wt. Guarantee</fullName>
+                    <default>false</default>
+                    <label>COC, CX, Wt. Guarantee</label>
+                </value>
+                <value>
+                    <fullName>CONFIGURE PER THE -501 SHIP CONFIGURATION ITEM</fullName>
+                    <default>false</default>
+                    <label>CONFIGURE PER THE -501 SHIP CONFIGURATION ITEM</label>
+                </value>
+                <value>
+                    <fullName>FAA 8130-3 Tag</fullName>
+                    <default>false</default>
+                    <label>FAA 8130-3 Tag</label>
+                </value>
+                <value>
+                    <fullName>FAA Conformity</fullName>
+                    <default>false</default>
+                    <label>FAA Conformity</label>
+                </value>
+                <value>
+                    <fullName>FAA 8130-3, CX Wt Guar</fullName>
+                    <default>false</default>
+                    <label>FAA 8130-3, CX Wt Guar</label>
+                </value>
+                <value>
+                    <fullName>FAA Conform;CX, WtGuar</fullName>
+                    <default>false</default>
+                    <label>FAA Conform;CX, WtGuar</label>
+                </value>
+                <value>
+                    <fullName>Form 1 Appr Data</fullName>
+                    <default>false</default>
+                    <label>Form 1 Appr Data</label>
+                </value>
+                <value>
+                    <fullName>Form1 NonAppr Data</fullName>
+                    <default>false</default>
+                    <label>Form1 NonAppr Data</label>
+                </value>
+                <value>
+                    <fullName>Highest Cert Avail.</fullName>
+                    <default>false</default>
+                    <label>Highest Cert Avail.</label>
+                </value>
+                <value>
+                    <fullName>Highest Cert and Cathay Wt. Guarantee</fullName>
+                    <default>false</default>
+                    <label>Highest Cert and Cathay Wt. Guarantee</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+                <value>
+                    <fullName>N/A; CX Wt Guarantee</fullName>
+                    <default>false</default>
+                    <label>N/A; CX Wt Guarantee</label>
+                </value>
+                <value>
+                    <fullName>PMA A/C Specific</fullName>
+                    <default>false</default>
+                    <label>PMA A/C Specific</label>
+                </value>
+                <value>
+                    <fullName>PMA Any A/C</fullName>
+                    <default>false</default>
+                    <label>PMA Any A/C</label>
+                </value>
+                <value>
+                    <fullName>PMA Any Airbus A/C</fullName>
+                    <default>false</default>
+                    <label>PMA Any Airbus A/C</label>
+                </value>
+                <value>
+                    <fullName>PMA Any Boeing A/C</fullName>
+                    <default>false</default>
+                    <label>PMA Any Boeing A/C</label>
+                </value>
+                <value>
+                    <fullName>Uses/SvcbleRTS8130-3</fullName>
+                    <default>false</default>
+                    <label>Uses/SvcbleRTS8130-3</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PT_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>PT Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Removed</fullName>
+                    <default>false</default>
+                    <label>Removed</label>
+                </value>
+                <value>
+                    <fullName>Pending Replaced</fullName>
+                    <default>false</default>
+                    <label>Pending Replaced</label>
+                </value>
+                <value>
+                    <fullName>Reinitialized</fullName>
+                    <default>false</default>
+                    <label>Reinitialized</label>
+                </value>
+                <value>
+                    <fullName>Pending Removed</fullName>
+                    <default>false</default>
+                    <label>Pending Removed</label>
+                </value>
+                <value>
+                    <fullName>Pending Move</fullName>
+                    <default>false</default>
+                    <label>Pending Move</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PT_Supply_Available_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Supply Available Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PT_Supply_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Supply Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Discreet Job</fullName>
+                    <default>false</default>
+                    <label>Discreet Job</label>
+                </value>
+                <value>
+                    <fullName>Inventory</fullName>
+                    <default>false</default>
+                    <label>Inventory</label>
+                </value>
+                <value>
+                    <fullName>Planned Order</fullName>
+                    <default>false</default>
+                    <label>Planned Order</label>
+                </value>
+                <value>
+                    <fullName>PO in Receiving</fullName>
+                    <default>false</default>
+                    <label>PO in Receiving</label>
+                </value>
+                <value>
+                    <fullName>Purchase Order</fullName>
+                    <default>false</default>
+                    <label>Purchase Order</label>
+                </value>
+                <value>
+                    <fullName>Requisition</fullName>
+                    <default>false</default>
+                    <label>Requisition</label>
+                </value>
+                <value>
+                    <fullName>WIP</fullName>
+                    <default>false</default>
+                    <label>WIP</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PT_System_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>System Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Primary</fullName>
+                    <default>false</default>
+                    <label>Primary</label>
+                </value>
+                <value>
+                    <fullName>Secondary</fullName>
+                    <default>false</default>
+                    <label>Secondary</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PT_Tail_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Tail #</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Total_Order_Quantity__c</fullName>
+        <description>This field will be populated via code to inform the Order Administrator the total quantity of all cloned (child) assets</description>
+        <externalId>false</externalId>
+        <label>Total Order Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Use_D1_Date__c</fullName>
+        <defaultValue>&#39;Yes&#39;</defaultValue>
+        <externalId>false</externalId>
+        <label>Use D1 Date?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PT_Warehouse__c</fullName>
+        <externalId>false</externalId>
+        <label>NonDefault Conforming Org</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>BOT</fullName>
+                    <default>false</default>
+                    <label>BOT</label>
+                </value>
+                <value>
+                    <fullName>GLO</fullName>
+                    <default>false</default>
+                    <label>GLO</label>
+                </value>
+                <value>
+                    <fullName>IRV</fullName>
+                    <default>false</default>
+                    <label>IRV</label>
+                </value>
+                <value>
+                    <fullName>BRP</fullName>
+                    <default>false</default>
+                    <label>BRP</label>
+                </value>
+                <value>
+                    <fullName>LRP</fullName>
+                    <default>false</default>
+                    <label>LRP</label>
+                </value>
+                <value>
+                    <fullName>DRP</fullName>
+                    <default>false</default>
+                    <label>DRP</label>
+                </value>
+                <value>
+                    <fullName>SRP</fullName>
+                    <default>false</default>
+                    <label>SRP</label>
+                </value>
+                <value>
+                    <fullName>DLR</fullName>
+                    <default>false</default>
+                    <label>DLR</label>
+                </value>
+                <value>
+                    <fullName>TRP</fullName>
+                    <default>false</default>
+                    <label>TRP</label>
+                </value>
+                <value>
+                    <fullName>DSP</fullName>
+                    <default>false</default>
+                    <label>DSP</label>
+                </value>
+                <value>
+                    <fullName>MMS</fullName>
+                    <default>false</default>
+                    <label>MMS</label>
+                </value>
+                <value>
+                    <fullName>COW</fullName>
+                    <default>false</default>
+                    <label>COW</label>
+                </value>
+                <value>
+                    <fullName>OEM</fullName>
+                    <default>false</default>
+                    <label>OEM</label>
+                </value>
+                <value>
+                    <fullName>OST</fullName>
+                    <default>false</default>
+                    <label>OST</label>
+                </value>
+                <value>
+                    <fullName>RTN</fullName>
+                    <default>false</default>
+                    <label>RTN</label>
+                </value>
+                <value>
+                    <fullName>OSA</fullName>
+                    <default>false</default>
+                    <label>OSA</label>
+                </value>
+                <value>
+                    <fullName>ORP</fullName>
+                    <default>false</default>
+                    <label>ORP</label>
+                </value>
+                <value>
+                    <fullName>CAR</fullName>
+                    <default>false</default>
+                    <label>CAR</label>
+                </value>
+                <value>
+                    <fullName>PTS</fullName>
+                    <default>false</default>
+                    <label>PTS</label>
+                </value>
+                <value>
+                    <fullName>DSO</fullName>
+                    <default>false</default>
+                    <label>DSO</label>
+                </value>
+                <value>
+                    <fullName>BUY</fullName>
+                    <default>false</default>
+                    <label>BUY</label>
+                </value>
+                <value>
+                    <fullName>SYR</fullName>
+                    <default>false</default>
+                    <label>SYR</label>
+                </value>
+                <value>
+                    <fullName>DUB</fullName>
+                    <default>false</default>
+                    <label>DUB</label>
+                </value>
+                <value>
+                    <fullName>DEV</fullName>
+                    <default>false</default>
+                    <label>DEV</label>
+                </value>
+                <value>
+                    <fullName>LON</fullName>
+                    <default>false</default>
+                    <label>LON</label>
+                </value>
+                <value>
+                    <fullName>LFR</fullName>
+                    <default>false</default>
+                    <label>LFR</label>
+                </value>
+                <value>
+                    <fullName>PWS</fullName>
+                    <default>false</default>
+                    <label>PWS</label>
+                </value>
+                <value>
+                    <fullName>PRC</fullName>
+                    <default>false</default>
+                    <label>PRC</label>
+                </value>
+                <value>
+                    <fullName>NRP</fullName>
+                    <default>false</default>
+                    <label>NRP</label>
+                </value>
+                <value>
+                    <fullName>ELF</fullName>
+                    <default>false</default>
+                    <label>ELF</label>
+                </value>
+                <value>
+                    <fullName>MXO</fullName>
+                    <default>false</default>
+                    <label>MXO</label>
+                </value>
+                <value>
+                    <fullName>DUN</fullName>
+                    <default>false</default>
+                    <label>DUN</label>
+                </value>
+                <value>
+                    <fullName>KRA</fullName>
+                    <default>false</default>
+                    <label>KRA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PT_hasMRODchange__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( AND( ISBLANK(PT_Pending__c), ISBLANK( PT_Airbus_D1_Date__c )),false,true)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>has mrod change</inlineHelpText>
+        <label>hasMRODchange</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PT_inPL_approval__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(PT_Install_Location__r.Part_List_Opportunity__r.PT_PL_Approval_Status__c, &quot;Pending&quot;)
+  ,true,false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Asset in Parts List approval</inlineHelpText>
+        <label>inPL_approval</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PT_isApproved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>isApproved</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PT_xx_Warehouse_Text__c</fullName>
+        <description>This field is used to replicate the Warehouse field and store it as text. This is used in PMA Lead Time formula field to overcome formula length limitation.</description>
+        <externalId>false</externalId>
+        <label>xx_Warehouse_Text</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Price</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Product2Id</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+    </fields>
+    <fields>
+        <fullName>ProductDescription</fullName>
+    </fields>
+    <fields>
+        <fullName>ProductFamily</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>PurchaseDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Quantity</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>RootAssetId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SerialNumber</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Shipped__c</fullName>
+        <externalId>false</externalId>
+        <label>Shipped</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ship</fullName>
+                    <default>false</default>
+                    <label>Ship</label>
+                </value>
+                <value>
+                    <fullName>No Ship</fullName>
+                    <default>false</default>
+                    <label>No Ship</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Shipset_PPL_Link__c</fullName>
+        <description>Link to Shipset / PPL of this Asset</description>
+        <externalId>false</externalId>
+        <formula>IF(isPTAsset__c
+,HYPERLINK( &quot;/&quot; + 
+  IF(ISBLANK(PT_Install_Location__r.ShipSet__c)
+    ,PT_Install_Location__r.Part_List_Opportunity__c
+    ,PT_Install_Location__r.ShipSet__c
+  )
+  ,PT_Install_Location_Parent__c 
+ )
+,&quot;&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Link to Shipset / PPL of this Asset</inlineHelpText>
+        <label>Shipset/PPL Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>StatusReason</fullName>
+        <inlineHelpText>Explanation of the device status.</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>StockKeepingUnit</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalLifecycleAmount</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>UsageEndDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Uuid</fullName>
+        <inlineHelpText>Unique string identifying the asset.</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>canBulkChangePendingMROD__c</fullName>
+        <description>Boolean to identify assets where the Pending MROD date will be updatable when changing the related Install Location Pending MROD date</description>
+        <externalId>false</externalId>
+        <formula>IF( OR(ISBLANK( PT_Install_Location__c ), ISBLANK( Quantity), Quantity = 0), false
+, IF(OR(PT_MROD__c=PT_Install_Location__r.MROD__c,AND(ISBLANK(PT_MROD__c),ISBLANK(PT_Install_Location__r.MROD__c))) , true, false )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Boolean to identify assets where the Pending MROD date will be updatable when changing the related Install Location Pending MROD date</inlineHelpText>
+        <label>canBulkChangePendingMROD</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isActiveProgram__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISPICKVAL(PT_Program__r.PT_isActive__c,&#39;Active&#39;) ,
+ IF(  ISPICKVAL(PT_Install_Location__r.Part_List_Opportunity__r.StageName , &#39;Delivery&#39;),true,false)
+ ,false
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>isActiveProgram</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isPTAsset__c</fullName>
+        <externalId>false</externalId>
+        <formula>NOT(
+ AND(ISBLANK(PT_Install_Location__c)
+ ,ISBLANK(PT_Install_Location__r.ShipSet__c)
+ ,ISBLANK(PT_Install_Location__r.Part_List_Opportunity__c)
+ )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>isPTAsset</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <listViews>
+        <fullName>AllAssets</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Assets</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>ASSET.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ASSET.SERIAL_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ASSET.INSTALL_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.NAME</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ASSET.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ASSET.SERIAL_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ASSET.INSTALL_DATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ASSET.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ASSET.SERIAL_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ASSET.INSTALL_DATE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.NAME</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>ASSET.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ASSET.SERIAL_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ASSET.INSTALL_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.NAME</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Cannot_populate_on_Parent_asset_lookup</fullName>
+        <active>true</active>
+        <description>This error will be displayed if the user attempts in input a value on the Order Quantity field on the Parent asset</description>
+        <errorConditionFormula>ISCHANGED(PT_Order_Quantity__c) &amp;&amp; ISBLANK(PT_Case__c)</errorConditionFormula>
+        <errorDisplayField>PT_Order_Quantity__c</errorDisplayField>
+        <errorMessage>Order Quantity can only be updated on the Child Asset level</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Conformity_not_allowed_on_Prod_Prog_Type</fullName>
+        <active>true</active>
+        <errorConditionFormula>BEGINS(PT_Program__r.PT_Program_Type__c, &quot;Production&quot;) &amp;&amp; ISPICKVAL(PT_Conformity_Overwritten__c, &quot;Yes&quot;)</errorConditionFormula>
+        <errorMessage>Conformity can not be true or overwritten when Program Type is Production</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Disallow_Asset_updates</fullName>
+        <active>false</active>
+        <description>Asset updates not allowed when related Order Product is NOT in a Status of &quot;Booked&quot;, &quot;Entered&quot; or &quot;Awaiting shipping&quot;</description>
+        <errorConditionFormula>/*OR(
+SBQQ__OrderProduct__r.PT_Ext_Order_Line_Status__c =  &quot;Booked&quot;,*/
+		/*SBQQ__OrderProduct__r.PT_Ext_Order_Line_Status__c = &quot;Entered&quot;,*/
+			/*	&quot;&quot;SBQQ__OrderProduct__r.PT_Ext_Order_Line_Status__c =	&quot;Awaiting shipping&quot;*/
+				
+		AND(		
+						 ISBLANK(PT_Ship_to_Location__c ))</errorConditionFormula>
+        <errorMessage>Updates are no longer allowed for this Part as it has been closed in Oracle</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Order_Qty_Cannot_be_less_than_0</fullName>
+        <active>true</active>
+        <errorConditionFormula>PT_Order_Quantity__c &lt;   0</errorConditionFormula>
+        <errorDisplayField>PT_Order_Quantity__c</errorDisplayField>
+        <errorMessage>Order Quantity cannot be less than 0</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Order_Qty_must_be_less_Available_Qt</fullName>
+        <active>false</active>
+        <errorConditionFormula>PT_Order_Quantity__c &gt; Parent.PT_Available_Quantity__c</errorConditionFormula>
+        <errorDisplayField>PT_Order_Quantity__c</errorDisplayField>
+        <errorMessage>Inputted Order Quantity results in a total that is greater than the remaining Available Quantity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>PT_Prevent_Asset_update_OrderClosed_Case</fullName>
+        <active>true</active>
+        <description>Assets cannot be updated when the associated Customer PO Case is in a Status of &quot;Order Closed&quot;</description>
+        <errorConditionFormula>AND(
+ISPICKVAL(PT_Case__r.Status, &quot;Order Closed&quot;),
+ISPICKVAL( PT_Case__r.PO_Case_Type__c, &quot;IFEC&quot;),
+NOT( ISBLANK( 				 PT_Case__c )),
+NOT (ISBLANK(ParentId)))</errorConditionFormula>
+        <errorDisplayField>AccountId</errorDisplayField>
+        <errorMessage>This Asset cannot be updated because it is related to a Customer PO Case that is in a Status of &quot;Order Closed&quot;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Update_Order_Product_is_Closed</fullName>
+        <active>true</active>
+        <description>Prevent Asset Update if Related Order Product is Closed (Oracle Status)</description>
+        <errorConditionFormula>OR(UPPER(PT_Oracle_Line_Status__c) = &quot;CANCELLED&quot;, UPPER(PT_Oracle_Line_Status__c) = &quot;CLOSED&quot;, UPPER(PT_Oracle_Line_Status__c) = &quot;FULFILLED&quot;, UPPER(PT_Oracle_Line_Status__c) = &quot;PICKED&quot;, UPPER(PT_Oracle_Line_Status__c) = &quot;PICKED_PARTIAL&quot;, UPPER(PT_Oracle_Line_Status__c) = &quot;SHIPPED&quot;, UPPER(PT_Oracle_Line_Status__c) = &quot;AWAITING_EXPORT_SCREENING&quot;, UPPER(PT_Oracle_Line_Status__c) = &quot;RELEASED_TO_WAREHOUSE&quot;, UPPER(PT_Oracle_Line_Status__c) = &quot;PENDING_APPROVAL&quot;, UPPER(PT_Oracle_Line_Status__c) = &quot;APPROVED&quot;, UPPER(PT_Oracle_Line_Status__c) = &quot;INVOICE_HOLD&quot;)
+ 
+&amp;&amp;
+ 
+OR(ISCHANGED(PT_Order_Quantity__c), ISCHANGED(PT_Warehouse__c), ISCHANGED(PT_Line_Type__c), ISCHANGED(PT_Customer_PO_Line__c), ISCHANGED(PT_Customer_PO_Request_Date__c), ISCHANGED(PT_Reference_PO__c), ISCHANGED(PT_Reference_PO_Request_Date__c), ISCHANGED(PT_LF_Software_Supply_Date__c), ISCHANGED(PT_Ship_to_Location__c), ISCHANGED(PT_Additional_AR_Invoice_Notes__c), ISCHANGED(PT_Comments__c))</errorConditionFormula>
+        <errorMessage>Updates are no longer allowed for this Part as it has been closed in Oracle</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Qty_cannot_be_greater_than_Config_Qty</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND($Profile.Name &lt;&gt; &quot;System Administrator&quot; ,
+OR ( AND (NOT(ISBLANK(PT_Pending_Quantity__c)), NOT(ISBLANK(PT_Pending_Configured_Quantity__c)), PT_Pending_Quantity__c  &gt;  PT_Pending_Configured_Quantity__c),
+     AND (NOT(ISBLANK(PT_Pending_Quantity__c)), ISBLANK(PT_Pending_Configured_Quantity__c)) )
+     )</errorConditionFormula>
+        <errorMessage>Quantity cannot be greater than Configured Quantity.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Total_Order_Qty_cannot_exceed_Quantity</fullName>
+        <active>true</active>
+        <errorConditionFormula>/*ISCHANGED(PT_Order_Quantity__c) &amp;&amp;
+Parent.PT_Total_Order_Quantity__c &gt; Parent.Quantity
+
+!ISBLANK(ParentId) &amp;&amp; ISCHANGED(PT_Order_Quantity__c) &amp;&amp; IF(ISBLANK(Parent.PT_Total_Order_Quantity__c), 
+(PT_Available_Quantity__c - PT_Order_Quantity__c) &lt; 0,
+PT_Order_Quantity__c &gt; PT_Available_Quantity__c
+)*/
+
+!ISBLANK(ParentId) &amp;&amp; ISCHANGED(PT_Order_Quantity__c) &amp;&amp; IF(ISBLANK(Parent.PT_Total_Order_Quantity__c), 
+(PT_Available_Quantity__c - PT_Order_Quantity__c) &lt; 0,
+IF(ISBLANK(PRIORVALUE(PT_Order_Quantity__c)), 
+(Parent.Quantity - (Parent.PT_Total_Order_Quantity__c + PT_Order_Quantity__c )) &lt; 0,
+(Parent.Quantity - ((Parent.PT_Total_Order_Quantity__c - PRIORVALUE(PT_Order_Quantity__c)) + PT_Order_Quantity__c )) &lt; 0
+))</errorConditionFormula>
+        <errorDisplayField>PT_Order_Quantity__c</errorDisplayField>
+        <errorMessage>Order Quantity cannot be greater than Available Quantity, please reduce Order Quantity</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Total_Order_qty_not_more_than_available</fullName>
+        <active>false</active>
+        <errorConditionFormula>Parent.PT_Total_Order_Quantity__c  &gt;  Parent.PT_Available_Quantity__c</errorConditionFormula>
+        <errorMessage>Total Order Quantity cannot be greater than the remaining available Quantity</errorMessage>
+    </validationRules>
+</CustomObject>

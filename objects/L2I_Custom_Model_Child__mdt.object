@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>L2I_Custom_Model__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Custom Model</label>
+        <referenceTo>L2I_Custom_Model__mdt</referenceTo>
+        <relationshipLabel>Custom Model Children</relationshipLabel>
+        <relationshipName>L2I_Custom_Model_Children</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <label>Custom Model Child</label>
+    <pluralLabel>Custom Model Children</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

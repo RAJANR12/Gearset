@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Ready to Integrate</fullName>
+        <default>false</default>
+        <label>Ready to Integrate</label>
+    </customValue>
+    <customValue>
+        <fullName>Integration Successfully Received</fullName>
+        <default>false</default>
+        <label>Integration Successfully Received</label>
+    </customValue>
+    <customValue>
+        <fullName>Processing</fullName>
+        <default>false</default>
+        <label>Processing</label>
+    </customValue>
+    <customValue>
+        <fullName>Success</fullName>
+        <default>false</default>
+        <label>Success</label>
+    </customValue>
+    <customValue>
+        <fullName>Failed</fullName>
+        <default>false</default>
+        <label>Failed</label>
+    </customValue>
+    <masterLabel>Integration Status</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

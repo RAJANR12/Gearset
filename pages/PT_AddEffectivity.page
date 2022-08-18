@@ -1,0 +1,20 @@
+<apex:page >
+    <style>
+        .removeHelptext .slds-form-element__icon{
+        display: none !important;
+        }
+    </style>
+    <apex:includeLightning />
+    <div id="lightning"></div>
+    <script>
+        var oppId = "{!$CurrentPage.parameters.id}";
+        $Lightning.use("c:PT_AddPartsToOpportunityApp", function () {
+            $Lightning.createComponent("c:pt_AddEffectivity",
+                  {"oppId": oppId},
+                  "lightning",
+                  function (cmp) {
+                      // do some stuff
+                  });
+        });
+    </script> 
+</apex:page>

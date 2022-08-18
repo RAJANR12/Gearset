@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Aircraft_Type__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Aircraft Type</label>
+        <referenceTo>L2I_Aircraft_Type__c</referenceTo>
+        <relationshipLabel>PTS Aircraft Types</relationshipLabel>
+        <relationshipName>PTS_Aircraft_Types</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Is_Quote_Primary__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quote__r.SBQQ__Primary__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Quote Primary</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityId__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quote__r.SBQQ__Opportunity2__c</formula>
+        <label>OpportunityId</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PTS_Service_Types__c</fullName>
+        <externalId>false</externalId>
+        <label>PTS Service Types</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CABIN/AIRCRAFT MAINTENANCE PER A/C</fullName>
+                    <default>false</default>
+                    <label>CABIN/AIRCRAFT MAINTENANCE PER A/C</label>
+                </value>
+                <value>
+                    <fullName>CABIN/AIRCRAFT MAINTENANCE PER TURN</fullName>
+                    <default>false</default>
+                    <label>CABIN/AIRCRAFT MAINTENANCE PER TURN</label>
+                </value>
+                <value>
+                    <fullName>FIXED PRICE REPAIRS - PER A/C</fullName>
+                    <default>false</default>
+                    <label>FIXED PRICE REPAIRS - PER A/C</label>
+                </value>
+                <value>
+                    <fullName>FIXED PRICE REPAIRS - PER LRU</fullName>
+                    <default>false</default>
+                    <label>FIXED PRICE REPAIRS - PER LRU</label>
+                </value>
+                <value>
+                    <fullName>LABOR ONLY (IFEC)</fullName>
+                    <default>false</default>
+                    <label>LABOR ONLY (IFEC)</label>
+                </value>
+                <value>
+                    <fullName>LINE MAINTENANCE</fullName>
+                    <default>false</default>
+                    <label>LINE MAINTENANCE</label>
+                </value>
+                <value>
+                    <fullName>MATERIAL SOLUTION</fullName>
+                    <default>false</default>
+                    <label>MATERIAL SOLUTION</label>
+                </value>
+                <value>
+                    <fullName>MTL SOLUTION/TECHNICAL ADVISORY</fullName>
+                    <default>false</default>
+                    <label>MTL SOLUTION/TECHNICAL ADVISORY</label>
+                </value>
+                <value>
+                    <fullName>OCC/TSR GCS SUPPORT</fullName>
+                    <default>false</default>
+                    <label>OCC/TSR GCS SUPPORT</label>
+                </value>
+                <value>
+                    <fullName>PTS - NON-PAC IFE</fullName>
+                    <default>false</default>
+                    <label>PTS - NON-PAC IFE</label>
+                </value>
+                <value>
+                    <fullName>PTS - OTHER</fullName>
+                    <default>false</default>
+                    <label>PTS - OTHER</label>
+                </value>
+                <value>
+                    <fullName>RACKS - LEASE</fullName>
+                    <default>false</default>
+                    <label>RACKS - LEASE</label>
+                </value>
+                <value>
+                    <fullName>RACKS - PURCHASE</fullName>
+                    <default>false</default>
+                    <label>RACKS - PURCHASE</label>
+                </value>
+                <value>
+                    <fullName>REPAIRS SUPPORT</fullName>
+                    <default>false</default>
+                    <label>REPAIRS SUPPORT</label>
+                </value>
+                <value>
+                    <fullName>SPARES - INDIVIDUAL</fullName>
+                    <default>false</default>
+                    <label>SPARES - INDIVIDUAL</label>
+                </value>
+                <value>
+                    <fullName>SPARES - MONTHLY</fullName>
+                    <default>false</default>
+                    <label>SPARES - MONTHLY</label>
+                </value>
+                <value>
+                    <fullName>TECHNICAL ADVISORY - PER A/C</fullName>
+                    <default>false</default>
+                    <label>TECHNICAL ADVISORY - PER A/C</label>
+                </value>
+                <value>
+                    <fullName>TECHNICAL ADVISORY -MONTHLY</fullName>
+                    <default>false</default>
+                    <label>TECHNICAL ADVISORY -MONTHLY</label>
+                </value>
+                <value>
+                    <fullName>TESTER - LEASE</fullName>
+                    <default>false</default>
+                    <label>TESTER - LEASE</label>
+                </value>
+                <value>
+                    <fullName>TESTER - PURCHASE</fullName>
+                    <default>false</default>
+                    <label>TESTER - PURCHASE</label>
+                </value>
+                <value>
+                    <fullName>TOTAL CARE PACKAGE</fullName>
+                    <default>false</default>
+                    <label>TOTAL CARE PACKAGE</label>
+                </value>
+                <value>
+                    <fullName>TRAINING</fullName>
+                    <default>false</default>
+                    <label>TRAINING</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Qty_Firm__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Qty Firm</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Qty_Optional__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Qty Optional</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quote__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Quote</label>
+        <referenceTo>SBQQ__Quote__c</referenceTo>
+        <relationshipLabel>PTS Aircraft Types</relationshipLabel>
+        <relationshipName>PTS_Aircraft_Types</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>System_Type_1__c</fullName>
+        <externalId>false</externalId>
+        <label>System Type 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>L2I_System_Type_On_Quote</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>System_Type_2__c</fullName>
+        <externalId>false</externalId>
+        <label>System Type 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>L2I_System_Type_On_Quote</valueSetName>
+        </valueSet>
+    </fields>
+    <label>PTS Aircraft Type</label>
+    <nameField>
+        <displayFormat>{0000}</displayFormat>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>PTS Aircraft Types</pluralLabel>
+    <searchLayouts />
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

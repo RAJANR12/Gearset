@@ -1,0 +1,27 @@
+<apex:page standardController="L2I_Deal_Summary__c" showHeader="false" sidebar="false" title="Sales Opportunities">
+	<GBLite:TabbedPageComponent pageAPIName="GBTabs_Sales_Opportunities" customJsIds="" customCssIds="">
+	<GBLite:EmbedComponent baseGridUrl="{!$Page.GBLite__Grid}" />
+		<script>
+			var pageDefinition = {
+	"pageAPIName": "GBTabs_Sales_Opportunities",
+	"showSidebar": false,
+	"showHeader": false,
+	"height": "",
+	"object": "L2I_Deal_Summary__c",
+	"globalButtons": true,
+	"description": "",
+	"selectedCustomJSIds": [],
+	"selectedCustomCSSIds": [],
+	"id": 1602264171639,
+	"tabs": [
+		{
+			"id": 1602264171639,
+			"content": "{!gridPage}gname=Sales Opportunities&amp;sh=0&amp;sfname=default&amp;fpf=L2I_P_L_Approval__c&amp;fpv={!L2I_Deal_Summary__c.L2I_P_L_Approval__c}",
+			"name": "P&amp;L Sales Opportunities"
+		}
+	],
+	"name": "Sales Opportunities"
+};
+		</script>
+	</GBLite:TabbedPageComponent>
+</apex:page>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SEATEND LRU</fullName>
+        <default>false</default>
+        <label>SEATEND LRU</label>
+    </customValue>
+    <customValue>
+        <fullName>HEADEND LRU</fullName>
+        <default>false</default>
+        <label>HEADEND LRU</label>
+    </customValue>
+    <customValue>
+        <fullName>HARNESS</fullName>
+        <default>false</default>
+        <label>HARNESS</label>
+    </customValue>
+    <customValue>
+        <fullName>STRUCTURES</fullName>
+        <default>false</default>
+        <label>STRUCTURES</label>
+    </customValue>
+    <customValue>
+        <fullName>OEM</fullName>
+        <default>false</default>
+        <label>OEM</label>
+    </customValue>
+    <customValue>
+        <fullName>CONNECTIVITY</fullName>
+        <default>false</default>
+        <label>CONNECTIVITY</label>
+    </customValue>
+    <customValue>
+        <fullName>MOBILITY</fullName>
+        <default>false</default>
+        <label>MOBILITY</label>
+    </customValue>
+    <customValue>
+        <fullName>TV/MEDIA</fullName>
+        <default>false</default>
+        <label>TV/MEDIA</label>
+    </customValue>
+    <customValue>
+        <fullName>Spares</fullName>
+        <default>false</default>
+        <label>Spares</label>
+    </customValue>
+    <customValue>
+        <fullName>Interactive Development</fullName>
+        <default>false</default>
+        <label>Interactive Development</label>
+    </customValue>
+    <customValue>
+        <fullName>Applications</fullName>
+        <default>false</default>
+        <label>Applications</label>
+    </customValue>
+    <customValue>
+        <fullName>Media Services</fullName>
+        <default>false</default>
+        <label>Media Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Custom S/W &amp; Other</fullName>
+        <default>false</default>
+        <label>Custom S/W &amp; Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Maintenance Services</fullName>
+        <default>false</default>
+        <label>Maintenance Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Repair Shop Services</fullName>
+        <default>false</default>
+        <label>Repair Shop Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Extended Warranty</fullName>
+        <default>false</default>
+        <label>Extended Warranty</label>
+    </customValue>
+    <customValue>
+        <fullName>Core System Software</fullName>
+        <default>false</default>
+        <label>Core System Software</label>
+    </customValue>
+    <customValue>
+        <fullName>NRE (Product Development)</fullName>
+        <default>false</default>
+        <label>NRE (Product Development)</label>
+    </customValue>
+    <customValue>
+        <fullName>Test Equip/Testers</fullName>
+        <default>false</default>
+        <label>Test Equip/Testers</label>
+    </customValue>
+    <customValue>
+        <fullName>Dedicated Rack (&amp; costs)</fullName>
+        <default>false</default>
+        <label>Dedicated Rack (&amp; costs)</label>
+    </customValue>
+    <customValue>
+        <fullName>PML/MLS-Load Equip</fullName>
+        <default>false</default>
+        <label>PML/MLS-Load Equip</label>
+    </customValue>
+    <customValue>
+        <fullName>System Engineering Support</fullName>
+        <default>false</default>
+        <label>System Engineering Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer Support Service</fullName>
+        <default>false</default>
+        <label>Customer Support Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Certification (STC)</fullName>
+        <default>false</default>
+        <label>Certification (STC)</label>
+    </customValue>
+    <customValue>
+        <fullName>Training</fullName>
+        <default>false</default>
+        <label>Training</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical  Publications</fullName>
+        <default>false</default>
+        <label>Technical  Publications</label>
+    </customValue>
+    <customValue>
+        <fullName>Cell Modem Service Fees</fullName>
+        <default>false</default>
+        <label>Cell Modem Service Fees</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Products</fullName>
+        <default>false</default>
+        <label>Other Products</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Program Related</fullName>
+        <default>false</default>
+        <label>Other Program Related</label>
+    </customValue>
+    <customValue>
+        <fullName>Boeing Retrofit IP Royalty</fullName>
+        <default>false</default>
+        <label>Boeing Retrofit IP Royalty</label>
+    </customValue>
+    <masterLabel>Product Summary Names</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

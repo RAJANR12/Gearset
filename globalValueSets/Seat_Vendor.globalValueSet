@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>1 Viscount Road</fullName>
+        <default>false</default>
+        <label>1 Viscount Road</label>
+    </customValue>
+    <customValue>
+        <fullName>AAR</fullName>
+        <default>false</default>
+        <label>AAR</label>
+    </customValue>
+    <customValue>
+        <fullName>Acro Aircraft Seating (Sussex, UK)</fullName>
+        <default>false</default>
+        <label>Acro Aircraft Seating (Sussex, UK)</label>
+    </customValue>
+    <customValue>
+        <fullName>Adient Aerospace</fullName>
+        <default>false</default>
+        <label>Adient Aerospace</label>
+    </customValue>
+    <customValue>
+        <fullName>AIM (Henshalls)</fullName>
+        <default>false</default>
+        <label>AIM (Henshalls)</label>
+    </customValue>
+    <customValue>
+        <fullName>AIM (Renton)</fullName>
+        <default>false</default>
+        <label>AIM (Renton)</label>
+    </customValue>
+    <customValue>
+        <fullName>AIM Altitude</fullName>
+        <default>false</default>
+        <label>AIM Altitude</label>
+    </customValue>
+    <customValue>
+        <fullName>AIM Aviation (Dorset)</fullName>
+        <default>false</default>
+        <label>AIM Aviation (Dorset)</label>
+    </customValue>
+    <customValue>
+        <fullName>AIP, Aircraft Interior Products (Paris)</fullName>
+        <default>false</default>
+        <label>AIP, Aircraft Interior Products (Paris)</label>
+    </customValue>
+    <customValue>
+        <fullName>Airbus (Alabama)</fullName>
+        <default>false</default>
+        <label>Airbus (Alabama)</label>
+    </customValue>
+    <customValue>
+        <fullName>Airbus (DSM)</fullName>
+        <default>false</default>
+        <label>Airbus (DSM)</label>
+    </customValue>
+    <customValue>
+        <fullName>Airbus (Hamburg)</fullName>
+        <default>false</default>
+        <label>Airbus (Hamburg)</label>
+    </customValue>
+    <customValue>
+        <fullName>Airbus (Saint-Nazaire)</fullName>
+        <default>false</default>
+        <label>Airbus (Saint-Nazaire)</label>
+    </customValue>
+    <customValue>
+        <fullName>Airbus (Tianjin)</fullName>
+        <default>false</default>
+        <label>Airbus (Tianjin)</label>
+    </customValue>
+    <customValue>
+        <fullName>Airbus (Toulouse)</fullName>
+        <default>false</default>
+        <label>Airbus (Toulouse)</label>
+    </customValue>
+    <customValue>
+        <fullName>Airbus (ZOCI)</fullName>
+        <default>false</default>
+        <label>Airbus (ZOCI)</label>
+    </customValue>
+    <customValue>
+        <fullName>Airbus Canada Limited Partnership (ACLP)</fullName>
+        <default>false</default>
+        <label>Airbus Canada Limited Partnership (ACLP)</label>
+    </customValue>
+    <customValue>
+        <fullName>Airbus HUA (Montauban)</fullName>
+        <default>false</default>
+        <label>Airbus HUA (Montauban)</label>
+    </customValue>
+    <customValue>
+        <fullName>Airbus Operations SAS - Airlog II</fullName>
+        <default>false</default>
+        <label>Airbus Operations SAS - Airlog II</label>
+    </customValue>
+    <customValue>
+        <fullName>Airbus PM5 (Cornebarrieu)</fullName>
+        <default>false</default>
+        <label>Airbus PM5 (Cornebarrieu)</label>
+    </customValue>
+    <customValue>
+        <fullName>Air Cabin (Toulouse)</fullName>
+        <default>false</default>
+        <label>Air Cabin (Toulouse)</label>
+    </customValue>
+    <customValue>
+        <fullName>Airline (Customer Facility)</fullName>
+        <default>false</default>
+        <label>Airline (Customer Facility)</label>
+    </customValue>
+    <customValue>
+        <fullName>Airline Services Ltd. (Manchester)</fullName>
+        <default>false</default>
+        <label>Airline Services Ltd. (Manchester)</label>
+    </customValue>
+    <customValue>
+        <fullName>AIS (Airbus Interior Services) - Toulouse</fullName>
+        <default>false</default>
+        <label>AIS (Airbus Interior Services) - Toulouse</label>
+    </customValue>
+    <customValue>
+        <fullName>Atlas Air</fullName>
+        <default>false</default>
+        <label>Atlas Air</label>
+    </customValue>
+    <customValue>
+        <fullName>ATS (Everett)</fullName>
+        <default>false</default>
+        <label>ATS (Everett)</label>
+    </customValue>
+    <customValue>
+        <fullName>Aviation Business Park</fullName>
+        <default>false</default>
+        <label>Aviation Business Park</label>
+    </customValue>
+    <customValue>
+        <fullName>Avio (Latina)</fullName>
+        <default>false</default>
+        <label>Avio (Latina)</label>
+    </customValue>
+    <customValue>
+        <fullName>BE (Bedfordshire)</fullName>
+        <default>false</default>
+        <label>BE (Bedfordshire)</label>
+    </customValue>
+    <customValue>
+        <fullName>BE (Everett)</fullName>
+        <default>false</default>
+        <label>BE (Everett)</label>
+    </customValue>
+    <customValue>
+        <fullName>BE (Kilkeel)</fullName>
+        <default>false</default>
+        <label>BE (Kilkeel)</label>
+    </customValue>
+    <customValue>
+        <fullName>BE (Leighton Buzzard)</fullName>
+        <default>false</default>
+        <label>BE (Leighton Buzzard)</label>
+    </customValue>
+    <customValue>
+        <fullName>BE (Miami)</fullName>
+        <default>false</default>
+        <label>BE (Miami)</label>
+    </customValue>
+    <customValue>
+        <fullName>BE (Phillipines)</fullName>
+        <default>false</default>
+        <label>BE (Phillipines)</label>
+    </customValue>
+    <customValue>
+        <fullName>BE (Tucson)</fullName>
+        <default>false</default>
+        <label>BE (Tucson)</label>
+    </customValue>
+    <customValue>
+        <fullName>BE (Viceroy)</fullName>
+        <default>false</default>
+        <label>BE (Viceroy)</label>
+    </customValue>
+    <customValue>
+        <fullName>BE (Winston Salem)</fullName>
+        <default>false</default>
+        <label>BE (Winston Salem)</label>
+    </customValue>
+    <customValue>
+        <fullName>BE-FSI (Marysville)</fullName>
+        <default>false</default>
+        <label>BE-FSI (Marysville)</label>
+    </customValue>
+    <customValue>
+        <fullName>BH23 6BU</fullName>
+        <default>false</default>
+        <label>BH23 6BU</label>
+    </customValue>
+    <customValue>
+        <fullName>Boeing (ESRC)</fullName>
+        <default>false</default>
+        <label>Boeing (ESRC)</label>
+    </customValue>
+    <customValue>
+        <fullName>Boeing (Everett)</fullName>
+        <default>false</default>
+        <label>Boeing (Everett)</label>
+    </customValue>
+    <customValue>
+        <fullName>Boeing (IRC)</fullName>
+        <default>false</default>
+        <label>Boeing (IRC)</label>
+    </customValue>
+    <customValue>
+        <fullName>Boeing (Mukilteo - PCA 575E)</fullName>
+        <default>false</default>
+        <label>Boeing (Mukilteo - PCA 575E)</label>
+    </customValue>
+    <customValue>
+        <fullName>Boeing (New Breed)</fullName>
+        <default>false</default>
+        <label>Boeing (New Breed)</label>
+    </customValue>
+    <customValue>
+        <fullName>Boeing (Renton)</fullName>
+        <default>false</default>
+        <label>Boeing (Renton)</label>
+    </customValue>
+    <customValue>
+        <fullName>Boeing (South Carolina)</fullName>
+        <default>false</default>
+        <label>Boeing (South Carolina)</label>
+    </customValue>
+    <customValue>
+        <fullName>Boeing (Spirit)</fullName>
+        <default>false</default>
+        <label>Boeing (Spirit)</label>
+    </customValue>
+    <customValue>
+        <fullName>Boeing Fad</fullName>
+        <default>false</default>
+        <label>Boeing Fad</label>
+    </customValue>
+    <customValue>
+        <fullName>Boeing - XPO Logistics (Hanahan, SC)</fullName>
+        <default>false</default>
+        <label>Boeing - XPO Logistics (Hanahan, SC)</label>
+    </customValue>
+    <customValue>
+        <fullName>Bombardier (Canada)</fullName>
+        <default>false</default>
+        <label>Bombardier (Canada)</label>
+    </customValue>
+    <customValue>
+        <fullName>Bournemouth International Airport</fullName>
+        <default>false</default>
+        <label>Bournemouth International Airport</label>
+    </customValue>
+    <customValue>
+        <fullName>Brice (Pacolma)</fullName>
+        <default>false</default>
+        <label>Brice (Pacolma)</label>
+    </customValue>
+    <customValue>
+        <fullName>British Airways Interior Engineering (Blackwood)</fullName>
+        <default>false</default>
+        <label>British Airways Interior Engineering (Blackwood)</label>
+    </customValue>
+    <customValue>
+        <fullName>British Airways Maintenance Cardiff (Wales)</fullName>
+        <default>false</default>
+        <label>British Airways Maintenance Cardiff (Wales)</label>
+    </customValue>
+    <customValue>
+        <fullName>Bucher (Leichtbau)</fullName>
+        <default>false</default>
+        <label>Bucher (Leichtbau)</label>
+    </customValue>
+    <customValue>
+        <fullName>Bucher Aerospace (Everett)</fullName>
+        <default>false</default>
+        <label>Bucher Aerospace (Everett)</label>
+    </customValue>
+    <customValue>
+        <fullName>C&amp;D (Colomiers)</fullName>
+        <default>false</default>
+        <label>C&amp;D (Colomiers)</label>
+    </customValue>
+    <customValue>
+        <fullName>C&amp;D (Cypress)</fullName>
+        <default>false</default>
+        <label>C&amp;D (Cypress)</label>
+    </customValue>
+    <customValue>
+        <fullName>C&amp;D (Garden Grove)</fullName>
+        <default>false</default>
+        <label>C&amp;D (Garden Grove)</label>
+    </customValue>
+    <customValue>
+        <fullName>C&amp;D (La Palma)</fullName>
+        <default>false</default>
+        <label>C&amp;D (La Palma)</label>
+    </customValue>
+    <customValue>
+        <fullName>C&amp;D (Marysville)</fullName>
+        <default>false</default>
+        <label>C&amp;D (Marysville)</label>
+    </customValue>
+    <customValue>
+        <fullName>C&amp;D (Santa Maria)</fullName>
+        <default>false</default>
+        <label>C&amp;D (Santa Maria)</label>
+    </customValue>
+    <customValue>
+        <fullName>Christchurch</fullName>
+        <default>false</default>
+        <label>Christchurch</label>
+    </customValue>
+    <customValue>
+        <fullName>COLLINS AEROSPACE(EVERETT)</fullName>
+        <default>false</default>
+        <label>COLLINS AEROSPACE(EVERETT)</label>
+    </customValue>
+    <customValue>
+        <fullName>Collins Aerospace (FSI)</fullName>
+        <default>false</default>
+        <label>Collins Aerospace (FSI)</label>
+    </customValue>
+    <customValue>
+        <fullName>COLLINS AEROSPACE (KILKEEL)</fullName>
+        <default>false</default>
+        <label>COLLINS AEROSPACE (KILKEEL)</label>
+    </customValue>
+    <customValue>
+        <fullName>COLLINS AEROSPACE (NC)</fullName>
+        <default>false</default>
+        <label>COLLINS AEROSPACE (NC)</label>
+    </customValue>
+    <customValue>
+        <fullName>CONTOUR (CAMBERLEY)</fullName>
+        <default>false</default>
+        <label>CONTOUR (CAMBERLEY)</label>
+    </customValue>
+    <customValue>
+        <fullName>CONTOUR (Wales)</fullName>
+        <default>false</default>
+        <label>CONTOUR (Wales)</label>
+    </customValue>
+    <customValue>
+        <fullName>DeCrane (Peshtigo)</fullName>
+        <default>false</default>
+        <label>DeCrane (Peshtigo)</label>
+    </customValue>
+    <customValue>
+        <fullName>DIEHL Air Cabin</fullName>
+        <default>false</default>
+        <label>DIEHL Air Cabin</label>
+    </customValue>
+    <customValue>
+        <fullName>Diehl Aviation</fullName>
+        <default>false</default>
+        <label>Diehl Aviation</label>
+    </customValue>
+    <customValue>
+        <fullName>Diehl Comfort Module (Hamburg)</fullName>
+        <default>false</default>
+        <label>Diehl Comfort Module (Hamburg)</label>
+    </customValue>
+    <customValue>
+        <fullName>DIEHL Service Modules (Hamburg)</fullName>
+        <default>false</default>
+        <label>DIEHL Service Modules (Hamburg)</label>
+    </customValue>
+    <customValue>
+        <fullName>Dretloh (Anaheim)</fullName>
+        <default>false</default>
+        <label>Dretloh (Anaheim)</label>
+    </customValue>
+    <customValue>
+        <fullName>DRIESSEN (Czech Republic)</fullName>
+        <default>false</default>
+        <label>DRIESSEN (Czech Republic)</label>
+    </customValue>
+    <customValue>
+        <fullName>Driessen (Netherlands)</fullName>
+        <default>false</default>
+        <label>Driessen (Netherlands)</label>
+    </customValue>
+    <customValue>
+        <fullName>EFW (Dresden, Germany)</fullName>
+        <default>false</default>
+        <label>EFW (Dresden, Germany)</label>
+    </customValue>
+    <customValue>
+        <fullName>Embraer (Lima)</fullName>
+        <default>false</default>
+        <label>Embraer (Lima)</label>
+    </customValue>
+    <customValue>
+        <fullName>Encore (Huntington Beach)</fullName>
+        <default>false</default>
+        <label>Encore (Huntington Beach)</label>
+    </customValue>
+    <customValue>
+        <fullName>Etihad Airways Engineering</fullName>
+        <default>false</default>
+        <label>Etihad Airways Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>Flight Line (Valencia)</fullName>
+        <default>false</default>
+        <label>Flight Line (Valencia)</label>
+    </customValue>
+    <customValue>
+        <fullName>GDC Technics</fullName>
+        <default>false</default>
+        <label>GDC Technics</label>
+    </customValue>
+    <customValue>
+        <fullName>Geven (Napoli)</fullName>
+        <default>false</default>
+        <label>Geven (Napoli)</label>
+    </customValue>
+    <customValue>
+        <fullName>Greenpoint Technologies (Denton)</fullName>
+        <default>false</default>
+        <label>Greenpoint Technologies (Denton)</label>
+    </customValue>
+    <customValue>
+        <fullName>Greenpooint Technologies (Moses Lake)</fullName>
+        <default>false</default>
+        <label>Greenpooint Technologies (Moses Lake)</label>
+    </customValue>
+    <customValue>
+        <fullName>HAECO (Greensboro)</fullName>
+        <default>false</default>
+        <label>HAECO (Greensboro)</label>
+    </customValue>
+    <customValue>
+        <fullName>HAECO (Hong Kong)</fullName>
+        <default>false</default>
+        <label>HAECO (Hong Kong)</label>
+    </customValue>
+    <customValue>
+        <fullName>HAECO (Pacoima)</fullName>
+        <default>false</default>
+        <label>HAECO (Pacoima)</label>
+    </customValue>
+    <customValue>
+        <fullName>HAECO (Winston-Salem)</fullName>
+        <default>false</default>
+        <label>HAECO (Winston-Salem)</label>
+    </customValue>
+    <customValue>
+        <fullName>Heath Techna (Camberly)</fullName>
+        <default>false</default>
+        <label>Heath Techna (Camberly)</label>
+    </customValue>
+    <customValue>
+        <fullName>Heath Tecna (Bellingham)</fullName>
+        <default>false</default>
+        <label>Heath Tecna (Bellingham)</label>
+    </customValue>
+    <customValue>
+        <fullName>Hurn</fullName>
+        <default>false</default>
+        <label>Hurn</label>
+    </customValue>
+    <customValue>
+        <fullName>Jai Tai</fullName>
+        <default>false</default>
+        <label>Jai Tai</label>
+    </customValue>
+    <customValue>
+        <fullName>JAMCO (Everett)</fullName>
+        <default>false</default>
+        <label>JAMCO (Everett)</label>
+    </customValue>
+    <customValue>
+        <fullName>JAMCO (Niigata)</fullName>
+        <default>false</default>
+        <label>JAMCO (Niigata)</label>
+    </customValue>
+    <customValue>
+        <fullName>JAMCO (Singapore)</fullName>
+        <default>false</default>
+        <label>JAMCO (Singapore)</label>
+    </customValue>
+    <customValue>
+        <fullName>JAMCO (Tokyo)</fullName>
+        <default>false</default>
+        <label>JAMCO (Tokyo)</label>
+    </customValue>
+    <customValue>
+        <fullName>JET (Basel)</fullName>
+        <default>false</default>
+        <label>JET (Basel)</label>
+    </customValue>
+    <customValue>
+        <fullName>Koito (Fujinagaizum)</fullName>
+        <default>false</default>
+        <label>Koito (Fujinagaizum)</label>
+    </customValue>
+    <customValue>
+        <fullName>Koito (Yokohama)</fullName>
+        <default>false</default>
+        <label>Koito (Yokohama)</label>
+    </customValue>
+    <customValue>
+        <fullName>Lufthansa Technik (Hamburg)</fullName>
+        <default>false</default>
+        <label>Lufthansa Technik (Hamburg)</label>
+    </customValue>
+    <customValue>
+        <fullName>Lufthansa Technik AG</fullName>
+        <default>false</default>
+        <label>Lufthansa Technik AG</label>
+    </customValue>
+    <customValue>
+        <fullName>MRO (Retrofit Site)</fullName>
+        <default>false</default>
+        <label>MRO (Retrofit Site)</label>
+    </customValue>
+    <customValue>
+        <fullName>N/A</fullName>
+        <default>false</default>
+        <label>N/A</label>
+    </customValue>
+    <customValue>
+        <fullName>NAT (Everett)</fullName>
+        <default>false</default>
+        <label>NAT (Everett)</label>
+    </customValue>
+    <customValue>
+        <fullName>Nordam (Tulsa)</fullName>
+        <default>false</default>
+        <label>Nordam (Tulsa)</label>
+    </customValue>
+    <customValue>
+        <fullName>Odyssey (Denton)</fullName>
+        <default>false</default>
+        <label>Odyssey (Denton)</label>
+    </customValue>
+    <customValue>
+        <fullName>Optimares (Italy)</fullName>
+        <default>false</default>
+        <label>Optimares (Italy)</label>
+    </customValue>
+    <customValue>
+        <fullName>PAC Seating Systems (Florida)</fullName>
+        <default>false</default>
+        <label>PAC Seating Systems (Florida)</label>
+    </customValue>
+    <customValue>
+        <fullName>Recaro (Fort Worth)</fullName>
+        <default>false</default>
+        <label>Recaro (Fort Worth)</label>
+    </customValue>
+    <customValue>
+        <fullName>Recaro (Friedrichshafen)</fullName>
+        <default>false</default>
+        <label>Recaro (Friedrichshafen)</label>
+    </customValue>
+    <customValue>
+        <fullName>Recaro (Schwabisch Hall)</fullName>
+        <default>false</default>
+        <label>Recaro (Schwabisch Hall)</label>
+    </customValue>
+    <customValue>
+        <fullName>Recaro (Swiebodzin)</fullName>
+        <default>false</default>
+        <label>Recaro (Swiebodzin)</label>
+    </customValue>
+    <customValue>
+        <fullName>Recaro Grieshaber Logistyka (Jordanowo)</fullName>
+        <default>false</default>
+        <label>Recaro Grieshaber Logistyka (Jordanowo)</label>
+    </customValue>
+    <customValue>
+        <fullName>Reynard (Northants)</fullName>
+        <default>false</default>
+        <label>Reynard (Northants)</label>
+    </customValue>
+    <customValue>
+        <fullName>Rockwell Collins (Phillipines)</fullName>
+        <default>false</default>
+        <label>Rockwell Collins (Phillipines)</label>
+    </customValue>
+    <customValue>
+        <fullName>Rockwell Collins (Satterfield)</fullName>
+        <default>false</default>
+        <label>Rockwell Collins (Satterfield)</label>
+    </customValue>
+    <customValue>
+        <fullName>Rockwell Collins (Tucson)</fullName>
+        <default>false</default>
+        <label>Rockwell Collins (Tucson)</label>
+    </customValue>
+    <customValue>
+        <fullName>Rockwell Collins Interior Systems (Winston Salem)</fullName>
+        <default>false</default>
+        <label>Rockwell Collins Interior Systems (Winston Salem)</label>
+    </customValue>
+    <customValue>
+        <fullName>S &amp; S Numerical Control, Northridge</fullName>
+        <default>false</default>
+        <label>S &amp; S Numerical Control, Northridge</label>
+    </customValue>
+    <customValue>
+        <fullName>Sabena Technics</fullName>
+        <default>false</default>
+        <label>Sabena Technics</label>
+    </customValue>
+    <customValue>
+        <fullName>SAFRAN (UK)</fullName>
+        <default>false</default>
+        <label>SAFRAN (UK)</label>
+    </customValue>
+    <customValue>
+        <fullName>Safran Cabin (Cypress)</fullName>
+        <default>false</default>
+        <label>Safran Cabin (Cypress)</label>
+    </customValue>
+    <customValue>
+        <fullName>Safran Seats (France)</fullName>
+        <default>false</default>
+        <label>Safran Seats (France)</label>
+    </customValue>
+    <customValue>
+        <fullName>Safran Seats (UK)</fullName>
+        <default>false</default>
+        <label>Safran Seats (UK)</label>
+    </customValue>
+    <customValue>
+        <fullName>Safran Seats (US)</fullName>
+        <default>false</default>
+        <label>Safran Seats (US)</label>
+    </customValue>
+    <customValue>
+        <fullName>Satterfield Aerospace (Northridge)</fullName>
+        <default>false</default>
+        <label>Satterfield Aerospace (Northridge)</label>
+    </customValue>
+    <customValue>
+        <fullName>Ship to Customer</fullName>
+        <default>false</default>
+        <label>Ship to Customer</label>
+    </customValue>
+    <customValue>
+        <fullName>Ship to OEM</fullName>
+        <default>false</default>
+        <label>Ship to OEM</label>
+    </customValue>
+    <customValue>
+        <fullName>SIAEC (Singapore)</fullName>
+        <default>false</default>
+        <label>SIAEC (Singapore)</label>
+    </customValue>
+    <customValue>
+        <fullName>Sicma (Everett)</fullName>
+        <default>false</default>
+        <label>Sicma (Everett)</label>
+    </customValue>
+    <customValue>
+        <fullName>Sicma (Issoudun)</fullName>
+        <default>false</default>
+        <label>Sicma (Issoudun)</label>
+    </customValue>
+    <customValue>
+        <fullName>SR Technics (Zurich)</fullName>
+        <default>false</default>
+        <label>SR Technics (Zurich)</label>
+    </customValue>
+    <customValue>
+        <fullName>Stelia (Rochefort)</fullName>
+        <default>false</default>
+        <label>Stelia (Rochefort)</label>
+    </customValue>
+    <customValue>
+        <fullName>Taeco (Xiamen)</fullName>
+        <default>false</default>
+        <label>Taeco (Xiamen)</label>
+    </customValue>
+    <customValue>
+        <fullName>Thompson Aero Seating</fullName>
+        <default>false</default>
+        <label>Thompson Aero Seating</label>
+    </customValue>
+    <customValue>
+        <fullName>ThreeSixty (Northants)</fullName>
+        <default>false</default>
+        <label>ThreeSixty (Northants)</label>
+    </customValue>
+    <customValue>
+        <fullName>TO BE DETERMINED</fullName>
+        <default>false</default>
+        <label>TO BE DETERMINED</label>
+    </customValue>
+    <customValue>
+        <fullName>Toyota Boshoku (Aichi)</fullName>
+        <default>false</default>
+        <label>Toyota Boshoku (Aichi)</label>
+    </customValue>
+    <customValue>
+        <fullName>TTF Aerospace (Auburn)</fullName>
+        <default>false</default>
+        <label>TTF Aerospace (Auburn)</label>
+    </customValue>
+    <customValue>
+        <fullName>Turkish Airlines Technic (Istanbul)</fullName>
+        <default>false</default>
+        <label>Turkish Airlines Technic (Istanbul)</label>
+    </customValue>
+    <customValue>
+        <fullName>Turkish Cabin Interiors (Pendik)</fullName>
+        <default>false</default>
+        <label>Turkish Cabin Interiors (Pendik)</label>
+    </customValue>
+    <customValue>
+        <fullName>Turkish Seat Industries (Istanbul)</fullName>
+        <default>false</default>
+        <label>Turkish Seat Industries (Istanbul)</label>
+    </customValue>
+    <customValue>
+        <fullName>Turkish Seat Industries (Utah)</fullName>
+        <default>false</default>
+        <label>Turkish Seat Industries (Utah)</label>
+    </customValue>
+    <customValue>
+        <fullName>Weber (College Park)</fullName>
+        <default>false</default>
+        <label>Weber (College Park)</label>
+    </customValue>
+    <customValue>
+        <fullName>Weber (Gainesville)</fullName>
+        <default>false</default>
+        <label>Weber (Gainesville)</label>
+    </customValue>
+    <customValue>
+        <fullName>ZIM (Markdorf)</fullName>
+        <default>false</default>
+        <label>ZIM (Markdorf)</label>
+    </customValue>
+    <customValue>
+        <fullName>ZIM(Schwerin)</fullName>
+        <default>false</default>
+        <label>ZIM(Schwerin)</label>
+    </customValue>
+    <customValue>
+        <fullName>Zodiac (Bellingham)</fullName>
+        <default>false</default>
+        <label>Zodiac (Bellingham)</label>
+    </customValue>
+    <customValue>
+        <fullName>Zodiac (Camberley)</fullName>
+        <default>false</default>
+        <label>Zodiac (Camberley)</label>
+    </customValue>
+    <customValue>
+        <fullName>Zodiac (Colomiers)</fullName>
+        <default>false</default>
+        <label>Zodiac (Colomiers)</label>
+    </customValue>
+    <customValue>
+        <fullName>Zodiac (Czech Republic)</fullName>
+        <default>false</default>
+        <label>Zodiac (Czech Republic)</label>
+    </customValue>
+    <customValue>
+        <fullName>Zodiac (Gainesville)</fullName>
+        <default>false</default>
+        <label>Zodiac (Gainesville)</label>
+    </customValue>
+    <customValue>
+        <fullName>Zodiac (Garden Grove)</fullName>
+        <default>false</default>
+        <label>Zodiac (Garden Grove)</label>
+    </customValue>
+    <customValue>
+        <fullName>Zodiac (Herborn)</fullName>
+        <default>false</default>
+        <label>Zodiac (Herborn)</label>
+    </customValue>
+    <customValue>
+        <fullName>Zodiac (Issoudun)</fullName>
+        <default>false</default>
+        <label>Zodiac (Issoudun)</label>
+    </customValue>
+    <customValue>
+        <fullName>Zodiac (La Palma)</fullName>
+        <default>false</default>
+        <label>Zodiac (La Palma)</label>
+    </customValue>
+    <customValue>
+        <fullName>Zodiac (Netherlands)</fullName>
+        <default>false</default>
+        <label>Zodiac (Netherlands)</label>
+    </customValue>
+    <customValue>
+        <fullName>Zodiac (Northants)</fullName>
+        <default>false</default>
+        <label>Zodiac (Northants)</label>
+    </customValue>
+    <customValue>
+        <fullName>Zodiac (Rancho Cucamonga)</fullName>
+        <default>false</default>
+        <label>Zodiac (Rancho Cucamonga)</label>
+    </customValue>
+    <customValue>
+        <fullName>Zodiac (Santa Maria)</fullName>
+        <default>false</default>
+        <label>Zodiac (Santa Maria)</label>
+    </customValue>
+    <customValue>
+        <fullName>Zodiac (UK)</fullName>
+        <default>false</default>
+        <label>Zodiac (UK)</label>
+    </customValue>
+    <customValue>
+        <fullName>Zodiac (Wales)</fullName>
+        <default>false</default>
+        <label>Zodiac (Wales)</label>
+    </customValue>
+    <customValue>
+        <fullName>Zodiac Cabin Interiors</fullName>
+        <default>false</default>
+        <label>Zodiac Cabin Interiors</label>
+    </customValue>
+    <customValue>
+        <fullName>Zodiac Cabin Interiors (Hamburg)</fullName>
+        <default>false</default>
+        <label>Zodiac Cabin Interiors (Hamburg)</label>
+    </customValue>
+    <customValue>
+        <fullName>Zodiac Cabin Interiors (Huntington Beach, CA)</fullName>
+        <default>false</default>
+        <label>Zodiac Cabin Interiors (Huntington Beach, CA)</label>
+    </customValue>
+    <customValue>
+        <fullName>Zodiac Cabin Interiors (Marysville, WA)</fullName>
+        <default>false</default>
+        <label>Zodiac Cabin Interiors (Marysville, WA)</label>
+    </customValue>
+    <customValue>
+        <fullName>Zodiac Galleys Europe (Czech Republic)</fullName>
+        <default>false</default>
+        <label>Zodiac Galleys Europe (Czech Republic)</label>
+    </customValue>
+    <customValue>
+        <fullName>Zodiac Premium Galleys</fullName>
+        <default>false</default>
+        <label>Zodiac Premium Galleys</label>
+    </customValue>
+    <masterLabel>Seat Vendor</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

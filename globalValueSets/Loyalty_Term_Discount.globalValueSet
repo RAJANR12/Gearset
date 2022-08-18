@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>None</fullName>
+        <default>true</default>
+        <label>None</label>
+    </customValue>
+    <customValue>
+        <fullName>Term 2 yr</fullName>
+        <default>false</default>
+        <label>Term 2 yr</label>
+    </customValue>
+    <customValue>
+        <fullName>Term 3 yr</fullName>
+        <default>false</default>
+        <label>Term 3 yr</label>
+    </customValue>
+    <customValue>
+        <fullName>Term 5 yr</fullName>
+        <default>false</default>
+        <label>Term 5 yr</label>
+    </customValue>
+    <masterLabel>Loyalty &amp; Term Discount</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,13 @@
+<apex:page action="{!if($Profile.Name !='System Administrator',
+ null,
+    urlFor($Action.L2I_DSL__c.Delete, $CurrentPage.Parameters.id, [retURL='/a2p'], true)
+    )
+    }"
+  standardController="L2I_DSL__c">
+     <apex:pageBlock >
+        <apex:PageMessage summary="Use the Delivery Schedule tab on the Opportunity to manage Delivery Schedule Lines "
+            severity="Warning"
+            strength="3"/>
+        <apex:pageMessages />
+    </apex:pageBlock>
+</apex:page>

@@ -1,0 +1,4 @@
+<apex:component controller="L2I_ApprovalRequestCommentsController" access="global" id="L2I_ApprovalRequestSteps">
+    <apex:attribute name="relatedToId" assignTo="{!targetObjectId}" type="String" description="ID of the record whose last approval step"/>
+    <apex:outputText value="{!step}"/>
+</apex:component>

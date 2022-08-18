@@ -1,0 +1,32 @@
+<apex:page standardController="PT_Program__c" showHeader="false" sidebar="false" title="Shipsets">
+	<GBLite:TabbedPageComponent pageAPIName="GBTabs_Shipsets" customJsIds="" customCssIds="">
+	<GBLite:EmbedComponent baseGridUrl="{!$Page.GBLite__Grid}" />
+		<script>
+			var pageDefinition = {
+	"name": "Shipsets",
+	"tabs": [
+		{
+			"name": "Active Shipsets",
+			"content": "{!gridPage}gname=Shipsets&amp;sh=0&amp;sfname=default&amp;fpf=L2I_DSL__c.PT_Program__c&amp;fpv={!Id}",
+			"id": 1615559885023
+		},
+		{
+			"name": "Other Shipsets",
+			"content": "{!gridPage}gname=Shipsets Other&amp;sh=0&amp;sfname=default&amp;fpf=L2I_DSL__c.PT_Program__c&amp;fpv={!Id}",
+			"id": 1615562095409
+		}
+	],
+	"id": 1615559885023,
+	"selectedCustomCSSIds": [],
+	"selectedCustomJSIds": [],
+	"description": "",
+	"globalButtons": true,
+	"object": "PT_Program__c",
+	"height": "",
+	"showHeader": false,
+	"showSidebar": false,
+	"pageAPIName": "GBTabs_Shipsets"
+};
+		</script>
+	</GBLite:TabbedPageComponent>
+</apex:page>

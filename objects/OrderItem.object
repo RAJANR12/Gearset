@@ -1,0 +1,2084 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddProduct</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddProduct</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditAllProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditAllProduct</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditAllProduct</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>L2I_PAC_Order_Product</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>L2I_PAC_Order_Product</fullName>
+        <fields>Product2Id</fields>
+        <fields>ProductCode</fields>
+        <fields>SBQQ__ChargeType__c</fields>
+        <fields>SBQQ__BillingFrequency__c</fields>
+        <fields>blng__NextBillingDate__c</fields>
+        <fields>blng__BillableUnitPrice__c</fields>
+        <fields>blng__TotalBilling__c</fields>
+        <fields>blng__InvoiceRunProcessingStatus__c</fields>
+        <label>PAC Order Product</label>
+    </compactLayouts>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>AvailableQuantity</fullName>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>L2I_Ad_Ops_Notes__c</fullName>
+        <externalId>false</externalId>
+        <formula>Order.Opportunity.L2I_Ad_Ops_Notes__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ad Ops Notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_AdditionalInfo1__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Info 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>L2I_AdditionalInfo2__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Info 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Additional_AR_Invoice_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional AR Invoice Notes</label>
+        <length>240</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Advertiser_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Order.Opportunity.L2I_Advertiser_Name__r.L2I_Account_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Advertiser ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Advertiser_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Order.Opportunity.L2I_Advertiser_Name__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Advertiser Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Airline_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__QuoteLine__r.L2I_Account__r.L2I_Airline_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Airline Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Airline_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__QuoteLine__r.L2I_Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Airline Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_CCC_Prefix__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(  L2I_Sub_Category_2__c , 
+&#39;eX2&#39;, &#39;A&#39;, 
+&#39;eXLite&#39;, &#39;L&#39;, 
+&#39;eX1&#39;, &#39;H&#39;, 
+&#39;eX3&#39;, &#39;G&#39;, 
+&#39;NEXT&#39;, &#39;Z&#39;, 
+&#39;eXK&#39;, &#39;J&#39;, 
+&#39;eXO&#39;, &#39;Y&#39;, 
+&#39;eXW&#39;, &#39;W&#39;, 
+&#39;DMPES&#39;, &#39;3&#39;, 
+&#39;S3K&#39;, &#39;5&#39;, 
+&#39;eFX&#39;, &#39;C&#39;, 
+&#39;S&#39;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>L2I_CCC_Prefix</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_CCC_Suffix__c</fullName>
+        <externalId>false</externalId>
+        <label>CCC Suffix</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>WI</fullName>
+                    <default>false</default>
+                    <label>WI</label>
+                </value>
+                <value>
+                    <fullName>GM</fullName>
+                    <default>false</default>
+                    <label>GM</label>
+                </value>
+                <value>
+                    <fullName>AD</fullName>
+                    <default>false</default>
+                    <label>AD</label>
+                </value>
+                <value>
+                    <fullName>TV</fullName>
+                    <default>false</default>
+                    <label>TV</label>
+                </value>
+                <value>
+                    <fullName>AP</fullName>
+                    <default>false</default>
+                    <label>AP</label>
+                </value>
+                <value>
+                    <fullName>EX</fullName>
+                    <default>false</default>
+                    <label>EX</label>
+                </value>
+                <value>
+                    <fullName>MP</fullName>
+                    <default>false</default>
+                    <label>MP</label>
+                </value>
+                <value>
+                    <fullName>CM</fullName>
+                    <default>false</default>
+                    <label>CM</label>
+                </value>
+                <value>
+                    <fullName>ZT</fullName>
+                    <default>false</default>
+                    <label>ZT</label>
+                </value>
+                <value>
+                    <fullName>GU</fullName>
+                    <default>false</default>
+                    <label>GU</label>
+                </value>
+                <value>
+                    <fullName>SE</fullName>
+                    <default>false</default>
+                    <label>SE</label>
+                </value>
+                <value>
+                    <fullName>PH</fullName>
+                    <default>false</default>
+                    <label>PH</label>
+                </value>
+                <value>
+                    <fullName>ME</fullName>
+                    <default>false</default>
+                    <label>ME</label>
+                </value>
+                <value>
+                    <fullName>OP</fullName>
+                    <default>false</default>
+                    <label>OP</label>
+                </value>
+                <value>
+                    <fullName>BUNDLE PRODUCT</fullName>
+                    <default>false</default>
+                    <label>BUNDLE PRODUCT</label>
+                </value>
+                <value>
+                    <fullName>ZZ</fullName>
+                    <default>false</default>
+                    <label>ZZ</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_CCC__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+ISPICKVAL(L2I_Sub_Category_2__c, &quot;MCS&quot;), L2I_Program_Number__c &amp; TEXT(PricebookEntry.Product2.L2I_CCC_Suffix__c),
+ L2I_CCC_Prefix__c  &amp; Order.Account.L2I_Operator_Number__c &amp; &quot;MIXED&quot; &amp; TEXT(PricebookEntry.Product2.L2I_CCC_Suffix__c)
+)</formula>
+        <label>CCC</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Campaign_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Campaign Type</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Case_Ship_to_Customer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case Ship to Customer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Order Products (Case Ship to Customer)</relationshipLabel>
+        <relationshipName>Order_Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Order Products</relationshipLabel>
+        <relationshipName>Order_Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>L2I_Category</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>240</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Connecctivity_Frequency__c</fullName>
+        <externalId>false</externalId>
+        <label>Frequency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Annually(1)</fullName>
+                    <default>false</default>
+                    <label>Annually(1)</label>
+                </value>
+                <value>
+                    <fullName>Semi-Annual(2)</fullName>
+                    <default>false</default>
+                    <label>Semi-Annual(2)</label>
+                </value>
+                <value>
+                    <fullName>Tri-Annual(3)</fullName>
+                    <default>false</default>
+                    <label>Tri-Annual(3)</label>
+                </value>
+                <value>
+                    <fullName>Quarterly(4)</fullName>
+                    <default>false</default>
+                    <label>Quarterly(4)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_Connected_User_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Connected User Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Average Users per Flight</fullName>
+                    <default>false</default>
+                    <label>Average Users per Flight</label>
+                </value>
+                <value>
+                    <fullName>Service Level</fullName>
+                    <default>false</default>
+                    <label>Service Level</label>
+                </value>
+                <value>
+                    <fullName>MB Definition</fullName>
+                    <default>false</default>
+                    <label>MB Definition</label>
+                </value>
+                <value>
+                    <fullName>PAC RevShare Percent</fullName>
+                    <default>false</default>
+                    <label>PAC RevShare Percent</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_Customer_PO_Line__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer PO Line</label>
+        <length>240</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Customer_PO_Request_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer PO Request Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Default_Shipping_Org__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product2.L2I_Default_Shipping_Org__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Default Shipping Org</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Delivery_Schedule__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Delivery Schedule</label>
+        <referenceTo>L2I_DSH__c</referenceTo>
+        <relationshipLabel>Order Products</relationshipLabel>
+        <relationshipName>Order_Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>L2I_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Order.Opportunity.L2I_Campaign_End_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Feature_ID__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Twin Field, originating from the product2</inlineHelpText>
+        <label>Feature ID</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Feature_Name__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Twin Field, originating from the product2</inlineHelpText>
+        <label>Feature Name</label>
+        <length>240</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Frequency_Cap__c</fullName>
+        <externalId>false</externalId>
+        <formula>Order.Opportunity.L2I_Frequency_Cap__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Frequency Cap</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Frequency__c</fullName>
+        <externalId>false</externalId>
+        <label>Frequency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Monthly (12)</fullName>
+                    <default>false</default>
+                    <label>Monthly (12)</label>
+                </value>
+                <value>
+                    <fullName>Bi-Monthly (6)</fullName>
+                    <default>false</default>
+                    <label>Bi-Monthly (6)</label>
+                </value>
+                <value>
+                    <fullName>Quarterly (4)</fullName>
+                    <default>false</default>
+                    <label>Quarterly (4)</label>
+                </value>
+                <value>
+                    <fullName>Tri-Annually (3)</fullName>
+                    <default>false</default>
+                    <label>Tri-Annually (3)</label>
+                </value>
+                <value>
+                    <fullName>Semi-Annual (2)</fullName>
+                    <default>false</default>
+                    <label>Semi-Annual (2)</label>
+                </value>
+                <value>
+                    <fullName>Annually (1)</fullName>
+                    <default>false</default>
+                    <label>Annually (1)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_Goal_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Goal Type</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Has_Rate_Schedule__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Boolean to identify whether the Order Item has a custom Rate Schedule associated with it</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Boolean to identify whether the Order Item has a custom Rate Schedule associated with it</inlineHelpText>
+        <label>Has Rate Schedule</label>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>L2I_IncludedUsage__c</fullName>
+        <externalId>false</externalId>
+        <label>Included Usage Qty (MB)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Installation_Location__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(L2I_Sub_Category_2__c, &quot;MCS&quot;), &quot;SWD&quot;, null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Installation Location</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Integration_Message__c</fullName>
+        <externalId>false</externalId>
+        <label>Integration Message</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Integration_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Integration Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>L2I_IntegrationStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_Inventory_Item_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Inventory Item ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Is_there_an_Integration_Effort__c</fullName>
+        <externalId>false</externalId>
+        <label>Is there an Integration Effort?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes (1)</fullName>
+                    <default>false</default>
+                    <label>Yes (1)</label>
+                </value>
+                <value>
+                    <fullName>No (0)</fullName>
+                    <default>false</default>
+                    <label>No (0)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_LF_Software_Supply_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>LF Software Supply Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Line_ExternalId__c</fullName>
+        <externalId>false</externalId>
+        <label>Line ExternalId</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Line_Type_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Line Type ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Max_Impressions__c</fullName>
+        <externalId>false</externalId>
+        <formula>Order.Opportunity.L2I_Max_Impressions__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Max Impressions</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Megabyte_Definition__c</fullName>
+        <externalId>false</externalId>
+        <label>Megabyte Definition</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1000</fullName>
+                    <default>false</default>
+                    <label>1000</label>
+                </value>
+                <value>
+                    <fullName>1024</fullName>
+                    <default>false</default>
+                    <label>1024</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_Minimum_GB_Per_Tail__c</fullName>
+        <externalId>false</externalId>
+        <label>Minimum GB Per Tail</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Model_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Model Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Average GB per Tail with Overage</fullName>
+                    <default>false</default>
+                    <label>Average GB per Tail with Overage</label>
+                </value>
+                <value>
+                    <fullName>Average GB per Tail - Tiered</fullName>
+                    <default>false</default>
+                    <label>Average GB per Tail - Tiered</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_Next_Threshold_Percentage__c</fullName>
+        <description>Percentage for the next billing event. Used for tracking consumption milestone in addition to a time based billing</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Percentage for the next billing event. Used for tracking consumption milestone in addition to a time based billing</inlineHelpText>
+        <label>Next Threshold Percentage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>L2I_On_Doc_Delivery_Day__c</fullName>
+        <externalId>false</externalId>
+        <label>On Doc Delivery Day</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                    <label>6</label>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                    <label>7</label>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                    <label>8</label>
+                </value>
+                <value>
+                    <fullName>9</fullName>
+                    <default>false</default>
+                    <label>9</label>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                    <label>10</label>
+                </value>
+                <value>
+                    <fullName>11</fullName>
+                    <default>false</default>
+                    <label>11</label>
+                </value>
+                <value>
+                    <fullName>12</fullName>
+                    <default>false</default>
+                    <label>12</label>
+                </value>
+                <value>
+                    <fullName>13</fullName>
+                    <default>false</default>
+                    <label>13</label>
+                </value>
+                <value>
+                    <fullName>14</fullName>
+                    <default>false</default>
+                    <label>14</label>
+                </value>
+                <value>
+                    <fullName>15</fullName>
+                    <default>false</default>
+                    <label>15</label>
+                </value>
+                <value>
+                    <fullName>16</fullName>
+                    <default>false</default>
+                    <label>16</label>
+                </value>
+                <value>
+                    <fullName>17</fullName>
+                    <default>false</default>
+                    <label>17</label>
+                </value>
+                <value>
+                    <fullName>18</fullName>
+                    <default>false</default>
+                    <label>18</label>
+                </value>
+                <value>
+                    <fullName>19</fullName>
+                    <default>false</default>
+                    <label>19</label>
+                </value>
+                <value>
+                    <fullName>20</fullName>
+                    <default>false</default>
+                    <label>20</label>
+                </value>
+                <value>
+                    <fullName>21</fullName>
+                    <default>false</default>
+                    <label>21</label>
+                </value>
+                <value>
+                    <fullName>22</fullName>
+                    <default>false</default>
+                    <label>22</label>
+                </value>
+                <value>
+                    <fullName>23</fullName>
+                    <default>false</default>
+                    <label>23</label>
+                </value>
+                <value>
+                    <fullName>24</fullName>
+                    <default>false</default>
+                    <label>24</label>
+                </value>
+                <value>
+                    <fullName>25</fullName>
+                    <default>false</default>
+                    <label>25</label>
+                </value>
+                <value>
+                    <fullName>26</fullName>
+                    <default>false</default>
+                    <label>26</label>
+                </value>
+                <value>
+                    <fullName>27</fullName>
+                    <default>false</default>
+                    <label>27</label>
+                </value>
+                <value>
+                    <fullName>28</fullName>
+                    <default>false</default>
+                    <label>28</label>
+                </value>
+                <value>
+                    <fullName>29</fullName>
+                    <default>false</default>
+                    <label>29</label>
+                </value>
+                <value>
+                    <fullName>30</fullName>
+                    <default>false</default>
+                    <label>30</label>
+                </value>
+                <value>
+                    <fullName>31</fullName>
+                    <default>false</default>
+                    <label>31</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_On_Dock_Delivery_Date_c__c</fullName>
+        <externalId>false</externalId>
+        <label>On Dock Delivery Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Opportunity_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Order.Opportunity.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Oracle_Sales_Order_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Oracle Sales Order ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Order_Process__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Order.L2I_Order_Process__c)</formula>
+        <label>Order Process</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Order_Type_Context__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Type Context</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Order_Type_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Type ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_PACRevSharePerc__c</fullName>
+        <externalId>false</externalId>
+        <label>PAC RevShare Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>L2I_PO_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>PO Required</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Part_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Part Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Per_Aircraft_Proration__c</fullName>
+        <description>Defines how per aircraft per month fees are treated</description>
+        <externalId>false</externalId>
+        <label>Per Aircraft Proration</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_Price_List_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Price List ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Pricing_Model__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Order.Opportunity.L2I_Pricing_Model__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Pricing Model</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_ProductName__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(!ISBLANK(SBQQ__QuoteLine__c), SBQQ__QuoteLine__r.L2I_ProductName_Display__c, Product2.Name)</formula>
+        <label>Product Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Product_Billable_MB__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Billable MB</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Product_Code_Int__c</fullName>
+        <externalId>false</externalId>
+        <formula>SBQQ__QuoteLine__r.SBQQ__ProductCode__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Code Int</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Product_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(!ISBLANK(SBQQ__QuoteLine__c), SBQQ__QuoteLine__r.L2I_ProductCode_Display__c, Product2.ProductCode)</formula>
+        <label>Product Code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Program_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+ISPICKVAL(L2I_Sub_Category_2__c, &quot;MCS&quot;), Order.L2I_Program_Number__c,
+&quot;NA&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Program Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Rate_Schedule_JSON__c</fullName>
+        <description>Twins from Quote Line. Capture the Rate Schedule Tiers from the Quote Line Rate Schedule JSON field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Twins from Quote Line. Capture the Rate Schedule Tiers from the Quote Line Rate Schedule JSON field.</inlineHelpText>
+        <label>L2I Rate Schedule JSON</label>
+        <length>131000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>L2I_Reference_PO_Request_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Reference PO Request Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Reference_PO__c</fullName>
+        <externalId>false</externalId>
+        <label>Reference PO</label>
+        <length>240</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Renewal_Notification_Email_Sent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Renewal Notification Email Sent</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Renewal_Notification_Percent__c</fullName>
+        <defaultValue>0.75</defaultValue>
+        <externalId>false</externalId>
+        <label>Renewal Notification Percent</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>L2I_RevShare__c</fullName>
+        <externalId>false</externalId>
+        <label>PAC RevShare %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Revenue_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Revenue Type</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_RunningDailyUsageAverage__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Calculated field that averages the usage of the last n days. This field is used to forecast the burndown of the TeraByte connectivity plan</inlineHelpText>
+        <label>Running Daily Usage Average</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Service_Activation_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(PricebookEntry.Product2.L2I_Service_Activation_Type__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Service Activation Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Ship_to_Location__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Ship to Location</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Value in Ship to Location does not exist or does not match filter criteria.</errorMessage>
+            <filterItems>
+                <field>L2I_Site__c.PT_AccountId__c</field>
+                <operation>equals</operation>
+                <valueField>$Source.L2I_Case_Ship_to_Customer__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>L2I_Site__c.L2I_Site_Use_Code__c</field>
+                <operation>equals</operation>
+                <value>Ship_To</value>
+            </filterItems>
+            <filterItems>
+                <field>L2I_Site__c.L2I_Status__c</field>
+                <operation>equals</operation>
+                <value>Active</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>L2I_Site__c</referenceTo>
+        <relationshipLabel>Order Products</relationshipLabel>
+        <relationshipName>Order_Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Shipment_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Shipment Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Physical</fullName>
+                    <default>false</default>
+                    <label>Physical</label>
+                </value>
+                <value>
+                    <fullName>Electronic</fullName>
+                    <default>false</default>
+                    <label>Electronic</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_Source_OrderProduct__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Populated for shadow Order Products to denote what their source order product is.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Populated for shadow Order Products to denote what their source order product is.</inlineHelpText>
+        <label>L2I Source Order Product</label>
+        <referenceTo>OrderItem</referenceTo>
+        <relationshipLabel>Shadow Order Products (Source Order Product)</relationshipLabel>
+        <relationshipName>Shadow_OrderProducts</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Special_QA_Inspection__c</fullName>
+        <externalId>false</externalId>
+        <label>Special QA Inspection</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Airbus Source</fullName>
+                    <default>false</default>
+                    <label>Airbus Source</label>
+                </value>
+                <value>
+                    <fullName>Airbus Yellow Tag</fullName>
+                    <default>false</default>
+                    <label>Airbus Yellow Tag</label>
+                </value>
+                <value>
+                    <fullName>Any/PMAConformity</fullName>
+                    <default>false</default>
+                    <label>Any/PMAConformity</label>
+                </value>
+                <value>
+                    <fullName>Boeing FAA 8130-3</fullName>
+                    <default>false</default>
+                    <label>Boeing FAA 8130-3</label>
+                </value>
+                <value>
+                    <fullName>Boeing Source</fullName>
+                    <default>false</default>
+                    <label>Boeing Source</label>
+                </value>
+                <value>
+                    <fullName>COC</fullName>
+                    <default>false</default>
+                    <label>COC</label>
+                </value>
+                <value>
+                    <fullName>COC, CX, Wt. Guarantee</fullName>
+                    <default>false</default>
+                    <label>COC, CX, Wt. Guarantee</label>
+                </value>
+                <value>
+                    <fullName>CONFIGURE PER THE -501 SHIP CONFIGURATION ITEM</fullName>
+                    <default>false</default>
+                    <label>CONFIGURE PER THE -501 SHIP CONFIGURATION ITEM</label>
+                </value>
+                <value>
+                    <fullName>FAA 8130-3 Tag</fullName>
+                    <default>false</default>
+                    <label>FAA 8130-3 Tag</label>
+                </value>
+                <value>
+                    <fullName>FAA Conformity</fullName>
+                    <default>false</default>
+                    <label>FAA Conformity</label>
+                </value>
+                <value>
+                    <fullName>FAA 8130-3, CX Wt Guar</fullName>
+                    <default>false</default>
+                    <label>FAA 8130-3, CX Wt Guar</label>
+                </value>
+                <value>
+                    <fullName>FAA Conform;CX, WtGuar</fullName>
+                    <default>false</default>
+                    <label>FAA Conform;CX, WtGuar</label>
+                </value>
+                <value>
+                    <fullName>Form 1 Appr Data</fullName>
+                    <default>false</default>
+                    <label>Form 1 Appr Data</label>
+                </value>
+                <value>
+                    <fullName>Form1 NonAppr Data</fullName>
+                    <default>false</default>
+                    <label>Form1 NonAppr Data</label>
+                </value>
+                <value>
+                    <fullName>Highest Cert Avail.</fullName>
+                    <default>false</default>
+                    <label>Highest Cert Avail.</label>
+                </value>
+                <value>
+                    <fullName>Highest Cert and Cathay Wt. Guarantee</fullName>
+                    <default>false</default>
+                    <label>Highest Cert and Cathay Wt. Guarantee</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+                <value>
+                    <fullName>N/A; CX Wt Guarantee</fullName>
+                    <default>false</default>
+                    <label>N/A; CX Wt Guarantee</label>
+                </value>
+                <value>
+                    <fullName>PMA A/C Specific</fullName>
+                    <default>false</default>
+                    <label>PMA A/C Specific</label>
+                </value>
+                <value>
+                    <fullName>PMA Any A/C</fullName>
+                    <default>false</default>
+                    <label>PMA Any A/C</label>
+                </value>
+                <value>
+                    <fullName>PMA Any Airbus A/C</fullName>
+                    <default>false</default>
+                    <label>PMA Any Airbus A/C</label>
+                </value>
+                <value>
+                    <fullName>PMA Any Boeing A/C</fullName>
+                    <default>false</default>
+                    <label>PMA Any Boeing A/C</label>
+                </value>
+                <value>
+                    <fullName>Uses/SvcbleRTS8130-3</fullName>
+                    <default>false</default>
+                    <label>Uses/SvcbleRTS8130-3</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Order.Opportunity.L2I_Campaign_Start_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Sub_Category3__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub Category 3</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_Sub_Category_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>L2I_Sub_Category</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_Sub_Category_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub Category 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>L2I_Sub_Category_2</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_System_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>System Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>2K</fullName>
+                    <default>false</default>
+                    <label>2K</label>
+                </value>
+                <value>
+                    <fullName>3K/3Ki</fullName>
+                    <default>false</default>
+                    <label>3K/3Ki</label>
+                </value>
+                <value>
+                    <fullName>CMS</fullName>
+                    <default>false</default>
+                    <label>CMS</label>
+                </value>
+                <value>
+                    <fullName>DMPES</fullName>
+                    <default>false</default>
+                    <label>DMPES</label>
+                </value>
+                <value>
+                    <fullName>eFX</fullName>
+                    <default>false</default>
+                    <label>eFX</label>
+                </value>
+                <value>
+                    <fullName>eX1</fullName>
+                    <default>false</default>
+                    <label>eX1</label>
+                </value>
+                <value>
+                    <fullName>eX2</fullName>
+                    <default>false</default>
+                    <label>eX2</label>
+                </value>
+                <value>
+                    <fullName>eX3</fullName>
+                    <default>false</default>
+                    <label>eX3</label>
+                </value>
+                <value>
+                    <fullName>eXK</fullName>
+                    <default>false</default>
+                    <label>eXK</label>
+                </value>
+                <value>
+                    <fullName>eXLite</fullName>
+                    <default>false</default>
+                    <label>eXLite</label>
+                </value>
+                <value>
+                    <fullName>eXO</fullName>
+                    <default>false</default>
+                    <label>eXO</label>
+                </value>
+                <value>
+                    <fullName>eXW</fullName>
+                    <default>false</default>
+                    <label>eXW</label>
+                </value>
+                <value>
+                    <fullName>Next</fullName>
+                    <default>false</default>
+                    <label>NEXT</label>
+                </value>
+                <value>
+                    <fullName>GCS</fullName>
+                    <default>false</default>
+                    <label>GCS</label>
+                </value>
+                <value>
+                    <fullName>3K</fullName>
+                    <default>false</default>
+                    <label>3K</label>
+                </value>
+                <value>
+                    <fullName>All</fullName>
+                    <default>false</default>
+                    <label>All</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_Threshold_Step__c</fullName>
+        <description>Step value to add to the Next Threshold Percentage when the existing milestone is reached.</description>
+        <externalId>false</externalId>
+        <label>Threshold Step</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Total_Usage_Consumed__c</fullName>
+        <description>Percentage of Total Usage divided by Included Usage</description>
+        <externalId>false</externalId>
+        <formula>IF(
+ ISBLANK(L2I_IncludedUsage__c),NULL,
+   L2I_Total_Usage__c / L2I_IncludedUsage__c
+)</formula>
+        <inlineHelpText>Percentage of Total Usage divided by Included Usage</inlineHelpText>
+        <label>Total Usage Consumed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Total_Usage__c</fullName>
+        <description>Aggregated usage across all billing periods for this order.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Aggregated usage across all billing periods for this order.</inlineHelpText>
+        <label>Total Usage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>3</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_UOM__c</fullName>
+        <externalId>false</externalId>
+        <label>Mediation UOM</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>L2I_Mediation_UOM</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_Usage_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Usage Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Passenger</fullName>
+                    <default>false</default>
+                    <label>Passenger</label>
+                </value>
+                <value>
+                    <fullName>Operational</fullName>
+                    <default>false</default>
+                    <label>Operational</label>
+                </value>
+                <value>
+                    <fullName>Whitelist</fullName>
+                    <default>false</default>
+                    <label>Whitelist</label>
+                </value>
+                <value>
+                    <fullName>Both</fullName>
+                    <default>false</default>
+                    <label>Both</label>
+                </value>
+                <value>
+                    <fullName>iPass</fullName>
+                    <default>false</default>
+                    <label>iPass</label>
+                </value>
+                <value>
+                    <fullName>Boingo</fullName>
+                    <default>false</default>
+                    <label>Boingo</label>
+                </value>
+                <value>
+                    <fullName>Level 1</fullName>
+                    <default>false</default>
+                    <label>Level 1</label>
+                </value>
+                <value>
+                    <fullName>Level 2</fullName>
+                    <default>false</default>
+                    <label>Level 2</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_VLS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>VLS</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>L2I_VendorRevSharePerc__c</fullName>
+        <externalId>false</externalId>
+        <label>Vendor RevShare Percent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Warehouse__c</fullName>
+        <externalId>false</externalId>
+        <label>Warehouse</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>BOT</fullName>
+                    <default>false</default>
+                    <label>BOT</label>
+                </value>
+                <value>
+                    <fullName>GLO</fullName>
+                    <default>false</default>
+                    <label>GLO</label>
+                </value>
+                <value>
+                    <fullName>IRV</fullName>
+                    <default>false</default>
+                    <label>IRV</label>
+                </value>
+                <value>
+                    <fullName>BRP</fullName>
+                    <default>false</default>
+                    <label>BRP</label>
+                </value>
+                <value>
+                    <fullName>LRP</fullName>
+                    <default>false</default>
+                    <label>LRP</label>
+                </value>
+                <value>
+                    <fullName>DRP</fullName>
+                    <default>false</default>
+                    <label>DRP</label>
+                </value>
+                <value>
+                    <fullName>SRP</fullName>
+                    <default>false</default>
+                    <label>SRP</label>
+                </value>
+                <value>
+                    <fullName>DLR</fullName>
+                    <default>false</default>
+                    <label>DLR</label>
+                </value>
+                <value>
+                    <fullName>TRP</fullName>
+                    <default>false</default>
+                    <label>TRP</label>
+                </value>
+                <value>
+                    <fullName>DSP</fullName>
+                    <default>false</default>
+                    <label>DSP</label>
+                </value>
+                <value>
+                    <fullName>MMS</fullName>
+                    <default>false</default>
+                    <label>MMS</label>
+                </value>
+                <value>
+                    <fullName>COW</fullName>
+                    <default>false</default>
+                    <label>COW</label>
+                </value>
+                <value>
+                    <fullName>OEM</fullName>
+                    <default>false</default>
+                    <label>OEM</label>
+                </value>
+                <value>
+                    <fullName>OST</fullName>
+                    <default>false</default>
+                    <label>OST</label>
+                </value>
+                <value>
+                    <fullName>RTN</fullName>
+                    <default>false</default>
+                    <label>RTN</label>
+                </value>
+                <value>
+                    <fullName>OSA</fullName>
+                    <default>false</default>
+                    <label>OSA</label>
+                </value>
+                <value>
+                    <fullName>ORP</fullName>
+                    <default>false</default>
+                    <label>ORP</label>
+                </value>
+                <value>
+                    <fullName>CAR</fullName>
+                    <default>false</default>
+                    <label>CAR</label>
+                </value>
+                <value>
+                    <fullName>PTS</fullName>
+                    <default>false</default>
+                    <label>PTS</label>
+                </value>
+                <value>
+                    <fullName>DSO</fullName>
+                    <default>false</default>
+                    <label>DSO</label>
+                </value>
+                <value>
+                    <fullName>BUY</fullName>
+                    <default>false</default>
+                    <label>BUY</label>
+                </value>
+                <value>
+                    <fullName>SYR</fullName>
+                    <default>false</default>
+                    <label>SYR</label>
+                </value>
+                <value>
+                    <fullName>DUB</fullName>
+                    <default>false</default>
+                    <label>DUB</label>
+                </value>
+                <value>
+                    <fullName>DEV</fullName>
+                    <default>false</default>
+                    <label>DEV</label>
+                </value>
+                <value>
+                    <fullName>LON</fullName>
+                    <default>false</default>
+                    <label>LON</label>
+                </value>
+                <value>
+                    <fullName>LFR</fullName>
+                    <default>false</default>
+                    <label>LFR</label>
+                </value>
+                <value>
+                    <fullName>PWS</fullName>
+                    <default>false</default>
+                    <label>PWS</label>
+                </value>
+                <value>
+                    <fullName>PRC</fullName>
+                    <default>false</default>
+                    <label>PRC</label>
+                </value>
+                <value>
+                    <fullName>NRP</fullName>
+                    <default>false</default>
+                    <label>NRP</label>
+                </value>
+                <value>
+                    <fullName>ELF</fullName>
+                    <default>false</default>
+                    <label>ELF</label>
+                </value>
+                <value>
+                    <fullName>MXO</fullName>
+                    <default>false</default>
+                    <label>MXO</label>
+                </value>
+                <value>
+                    <fullName>DUN</fullName>
+                    <default>false</default>
+                    <label>DUN</label>
+                </value>
+                <value>
+                    <fullName>KRA</fullName>
+                    <default>false</default>
+                    <label>KRA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_What_is_the_Release_Effort__c</fullName>
+        <externalId>false</externalId>
+        <label>What is the Release Effort?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Separate Release (1)</fullName>
+                    <default>false</default>
+                    <label>Separate Release (1)</label>
+                </value>
+                <value>
+                    <fullName>Single Release (0)</fullName>
+                    <default>false</default>
+                    <label>Single Release (0)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_What_is_the_Test_Effort__c</fullName>
+        <externalId>false</externalId>
+        <label>What is the Test Effort?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Major Spot Check (2)</fullName>
+                    <default>false</default>
+                    <label>Major Spot Check (2)</label>
+                </value>
+                <value>
+                    <fullName>Minor Spot Check (1)</fullName>
+                    <default>false</default>
+                    <label>Minor Spot Check (1)</label>
+                </value>
+                <value>
+                    <fullName>No Test (0)</fullName>
+                    <default>false</default>
+                    <label>No Test (0)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_Who_is_Responsible__c</fullName>
+        <externalId>false</externalId>
+        <label>Who is Responsible?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Panasonic (0)</fullName>
+                    <default>false</default>
+                    <label>Panasonic (0)</label>
+                </value>
+                <value>
+                    <fullName>Customer (1)</fullName>
+                    <default>false</default>
+                    <label>Customer (1)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>L2I_blng_MatchingId__c</fullName>
+        
+        <businessStatus>Active</businessStatus>
+        <externalId>true</externalId>
+        <label>Matching ID</label>
+        <length>255</length>
+        <required>false</required>
+        <securityClassification>Public</securityClassification>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ListPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>OrderId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OriginalOrderItemId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PT_Ext_Hold_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Ext Hold Status</label>
+        <length>10000</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>PT_Ext_Order_Line_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Ext Order Line Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Integration_Message__c</fullName>
+        <externalId>false</externalId>
+        <label>Integration Message</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Integration_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Integration Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>L2I_IntegrationStatus</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PT_Line_External_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Line External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Unit_Price__c</fullName>
+        <externalId>false</externalId>
+        <formula>UnitPrice</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Unit Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product2Id</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+    </fields>
+    <fields>
+        <fullName>Quantity</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>QuoteLineItemId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ServiceDate</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>TotalPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>UnitPrice</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+</CustomObject>

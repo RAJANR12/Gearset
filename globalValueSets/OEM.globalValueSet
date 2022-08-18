@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Airbus</fullName>
+        <default>false</default>
+        <label>Airbus</label>
+    </customValue>
+    <customValue>
+        <fullName>ATR</fullName>
+        <default>false</default>
+        <label>ATR</label>
+    </customValue>
+    <customValue>
+        <fullName>Boeing </fullName>
+        <default>false</default>
+        <label>Boeing </label>
+    </customValue>
+    <customValue>
+        <fullName>Bombardier</fullName>
+        <default>false</default>
+        <label>Bombardier</label>
+    </customValue>
+    <customValue>
+        <fullName>COMAC</fullName>
+        <default>false</default>
+        <label>COMAC</label>
+    </customValue>
+    <customValue>
+        <fullName>Embraer</fullName>
+        <default>false</default>
+        <label>Embraer</label>
+    </customValue>
+    <customValue>
+        <fullName>Irkut</fullName>
+        <default>false</default>
+        <label>Irkut</label>
+    </customValue>
+    <customValue>
+        <fullName>Mitsubishi</fullName>
+        <default>false</default>
+        <label>Mitsubishi</label>
+    </customValue>
+    <customValue>
+        <fullName>NA</fullName>
+        <default>false</default>
+        <label>NA</label>
+    </customValue>
+    <masterLabel>OEM</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

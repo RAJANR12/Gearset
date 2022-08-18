@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CABIN/AIRCRAFT MAINTENANCE PER A/C</fullName>
+        <default>false</default>
+        <label>CABIN/AIRCRAFT MAINTENANCE PER A/C</label>
+    </customValue>
+    <customValue>
+        <fullName>CABIN/AIRCRAFT MAINTENANCE PER TURN</fullName>
+        <default>false</default>
+        <label>CABIN/AIRCRAFT MAINTENANCE PER TURN</label>
+    </customValue>
+    <customValue>
+        <fullName>FIXED PRICE REPAIRS - PER A/C</fullName>
+        <default>false</default>
+        <label>FIXED PRICE REPAIRS - PER A/C</label>
+    </customValue>
+    <customValue>
+        <fullName>FIXED PRICE REPAIRS - PER LRU</fullName>
+        <default>false</default>
+        <label>FIXED PRICE REPAIRS - PER LRU</label>
+    </customValue>
+    <customValue>
+        <fullName>LABOR ONLY (IFEC)</fullName>
+        <default>false</default>
+        <label>LABOR ONLY (IFEC)</label>
+    </customValue>
+    <customValue>
+        <fullName>LINE MAINTENANCE</fullName>
+        <default>false</default>
+        <label>LINE MAINTENANCE</label>
+    </customValue>
+    <customValue>
+        <fullName>MATERIAL SOLUTION</fullName>
+        <default>false</default>
+        <label>MATERIAL SOLUTION</label>
+    </customValue>
+    <customValue>
+        <fullName>MTL SOLUTION/TECHNICAL ADVISORY</fullName>
+        <default>false</default>
+        <label>MTL SOLUTION/TECHNICAL ADVISORY</label>
+    </customValue>
+    <customValue>
+        <fullName>OCC/TSR GCS SUPPORT</fullName>
+        <default>false</default>
+        <label>OCC/TSR GCS SUPPORT</label>
+    </customValue>
+    <customValue>
+        <fullName>PTS - NON-PAC IFE</fullName>
+        <default>false</default>
+        <label>PTS - NON-PAC IFE</label>
+    </customValue>
+    <customValue>
+        <fullName>PTS - OTHER</fullName>
+        <default>false</default>
+        <label>PTS - OTHER</label>
+    </customValue>
+    <customValue>
+        <fullName>RACKS - LEASE</fullName>
+        <default>false</default>
+        <label>RACKS - LEASE</label>
+    </customValue>
+    <customValue>
+        <fullName>RACKS - PURCHASE</fullName>
+        <default>false</default>
+        <label>RACKS - PURCHASE</label>
+    </customValue>
+    <customValue>
+        <fullName>REPAIRS SUPPORT</fullName>
+        <default>false</default>
+        <label>REPAIRS SUPPORT</label>
+    </customValue>
+    <customValue>
+        <fullName>SPARES - INDIVIDUAL</fullName>
+        <default>false</default>
+        <label>SPARES - INDIVIDUAL</label>
+    </customValue>
+    <customValue>
+        <fullName>SPARES - MONTHLY</fullName>
+        <default>false</default>
+        <label>SPARES - MONTHLY</label>
+    </customValue>
+    <customValue>
+        <fullName>TECHNICAL ADVISORY - PER A/C</fullName>
+        <default>false</default>
+        <label>TECHNICAL ADVISORY - PER A/C</label>
+    </customValue>
+    <customValue>
+        <fullName>TECHNICAL ADVISORY -MONTHLY</fullName>
+        <default>false</default>
+        <label>TECHNICAL ADVISORY -MONTHLY</label>
+    </customValue>
+    <customValue>
+        <fullName>TESTER - LEASE</fullName>
+        <default>false</default>
+        <label>TESTER - LEASE</label>
+    </customValue>
+    <customValue>
+        <fullName>TESTER - PURCHASE</fullName>
+        <default>false</default>
+        <label>TESTER - PURCHASE</label>
+    </customValue>
+    <customValue>
+        <fullName>TOTAL CARE PACKAGE</fullName>
+        <default>false</default>
+        <label>TOTAL CARE PACKAGE</label>
+    </customValue>
+    <customValue>
+        <fullName>TRAINING</fullName>
+        <default>false</default>
+        <label>TRAINING</label>
+    </customValue>
+    <customValue>
+        <fullName>TECHNICAL ADVISORY</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TECHNICAL ADVISORY</label>
+    </customValue>
+    <customValue>
+        <fullName>TCP IFE/GCS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TCP IFE/GCS</label>
+    </customValue>
+    <customValue>
+        <fullName>TCP IFE</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TCP IFE</label>
+    </customValue>
+    <customValue>
+        <fullName>TCP GCS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TCP GCS</label>
+    </customValue>
+    <customValue>
+        <fullName>TOTAL MATERIAL SUPPORT</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TOTAL MATERIAL SUPPORT</label>
+    </customValue>
+    <masterLabel>PTS Service Types</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

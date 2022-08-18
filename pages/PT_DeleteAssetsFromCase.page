@@ -1,0 +1,7 @@
+<apex:page showHeader="false" sidebar="false" controller="PT_DeleteAssetsFromCaseController" action="{!deleteAssetsFromCase}">
+    <apex:pageMessages ></apex:pageMessages>
+    <!--<div style="text-align:center">
+        <br />
+        Selected parts have been successfully removed from the case.
+    </div>-->
+</apex:page>

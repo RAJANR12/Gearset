@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>MB</fullName>
+        <default>true</default>
+        <label>MB</label>
+    </customValue>
+    <customValue>
+        <fullName>User</fullName>
+        <default>false</default>
+        <label>User</label>
+    </customValue>
+    <masterLabel>Mediation UOM</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

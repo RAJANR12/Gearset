@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Monitor Upgrade Program</fullName>
+        <default>false</default>
+        <label>Monitor Upgrade Program</label>
+    </customValue>
+    <customValue>
+        <fullName>Ultra-Low Cost</fullName>
+        <default>false</default>
+        <label>Ultra-Low Cost</label>
+    </customValue>
+    <customValue>
+        <fullName>VIP/VVIP</fullName>
+        <default>false</default>
+        <label>VIP/VVIP</label>
+    </customValue>
+    <customValue>
+        <fullName>Special Project</fullName>
+        <default>false</default>
+        <label>Special Project</label>
+    </customValue>
+    <masterLabel>Business Initiative</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

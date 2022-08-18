@@ -1,0 +1,527 @@
+<apex:page controller="ife_SOReportController" showHeader="false" renderAs="PdF" sidebar="false" standardStylesheets="false"
+    applyHtmlTag="false" action="{!getPageValue}">
+    <apex:outputText rendered="{!!isDisplay}">
+
+        <apex:pageMessages />
+
+    </apex:outputText>
+
+    <apex:outputText rendered="{!isDisplay}">
+
+        <head>
+
+            <style type="text/css" media="print">
+                @page :first {
+                    margin-top: 402px;
+
+                }
+
+                @page {
+                    margin-top: 408.5px;
+
+                    @top-center {
+                        content: element(header);
+                    }
+                    @bottom-left {
+                        content: element(footer);
+                    }
+                }
+
+                div.header {
+                    padding: 10px;
+                    position: running(header);
+                }
+
+                div.footer {
+                    display: block;
+                    position: running(footer);
+                }
+
+                .pagenumber:before {
+
+                    content: counter(page);
+                }
+
+                .pagecount:before {
+
+                    content: counter(pages);
+                }
+            </style>
+            <style>
+                table {
+
+                    border-collapse: collapse;
+                    min-width: 100%;
+                    min-height: 100%;
+                }
+
+                .table--border {
+                    border: 1px solid black;
+
+                }
+            </style>
+
+            <style>
+                .row {
+                    width: 100%;
+
+                    margin: 0 auto;
+                }
+
+                .block {
+
+                    float: left;
+                }
+
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+
+                }
+            </style>
+        </head>
+        <div class="header">
+            <div class="row">
+                <div class="block" style="width: 59%;">
+                    <div class="row">
+                        <div class="block" style="font-size:30px; font-weight: bold;">Panasonic</div>
+                        <br/>
+                        <div class="block" style="width: 68%;">
+                            <span style="font-size:15px; font-weight: bold; padding: 10px;">
+                                {!logoName}
+                                <br/>
+                            </span>
+                            <span style="font-size:11px;  padding: 10px;">
+                                {!shopAddress}
+                                <!-- 3303 Monte Villa Parkway, Bothell, WA 98021, U.S.A-->
+                                <br/>
+                            </span>
+                            <span style="font-size:11px;  padding: 10px;">
+                                {!shopTeleFax}
+                                <!-- Telephone: (425) 415-9000 Fax: (425) 487-0776-->
+                            </span>
+                        </div>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <div style="font-size: 13px;">
+                            SHIP TO:
+                            <div style="margin-left: 20px; margin-top: -1px;">
+                                {!headerObj.SHIP_CUSTOMER}
+                                <br/> {!headerObj.SHIP_TO_LOCATION}
+                                <br/> {!headerObj.S_ADDRESS1}
+                                <br/> {!headerObj.S_ADDRESS2}
+                                <br/> {!headerObj.S_ADDRESS3}
+                                <br/> {!headerObj.S_ADDRESS4}
+                                <br/> {!headerObj.S_CITY_ST_ZIP}
+                                <br/> {!headerObj.S_COUNTRY_NAME}
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <div class="block" style="font-size: 13px;">
+                                BILL TO:
+                                <div style="margin-left: 20px; margin-top: -1px;">
+                                    <div> {!headerObj.BILL_CUSTOMER}
+                                        <br/> {!headerObj.BILL_TO_LOCATION}
+                                        <br/> {!headerObj.B_ADDRESS1}
+                                        <br/> {!headerObj.B_ADDRESS2}
+                                        <br/> {!headerObj.B_ADDRESS3}
+                                        <br/> {!headerObj.B_ADDRESS4}
+                                        <br/> {!headerObj.B_CITY_ST_ZIP1}
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block" style="font-size: 17px;font-weight: bold;margin-left: 51px;">
+
+                                <div>NOT AN INVOICE
+                                    <br/> DO NOT PAY</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block" style="width: 41%; ">
+                    <table>
+                        <tr style="height : 40px;">
+                            <th colspan="6" style="border: 1px solid black; font-size: 25px; font-weight: bold; width: 50px;">Order Acknowledgement
+                            </th>
+                        </tr>
+                        <tr style="height : 40px;">
+                            <th colspan="2" style="border: 1px solid black; font-size: 8px; font-weight: bold; width: 50px;">ORDER NUMBER
+                                <br/>
+                                <br/>
+                                <span style="font-size: 14px; font-weight: bold;">{!headerObj.ORDER_NUMBER}</span>
+                            </th>
+                            <th colspan="2" style="border: 1px solid black; font-size: 8px; font-weight: bold;width: 50px; ">ORDER DATE
+                                <br/>
+                                <br/>
+                                <span style="font-size: 14px; font-weight: bold;">{!headerObj.ORDER_DATE}</span>
+                            </th>
+                            <th colspan="2" style="border: 1px solid black; font-size: 8px; font-weight: bold; width: 50px;">PAGE
+                                <br/>
+                                <br/>
+                                <span style="font-size: 14px; font-weight: bold;">
+                                    <span class="pagenumber" /> of
+                                    <span class="pagecount" />
+
+                                </span>
+
+                            </th>
+                        </tr>
+                        <tr style="height : 40px;">
+                            <td colspan="6" style=" font-size: 8px; font-weight: bold; border: 1px solid black; width: 50px;">PROGRAM NUMBER
+                                <br/>
+                                <br/>
+                                <span style="font-size: 14px; font-weight: bold;">{!headerObj.Attribute1}</span>
+                            </td>
+
+                        </tr>
+
+                        <tr style="height : 40px;">
+                            <td colspan="6" style=" font-size: 8px; font-weight: bold; border: 1px solid black;width: 50px;">PURCHASE ORDER NUMBER
+                                <br/>
+                                <br/>
+                                <span style="font-size: 14px; font-weight: bold;">{!headerObj.PURCHASE_ORDER}</span>
+                            </td>
+
+                        </tr>
+                        <tr style="height : 40px;">
+                            <td colspan="6" style=" font-size: 8px; font-weight: bold; border: 1px solid black;width: 50px;">PLEASE DIRECT QUESTIONS TO:
+                                <br/>
+                                <br/>
+                                <span style="font-size: 14px; font-weight: bold;">{!headerObj.F_SO_CONTACT}
+                                </span>
+                            </td>
+                        </tr>
+                        <tr style="height : 40px;">
+                            <td colspan="3" style=" font-size: 8px; font-weight: bold; border: 1px solid black;width: 50px;">PAYMENT TERMS
+                                <br/>
+                                <br/>
+                                <span style="font-size: 14px; font-weight: bold;">{!headerObj.PAYMENT_TERMS}
+                                </span>
+                            </td>
+                            <td colspan="3" style=" font-size: 8px; font-weight: bold; border: 1px solid black; width: 50px;  ">FREIGHT TERMS
+                                <br/>
+                                <br/>
+                                <span style="font-size: 14px; font-weight: bold;">{!headerObj.FREIGHT_TERMS}
+                                </span>
+                            </td>
+                        </tr>
+                        <tr style="height : 40px;">
+                            <td colspan="4" style=" font-size: 8px; font-weight: bold; border: 1px solid black; width: 50px;">F.O.B
+                                <br/>
+                                <br/>
+                                <span style="font-size: 14px; font-weight: bold;">{!headerObj.FOB}
+                                </span>
+                            </td>
+                            <td colspan="2" style=" font-size: 8px; font-weight: bold; border: 1px solid black; width: 50px; ">SHIP VIA
+                                <br/>
+                                <br/>
+                                <span style="font-size: 14px; font-weight: bold;">{!headerObj.CARRIER}
+                                </span>
+                            </td>
+                        </tr>
+                        <tr style="height : 40px;">
+                            <td colspan="3" style=" font-size: 8px; font-weight: bold; border: 1px solid black;width: 50px;">CURRENCY
+                                <br/>
+                                <br/>
+                                <span style="font-size: 14px; font-weight: bold;"> {!headerObj.CURRENCY1}
+                                </span>
+                            </td>
+                            <td colspan="3" style=" font-size: 8px; font-weight: bold; border: 1px solid black; width: 50px;  ">SERVICE REQUEST NUMBER
+                                <br/>
+                                <br/>
+                                <span style="font-size: 14px; font-weight: bold;">{!headerObj.CF_SR_NUMBER}
+                                </span>
+                            </td>
+                        </tr>
+                        <tr style="height : 40px;">
+                            <td colspan="3" style=" font-size: 8px; font-weight: bold; border: 1px solid black;width: 50px;">AIRCRAFT TYPE
+                                <br/>
+                                <br/>
+                                <span style="font-size: 14px; font-weight: bold;">{!headerObj.F_AC_TYPE}
+                                </span>
+                            </td>
+                            <td colspan="3" style=" font-size: 8px; font-weight: bold; border: 1px solid black; width: 50px;  ">AIRCRAFT NUMBER
+                                <br/>
+                                <br/>
+                                <span style="font-size: 14px; font-weight: bold;">{!headerObj.F_AC_NUMBER}
+                                </span>
+                            </td>
+                        </tr>
+                        <tr style="height : 40px; ">
+                            <td colspan="6" style="  border-right: 1px solid black;  border-left: 1px solid black; font-size: 8px; font-weight: bold; width: 50px;">CUSTOMER CONTACT
+                                <br/>
+                                <br/>
+                                <span style="font-size: 14px; font-weight: bold;">
+                                </span>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                Page
+                <span class="pagenumber" /> of
+                <span class="pagecount" />
+            </div>
+
+
+
+        </div>
+        <div class="content">
+            <table>
+                <tr style=" font-size: 14px; font-weight: bold;border: 1px solid black;">
+                    <th style=" width: 5%; border: 1px solid; font-size: 12px;">LINE</th>
+                    <th style="width: 45%; border: 1px solid;font-size: 12px;">PART NUMBER/DESCRIPTION</th>
+                    <th style="width: 10%; border: 1px solid;font-size: 12px;">SCHEDULED</th>
+                    <th style="width: 10%; border: 1px solid;font-size: 12px;">QTY</th>
+                    <th style="width: 10%; border: 1px solid;font-size: 12px;">UNIT</th>
+                    <th style="width: 10%; border: 1px solid;font-size: 12px;">UNIT SELLING PRICE
+                    </th>
+                    <th style="width: 10%;border: 1px solid;">EXTE NDED AMOUNT
+                    </th>
+                </tr>
+                <apex:variable var="index" value="{!0}" />
+                <apex:variable var="breaktable" value="{!recordPerPage}" />
+                <apex:variable var="isSize" value="false" />
+                <apex:repeat value="{!fromJSONObj.lines}" var="line" id="theRepeat">
+                    <tr style="height: 5px;">
+                        <td style=" width: 5%;border-right: 1px solid; border-left: 1px solid; padding: 8px;">{!line.CF_LINE_HOLD}</td>
+                        <td style="width: 45%; border-right: 1px solid; padding: 8px;font-size: 12px;">{!line.ITEM_DESCRIPTION2}</td>
+                        <td style="width: 10%; border-right: 1px solid; padding: 8px;font-size: 12px;">{!line.SCHEDULE_DATE}</td>
+                        <td style="width: 10%; border-right: 1px solid; padding: 8px;font-size: 12px;">{!line.QUANTITY_ORDERED}</td>
+                        <td style="width: 10%; border-right: 1px solid; padding: 8px;font-size: 12px;">{!line.UNIT}</td>
+                        <td style="width: 10%; border-right: 1px solid; padding: 8px;font-size: 12px;">{!line.SELLING_PRICE}</td>
+                        <td style=" width: 10%;border-right: 1px solid; padding: 8px;font-size: 12px;">{!line.C_EXTENDED_PRICE_DSP}</td>
+                    </tr>
+                    <apex:variable var="index" value="{!index + 1}" />
+                    <apex:outputText rendered="{!IF((index == breaktable), true, false)}">
+                        <apex:outputText rendered="{!IF((index != totalRecords), true, false)}">
+                            <apex:variable var="breaktable" value="{!breaktable + recordPerPage}" />
+                            <apex:variable var="isSize" value="true" />
+                        </apex:outputText>
+                    </apex:outputText>
+                    <apex:outputText rendered="{!IF((index == breakBeforLastPage), true, false)}">
+                        <apex:variable var="isSize" value="true" />
+                    </apex:outputText>
+
+
+
+                    <apex:outputText rendered="{!isSize }">
+                        <tr style="height: 50px;">
+                            <td style=" width: 5%;border-bottom: 1px solid;border-right: 1px solid; border-left: 1px solid; padding: 8px;"></td>
+                            <td style="width: 45%; border-bottom: 1px solid;border-right: 1px solid; padding: 8px;"></td>
+                            <td style="width: 10%; border-bottom: 1px solid;border-right: 1px solid; padding: 8px;"></td>
+                            <td style=" width: 10%;border-bottom: 1px solid;border-right: 1px solid; padding: 8px;"></td>
+                            <td style=" width: 10%;border-bottom: 1px solid;border-right: 1px solid; padding: 8px;"></td>
+                            <td style="width: 10%; border-bottom: 1px solid;border-right: 1px solid; padding: 8px;"></td>
+                            <td style=" width: 10%;border-bottom: 1px solid; border-right: 1px solid; padding: 8px;"></td>
+                        </tr>
+
+                        <div style="page-break-after: always" />
+                        <table>
+                            <tr style=" font-size: 14px; font-weight: bold;border: 1px solid black;">
+                                <th style=" width: 5%; border: 1px solid; font-size: 12px;">LINE</th>
+                                <th style="width: 45%; border: 1px solid;font-size: 12px;">PART NUMBER/DESCRIPTION</th>
+                                <th style="width: 10%; border: 1px solid;font-size: 12px;">SCHEDULED</th>
+                                <th style="width: 10%; border: 1px solid;font-size: 12px;">QTY</th>
+                                <th style="width: 10%; border: 1px solid;font-size: 12px;">UNIT</th>
+                                <th style="width: 10%; border: 1px solid;font-size: 12px;">UNIT SELLING PRICE
+                                </th>
+                                <th style="width: 10%;border: 1px solid;font-size: 12px;">EXTE NDED AMOUNT
+                                </th>
+                            </tr>
+                        </table>
+
+                        <apex:variable var="isSize" value="false" />
+                    </apex:outputText>
+
+
+                </apex:repeat>
+
+                <tr>
+                    <td style="width: 5%; border-bottom: 1px solid; border-right: 1px solid; border-left: 1px solid; padding: 8px;"></td>
+                    <td style="width: 45%; border-bottom: 1px solid; border-right: 1px solid; padding: 8px;"></td>
+                    <td style=" width: 10%;border-bottom: 1px solid; border-right: 1px solid; padding: 8px;"></td>
+                    <td style=" width: 10%;border-bottom: 1px solid; border-right: 1px solid; padding: 8px;"></td>
+                    <td style=" width: 10%;border-bottom: 1px solid; border-right: 1px solid; padding: 8px;"></td>
+                    <td style=" width: 10%;border-bottom: 1px solid; border-right: 1px solid; padding: 8px;"></td>
+                    <td style=" width: 10%;border-bottom: 1px solid; border-right: 1px solid; padding: 8px;"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2" style="width: 60%;border-right: 1px solid; font-size: 8px;">
+                        All Panasonic exports from the United States of commodities, technology or software are carried out in strict compliance
+                        with applicaple Export Administration Regulations and/or Foreign Assets Control Regulations. Diversion
+                        contrary to U.S. law by overseas recipients of such commodities, technology or software, including
+                        but not limited to, re-exports or any other form of shipment to terrorist-supporting organizations
+                        or entities, or to terrorist-supporting countries or nationals thereof, is strictly prohibited.
+                    </td>
+                    <td colspan="3" style="width: 20%; border-bottom: 1px solid; border-right: 1px solid; margin-left: 15px; ">SUBTOTAL</td>
+                    <td style="width: 10%; border-bottom: 1px solid; border-right: 1px solid; ">TAX</td>
+                    <td style=" width: 10%;border-bottom: 1px solid; border-right: 1px solid;">TOTAL</td>
+
+                </tr>
+                <tr>
+                    <td colspan="3" style="width: 50%; border-bottom: 1px solid; border-right: 1px solid;">{!headerObj.RP_TAXABLE_AMOUNT}</td>
+                    <td style=" border-bottom: 1px solid; border-right: 1px solid; ">{!headerObj.RP_TAXABLE_AMOUNT}</td>
+                    <td style=" border-bottom: 1px solid; border-right: 1px solid; ">{!headerObj.RP_TAXABLE_AMOUNT}</td>
+                </tr>
+            </table>
+            <div style="margin-top: 15px;">
+                <span style="float: left;"> {!todayDate}</span>
+                <span style="margin-left: 200px;"> ORIGINAL</span>
+
+            </div>
+
+        </div>
+        <div style="page-break-after: always" />
+        <div class="header">
+            <span style="margin-left: 200px; font-weight: bold; font-size: 20px;"> TERMS AND CONDITIONS OF SALE
+                <br/>
+            </span>
+            <div style="font-size: 10px;">
+                This Acknowledgement constitutes an acceptance, solely upon all of the terms and conditions contained herein, of Buyer's
+                offer to purchase the goods specified herein and shall become the entire contract between buyer and Seller,
+                and shall supersede Buyer's order form upon (a) receipt by Buyer of this acknowledgement or (b) acceptance
+                by Buyer of goods shipped by Seller hereunder, Seller hereby expressly rejects all terms and conditions set
+                forth on Buyer's order form which are contrary or in addition to, or which in any way modify, any of the
+                terms and conditions herein. 1. PAYMENT, CREDIT AND INTEREST: If Seller believes, in its sole discretion,
+                that Buyer's ability to make any payment(s) called for by this contract is or may be impaired, Seller may,
+                in its sole discretion and in addition to any other rights Seller may have, require payment in cash in advance
+                of shipment or delivery of any or all of the goods speci?ed herein or otherwise change the terms of Buyer's
+                credit, or delay the shipment of said goods, whether or not in transit, or cancel Buyer's order for all or
+                any of the then remaining balance of goods covered by this contract, without Seller incurring any liability
+                for loss or damage of any kind by reason of such change, delay or cancellation and with Buyer remaining liable
+                to pay for all goods already shipped. Interest on overdue payments shall be payable at the rate of the lower
+                of (a) the maximum rate permitted by law or (b) one percent (1%) per month. 2. SHIPMENT: Subject to Seller's
+                rights set forth in Paragraph 1 above, and unless otherwise stipulated on the face of this Acknowledgement,
+                delivery of all goods covered by this contract shall be F.O.B. Seller's U.S. warehouse (via surface) within
+                a reasonable time of the estimated date for shipment, if any, set forth on the face of this Acknowledgement,
+                but Seller shall in no event be liable for any direct, indirect, special, incidental, consequential or any
+                other damages suffered by Buyer due to a delay in such shipment. Seller reserves the right to select the
+                means of shipment, point of shipment and routing. 3. PRICE INCREASES AND TAXES: If Seller announces a price
+                increase on any product model covered by this contract, which increase is to take effect prior to any estimated
+                date for shipment set forth on the face of this Acknowledgement, then such increased price shall apply to
+                any shipments hereunder made after the effective date of such price increase, other than shipments made within
+                five (5) days after such announcement; provided, however, the Buyer may, by written notice received by Seller
+                no later than five (5) days after such announcement, cancel its order for any goods otherwise subject to
+                such price increase. All taxes, duties or assessments of any kind applicable to the goods listed herein shall
+                be added to the purchase price and shall be paid by Buyer, except to the extent that Buyer shall have provided
+                Seller with a tax exemption certificate acceptable to all relevant taxing authorities. 4. FORCE MAJEURE:
+                Seller shall not be liable to Buyer or to any other party for losses or damages of any kind whatsoever, including,
+                but not limited to, direct, indirect, special, consequential, incidental damages or loss of profits if Seller's
+                supply of the goods sold hereunder shall be curtailed or limited, or if shipment of such goods shall be delayed,
+                directly or indirectly, by acts of God, acts of a public enemy, acts of governmental bodies or agencies,
+                whether foreign or domestic, sabotage, fire, ?oods, explosions or other catastrophes, epidemics or quarantine
+                restrictions, labor unrest, accidents, delays occasioned by suppliers or carriers or other causes beyond
+                Seller's control in whole or in part. No shipments of the goods shall be required to be made hereunder for
+                the period of time occasioned by any such occurrence. This provision shall have the effect of permitting
+                delay in shipments under this contract for such time as is occasioned by any of the aforesaid conditions,
+                but such delay shall not in any event reduce the full amount of the goods purchased and sold but only defer
+                shipment and payment in the event(s) and to the extent herein provided. Notwithstanding the foregoing, Seller
+                shall have the right to prorate the quantity of goods deliverable under this contract and orders of others
+                during the period of time occasioned by the conditions set forth above, and as so prorated this contract
+                shall remain binding upon Seller and Buyer. 5. WARRANTIES AND LIABILITY OF SELLER: (a) Seller hereby warrants
+                to Buyer only that the goods sold hereunder will have been manufactured in accordance with, and will conform
+                to, the manufacturer's usual standard for said goods and that any defects in material or workmanship in said
+                goods will be repaired, or in Seller's sole discretion, said goods replaced, for a period of twelve (12)
+                months from the date of Seller's shipment thereof (or such other period as may be set forth on the face of
+                this Acknowledgement). Buyer shall not issue any warranties or guarantees with respect to said goods to any
+                person or party which in any way obligate or purport to obligate Seller to any such person or party. This
+                warranty does not apply if the goods have been damaged by articles not supplied by Seller, accident, neglect,
+                abuse, misuse, mishandling, modification, misapplication, alteration, acts of God, improper installation,
+                service or maintenance, or during shipment or storage. (b) Buyer shall give Seller written notice, as soon
+                as possible, but not later than thirty (30) calendar days from the date of Buyer's receipt of the goods,
+                of any claim which Buyer believes it has against Seller based on shortages, and Buyer shall give Seller written
+                notice as soon as possible, but not later than ?fteen (15) calendar days from the date of termination of
+                the warranty period referred to in Paragraph 5(a) above (or on the face of this Acknowledgement), of any
+                claim which Buyer believes it has against Seller based on breach of warranty, and Buyer's failure to do so
+                shall constitute a waiver by Buyer of all claims in respect of such goods. No charges, expenses, replacements
+                or repairs incident to any claim will thereafter be allowed. No such goods shall be returned to Seller without
+                Seller's prior written authorization. If unauthorized shipments are made to Seller, Seller reserves the right
+                to refuse the shipment or to accept it, and in the latter case, the shipment will be held as Buyer's property
+                and without any responsibility whatsoever by Seller. (c) Any goods con?rmed by Seller, in SeIler's sole and
+                absolute discretion, upon inspection, and not conforming to the standards set forth in the above warranty
+                shall be, at Seller's option, repaired or exchanged by Seller, F.O.B. Seller's U.S. warehouse, so that the
+                same will the conform to such standards, or Seller may, at Seller's sole option, refund to Buyer the purchase
+                price of such goods. Seller shall have no other obligation with respect to said goods. (d) THE WARRANTIES
+                SET FORTH IN THIS PARAGRAPH 5 ARE EXCLUSIVE TO BUYER AND ARE IN LIEU OF ALL OTHER WARRANTIES, GUARANTEES,
+                OR REPRESENTATIONS, OTHER THAN WARRANTY OF TITLE, EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE
+                WARRANTIES OF MERCHANTABILITY AND OF FITNESS FOR A PARTICULAR PURPOSE, ON THE PART OF SELLER, ITS AGENTS,
+                DEALERS AND EMPLOYEES, ALL OF WHICH ARE HEREBY WAIVED BY BUYER. Seller's liability under this warranty shall
+                be limited solely to the cost of any necessary repairs to, replacements of or refunds of Buyer's purchase
+                price for the goods, and Seller assumes no risk of, and shall not in any case be liable for, any other damages,
+                including, without limitation, any special, incidental, consequential or punitive damages, arising from breach
+                of warranty or contract, negligence or any other legal theory, including, without limitation, loss of goodwill,
+                profits or revenue, loss of use of the goods or any associated equipment, cost of capital, cost of any substitute
+                equipment, facilities or services, downtime costs, or claims of any party dealing with Buyer for such damages.
+                (e) No suit shall be brought on an alleged breach of the warranty set forth in the Paragraph 5 more than
+                twelve (l2) months following the date of Buyer's receipt of the goods or three (3) months after the termination
+                of the warranty period referred to in Paragraph 5(a) above (or on the face of this Acknowledgement), whichever
+                is later. This Paragraph 5 allocates the risk of failure of the goods between Buyer and Seller, as authorized
+                by the Uniform Commercial Code and other applicable law. Seller's pricing for the goods reflects this allocation
+                of risk and the limitations of liability contained in this contract. 6. CANCELLATION, RESCHEDULING: Except
+                as otherwise provided herein, the within contract shall be non-cancelable, and acknowledged shipment dates
+                of goods hereunder shall not be subject to rescheduling by Buyer, unless pursuant to a written agreement
+                duly executed by both Buyer and Seller and in such event only upon the condition that Buyer promptly pays
+                to Seller any cancellation or rescheduling charge specified by Seller. 7. RETURNED MERCHANDISE: In no case
+                are goods to be returned without first obtaining Seller's written permission. Only unused goods in their
+                original sealed containers which are then currently sold by Seller and which have been invoiced by Seller
+                to Buyer within thirty (30) days of Buyer's request to return will be considered for return. Goods accepted
+                for credit upon return may be subject, in Seller's discretion, to a handling/restocking charge. Custom-made
+                goods are not subject to return under any circumstances. Goods must be securely packed and delivered to Seller
+                in an undamaged condition, with Buyer being solely responsible for paying all return freight expenses. 8.
+                PATENT INDEMNITY: (a) Seller agrees to indemnify and hold Buyer harmless against all claims that the goods
+                sold hereunder infringe any patent rights of third parties. Seller shall assume the defense of any suit,
+                action, proceeding or objection based on any such claim of infringement brought against Buyer speci?cally
+                relating to said goods, by counsel retained at Seller's own expense and shall pay any damages assessed against
+                or otherwise payable by Buyer in any such suit as a result of the final disposition of any such claim, suit,
+                action, proceeding or objection, provided Buyer, upon receiving notice thereof, promptly notifies Seller
+                of such claim, or of the commencement of any such suit, action, proceeding or objection or threats thereof,
+                and Seller is afforded the opportunity, in its sole and absolute discretion, to determine the manner in which
+                such claim, action, suite, proceeding or objection shall be handled or otherwise disposed of, with Buyer
+                giving Seller the cooperation Seller requires in connection therewith. Buyer shall not consent to any judgment
+                or decree in any such suit or pay or agree to pay any sum of money or agree to do any other act in compromise
+                of any such claim of a third party without ?rst obtaining Seller's consent thereto in writing. (b) ln the
+                event that the use or sale of said goods, or any part thereof, is preliminarily or permanently enjoined by
+                reason of infringement of any third party patent right, Seller shall, at Seller's sole cost and expense,
+                take any one of the following actions, in Seller's sole and absolute discretion; (I) procure for Buyer the
+                right to continue the use and/or sale of said goods; or (ii) modify the infringing goods so they become non-infringing;
+                or (iii) authorize Buyer to return said enjoined goods theretofore sold to and paid for by Buyer and agree
+                to refund to Buyer the full purchase price of the enjoined goods, and upon Seller's ful?llment of (i), (ii),
+                or (iii), Seller shall thereafter be relieved of any further obligation or liability to Buyer as a result
+                of any such infringement. In no event shall Seller be liable for any special, incidental, consequential,
+                or any other indirect damages or loss of pro?ts suffered by Buyer due to any such infringement. (c) Notwithstanding
+                any other provision of this contract, the provisions of this Paragraph 8 shall not apply to any designs,
+                specifications or modi?cations originating with Buyer or to the combination of said goods with other equipment
+                not supplied by Seller; but, rather, Buyer shall indemnify and hold Seller harmless and defend Seller against
+                all claims that the same infringe any patent rights of third parties in accordance with the terms and provisions
+                of this Paragraph 8. 9. LAW OF THE STATE OF NEW YORK: The entire transaction contemplated hereunder shall
+                be governed by the laws of the State of New York, U.S.A., without regard to its conflict-of-laws rules. 10.
+                ENTIRE AGREEMENT: This Acknowledgement contains all of the terms and conditions with respect to the sale
+                and purchase of the goods sold hereunder and there are no representations, warranties, covenants, agreements,
+                or collateral understandings, oral or otherwise, express or implied, affecting this instrument not expressly
+                set forth herein. No delay on the part of either party in exercising any of their respective rights hereunder
+                or the failure to exercise the same, shall operate as a waiver of such rights except in the speci?c instance.
+                None of the terms, conditions or provisions hereof may be, nor shall they be held, deemed or construed to
+                have been, changed, waived, varied, modified or altered by any act or knowledge of either party, their respective
+                agents, servants or employees, and the terms of this instrument may not be changed, waived, varied, modified
+                or altered except by a statement in writing signed by both parties. 11. EXPORT CONTROL: Buyer agrees that
+                it will not participate in the transfer, by any means, of any commodity or technical data acquired from Seller,
+                (i) in violation of the Export Administration Act ("Act") or any regulation, order or license issued under
+                the Act, or (ii) with the knowledge, or with the reason to know, that a violation of the Act, a regulation,
+                an order or a license has occurred, is about to occur or is intended to occur with respect to any such commodity
+                or technical data.
+            </div>
+
+        </div>
+
+    </apex:outputText>
+</apex:page>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>true</default>
+        <label>New</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+        <label>In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Ready to Order</fullName>
+        <default>false</default>
+        <label>Ready to Order</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Ordered</fullName>
+        <default>false</default>
+        <label>Ordered</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Canceled</fullName>
+        <default>false</default>
+        <label>Canceled</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Order Closed</fullName>
+        <default>false</default>
+        <label>Order Closed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Ready to Invoice</fullName>
+        <default>false</default>
+        <label>Ready to Invoice</label>
+        <closed>true</closed>
+    </standardValue>
+</StandardValueSet>

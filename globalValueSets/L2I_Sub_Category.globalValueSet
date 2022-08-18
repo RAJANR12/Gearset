@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Advertising</fullName>
+        <default>false</default>
+        <label>Advertising</label>
+    </customValue>
+    <customValue>
+        <fullName>Applications</fullName>
+        <default>false</default>
+        <label>Applications</label>
+    </customValue>
+    <customValue>
+        <fullName>Bluetooth Activation</fullName>
+        <default>false</default>
+        <label>Bluetooth Activation</label>
+    </customValue>
+    <customValue>
+        <fullName>Cancellations</fullName>
+        <default>false</default>
+        <label>Cancellations</label>
+    </customValue>
+    <customValue>
+        <fullName>Certification</fullName>
+        <default>false</default>
+        <label>Certification</label>
+    </customValue>
+    <customValue>
+        <fullName>Change Request</fullName>
+        <default>false</default>
+        <label>Change Request</label>
+    </customValue>
+    <customValue>
+        <fullName>Connectivity HW</fullName>
+        <default>false</default>
+        <label>Connectivity HW</label>
+    </customValue>
+    <customValue>
+        <fullName>Connectivity Services</fullName>
+        <default>false</default>
+        <label>Connectivity Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Credits</fullName>
+        <default>false</default>
+        <label>Credits</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer Support Engineering Tools</fullName>
+        <default>false</default>
+        <label>Customer Support Engineering Tools</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer Support Services</fullName>
+        <default>false</default>
+        <label>Customer Support Services</label>
+    </customValue>
+    <customValue>
+        <fullName>ENGINEERING</fullName>
+        <default>false</default>
+        <label>ENGINEERING</label>
+    </customValue>
+    <customValue>
+        <fullName>eXconnect</fullName>
+        <default>false</default>
+        <label>eXconnect</label>
+    </customValue>
+    <customValue>
+        <fullName>eXPhone</fullName>
+        <default>false</default>
+        <label>eXPhone</label>
+    </customValue>
+    <customValue>
+        <fullName>eXW</fullName>
+        <default>false</default>
+        <label>eXW</label>
+    </customValue>
+    <customValue>
+        <fullName>eXW HW (Standalone)</fullName>
+        <default>false</default>
+        <label>eXW HW (Standalone)</label>
+    </customValue>
+    <customValue>
+        <fullName>Ground Support Equipment</fullName>
+        <default>false</default>
+        <label>Ground Support Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Harnesses</fullName>
+        <default>false</default>
+        <label>Harnesses</label>
+    </customValue>
+    <customValue>
+        <fullName>IFE HeadEnd HW</fullName>
+        <default>false</default>
+        <label>IFE HeadEnd HW</label>
+    </customValue>
+    <customValue>
+        <fullName>IFE HW</fullName>
+        <default>false</default>
+        <label>IFE HW</label>
+    </customValue>
+    <customValue>
+        <fullName>IFE SeatEnd HW</fullName>
+        <default>false</default>
+        <label>IFE SeatEnd HW</label>
+    </customValue>
+    <customValue>
+        <fullName>IFE SVC</fullName>
+        <default>false</default>
+        <label>IFE SVC</label>
+    </customValue>
+    <customValue>
+        <fullName>INTEGRATION</fullName>
+        <default>false</default>
+        <label>INTEGRATION</label>
+    </customValue>
+    <customValue>
+        <fullName>Interactive GUI and Portal</fullName>
+        <default>false</default>
+        <label>Interactive GUI and Portal</label>
+    </customValue>
+    <customValue>
+        <fullName>Maps</fullName>
+        <default>false</default>
+        <label>Maps</label>
+    </customValue>
+    <customValue>
+        <fullName>Media Creative Services</fullName>
+        <default>false</default>
+        <label>Media Creative Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Miscellaneous Fees</fullName>
+        <default>false</default>
+        <label>Miscellaneous Fees</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobility</fullName>
+        <default>false</default>
+        <label>Mobility</label>
+    </customValue>
+    <customValue>
+        <fullName>OEM SFE (CSS, CMS)</fullName>
+        <default>false</default>
+        <label>OEM SFE (CSS, CMS)</label>
+    </customValue>
+    <customValue>
+        <fullName>Panasonic 3G to eCM Upgrade</fullName>
+        <default>false</default>
+        <label>Panasonic 3G to eCM Upgrade</label>
+    </customValue>
+    <customValue>
+        <fullName>Panasonic Wi-Fi De-Modification</fullName>
+        <default>false</default>
+        <label>Panasonic Wi-Fi De-Modification</label>
+    </customValue>
+    <customValue>
+        <fullName>Panasonic Wi-Fi Network Upgrade</fullName>
+        <default>false</default>
+        <label>Panasonic Wi-Fi Network Upgrade</label>
+    </customValue>
+    <customValue>
+        <fullName>Service</fullName>
+        <default>false</default>
+        <label>Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Structures</fullName>
+        <default>false</default>
+        <label>Structures</label>
+    </customValue>
+    <customValue>
+        <fullName>Systems Installation Engineering</fullName>
+        <default>false</default>
+        <label>Systems Installation Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>System Software</fullName>
+        <default>false</default>
+        <label>System Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Publications</fullName>
+        <default>false</default>
+        <label>Technical Publications</label>
+    </customValue>
+    <customValue>
+        <fullName>Test Equipment</fullName>
+        <default>false</default>
+        <label>Test Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Training</fullName>
+        <default>false</default>
+        <label>Training</label>
+    </customValue>
+    <customValue>
+        <fullName>TV/Media</fullName>
+        <default>false</default>
+        <label>TV/Media</label>
+    </customValue>
+    <customValue>
+        <fullName>Wellness HW</fullName>
+        <default>false</default>
+        <label>Wellness HW</label>
+    </customValue>
+    <customValue>
+        <fullName>Placeholder Parts</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Placeholder Products</label>
+    </customValue>
+    <customValue>
+        <fullName>MCS</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>MCS</label>
+    </customValue>
+    <customValue>
+        <fullName>Interactives</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Interactives</label>
+    </customValue>
+    <customValue>
+        <fullName>Connectivity</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Connectivity</label>
+    </customValue>
+    <customValue>
+        <fullName>Security</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Security</label>
+    </customValue>
+    <customValue>
+        <fullName>OPERATIONAL DATA</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>OPERATIONAL DATA</label>
+    </customValue>
+    <customValue>
+        <fullName>PTS HW</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>PTS HW</label>
+    </customValue>
+    <customValue>
+        <fullName>NON-SHIPSET</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NON-SHIPSET</label>
+    </customValue>
+    <customValue>
+        <fullName>Bluetooth</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Bluetooth</label>
+    </customValue>
+    <customValue>
+        <fullName>Apps</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Apps</label>
+    </customValue>
+    <masterLabel>Sub Category</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

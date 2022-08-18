@@ -1,0 +1,17 @@
+<apex:page id="PT_ProgramCPLSplitConfig">
+    <apex:includeLightning />
+    <div id="lightning"></div>
+    <script>
+        var rcdIds = "{!$CurrentPage.parameters.id}";
+        var newprogram = "{!$CurrentPage.parameters.newprogram}";
+        $Lightning.use("c:PT_ProgramCPLSplitConfigApp", function () {
+            $Lightning.createComponent("c:pt_ProgramCPLSplitConfig",
+                  {"recordIds": rcdIds,
+                      "newprogram":newprogram},
+                  "lightning",
+                  function (cmp) {
+                      // do some stuff
+                  });
+        });
+    </script>
+</apex:page>

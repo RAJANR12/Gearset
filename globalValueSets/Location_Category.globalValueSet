@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>HeadEnd</fullName>
+        <default>false</default>
+        <label>HeadEnd</label>
+    </customValue>
+    <customValue>
+        <fullName>Seat</fullName>
+        <default>false</default>
+        <label>Seat</label>
+    </customValue>
+    <customValue>
+        <fullName>Service</fullName>
+        <default>false</default>
+        <label>Service</label>
+    </customValue>
+    <customValue>
+        <fullName>SeatEnd</fullName>
+        <default>false</default>
+        <label>SeatEnd</label>
+    </customValue>
+    <masterLabel>Location Category</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

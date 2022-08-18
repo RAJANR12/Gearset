@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <content>L2I_PreventDSLDelete</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Delivery_Schedule_Line_Record_Page5</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Delivery_Schedule_Line_Record_Page5</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Program_Shipset</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Program_Shipset</fullName>
+        <fields>Name</fields>
+        <fields>PT_Program__c</fields>
+        <fields>PT_Parts_List__c</fields>
+        <fields>Aircraft_Identifier_Link__c</fields>
+        <fields>PT_Active__c</fields>
+        <label>Program Shipset</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Aircraft_Identifier_Link__c</fullName>
+        <description>Searches by tail #, AC Registration, GPIN, serial and block number</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;&amp; Aircraft__c , PT_Aircraft_Program_Identification_Field__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Searches by tail #, AC Registration, GPIN, serial and block number</inlineHelpText>
+        <label>Tail #</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Aircraft_Identifier__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK( IFEC_DSL__c ), Aircraft__r.Name,
+IFEC_DSL__r.Aircraft__r.Name)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Aircraft Identifier</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Aircraft__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Link by custom field to the associated aircraft object</inlineHelpText>
+        <label>Aircraft</label>
+        <referenceTo>L2I_Aircraft__c</referenceTo>
+        <relationshipLabel>Delivery Schedule Lines</relationshipLabel>
+        <relationshipName>Delivery_Schedules</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Asset_Avg_Head_End_MROD_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Average MROD - HeadEnd</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Asset_Avg_Seat_End_MROD_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Average MROD - SeatEnd</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Asset_Min_MROD_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Earliest MROD - E</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CPQ_Quote__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>XXXX Part List</label>
+        <referenceTo>SBQQ__Quote__c</referenceTo>
+        <relationshipLabel>Delivery Schedule Lines (Part List)</relationshipLabel>
+        <relationshipName>Delivery_Schedule_Lines_Old</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Deal_Opportunity__c</fullName>
+        <description>Getting the Deal Opportunity record from the Delivery Schedule Header. (For use in the Flow on the Deal Lightning Page.</description>
+        <externalId>false</externalId>
+        <formula>Delivery_Schedule_Header__r.Deal_Opportunity__c</formula>
+        <label>xxDeal Opportunity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Del_Date_for_Rollup__c</fullName>
+        <externalId>false</externalId>
+        <label>Del Date for Rollup</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Delivery_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is required for Hardware Delivery Schedule Lines</inlineHelpText>
+        <label>Delivery Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Delivery_Schedule_Header__c</fullName>
+        <externalId>false</externalId>
+        <label>Delivery Schedule Header</label>
+        <referenceTo>L2I_DSH__c</referenceTo>
+        <relationshipLabel>Delivery Schedule Lines</relationshipLabel>
+        <relationshipName>Delivery_Schedules</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Display_Headend_MROD__c</fullName>
+        <description>Average of MRODs or Forecast Date if NULL</description>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK( Asset_Avg_Head_End_MROD_Date__c ) ,  Head_End_Date__c , Asset_Avg_Head_End_MROD_Date__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Average of MRODs or Forecast Date if NULL</inlineHelpText>
+        <label>Display Headend MROD</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Display_Seat_MROD__c</fullName>
+        <description>Average of MRODs or Forecast Date if NULL</description>
+        <externalId>false</externalId>
+        <formula>IF(  ISBLANK(Asset_Avg_Seat_End_MROD_Date__c) , Seat_End_Date__c, Asset_Avg_Seat_End_MROD_Date__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Average of MRODs or Forecast Date if NULL</inlineHelpText>
+        <label>Display Seat End MROD</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Estimated_Amount_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>xxEstimated Amount Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Forecasted_Delivery_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(  IFEC_DSL__c ), Delivery_Date__c,
+			ADDMONTHS(IFEC_DSL__r.Delivery_Date__c ,  Delivery_Schedule_Header__r.Delivery_Date_Offset__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Delivery Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Hardware_Program_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Hardware Program Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Head_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Head End Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IFEC_DSL__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>IFEC DSL</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>L2I_DSL__c.Product_Category__c</field>
+                <operation>equals</operation>
+                <value>IFEC</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>L2I_DSL__c</referenceTo>
+        <relationshipLabel>DSLs</relationshipLabel>
+        <relationshipName>Delivery_Schedule_Lines</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IFEC_Delivery_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>IFEC_DSL__r.Delivery_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IFEC Delivery Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Induction_Date__c</fullName>
+        <description>Date that the aircraft rolls off the assembly line</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date that the aircraft rolls off the assembly line</inlineHelpText>
+        <label>Induction Rollout</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>L2I_AC_Entered_Into_Service__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>AC Entered Into Service</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Advertising_Est_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>xxAdvertising Estimated Start Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Aircraft_Confirmation_Set__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>this gets triggered once an aircraft has been confirmed</description>
+        <externalId>false</externalId>
+        <label>Aircraft Confirmation Set</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Aircraft_Confirmation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is checked when aircraft has been verified and ready for services to be turned on.</description>
+        <externalId>false</externalId>
+        <label>Aircraft Confirmation</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Connectivity_Est_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>xxConnectivity Estimated Start Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Games_Est_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>xxGames Estimated Start Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>L2I_Lead_Line_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>L2I_Lead_Line_Id</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>L2I_TV_Est_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>xxTV Estimated Start Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Line_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Line Number</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Migration_External_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Migration External Id</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Modified_On_Opportunity_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Modified_on_Opportunity__r.L2I_Opportunity_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Modified On Opportunity Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Modified_On_Opportunity_Stage__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Modified_on_Opportunity__r.StageName)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Modified On Opportunity Stage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Modified_on_Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Modified on Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Delivery Schedule Lines (Deleted on Opportunity)</relationshipLabel>
+        <relationshipName>Delivery_Schedule_Lines1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Original_Opportunity_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Original_Opportunity__r.L2I_Opportunity_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Original Opportunity Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Original_Opportunity_Stage__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Original_Opportunity__r.StageName)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Original Opportunity Stage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Original_Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Original Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Delivery Schedule Lines</relationshipLabel>
+        <relationshipName>Delivery_Schedule_Lines</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Out_of_Warranty_Date_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Out of Warranty Date 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Out_of_Warranty_Date_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Out of Warranty Date 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PT_Active__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(TEXT(PT_isActive__c) = &quot;Inactive&quot;, IMAGE(&quot;/img/func_icons/remove12_on.gif&quot;, &quot;red&quot;), IMAGE(&quot;/img/func_icons/util/checkmark16.gif&quot;, &quot;green&quot;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Active</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Aircraft_Program_Identification_Field__c</fullName>
+        <description>The Program specific Identifier of the Aircraft</description>
+        <externalId>false</externalId>
+        <formula>if( Text(PT_Program__r.Aircraft_Identifier_Field__c) = &#39;Block Number&#39;, Aircraft__r.L2I_Block_Number__c
+,IF(Text(PT_Program__r.Aircraft_Identifier_Field__c) = &#39;Fleet Number&#39;, Aircraft__r.L2I_Fleet_Number__c
+,IF(Text(PT_Program__r.Aircraft_Identifier_Field__c) = &#39;Line Number&#39;, Aircraft__r.L2I_Line_Number__c
+,IF(Text(PT_Program__r.Aircraft_Identifier_Field__c) = &#39;Serial Number&#39;, Aircraft__r.L2I_Serial_Number__c
+,IF(Text(PT_Program__r.Aircraft_Identifier_Field__c) = &#39;Tail Number&#39;, Aircraft__r.L2I_Registration_Number__c
+, Aircraft_Identifier__c
+)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The Program specific Identifier of the Aircraft</inlineHelpText>
+        <label>Aircraft Program Identification Field</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Assigned_Part_List__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>xxxAssigned Part List</label>
+        <referenceTo>SBQQ__Quote__c</referenceTo>
+        <relationshipLabel>Delivery Schedule Lines (Assigned Part List)</relationshipLabel>
+        <relationshipName>Delivery_Schedule_Lines1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PT_Date_Source__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Method used in Date Entry</inlineHelpText>
+        <label>Date Source</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1. PAC DATES (guess by PAC)</fullName>
+                    <default>true</default>
+                    <label>1. PAC DATES (guess by PAC)</label>
+                </value>
+                <value>
+                    <fullName>2. # of A/C per month (cust)</fullName>
+                    <default>false</default>
+                    <label>2. # of A/C per month (cust)</label>
+                </value>
+                <value>
+                    <fullName>3. A/C delivery date (cust)</fullName>
+                    <default>false</default>
+                    <label>3. A/C delivery date (cust)</label>
+                </value>
+                <value>
+                    <fullName>4. ODD (cust, WF, Boeing Matrix)</fullName>
+                    <default>false</default>
+                    <label>4. ODD (cust, WF, Boeing Matrix)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PT_InService_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>AC Entered Into Service Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PT_Is_InService__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (ISBLANK(PT_InService_Date__c), false, true)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is InService</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PT_Line_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Line Number</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Part_List_Name_Rev__c</fullName>
+        <externalId>false</externalId>
+        <formula>Original_Opportunity__r.PT_Part_List_Name_Rev__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Part List Name Rev</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Parts_List_Link__c</fullName>
+        <description>Used in GB Tabbed Grids to go to new window</description>
+        <externalId>false</externalId>
+        <formula>Original_Opportunity__r.PT_Opportunity_Link_Tabbed__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parts List Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Parts_List__c</fullName>
+        <externalId>false</externalId>
+        <formula>Original_Opportunity__r.PT_Opportunity_Link__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parts List</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Program_MROD_Approval_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(PT_Program__r.MROD_Approval_Status__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Program MROD Approval Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Program_Price_List__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Program Price List</label>
+        <referenceTo>PT_PriceList__c</referenceTo>
+        <relationshipLabel>Delivery Schedule Lines</relationshipLabel>
+        <relationshipName>Delivery_Schedule_Lines</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PT_Program__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>PT Program</label>
+        <referenceTo>PT_Program__c</referenceTo>
+        <relationshipLabel>Delivery Schedule Lines</relationshipLabel>
+        <relationshipName>Delivery_Schedule_Lines</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PT_Tail_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Aircraft__r.L2I_Registration_Number__c</formula>
+        <label>PT Tail Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PT_Tail_Uniqueness__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>false</externalId>
+        <label>Tail Uniqueness</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>PT_isActive__c</fullName>
+        <externalId>false</externalId>
+        <label>Shipset Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>true</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Category__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Delivery_Schedule_Header__r.Product_Category__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Recalculated_At__c</fullName>
+        <externalId>false</externalId>
+        <label>xxRecalculated At</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Seat_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Seat End Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Service_Months_Copy__c</fullName>
+        <externalId>false</externalId>
+        <label>xxService Months (copy)</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Months__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Delivery_Schedule_Header__r.Subscription_Term__c - (MONTH(Delivery_Date__c) + (12*(YEAR(Delivery_Date__c)-YEAR(Delivery_Schedule_Header__r.First_Delivery_Date__c))) - MONTH(Delivery_Schedule_Header__r.First_Delivery_Date__c))&lt; 0, 0, Delivery_Schedule_Header__r.Subscription_Term__c - (MONTH(Delivery_Date__c) + (12*(YEAR(Delivery_Date__c)-YEAR(Delivery_Schedule_Header__r.First_Delivery_Date__c))) - MONTH(Delivery_Schedule_Header__r.First_Delivery_Date__c)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>xxService Months</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Deleted</fullName>
+                    <default>false</default>
+                    <label>Deleted</label>
+                </value>
+                <value>
+                    <fullName>Deactivate</fullName>
+                    <default>false</default>
+                    <label>Deactivate</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>xxName__c</fullName>
+        <description>This is used to mimic the Auto Number for Standard Name field.</description>
+        <displayFormat>DSL-{00000}</displayFormat>
+        <externalId>false</externalId>
+        <label>xxName</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <label>Delivery Schedule Line</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Aircraft__c</columns>
+        <columns>Delivery_Date__c</columns>
+        <columns>Line_Number__c</columns>
+        <columns>PT_Line_Number__c</columns>
+        <columns>Original_Opportunity__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Delivery Schedule Lines</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Hardware</fullName>
+        <active>true</active>
+        <label>Hardware</label>
+        <picklistValues>
+            <picklist>PT_Date_Source__c</picklist>
+            <values>
+                <fullName>1%2E PAC DATES %28guess by PAC%29</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2%2E %23 of A%2FC per month %28cust%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E A%2FC delivery date %28cust%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E ODD %28cust%2C WF%2C Boeing Matrix%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PT_isActive__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Deactivate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deleted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Inactive</fullName>
+        <active>true</active>
+        <label>Inactive</label>
+        <picklistValues>
+            <picklist>PT_Date_Source__c</picklist>
+            <values>
+                <fullName>1%2E PAC DATES %28guess by PAC%29</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2%2E %23 of A%2FC per month %28cust%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E A%2FC delivery date %28cust%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E ODD %28cust%2C WF%2C Boeing Matrix%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PT_isActive__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Deactivate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deleted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Delivery_Schedule_Header__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Aircraft__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>L2I_Aircraft_Confirmation__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Aircraft_Identifier__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PT_Assigned_Part_List__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Original_Opportunity__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Modified_on_Opportunity__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PT_Program__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Delivery_Date__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Aircraft_Confirmation_Check</fullName>
+        <active>true</active>
+        <description>This is to lock the Aircraft Confirmation once it&#39;s been checked</description>
+        <errorConditionFormula>AND ( 
+    AND($Profile.Name &lt;&gt; &#39;System Administrator&#39;),
+    NOT(ISNEW()), 
+    ISCHANGED(L2I_Aircraft_Confirmation__c), 
+    PRIORVALUE(L2I_Aircraft_Confirmation__c) = true,
+				Original_Opportunity__r.SBQQ__PrimaryQuote__r.SBQQ__Ordered__c = true
+)</errorConditionFormula>
+        <errorMessage>The Aircraft and/or Aircraft Confirmation cannot be changed once it is confirmed</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Update_Shipset_Inactive_Rec</fullName>
+        <active>true</active>
+        <errorConditionFormula>($Profile.Name &lt;&gt; &#39;System Administrator&#39;) &amp;&amp;
+RecordType.DeveloperName = &quot;Inactive&quot; &amp;&amp;
+(ISCHANGED(Head_End_Date__c) || ISCHANGED(Seat_End_Date__c) || ISCHANGED(Induction_Date__c) || ISCHANGED(Delivery_Date__c) || ISCHANGED(Forecasted_Delivery_Date__c) || ISCHANGED(Aircraft__c))</errorConditionFormula>
+        <errorMessage>You are not allowed to make changes to Inactive Shipset.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>L2I_Delivery_Date</fullName>
+        <active>true</active>
+        <description>Delivery Date is required for Hardware Delivery Schedules.</description>
+        <errorConditionFormula>AND
+(
+ ISBLANK( Delivery_Date__c ),
+ TEXT(Delivery_Schedule_Header__r.Product_Category__c) == &#39;IFEC&#39;,
+ AND($Profile.Name &lt;&gt; &#39;System Administrator&#39;) 
+)</errorConditionFormula>
+        <errorDisplayField>Delivery_Date__c</errorDisplayField>
+        <errorMessage>Delivery Date is required for Hardware Delivery Schedules.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>L2I_Estimated_Start_Dates</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND
+(
+ ISBLANK( Delivery_Date__c ),
+ ISBLANK( L2I_Advertising_Est_Start_Date__c ),
+ ISBLANK( L2I_Connectivity_Est_Start_Date__c ),  
+ ISBLANK( L2I_Games_Est_Start_Date__c ), 
+ ISBLANK( L2I_TV_Est_Start_Date__c )
+)</errorConditionFormula>
+        <errorMessage>For Hardware Delivery Schedules you must fill out the Delivery Date.
+For Services Delivery Schedules you must fill out at least one of the below Estimated Start of Service Dates.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>L2I_Linked_DSL_Aircraft</fullName>
+        <active>true</active>
+        <description>If the DSL is linked to an IFEC DSL then the Aircraft cannot be changed</description>
+        <errorConditionFormula>AND(NOT(ISBLANK(IFEC_DSL__c)),  ISCHANGED( Aircraft__c ),AND($Profile.Name &lt;&gt; &#39;System Administrator&#39;)  )</errorConditionFormula>
+        <errorMessage>Aircraft Identifier may not be changed when DSL is linked to an IFEC DSL.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>L2I_Validate_Aircraft</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(L2I_Aircraft_Confirmation__c = TRUE,
+AND($Profile.Name &lt;&gt; &#39;System Administrator&#39;),
+OR (
+
+AND((NOT(ISBLANK(IFEC_DSL__c))),
+   OR(NOT(IFEC_DSL__r.Aircraft__r.L2I_Approved__c), ISBLANK(IFEC_DSL__r.Aircraft__c) )),
+
+AND((ISBLANK(IFEC_DSL__c)),
+OR(NOT(Aircraft__r.L2I_Approved__c), ISBLANK(Aircraft__c) ))
+)
+)</errorConditionFormula>
+        <errorMessage>Selection of an Approved Aircraft is needed with Aircraft Confirmation.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Original_Opportunity_Required</fullName>
+        <active>false</active>
+        <description>The Original Opportunity field is required when creating or editing a DSL. This rule can be turned off via a custom setting value.</description>
+        <errorConditionFormula>AND ($Setup.L2I_Rule_Settings__c.Enforce_Validation_Rule__c,
+					 ISBLANK(Original_Opportunity__c) )</errorConditionFormula>
+        <errorDisplayField>Original_Opportunity__c</errorDisplayField>
+        <errorMessage>An Original Opportunity value is required on a DSL.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

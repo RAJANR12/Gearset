@@ -1,0 +1,233 @@
+<apex:page contenttype="application/vnd.ms-excel#PLDocument.xls" showHeader="false" sidebar="false"
+           standardStylesheets="false" applyBodyTag="false"
+           applyHtmlTag="false"
+           standardController="Opportunity" extensions="PT_PartsListPDFController">
+
+    <html>
+    <head>
+    </head>
+
+    <body>
+    <div class="header" style="text-align: center">
+
+        <h1 style="color: blue; text-align: center">Panasonic</h1>
+        <!--                    <img src="{!$Resource.PanasonicLogo}" width='300' height='52' />-->
+        <hr style="border: 3px solid #0168b3;"/>
+        <hr style="border: 1px solid #0168b;"/>
+        <h2 style="color: #0168b; text-align: center">Panasonic Avionics Corporation</h2>
+
+    </div>
+
+    <table width="100%" style="text-align: center;">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>26200 Enterprise Way</td>
+            <td></td>
+            <td>3303 Monte Villa Parkway</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Lake Forest, CA 92630 USA</td>
+            <td></td>
+            <td>Bothell, WA 98021 USA</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>CAGE Code: 1UL05</td>
+            <td></td>
+            <td>CAGE Code: 0FF57</td>
+        </tr>
+    </table>
+
+    <hr style="border: 1px solid black;"/>
+    <hr style="border: 3px solid black;"/>
+
+    <div style="text-align: center">
+        <h3>COMPONENT PARTS LIST</h3>
+        <h3>Operator: {!oppw.operator}</h3>
+        <h3>Owner: {!oppw.owner}</h3>
+        <h3>{!oppw.fitType}</h3>
+        <h3>{!oppw.aircraftType}</h3>
+        <h3>{!oppw.seats}</h3>
+        <h3>PROGRAM # {!oppw.program}</h3>
+        <h3>EFFECTIVITY#: {!oppw.eff}</h3>
+        <br/>
+        -NOTICE-<br/>
+        THE INFORMATION CONTAINED HEREIN IS PROPRIETARY TO PANASONIC AVIONICS<br/>
+        CORPORATION AND SHALL NOT BE REPRODUCED OR DISCLOSED IN WHOLE OR IN PART OR<br/>
+        USED FOR ANY DESIGN OR MANUFACTURE EXCEPT WHEN SUCH USER POSSESSES DIRECT, WRITTEN<br/>
+        AUTHORIZATION FROM PANASONIC AVIONICS CORPORATION.
+    </div>
+    <div>
+        <hr style="border: 1px solid #0168b;"/>
+    </div>
+    <div style="page-break-before:always;">
+        <div style="text-align: center">
+            <h3>Document Revision History Sheet</h3>
+        </div>
+        <table width="100%">
+            <tr>
+                <th width="20%" style="text-align: left">REV</th>
+                <th width="65%"></th>
+                <th></th>
+                <th></th>
+                <th width="5%">REV DATE</th>
+                <th width="5%">APPROVED</th>
+                <th width="5%">PREPARED</th>
+            </tr>
+            <apex:repeat id="PartList" value="{!plrListWrapper}" var="plrw">
+                <tr>
+                    <td>
+                        <b>{!plrw.revision}</b>
+                    </td>
+                    <td>
+                    </td>
+                    <td colspan="3" style="font-size: small">
+                        {!plrw.appSubDate}
+                    </td>
+                    <td style="font-size: small;text-align: center">
+                        {!plrw.approver}
+                    </td>
+                    <td style="font-size: small">
+                        {!plrw.submitter}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Comments</b>
+                    </td>
+                    <td colspan="6">
+                        {!plrw.comments} <br/>
+
+                    </td>
+                </tr>
+                <apex:repeat id="PartList" value="{!plrw.plrDetailsList}" var="plrwDetails">
+                    <apex:repeat id="PartList" value="{!plrwDetails}" var="dets">
+                    <tr>
+                        <td style="vertical-align: top">
+                            <b>{!dets.detailsLabel}</b>
+                        </td>
+                        <td colspan="6">
+                            {!dets.details} <br/>
+                        </td>
+                    </tr>
+                    </apex:repeat>
+                </apex:repeat>
+            </apex:repeat>
+
+        </table>
+    </div>
+    <div>
+        <hr style="border: 1px solid #0168b;"/>
+    </div>
+    <div>
+        <div style="text-align: center">
+            <h3>Note History</h3>
+        </div>
+        <table width="100%">
+            <tr>
+                <th width="10%" style="text-align: left">NOTE #</th>
+                <th width="65%">NOTE DESCRIPTION</th>
+                <th></th>
+                <th></th>
+                <th width="10%">REV NOTE ADDED</th>
+                <th width="10%">REV NOTE DELETED</th>
+            </tr>
+            <apex:repeat id="NoteList" value="{!noteWrapperList}" var="nwl">
+                <tr>
+                    <td>
+                        {!nwl.noteName}
+                    </td>
+                    <td colspan="3">
+                        {!nwl.notes}
+                    </td>
+                    <td>
+                        {!nwl.revAdded}
+                    </td>
+                    <td>
+                        {!nwl.revDeleted}
+                    </td>
+                </tr>
+            </apex:repeat>
+
+        </table>
+    </div>
+    <div>
+        <hr style="border: 1px solid #0168b;"/>
+    </div>
+    <div>
+        <div></div>
+        <div style="text-align: center">
+            <h3>Install Locations</h3>
+        </div>
+        <apex:repeat id="ILocList" value="{!iLocWrapperList}" var="ilw">
+            <div style="text-align: center">
+                <br/>
+                <b>{!ilw.installLoc}</b>
+                <br/>
+                <b>{!ilw.installLocDescription}</b>
+                <br/>
+                <b>{!ilw.vendor}</b>
+                <br/>
+                <br/>
+            </div>
+            <table width="100%">
+                <tr style="vertical-align: bottom">
+                    <th style="text-align: left">PART<br/>NUMBER</th>
+                    <th>NOMENCLATURE</th>
+                    <th></th>
+                    <th></th>
+                    <th>STATUS</th>
+                    <th>CONFIG QTY</th>
+                    <th>PEND CONFIG<br/>QTY</th>
+                    <th>PURCH QTY</th>
+                    <th>PEND PURCH<br/>QTY</th>
+                    <th>NOTE</th>
+                    <th>PEND NOTE</th>
+                    <!--                    <th>NOTE STATUS</th>-->
+
+                </tr>
+                <apex:repeat id="PartList" value="{!ilw.assetWrapperList}" var="awl">
+                    <tr>
+                        <td>
+                            {!awl.productCode}
+                        </td>
+                        <td colspan="3">
+                            {!awl.productName}
+                        </td>
+                        <td>
+                            {!awl.status}
+                        </td>
+                        <td>
+                            {!awl.configQty}
+                        </td>
+                        <td>
+                            {!awl.pendConfigQty}
+                        </td>
+                        <td>
+                            {!awl.qty}
+                        </td>
+                        <td>
+                            {!awl.pendQty}
+                        </td>
+                        <td>
+                            {!awl.noteName}
+                        </td>
+                        <td>
+                            {!awl.pendNoteName}
+                        </td>
+                    </tr>
+                </apex:repeat>
+            </table>
+        </apex:repeat>
+    </div>
+    </body>
+    </html>
+
+</apex:page>

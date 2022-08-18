@@ -1,0 +1,12 @@
+<apex:page standardController="Case" sidebar="false" showHeader="false">
+	<apex:stylesheet value="/sCSS/25.0/sprites/1342034628000/Theme3/default/gc/versioning.css" />
+	<apex:stylesheet value="/sCSS/25.0/sprites/1342034628000/Theme3/default/gc/extended.css" />
+
+	<GBLite:EmbedComponent baseGridUrl="{!$Page.GBLite__Grid}" />
+
+	<apex:tabPanel switchType="client" selectedTab="tabDetails" tabClass="activeTab" inactiveTabClass="inactiveTab">
+		<apex:tab label="Embedded Program Parts">
+			<iframe id="gridFrame" scrolling="auto" height="480" width="100%" frameborder="0" src="{!gridPage}gname=Parts - Assets&fpf=PT_Program__c&fpv={!Case.PT_Program__c}&sbb=1&sh=0&ssb=0&sfname=default"></iframe>
+		</apex:tab>
+	</apex:tabPanel>
+</apex:page>

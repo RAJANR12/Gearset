@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Accessibility</fullName>
+        <default>false</default>
+        <label>Accessibility</label>
+    </customValue>
+    <customValue>
+        <fullName>Additional Capacity</fullName>
+        <default>false</default>
+        <label>Additional Capacity</label>
+    </customValue>
+    <customValue>
+        <fullName>Airside Logging Software (formerly PAXUS)</fullName>
+        <default>false</default>
+        <label>Airside Logging Software (formerly PAXUS)</label>
+    </customValue>
+    <customValue>
+        <fullName>Application Integration Fee</fullName>
+        <default>false</default>
+        <label>Application Integration Fee</label>
+    </customValue>
+    <customValue>
+        <fullName>Automated Media Content Activation</fullName>
+        <default>false</default>
+        <label>Automated Media Content Activation</label>
+    </customValue>
+    <customValue>
+        <fullName>Bandwidth Options</fullName>
+        <default>false</default>
+        <label>Bandwidth Options</label>
+    </customValue>
+    <customValue>
+        <fullName>Cell Modem Services</fullName>
+        <default>false</default>
+        <label>Cell Modem Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Channel Selection</fullName>
+        <default>false</default>
+        <label>Channel Selection</label>
+    </customValue>
+    <customValue>
+        <fullName>Companion App</fullName>
+        <default>false</default>
+        <label>Companion App</label>
+    </customValue>
+    <customValue>
+        <fullName>Connecting Gate</fullName>
+        <default>false</default>
+        <label>Connecting Gate</label>
+    </customValue>
+    <customValue>
+        <fullName>Content Load Tools</fullName>
+        <default>false</default>
+        <label>Content Load Tools</label>
+    </customValue>
+    <customValue>
+        <fullName>Content Processing Tools</fullName>
+        <default>false</default>
+        <label>Content Processing Tools</label>
+    </customValue>
+    <customValue>
+        <fullName>Content Rating</fullName>
+        <default>false</default>
+        <label>Content Rating</label>
+    </customValue>
+    <customValue>
+        <fullName>Core Software</fullName>
+        <default>false</default>
+        <label>Core Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Credits</fullName>
+        <default>false</default>
+        <label>Credits</label>
+    </customValue>
+    <customValue>
+        <fullName>Crew Messaging - Air-To-Ground and Ground-To-Air</fullName>
+        <default>false</default>
+        <label>Crew Messaging - Air-To-Ground and Ground-To-Air</label>
+    </customValue>
+    <customValue>
+        <fullName>Crew Messaging - Crew to Passenger</fullName>
+        <default>false</default>
+        <label>Crew Messaging - Crew to Passenger</label>
+    </customValue>
+    <customValue>
+        <fullName>Custom Software</fullName>
+        <default>false</default>
+        <label>Custom Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer Support Engineering Tools</fullName>
+        <default>false</default>
+        <label>Customer Support Engineering Tools</label>
+    </customValue>
+    <customValue>
+        <fullName>Customer Support Services</fullName>
+        <default>false</default>
+        <label>Customer Support Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Plan</fullName>
+        <default>false</default>
+        <label>Data Plan</label>
+    </customValue>
+    <customValue>
+        <fullName>Destination Services</fullName>
+        <default>false</default>
+        <label>Destination Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Developer Program</fullName>
+        <default>false</default>
+        <label>Developer Program</label>
+    </customValue>
+    <customValue>
+        <fullName>DMPES Training</fullName>
+        <default>false</default>
+        <label>DMPES Training</label>
+    </customValue>
+    <customValue>
+        <fullName>Dynamic Content Update</fullName>
+        <default>false</default>
+        <label>Dynamic Content Update</label>
+    </customValue>
+    <customValue>
+        <fullName>Dynamic Content Update Options</fullName>
+        <default>false</default>
+        <label>Dynamic Content Update Options</label>
+    </customValue>
+    <customValue>
+        <fullName>Elemental Games</fullName>
+        <default>false</default>
+        <label>Elemental Games</label>
+    </customValue>
+    <customValue>
+        <fullName>eX1/eX2/eX3/eXLite Training</fullName>
+        <default>false</default>
+        <label>eX1/eX2/eX3/eXLite Training</label>
+    </customValue>
+    <customValue>
+        <fullName>eXK Training</fullName>
+        <default>false</default>
+        <label>eXK Training</label>
+    </customValue>
+    <customValue>
+        <fullName>eXO Training</fullName>
+        <default>false</default>
+        <label>eXO Training</label>
+    </customValue>
+    <customValue>
+        <fullName>eXW App Modules</fullName>
+        <default>false</default>
+        <label>eXW App Modules</label>
+    </customValue>
+    <customValue>
+        <fullName>eXW Services</fullName>
+        <default>false</default>
+        <label>eXW Services</label>
+    </customValue>
+    <customValue>
+        <fullName>eXW Training</fullName>
+        <default>false</default>
+        <label>eXW Training</label>
+    </customValue>
+    <customValue>
+        <fullName>Fees</fullName>
+        <default>false</default>
+        <label>Fees</label>
+    </customValue>
+    <customValue>
+        <fullName>Flight Profile</fullName>
+        <default>false</default>
+        <label>Flight Profile</label>
+    </customValue>
+    <customValue>
+        <fullName>Flight Route Based Programming</fullName>
+        <default>false</default>
+        <label>Flight Route Based Programming</label>
+    </customValue>
+    <customValue>
+        <fullName>Global Distribution</fullName>
+        <default>false</default>
+        <label>Global Distribution</label>
+    </customValue>
+    <customValue>
+        <fullName>Ground Support Equipment</fullName>
+        <default>false</default>
+        <label>Ground Support Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Ground Tools - Customized, Instructor-Led Training</fullName>
+        <default>false</default>
+        <label>Ground Tools - Customized, Instructor-Led Training</label>
+    </customValue>
+    <customValue>
+        <fullName>GUI Configuration Tool</fullName>
+        <default>false</default>
+        <label>GUI Configuration Tool</label>
+    </customValue>
+    <customValue>
+        <fullName>HAECO Survey</fullName>
+        <default>false</default>
+        <label>HAECO Survey</label>
+    </customValue>
+    <customValue>
+        <fullName>IDAir Cabin Management System (CMS) Training</fullName>
+        <default>false</default>
+        <label>IDAir Cabin Management System (CMS) Training</label>
+    </customValue>
+    <customValue>
+        <fullName>IFE Certification</fullName>
+        <default>false</default>
+        <label>IFE Certification</label>
+    </customValue>
+    <customValue>
+        <fullName>In-Seat Telephony</fullName>
+        <default>false</default>
+        <label>In-Seat Telephony</label>
+    </customValue>
+    <customValue>
+        <fullName>Initial License Fee</fullName>
+        <default>false</default>
+        <label>Initial License Fee</label>
+    </customValue>
+    <customValue>
+        <fullName>Insights enabled by NEXT Cloud</fullName>
+        <default>false</default>
+        <label>Insights enabled by NEXT Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>Instant Messaging SeatChat</fullName>
+        <default>false</default>
+        <label>Instant Messaging SeatChat</label>
+    </customValue>
+    <customValue>
+        <fullName>Integrated Personalization Service</fullName>
+        <default>false</default>
+        <label>Integrated Personalization Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Integration Fees</fullName>
+        <default>false</default>
+        <label>Integration Fees</label>
+    </customValue>
+    <customValue>
+        <fullName>Live Text News</fullName>
+        <default>false</default>
+        <label>Live Text News</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketplace enabled by NEXT Cloud</fullName>
+        <default>false</default>
+        <label>Marketplace enabled by NEXT Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>Miscellaneous Fees</fullName>
+        <default>false</default>
+        <label>Miscellaneous Fees</label>
+    </customValue>
+    <customValue>
+        <fullName>MMA API</fullName>
+        <default>false</default>
+        <label>MMA API</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobile Cabin Management Interface</fullName>
+        <default>false</default>
+        <label>Mobile Cabin Management Interface</label>
+    </customValue>
+    <customValue>
+        <fullName>Modification, Rebranding, and De-branding</fullName>
+        <default>false</default>
+        <label>Modification, Rebranding, and De-branding</label>
+    </customValue>
+    <customValue>
+        <fullName>Monthly Ad Operations Fee</fullName>
+        <default>false</default>
+        <label>Monthly Ad Operations Fee</label>
+    </customValue>
+    <customValue>
+        <fullName>Moving Map - Arc Enabled by NEXT Cloud</fullName>
+        <default>false</default>
+        <label>Moving Map - Arc Enabled by NEXT Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>Moving Map - Flightpath2D</fullName>
+        <default>false</default>
+        <label>Moving Map - Flightpath2D</label>
+    </customValue>
+    <customValue>
+        <fullName>Moving Map - Flightpath3D</fullName>
+        <default>false</default>
+        <label>Moving Map - Flightpath3D</label>
+    </customValue>
+    <customValue>
+        <fullName>Moving Map - iXplor2</fullName>
+        <default>false</default>
+        <label>Moving Map - iXplor2</label>
+    </customValue>
+    <customValue>
+        <fullName>Moving Map - Voyager 2D Plus</fullName>
+        <default>false</default>
+        <label>Moving Map - Voyager 2D Plus</label>
+    </customValue>
+    <customValue>
+        <fullName>Moving Map - Voyager 3D</fullName>
+        <default>false</default>
+        <label>Moving Map - Voyager 3D</label>
+    </customValue>
+    <customValue>
+        <fullName>NEXT Online Training (Includes Wi-Fi Services + Phone Services + Live Television)</fullName>
+        <default>false</default>
+        <label>NEXT Online Training (Includes Wi-Fi Services + Phone Services + Live Television)</label>
+    </customValue>
+    <customValue>
+        <fullName>NEXT Training</fullName>
+        <default>false</default>
+        <label>NEXT Training</label>
+    </customValue>
+    <customValue>
+        <fullName>Onboard Hospitality</fullName>
+        <default>false</default>
+        <label>Onboard Hospitality</label>
+    </customValue>
+    <customValue>
+        <fullName>Onboard Reader</fullName>
+        <default>false</default>
+        <label>Onboard Reader</label>
+    </customValue>
+    <customValue>
+        <fullName>Onboard Shopping</fullName>
+        <default>false</default>
+        <label>Onboard Shopping</label>
+    </customValue>
+    <customValue>
+        <fullName>Optional Features</fullName>
+        <default>false</default>
+        <label>Optional Features</label>
+    </customValue>
+    <customValue>
+        <fullName>Overhead Audio over Cabin Speakers</fullName>
+        <default>false</default>
+        <label>Overhead Audio over Cabin Speakers</label>
+    </customValue>
+    <customValue>
+        <fullName>Panasonic Wi-Fi (HTS) Network Upgrade</fullName>
+        <default>false</default>
+        <label>Panasonic Wi-Fi (HTS) Network Upgrade</label>
+    </customValue>
+    <customValue>
+        <fullName>Panasonic Wi-Fi De-Modification</fullName>
+        <default>false</default>
+        <label>Panasonic Wi-Fi De-Modification</label>
+    </customValue>
+    <customValue>
+        <fullName>Pay Per Service</fullName>
+        <default>false</default>
+        <label>Pay Per Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Payment Solution</fullName>
+        <default>false</default>
+        <label>Payment Solution</label>
+    </customValue>
+    <customValue>
+        <fullName>PKI Security as a Service</fullName>
+        <default>false</default>
+        <label>PKI Security as a Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Portal</fullName>
+        <default>false</default>
+        <label>Portal</label>
+    </customValue>
+    <customValue>
+        <fullName>Portal Moving Map - Arc enabled by NEXT Cloud</fullName>
+        <default>false</default>
+        <label>Portal Moving Map - Arc enabled by NEXT Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>Portal Moving Maps - Flightpath2D</fullName>
+        <default>false</default>
+        <label>Portal Moving Maps - Flightpath2D</label>
+    </customValue>
+    <customValue>
+        <fullName>Portal Moving Maps - Flightpath3D</fullName>
+        <default>false</default>
+        <label>Portal Moving Maps - Flightpath3D</label>
+    </customValue>
+    <customValue>
+        <fullName>Portal Moving Maps - iXplor2</fullName>
+        <default>false</default>
+        <label>Portal Moving Maps - iXplor2</label>
+    </customValue>
+    <customValue>
+        <fullName>Portal Moving Maps - Voyager</fullName>
+        <default>false</default>
+        <label>Portal Moving Maps - Voyager</label>
+    </customValue>
+    <customValue>
+        <fullName>Premium Games</fullName>
+        <default>false</default>
+        <label>Premium Games</label>
+    </customValue>
+    <customValue>
+        <fullName>Primary Media - EIS</fullName>
+        <default>false</default>
+        <label>Primary Media - EIS</label>
+    </customValue>
+    <customValue>
+        <fullName>Primary Media - Recurring</fullName>
+        <default>false</default>
+        <label>Primary Media - Recurring</label>
+    </customValue>
+    <customValue>
+        <fullName>Recommendations</fullName>
+        <default>false</default>
+        <label>Recommendations</label>
+    </customValue>
+    <customValue>
+        <fullName>Recurring License Fee</fullName>
+        <default>false</default>
+        <label>Recurring License Fee</label>
+    </customValue>
+    <customValue>
+        <fullName>Required Usage</fullName>
+        <default>false</default>
+        <label>Required Usage</label>
+    </customValue>
+    <customValue>
+        <fullName>Seatback GUI</fullName>
+        <default>false</default>
+        <label>Seatback GUI</label>
+    </customValue>
+    <customValue>
+        <fullName>Secondary Media - EIS</fullName>
+        <default>false</default>
+        <label>Secondary Media - EIS</label>
+    </customValue>
+    <customValue>
+        <fullName>Secondary Media - Recurring</fullName>
+        <default>false</default>
+        <label>Secondary Media - Recurring</label>
+    </customValue>
+    <customValue>
+        <fullName>Security Consulting Services</fullName>
+        <default>false</default>
+        <label>Security Consulting Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Select Games</fullName>
+        <default>false</default>
+        <label>Select Games</label>
+    </customValue>
+    <customValue>
+        <fullName>Serenity In-Seat</fullName>
+        <default>false</default>
+        <label>Serenity In-Seat</label>
+    </customValue>
+    <customValue>
+        <fullName>Short Term Channel Selection</fullName>
+        <default>false</default>
+        <label>Short Term Channel Selection</label>
+    </customValue>
+    <customValue>
+        <fullName>SIE NRE</fullName>
+        <default>false</default>
+        <label>SIE NRE</label>
+    </customValue>
+    <customValue>
+        <fullName>SIE Structural and Wiring Kits</fullName>
+        <default>false</default>
+        <label>SIE Structural and Wiring Kits</label>
+    </customValue>
+    <customValue>
+        <fullName>SIE Travel</fullName>
+        <default>false</default>
+        <label>SIE Travel</label>
+    </customValue>
+    <customValue>
+        <fullName>Software Deliverables</fullName>
+        <default>false</default>
+        <label>Software Deliverables</label>
+    </customValue>
+    <customValue>
+        <fullName>Spares</fullName>
+        <default>false</default>
+        <label>Spares</label>
+    </customValue>
+    <customValue>
+        <fullName>Surveys</fullName>
+        <default>false</default>
+        <label>Surveys</label>
+    </customValue>
+    <customValue>
+        <fullName>Tech Pubs Digital Submissions</fullName>
+        <default>false</default>
+        <label>Tech Pubs Digital Submissions</label>
+    </customValue>
+    <customValue>
+        <fullName>Tech Pubs Fees</fullName>
+        <default>false</default>
+        <label>Tech Pubs Fees</label>
+    </customValue>
+    <customValue>
+        <fullName>Tech Pubs System Manuals</fullName>
+        <default>false</default>
+        <label>Tech Pubs System Manuals</label>
+    </customValue>
+    <customValue>
+        <fullName>Tech Pubs Wiring Manuals</fullName>
+        <default>false</default>
+        <label>Tech Pubs Wiring Manuals</label>
+    </customValue>
+    <customValue>
+        <fullName>Test Equipment</fullName>
+        <default>false</default>
+        <label>Test Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Third Party Applications Management</fullName>
+        <default>false</default>
+        <label>Third Party Applications Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Third Party STC Support</fullName>
+        <default>false</default>
+        <label>Third Party STC Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Tool Access</fullName>
+        <default>false</default>
+        <label>Tool Access</label>
+    </customValue>
+    <customValue>
+        <fullName>Wi-Fi Certification</fullName>
+        <default>false</default>
+        <label>Wi-Fi Certification</label>
+    </customValue>
+    <customValue>
+        <fullName>Wi-Fi Services &amp; Phone Services Training</fullName>
+        <default>false</default>
+        <label>Wi-Fi Services &amp; Phone Services Training</label>
+    </customValue>
+    <customValue>
+        <fullName>WISP</fullName>
+        <default>false</default>
+        <label>WISP</label>
+    </customValue>
+    <customValue>
+        <fullName>X Series and Panasonic Wi-Fi Training</fullName>
+        <default>false</default>
+        <label>X Series and Panasonic Wi-Fi Training</label>
+    </customValue>
+    <customValue>
+        <fullName>X Series and Panasonic Wi-Fi Training Travel</fullName>
+        <default>false</default>
+        <label>X Series and Panasonic Wi-Fi Training Travel</label>
+    </customValue>
+    <customValue>
+        <fullName>ZeroTouch</fullName>
+        <default>false</default>
+        <label>ZeroTouch</label>
+    </customValue>
+    <customValue>
+        <fullName>Bluetooth Activation</fullName>
+        <default>false</default>
+        <label>Bluetooth Activation</label>
+    </customValue>
+    <masterLabel>Sub Category 3</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

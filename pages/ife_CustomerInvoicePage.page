@@ -1,0 +1,699 @@
+<apex:page controller="ife_CustomerInvoiceController" showHeader="false" renderAs="PDF" sidebar="false" standardStylesheets="false"
+    applyHtmlTag="false" action="{!getPageValue}">
+    <apex:outputText rendered="{!!isDisplay}">
+       
+        <apex:pageMessages />
+
+    </apex:outputText>
+
+    <apex:outputText rendered="{!isDisplay}">
+
+        <head>
+            <style type="text/css" media="print">
+                @page {
+                    padding-top: 270px;
+                    /*border-top: none;
+                page-break-after: always;
+                border-bottom: 1px solid black;*/
+                    @top-center {
+                        content: element(header);
+                    }
+                }
+
+                @page :first {
+                    padding-top: 262px;
+                    /* border-top: none;
+                page-break-after: always;
+                border-bottom: 1px solid black;*/
+                    @top-center {
+                        content: element(header);
+                    }
+                }
+
+                @page {
+                    /*page-break-after: always;
+               // border-bottom: 1px solid black;
+               // border-top: 1px solid black;*/
+                    margin-bottom: 100px;
+                    @bottom-left {
+                        margin-left: 3px;
+                        content: element(footer);
+                        */
+                    }
+                }
+
+                div.header {
+                    padding: 10px;
+                    position: running(header);
+                }
+
+                div.footer {
+                    display: block;
+                    position: running(footer);
+                }
+
+                .pagenumber:before {
+
+                    content: counter(page);
+                }
+
+                .pagecount:before {
+
+                    content: counter(pages);
+                }
+            </style>
+            <style>
+                table {
+
+                    border-collapse: collapse;
+                    min-width: 100%;
+                    min-height: 100%;
+                }
+
+                .table--border {
+                    border: 1px solid black;
+
+                }
+            </style>
+        </head>
+
+        <div class="header">
+            <div style="width : 100%">
+                <div style="width : 60%;float : left;">
+                    <div style="width : 40%;float : left; font-weight: bold; font-size: 35px;">
+                        Panasonic
+                    </div>
+                    <div style="width : 59%;float : left; ">
+                        <div style=" font-weight: bold; font-size: 15px;">{!pageLogo}</div>
+                        <div style=" font-size: 11px;">{!shopAddress}</div>
+                        <div style=" font-size: 11px;">{!shopTeleFsx}</div>
+                    </div>
+                    <div style="width : 60%;float : left;">
+                        <div style="font-size: 12px;">
+                            <span>SHIP TO:</span>
+                            <br/> {!headerObj.CP_SHIP_TO_CONCATENATED}
+                        </div>
+                        <br/>
+
+                        <div style="font-size: 12px;">
+                            <span>BILL TO:</span>
+                            <br/> {!headerObj.C_BILL_TO_CONCATENATED}
+
+                        </div>
+
+                    </div>
+                    <div style="width : 39%;float : left;">
+                        <div style="font-size: 10px;">
+                            <span style="font-size: 12px;">REMIT TO:</span>
+                            <br/> {!headerObj.CP_REMIT_TO_CONCATENATED}
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table--border" style="width : 37%; float: left">
+                    <table class="table--border" style="  width: 100%;border-collapse: collapse; ">
+                        <tr>
+                            <th colspan="6" style="border: 1px solid; height : 20px;">
+                                <span style="margin-left : 70px;font-size: 15px; font-weight: bold; ">{!headerObj.TRX_TYPE_NAME}</span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="border: 1px solid;">
+                                <span style="margin-left : 10px; font-weight: bold; font-size: 10px">NUMBER</span>
+                                <br/>
+                                <span style="margin-left : 60px;font-size: 13px; font-weight: bold;">{!headerObj.TRX_NUMBER}</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="border: 1px solid;">
+                                <span style="margin-left : 10px; font-weight: bold; font-size: 10px">Date</span>
+                                <br/>
+                                <span style="margin-left : 30px;font-size: 13px; font-weight: bold;">{!headerObj.TRX_DATE}</span>
+                            </td>
+                            <td colspan="3" style="border: 1px solid;">
+                                <span style="margin-left : 10px; font-weight: bold; font-size: 10px">PAGE</span>
+                                <br/>
+                                <span style="margin-left : 30px;font-size: 13px; font-weight: bold;">
+                                    <span class="pagenumber" /> of
+                                    <span class="pagecount" /></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="border: 1px solid;">
+                                <span style="margin-left : 10px; font-weight: bold; font-size: 10px">PURCHASE ORDER NUMBER</span>
+                                <br/>
+                                <span style="margin-left : 60px;font-size: 13px; font-weight: bold;">{!headerObj.PURCHASE_ORDER_NUMBER}</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="border: 1px solid;">
+                                <span style="margin-left : 10px; font-weight: bold; font-size: 10px">DELIVERY NUMBER</span>
+                                <br/>
+                                <span style="margin-left : 60px;font-size: 13px; font-weight: bold;">{!headerObj.CF_DELIVERY_NUMBER}</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="border: 1px solid;">
+                                <span style="margin-left : 10px; font-weight: bold; font-size: 10px">SALES ORDER NUMBER</span>
+                                <br/>
+                                <span style="margin-left : 60px;font-size: 13px; font-weight: bold;">{!headerObj.INV_SALES_ORDER}</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="border: 1px solid;">
+                                <span style="margin-left : 10px; font-weight: bold; font-size: 8px">CUSTOMER NUMBER</span>
+                                <br/>
+                                <span style="margin-left : 20px;font-size: 12px; font-weight: bold;">{!headerObj.CUSTOMER_NUMBER}</span>
+                            </td>
+                            <td colspan="3" style="border: 1px solid;">
+                                <span style="margin-left : 10px; font-weight: bold; font-size: 9px">LOCATION</span>
+                                <br/>
+                                <span style="margin-left : 10px;font-size: 11px; font-weight: bold;">{!headerObj.CF_LOCATION}</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="border: 1px solid;">
+                                <span style="margin-left : 10px; font-weight: bold; font-size: 8px">PROGRAM NUMBER</span>
+                                <br/>
+                                <span style="margin-left : 20px;font-size: 12px; font-weight: bold;">{!headerObj.CP_PROGRAM_NUMBER}</span>
+                            </td>
+                            <td colspan="3" style="border: 1px solid;">
+                                <span style="margin-left : 10px; font-weight: bold; font-size: 9px">TAIL NUMBER</span>
+                                <br/>
+                                <span style="margin-left : 10px;font-size: 11px; font-weight: bold;">{!headerObj.CP_TAIL_NUMBER}</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="footer" style="margin-left: 3px;">
+            <div>
+                Page
+                <span class="pagenumber" /> of
+                <span class="pagecount" />
+            </div>
+        </div>
+
+
+
+        <div class="content">
+            <div style="width : 100%;">
+                <span style="margin-left : 230px; font-size: 16px; font-weight: bold;">
+                    PLEASE NOTE REMITTANCE ADDRESS CHANGES
+                </span>
+            </div>
+            <div style="width : 100%;">
+                <table style="  width: 100%;border-collapse: collapse; ">
+                    <tr>
+                        <td colspan="4" style="border: 1px solid;width: 35%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">TERMS</span>
+                            <br/>
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">{!headerObj.TERM_NAME}</span>
+                        </td>
+                        <td colspan="4" style="border: 1px solid;width: 35%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">CURRENCY</span>
+                            <br/>
+                            <span style="margin-left : 20px;font-size: 10px; font-weight: bold;">{!headerObj.INVOICE_CURRENCY_CODE}</span>
+                        </td>
+                        <td colspan="4" style="border: 1px solid;width: 30%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">CUSTOMER CONTACT</span>
+                            <br/>
+                            <span style="margin-left : 20px;font-size: 10px; font-weight: bold;">{!headerObj.BILL_TO_ATTN}</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3" style="border: 1px solid;width: 35%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">SHIP DATE</span>
+                            <br/>
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">{!headerObj.SHIP_DATE_ACTUAL} </span>
+                        </td>
+                        <td colspan="5" style="border: 1px solid;width: 35%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">SHIP VIA</span>
+                            <br/>
+                            <span style="margin-left : 20px;font-size: 10px; font-weight: bold;">{!headerObj.SHIP_VIA_DESCRIPTION}</span>
+                        </td>
+                        <td colspan="4" style="border: 1px solid;width: 30%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">SHIPPING REFERENCE</span>
+                            <br/>
+                            <span style="margin-left : 20px;font-size: 10px; font-weight: bold;">{!headerObj.CF_WAYBILL}</span>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="border: 1px solid;width: 16%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">FREIGHT TERMS </span>
+                            <br/>
+                            <span style="margin-left : 20px;font-size: 10px; font-weight: bold;">{!headerObj.CP_FREIGHT_CODE}</span>
+
+                        </td>
+                        <td colspan="2" style="border: 1px solid;width:  17%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">SERVICE REQUEST NUMBER</span>
+                            <br/>
+                            <span style="margin-left : 20px;font-size: 10px; font-weight: bold;">{!headerObj.CP_INCIDENT_NUM}</span>
+
+                        </td>
+                        <td colspan="2" style="border: 1px solid;width:  17%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">SERVICE PART NUMBER</span>
+                            <br/>
+                            <span style="margin-left : 20px;font-size: 10px; font-weight: bold;">{!headerObj.CF_INCIDENT_ITEM}</span>
+
+                        </td>
+                        <td colspan="2" style="border: 1px solid;width:  20%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">SERIAL NUMBER</span>
+                            <br/>
+                            <span style="margin-left : 20px;font-size: 10px; font-weight: bold;">{!headerObj.CP_LOT_OR_SERIAL_NO}</span>
+
+                        </td>
+                        <td colspan="4" style="border: 1px solid;width: 30%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">BUYER</span>
+                            <br/>
+                            <span style="margin-left : 20px;font-size: 10px; font-weight: bold;"></span>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" style="border: 1px solid;width: 5%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">ITEM NO
+                            </span>
+
+                        </td>
+                        <td colspan="5" style="border: 1px solid;width:  45%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">PART NUMBER/DESCRIPTION</span>
+
+                        </td>
+
+                        <td colspan="1" style="border: 1px solid;width:  10%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">QTY SHIPPED</span>
+
+                        </td>
+                        <td colspan="1" style="border: 1px solid;width:  10%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">UNIT</span>
+
+                        </td>
+                        <td colspan="2" style="border: 1px solid;width: 15%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">UNIT PRICE
+                            </span>
+
+                        </td>
+                        <td colspan="2" style="border: 1px solid;width: 15%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">EXTENSION</span>
+
+                        </td>
+                    </tr>
+                    <apex:variable var="total" value="{!0}" />
+                    <apex:variable var="index" value="{!0}" />
+                    <apex:variable var="breaktable" value="{!6}" />
+                    <apex:variable var="isBreakPage" value="false" />
+                    <apex:repeat value="{!JSONWrapperObj.lines}" var="line">
+                        <tr style="height: 0px;">
+                            <td colspan="1" style="border-left: 1px solid; border-right: 1px solid;width: 7.5%; ">
+                                <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">{!line.LINE_NUMBER}
+                                </span>
+
+                            </td>
+                            <td colspan="5" style="border-right: 1px solid;width:  43.8%; ">
+                                <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">{!line.LINE_ITEM_DESCRIPTION}
+                                </span>
+                                <br/>
+                                <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">{!line.PO_LINE_REF}
+                                </span>
+                                <br/>
+                                <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">{!line.ORD_COMMENTS}
+                                </span>
+                            </td>
+
+                            <td colspan="1" style="border-right: 1px solid;width:  10%; ">
+                                <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">{!line.LINE_QTY_ORDERED}</span>
+
+                            </td>
+                            <td colspan="1" style="border-right: 1px solid;width:  10%; ">
+                                <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">{!line.LINE_UOM}</span>
+
+                            </td>
+                            <td colspan="2" style="border-right: 1px solid;width: 15%; ">
+                                <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">{!line.LINE_UNIT_SELLING_PRICE}
+                                </span>
+
+                            </td>
+                            <td colspan="2" style="border-right: 1px solid;width: 15%; ">
+                                <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">{!line.LINE_EXTENDED_AMOUNT}</span>
+                                <apex:variable var="total" value="{!total + line.LINE_EXTENDED_AMOUNT}" />
+
+                            </td>
+                        </tr>
+
+
+                        <apex:variable var="index" value="{!index + 1}" />
+                        <apex:outputText rendered="{!IF((index == breaktable), true, false)}">
+                            <apex:outputText rendered="{!IF((index != totalRecords), true, false)}">
+
+                                <apex:variable var="breaktable" value="{!breaktable + 6}" />
+                                <apex:variable var="isBreakPage" value="true" />
+                            </apex:outputText>
+                        </apex:outputText>
+                        <apex:outputText rendered="{!IF((index == breakBeforLastPage), true, false)}">
+                            <apex:variable var="isBreakPage" value="true" />
+                        </apex:outputText>
+
+                        <apex:outputText rendered="{!isBreakPage}">
+
+                            <apex:variable var="isBreakPage" value="false" />
+
+                            <tr>
+                                <td colspan="1" style="border-left: 1px solid; border-right: 1px solid;width: 5%; ">
+                                    <span style="margin-left : 10px;font-size: 10px; font-weight: bold;"></span>
+                                </td>
+                                <td colspan="5" style="border-right: 1px solid;width:  45%; "></td>
+                                <td colspan="1" style="border-right: 1px solid;width:  9.5%; "> </td>
+                                <td colspan="1" style="border-right: 1px solid;width:  8%; "> </td>
+                                <td colspan="2" style="border-right: 1px solid;width: 15%; "></td>
+                                <td colspan="2" style="border-right: 1px solid;width: 15%; "> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" style="border-left: 1px solid; border-right: 1px solid;width: 5%; ">
+                                    <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">
+                                    </span>
+                                </td>
+                                <td colspan="5" style="border-right: 1px solid;width:  45%; ">
+                                    <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">
+                                        SEND WIRE TRANSFER PAYMENTS TO :
+                                        <br/>
+                                        <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">citibank New Yourk</span>
+                                        <br/>
+                                        <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">339 Park Avenue</span>
+                                        <br/>
+                                        <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">New Yourk, NY 10022</span>
+                                        <br/>
+                                        <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">ABA#:021000089</span>
+                                        <br/>
+                                        <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">Account#:04586878</span>
+                                        <br/>
+                                    </span>
+                                </td>
+                                <td colspan="1" style="border-right: 1px solid;width:  9.5%; ">
+                                    <span style="margin-left : 10px;font-size: 10px; font-weight: bold;"></span>
+                                </td>
+                                <td colspan="1" style="border-right: 1px solid;width:  8%; ">
+                                    <span style="margin-left : 10px;font-size: 10px; font-weight: bold;"></span>
+                                </td>
+                                <td colspan="2" style="border-right: 1px solid;width: 15%; ">
+                                    <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">
+                                    </span>
+                                </td>
+                                <td colspan="2" style="border-right: 1px solid;width: 15%; ">
+                                    <span style="margin-left : 10px;font-size: 10px; font-weight: bold;"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" style="border-left: 1px solid; border-right: 1px solid;width: 5%; ">
+                                    <span style="margin-left : 10px;font-size: 10px; font-weight: bold;"></span>
+                                </td>
+                                <td colspan="5" style="border-right: 1px solid;width:  45%; "></td>
+                                <td colspan="1" style="border-right: 1px solid;width:  9.5%; "> </td>
+                                <td colspan="1" style="border-right: 1px solid;width:  8%; "> </td>
+                                <td colspan="2" style="border-right: 1px solid;width: 15%; "></td>
+                                <td colspan="2" style="border-right: 1px solid;width: 15%; "> </td>
+                            </tr>
+
+                            <div style="border-bottom: 1px solid black;"></div>
+                            <div style="page-break-after: always" />
+
+                            <div style="width : 100%;">
+                                <span style="margin-left : 230px; font-size: 16px; font-weight: bold;">
+                                    PLEASE NOTE REMITTANCE ADDRESS CHANGES
+                                </span>
+                            </div>
+                            <div style="width : 100%;">
+                                <table style="  width: 100%;border-collapse: collapse; ">
+                                    <tr>
+                                        <td colspan="4" style="border: 1px solid;width: 35%; ">
+                                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">TERMS</span>
+                                            <br/>
+                                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">{!headerObj.TERM_NAME}</span>
+                                        </td>
+                                        <td colspan="4" style="border: 1px solid;width: 35%; ">
+                                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">CURRENCY</span>
+                                            <br/>
+                                            <span style="margin-left : 20px;font-size: 10px; font-weight: bold;">{!headerObj.INVOICE_CURRENCY_CODE}</span>
+                                        </td>
+                                        <td colspan="4" style="border: 1px solid;width: 30%; ">
+                                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">CUSTOMER CONTACT</span>
+                                            <br/>
+                                            <span style="margin-left : 20px;font-size: 10px; font-weight: bold;">{!headerObj.BILL_TO_ATTN}</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="3" style="border: 1px solid;width: 35%; ">
+                                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">SHIP DATE</span>
+                                            <br/>
+                                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">{!headerObj.SHIP_DATE_ACTUAL} </span>
+                                        </td>
+                                        <td colspan="5" style="border: 1px solid;width: 35%; ">
+                                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">SHIP VIA</span>
+                                            <br/>
+                                            <span style="margin-left : 20px;font-size: 10px; font-weight: bold;">{!headerObj.SHIP_VIA_DESCRIPTION}</span>
+                                        </td>
+                                        <td colspan="4" style="border: 1px solid;width: 30%; ">
+                                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">SHIPPING REFERENCE</span>
+                                            <br/>
+                                            <span style="margin-left : 20px;font-size: 10px; font-weight: bold;">{!headerObj.CF_WAYBILL}</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" style="border: 1px solid;width: 16%; ">
+                                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">FREIGHT TERMS </span>
+                                            <br/>
+                                            <span style="margin-left : 20px;font-size: 10px; font-weight: bold;">{!headerObj.CP_FREIGHT_CODE}</span>
+                                        </td>
+                                        <td colspan="2" style="border: 1px solid;width:  17%; ">
+                                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">SERVICE REQUEST NUMBER</span>
+                                            <br/>
+                                            <span style="margin-left : 20px;font-size: 10px; font-weight: bold;">{!headerObj.CP_INCIDENT_NUM}</span>
+                                        </td>
+                                        <td colspan="2" style="border: 1px solid;width:  17%; ">
+                                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">SERVICE PART NUMBER</span>
+                                            <br/>
+                                            <span style="margin-left : 20px;font-size: 10px; font-weight: bold;">{!headerObj.CF_INCIDENT_ITEM}</span>
+                                        </td>
+                                        <td colspan="2" style="border: 1px solid;width:  20%; ">
+                                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">SERIAL NUMBER</span>
+                                            <br/>
+                                            <span style="margin-left : 20px;font-size: 10px; font-weight: bold;">{!headerObj.CP_LOT_OR_SERIAL_NO}</span>
+                                        </td>
+                                        <td colspan="4" style="border: 1px solid;width: 30%; ">
+                                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">BUYER</span>
+                                            <br/>
+                                            <span style="margin-left : 20px;font-size: 10px; font-weight: bold;">------</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="1" style="border: 1px solid;width: 7.5%; ">
+                                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">ITEM NO
+                                            </span>
+                                        </td>
+                                        <td colspan="5" style="border: 1px solid;width:  43.5%; ">
+                                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">PART NUMBER/DESCRIPTION</span>
+                                        </td>
+                                        <td colspan="1" style="border: 1px solid;width:  10%; ">
+                                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">QTY SHIPPED</span>
+                                        </td>
+                                        <td colspan="1" style="border: 1px solid;width:  10%; ">
+                                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">UNIT</span>
+                                        </td>
+                                        <td colspan="2" style="border: 1px solid;width: 15%; ">
+                                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">UNIT PRICE
+                                            </span>
+                                        </td>
+                                        <td colspan="2" style="border: 1px solid;width: 15%; ">
+                                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">EXTENSION</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </apex:outputText>
+                        <apex:outputText rendered="{!IF((index == totalRecords), true, false)}">
+
+                            <tr>
+                                <td colspan="1" style="border-left: 1px solid; border-right: 1px solid;width: 7.5%; "></td>
+                                <td colspan="5" style="border-right: 1px solid;width:  43.5%; "> </td>
+
+                                <td colspan="1" style="border-right: 1px solid;width:  10%; ">
+                                </td>
+                                <td colspan="1" style="border-right: 1px solid;width:  10%; ">
+                                </td>
+                                <td colspan="2" style="border-right: 1px solid;width: 15%; ">
+                                </td>
+                                <td colspan="2" style="border-right: 1px solid;width: 15%; ">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" style="border-left: 1px solid; border-right: 1px solid;width: 7.5%; ">
+                                    <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">
+                                    </span>
+                                </td>
+                                <td colspan="5" style="border-right: 1px solid;width:  43.5%; ">
+                                    <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">
+                                        SEND WIRE TRANSFER PAYMENTS TO :
+                                        <br/>
+                                        <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">citibank New Yourk</span>
+                                        <br/>
+                                        <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">339 Park Avenue</span>
+                                        <br/>
+                                        <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">New Yourk, NY 10022</span>
+                                        <br/>
+                                        <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">ABA#:021000089</span>
+                                        <br/>
+                                        <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">Account#:04586878</span>
+                                        <br/>
+                                    </span>
+
+                                </td>
+
+                                <td colspan="1" style="border-right: 1px solid;width: 10%; ">
+                                    <span style="margin-left : 10px;font-size: 10px; font-weight: bold;"></span>
+
+                                </td>
+                                <td colspan="1" style="border-right: 1px solid;width:  10%; ">
+                                    <span style="margin-left : 10px;font-size: 10px; font-weight: bold;"></span>
+
+                                </td>
+                                <td colspan="2" style="border-right: 1px solid;width: 15%; ">
+                                    <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">
+                                    </span>
+
+                                </td>
+                                <td colspan="2" style="border-right: 1px solid;width: 15%; ">
+                                    <span style="margin-left : 10px;font-size: 10px; font-weight: bold;"></span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" style="border-left: 1px solid; border-right: 1px solid;width: 7.5%; ">
+                                    <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">
+
+                                    </span>
+
+                                </td>
+                                <td colspan="5" style="border-right: 1px solid;width:  43.5%; ">
+
+                                </td>
+
+                                <td colspan="1" style="border-right: 1px solid;width:  10%; ">
+
+
+                                </td>
+                                <td colspan="1" style="border-right: 1px solid;width:  10%; ">
+
+
+                                </td>
+                                <td colspan="2" style="border-right: 1px solid;width: 15%; ">
+
+
+                                </td>
+                                <td colspan="2" style="border-right: 1px solid;width: 15%; ">
+
+
+                                </td>
+                            </tr>
+                        </apex:outputText>
+                    </apex:repeat>
+
+                    <tr style="height: 2px;">
+                        <td colspan="1" style="border-left: 1px solid; border-right: 1px solid;border-bottom: 1px solid;width: 5%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">
+                            </span>
+
+                        </td>
+                        <td colspan="5" style="border-right: 1px solid;border-bottom: 1px solid;width:  45%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;"></span>
+
+                        </td>
+
+                        <td colspan="1" style="border-right: 1px solid;border-bottom: 1px solid;width:  10%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;"></span>
+
+                        </td>
+                        <td colspan="1" style="border-right: 1px solid;border-bottom: 1px solid;width:  10%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;"></span>
+
+                        </td>
+                        <td colspan="2" style="border-right: 1px solid;border-bottom: 1px solid;width: 15%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">
+                            </span>
+
+                        </td>
+                        <td colspan="2" style="border-right: 1px solid;border-bottom: 1px solid;width: 15%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;"></span>
+
+                        </td>
+                    </tr>
+                    <tr style="height: 30px;">
+                        <td colspan="5" rowspan="2" style="border-left: 1px solid; border-right: 1px solid;border-bottom: 1px solid;width: 5%; ">
+                        </td>
+
+
+                        <td colspan="2" style="border-right: 1px solid;border-bottom: 1px solid;width:  10%; ">
+                            <span style="margin-left : 8px;font-size: 10px; font-weight: bold;">SUBTOTAL</span>
+
+                        </td>
+                        <td colspan="1" style="border-right: 1px solid;border-bottom: 1px solid;width:  10%; ">
+                            <span style="margin-left : 8px;font-size: 10px; font-weight: bold;">TAX</span>
+
+                        </td>
+                        <td colspan="2" style="border-right: 1px solid;border-bottom: 1px solid;width: 15%; ">
+                            <span style="margin-left : 8px;font-size: 10px; font-weight: bold;">SHIP/HANDLING</span>
+
+                        </td>
+                        <td colspan="2" style="border-right: 1px solid;border-bottom: 1px solid;width: 15%; ">
+                            <span style="margin-left : 8px;font-size: 12px; font-weight: bold;">TOTAL</span>
+                        </td>
+                    </tr>
+                    <tr style="height: 30px;">
+                        <td colspan="2" style="border-right: 1px solid;border-bottom: 1px solid;width:  10%; ">
+
+                            {!total}
+                        </td>
+                        <td colspan="1" style="border-right: 1px solid;border-bottom: 1px solid;width:  10%; ">
+
+                            00
+                        </td>
+                        <td colspan="2" style="border-right: 1px solid;border-bottom: 1px solid;width: 15%; ">
+
+                            00
+                        </td>
+                        <td colspan="2" style="border-right: 1px solid;border-bottom: 1px solid;width: 15%; ">
+                            {!total}
+                        </td>
+
+
+                    </tr>
+                    <tr style="height: 30px;">
+                        <td colspan="4" style="border-left: 1px solid; border-right: 1px solid;border-bottom: 1px solid;width: 5%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">
+                                {!todayDate}
+                            </span>
+
+                        </td>
+                        <td colspan="4" style="border-right: 1px solid;border-bottom: 1px solid;width: 15%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">
+                                ORIGINAL
+                            </span>
+
+                        </td>
+                        <td colspan="4" style="border-right: 1px solid;border-bottom: 1px solid;width: 15%; ">
+                            <span style="margin-left : 10px;font-size: 10px; font-weight: bold;">
+
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </apex:outputText>
+</apex:page>
