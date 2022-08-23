@@ -1865,6 +1865,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>Test_GS_AP1</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ife_CommercialInvoiceController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
