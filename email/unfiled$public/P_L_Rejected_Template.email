@@ -1,0 +1,21 @@
+<messaging:emailTemplate subject="P&L Approval: {!relatedTo.Name} has been REJECTED for Account: {!relatedTo.Account_Name__c} Deal Opportunity: {!relatedTo.L2I_Approval_Deal_Opportunity__r.Name}"
+relatedToType="L2I_P_L_Approval__c">
+<messaging:HtmlEmailBody >
+<html>
+<body>
+Hello {!relatedTo.Owner.Name}, 
+
+<p>Your submitted P&amp;L:  <apex:outputlink value="{!LEFT($Api.Partner_Server_URL_140,FIND('.com',$Api.Partner_Server_URL_140)+4)+relatedTo.Id}">{!relatedTo.Name}</apex:outputlink> for {!relatedTo.Account_Name__c} Deal Opportunity {!relatedTo.L2I_Approval_Deal_Opportunity__r.Name} has been REJECTED by one of the individuals you selected to approve the financials for this opportunity. </p>
+
+
+<p> Rejecting Approver Name: <c:L2I_ApprovalRequestApprover relatedToId="{!relatedTo.id}"/> </p>
+<p> Rejection Comments: <c:L2I_ApprovalRequestComments relatedToId="{!relatedTo.id}"/> </p>
+
+<p>Please make any required changes and re-submit for approval per the approval matrix published on the P&amp;L submission screen.  </p>
+
+<p style="color:white"><apex:outputText value="{!relatedTo.Id}"/></p>
+
+</body>
+</html>
+</messaging:HtmlEmailBody>
+</messaging:emailTemplate>

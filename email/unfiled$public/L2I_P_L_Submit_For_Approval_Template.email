@@ -1,0 +1,21 @@
+<messaging:emailTemplate subject="{!relatedTo.LastModifiedBy.Name} is requesting Approval on {!relatedTo.Name} for {!relatedTo.L2I_Approval_Deal_Opportunity__r.Account.Name} Deal Opportunity {!relatedTo.L2I_Approval_Deal_Opportunity__r.Name}"  
+relatedToType="L2I_P_L_Approval__c">
+
+<messaging:HtmlEmailBody >
+<html>
+<p>{!relatedTo.LastModifiedBy.Name} is requesting your approval on {!relatedTo.Name} for {!relatedTo.L2I_Approval_Deal_Opportunity__r.Account.Name} Deal Opportunity {!relatedTo.L2I_Approval_Deal_Opportunity__r.Name}. </p>
+<p>Please click on this link to Approve/Reject <c:L2I_ApprovalRequestStep relatedToId="{!relatedTo.id}"/> </p>
+<p>The link in this e-mail will take you to the approval page where you as a required approver can grant or reject this P&amp;L approval request. </p> 
+
+<p>Supporting documentation including the P&amp;L files can be accessed from from the P&amp;L Approval record by clicking here:<apex:outputlink value="{!LEFT($Api.Partner_Server_URL_140,FIND('.com',$Api.Partner_Server_URL_140)+4)+relatedTo.Id}">{!relatedTo.Name}</apex:outputlink>. These files are located in either the "Files" or "PTS P&amp;L Files" (for PTS opportunities) objects in the right hand side of the P&amp;L Approval request record. </p>
+
+<p>Risk/MIR items from a compliance matrix may be associated with this P&amp;L Submission.  Please review before approving.</p>
+
+<p>If you have questions or need clarification about the approval request, ask your questions within the P&amp;L Approval request record itself using the chatter feature in the right hand column and @ mentioning the submitter in your post.</p>
+
+<p>Thank you.</p>
+
+
+</html>
+</messaging:HtmlEmailBody>
+</messaging:emailtemplate>
